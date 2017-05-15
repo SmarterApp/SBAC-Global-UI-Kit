@@ -6727,8 +6727,8 @@ div.blue {
 }
 div.blue .label {
   font-weight: 400;
-  color: #014F9A;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #0176e6;
 }
 p.blue {
   color: #014F9A;
@@ -6739,8 +6739,8 @@ div.blue-dark {
 }
 div.blue-dark .label {
   font-weight: 400;
-  color: #104564;
-  background-color: #f5fafd;
+  color: #f5fafd;
+  background-color: #1b73a6;
 }
 p.blue-dark {
   color: #104564;
@@ -6751,8 +6751,8 @@ div.teal {
 }
 div.teal .label {
   font-weight: 400;
-  color: #0090B7;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #04caff;
 }
 p.teal {
   color: #0090B7;
@@ -6763,8 +6763,8 @@ div.aqua {
 }
 div.aqua .label {
   font-weight: 400;
-  color: #3696E6;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #7abaee;
 }
 p.aqua {
   color: #3696E6;
@@ -6775,8 +6775,8 @@ div.green {
 }
 div.green .label {
   font-weight: 400;
-  color: #6FAE29;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #95d54e;
 }
 p.green {
   color: #6FAE29;
@@ -6787,8 +6787,8 @@ div.green-dark {
 }
 div.green-dark .label {
   font-weight: 400;
-  color: #406934;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #5f9c4d;
 }
 p.green-dark {
   color: #406934;
@@ -6799,8 +6799,8 @@ div.orange {
 }
 div.orange .label {
   font-weight: 400;
-  color: #D66E1E;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #e89759;
 }
 p.orange {
   color: #D66E1E;
@@ -6811,8 +6811,8 @@ div.red {
 }
 div.red .label {
   font-weight: 400;
-  color: #D5124A;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #ef4475;
 }
 p.red {
   color: #D5124A;
@@ -6823,8 +6823,8 @@ div.red-dark {
 }
 div.red-dark .label {
   font-weight: 400;
-  color: #931432;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #d61d49;
 }
 p.red-dark {
   color: #931432;
@@ -6835,8 +6835,8 @@ div.maroon {
 }
 div.maroon .label {
   font-weight: 400;
-  color: #5B1931;
-  background-color: #fdf6f8;
+  color: #fdf6f8;
+  background-color: #972951;
 }
 p.maroon {
   color: #5B1931;
@@ -6847,8 +6847,8 @@ div.black {
 }
 div.black .label {
   font-weight: 400;
-  color: #000000;
-  background-color: #bfbfbf;
+  color: #bfbfbf;
+  background-color: #262626;
 }
 p.black {
   color: #000000;
@@ -6859,8 +6859,8 @@ div.gray-darker {
 }
 div.gray-darker .label {
   font-weight: 400;
-  color: #64666A;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #8a8c91;
 }
 p.gray-darker {
   color: #64666A;
@@ -6871,8 +6871,8 @@ div.gray-dark {
 }
 div.gray-dark .label {
   font-weight: 400;
-  color: #A7A7A7;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #cdcdcd;
 }
 p.gray-dark {
   color: #A7A7A7;
@@ -6883,8 +6883,8 @@ div.gray {
 }
 div.gray .label {
   font-weight: 400;
-  color: #D5D5D5;
-  background-color: #161616;
+  color: #161616;
+  background-color: #afafaf;
 }
 p.gray {
   color: #D5D5D5;
@@ -6895,8 +6895,8 @@ div.gray-light {
 }
 div.gray-light .label {
   font-weight: 400;
-  color: #E6E6E6;
-  background-color: #272727;
+  color: #272727;
+  background-color: #c0c0c0;
 }
 p.gray-light {
   color: #E6E6E6;
@@ -6907,8 +6907,8 @@ div.gray-lighter {
 }
 div.gray-lighter .label {
   font-weight: 400;
-  color: #F8F8F8;
-  background-color: #393939;
+  color: #393939;
+  background-color: #d2d2d2;
 }
 p.gray-lighter {
   color: #F8F8F8;
@@ -6919,8 +6919,8 @@ div.white {
 }
 div.white .label {
   font-weight: 400;
-  color: #FFFFFF;
-  background-color: #404040;
+  color: #404040;
+  background-color: #d9d9d9;
 }
 p.white {
   color: #FFFFFF;
@@ -6931,8 +6931,8 @@ div.brand-gray {
 }
 div.brand-gray .label {
   font-weight: 400;
-  color: #64666A;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #8a8c91;
 }
 p.brand-gray {
   color: #64666A;
@@ -6943,8 +6943,8 @@ div.brand-green {
 }
 div.brand-green .label {
   font-weight: 400;
-  color: #6FAE29;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #95d54e;
 }
 p.brand-green {
   color: #6FAE29;
@@ -6955,8 +6955,8 @@ div.brand-blue {
 }
 div.brand-blue .label {
   font-weight: 400;
-  color: #3696E6;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #7abaee;
 }
 p.brand-blue {
   color: #3696E6;
@@ -6967,8 +6967,8 @@ div.graph-gray {
 }
 div.graph-gray .label {
   font-weight: 400;
-  color: #64666A;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #8a8c91;
 }
 p.graph-gray {
   color: #64666A;
@@ -6979,8 +6979,8 @@ div.graph-green {
 }
 div.graph-green .label {
   font-weight: 400;
-  color: #406934;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #5f9c4d;
 }
 p.graph-green {
   color: #406934;
@@ -6991,8 +6991,8 @@ div.graph-red {
 }
 div.graph-red .label {
   font-weight: 400;
-  color: #931432;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #d61d49;
 }
 p.graph-red {
   color: #931432;
@@ -7003,8 +7003,8 @@ div.graph-blue {
 }
 div.graph-blue .label {
   font-weight: 400;
-  color: #014F9A;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #0176e6;
 }
 p.graph-blue {
   color: #014F9A;
@@ -7015,8 +7015,8 @@ div.brand-primary {
 }
 div.brand-primary .label {
   font-weight: 400;
-  color: #3696E6;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #7abaee;
 }
 p.brand-primary {
   color: #3696E6;
@@ -7027,8 +7027,8 @@ div.brand-success {
 }
 div.brand-success .label {
   font-weight: 400;
-  color: #6FAE29;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #95d54e;
 }
 p.brand-success {
   color: #6FAE29;
@@ -7039,8 +7039,8 @@ div.brand-info {
 }
 div.brand-info .label {
   font-weight: 400;
-  color: #3696E6;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #7abaee;
 }
 p.brand-info {
   color: #3696E6;
@@ -7051,8 +7051,8 @@ div.brand-warning {
 }
 div.brand-warning .label {
   font-weight: 400;
-  color: #D66E1E;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #e89759;
 }
 p.brand-warning {
   color: #D66E1E;
@@ -7063,8 +7063,8 @@ div.brand-danger {
 }
 div.brand-danger .label {
   font-weight: 400;
-  color: #D5124A;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #ef4475;
 }
 p.brand-danger {
   color: #D5124A;
