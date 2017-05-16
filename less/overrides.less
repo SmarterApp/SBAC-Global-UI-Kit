@@ -1,3 +1,20 @@
+// make all images have a max-width of 100%
+img {
+  .img-responsive;
+}
+
+// align an element to the right
 .right {
   float: right;
+}
+
+// specify figure image and caption styles
+figure {
+  img {
+    .img-thumbnail;
+    margin-bottom: @font-size-small / 2;
+  }
+  figcaption {
+    font-size: @font-size-small;
+  }
 }

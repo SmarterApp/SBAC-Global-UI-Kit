@@ -6725,6 +6725,40 @@ div.blue {
   color: #9ccefe;
   background-color: #014F9A;
 }
+div.blue h1,
+div.blue .h1,
+div.blue h2,
+div.blue .h2,
+div.blue h3,
+div.blue .h3 {
+  color: #ffffff;
+}
+div.blue h1 small,
+div.blue .h1 small,
+div.blue h2 small,
+div.blue .h2 small,
+div.blue h3 small,
+div.blue .h3 small {
+  color: #e8f3ff;
+}
+div.blue h4,
+div.blue .h4,
+div.blue h5,
+div.blue .h5,
+div.blue h6,
+div.blue .h6 p,
+div.blue span {
+  color: #9ccefe;
+}
+div.blue h4 small,
+div.blue .h4 small,
+div.blue h5 small,
+div.blue .h5 small,
+div.blue h6 small,
+div.blue .h6 p small,
+div.blue span small {
+  color: #69b5fe;
+}
 div.blue .label {
   font-weight: 400;
   color: #ffffff;
@@ -6736,6 +6770,40 @@ p.blue {
 div.blue-dark {
   color: #87c7ec;
   background-color: #104564;
+}
+div.blue-dark h1,
+div.blue-dark .h1,
+div.blue-dark h2,
+div.blue-dark .h2,
+div.blue-dark h3,
+div.blue-dark .h3 {
+  color: #f5fafd;
+}
+div.blue-dark h1 small,
+div.blue-dark .h1 small,
+div.blue-dark h2 small,
+div.blue-dark .h2 small,
+div.blue-dark h3 small,
+div.blue-dark .h3 small {
+  color: #c9e6f6;
+}
+div.blue-dark h4,
+div.blue-dark .h4,
+div.blue-dark h5,
+div.blue-dark .h5,
+div.blue-dark h6,
+div.blue-dark .h6 p,
+div.blue-dark span {
+  color: #87c7ec;
+}
+div.blue-dark h4 small,
+div.blue-dark .h4 small,
+div.blue-dark h5 small,
+div.blue-dark .h5 small,
+div.blue-dark h6 small,
+div.blue-dark .h6 p small,
+div.blue-dark span small {
+  color: #5bb2e5;
 }
 div.blue-dark .label {
   font-weight: 400;
@@ -6749,6 +6817,40 @@ div.teal {
   color: #b7f0ff;
   background-color: #0090B7;
 }
+div.teal h1,
+div.teal .h1,
+div.teal h2,
+div.teal .h2,
+div.teal h3,
+div.teal .h3 {
+  color: #ffffff;
+}
+div.teal h1 small,
+div.teal .h1 small,
+div.teal h2 small,
+div.teal .h2 small,
+div.teal h3 small,
+div.teal .h3 small {
+  color: #ffffff;
+}
+div.teal h4,
+div.teal .h4,
+div.teal h5,
+div.teal .h5,
+div.teal h6,
+div.teal .h6 p,
+div.teal span {
+  color: #b7f0ff;
+}
+div.teal h4 small,
+div.teal .h4 small,
+div.teal h5 small,
+div.teal .h5 small,
+div.teal h6 small,
+div.teal .h6 p small,
+div.teal span small {
+  color: #84e5ff;
+}
 div.teal .label {
   font-weight: 400;
   color: #ffffff;
@@ -6760,6 +6862,40 @@ p.teal {
 div.aqua {
   color: #ffffff;
   background-color: #3696E6;
+}
+div.aqua h1,
+div.aqua .h1,
+div.aqua h2,
+div.aqua .h2,
+div.aqua h3,
+div.aqua .h3 {
+  color: #ffffff;
+}
+div.aqua h1 small,
+div.aqua .h1 small,
+div.aqua h2 small,
+div.aqua .h2 small,
+div.aqua h3 small,
+div.aqua .h3 small {
+  color: #ffffff;
+}
+div.aqua h4,
+div.aqua .h4,
+div.aqua h5,
+div.aqua .h5,
+div.aqua h6,
+div.aqua .h6 p,
+div.aqua span {
+  color: #ffffff;
+}
+div.aqua h4 small,
+div.aqua .h4 small,
+div.aqua h5 small,
+div.aqua .h5 small,
+div.aqua h6 small,
+div.aqua .h6 p small,
+div.aqua span small {
+  color: #ebf5fd;
 }
 div.aqua .label {
   font-weight: 400;
@@ -6773,6 +6909,40 @@ div.green {
   color: #ecf7df;
   background-color: #6FAE29;
 }
+div.green h1,
+div.green .h1,
+div.green h2,
+div.green .h2,
+div.green h3,
+div.green .h3 {
+  color: #ffffff;
+}
+div.green h1 small,
+div.green .h1 small,
+div.green h2 small,
+div.green .h2 small,
+div.green h3 small,
+div.green .h3 small {
+  color: #ffffff;
+}
+div.green h4,
+div.green .h4,
+div.green h5,
+div.green .h5,
+div.green h6,
+div.green .h6 p,
+div.green span {
+  color: #ecf7df;
+}
+div.green h4 small,
+div.green .h4 small,
+div.green h5 small,
+div.green .h5 small,
+div.green h6 small,
+div.green .h6 p small,
+div.green span small {
+  color: #d3eeb5;
+}
 div.green .label {
   font-weight: 400;
   color: #ffffff;
@@ -6784,6 +6954,40 @@ p.green {
 div.green-dark {
   color: #c5dfbd;
   background-color: #406934;
+}
+div.green-dark h1,
+div.green-dark .h1,
+div.green-dark h2,
+div.green-dark .h2,
+div.green-dark h3,
+div.green-dark .h3 {
+  color: #ffffff;
+}
+div.green-dark h1 small,
+div.green-dark .h1 small,
+div.green-dark h2 small,
+div.green-dark .h2 small,
+div.green-dark h3 small,
+div.green-dark .h3 small {
+  color: #f2f8f1;
+}
+div.green-dark h4,
+div.green-dark .h4,
+div.green-dark h5,
+div.green-dark .h5,
+div.green-dark h6,
+div.green-dark .h6 p,
+div.green-dark span {
+  color: #c5dfbd;
+}
+div.green-dark h4 small,
+div.green-dark .h4 small,
+div.green-dark h5 small,
+div.green-dark .h5 small,
+div.green-dark h6 small,
+div.green-dark .h6 p small,
+div.green-dark span small {
+  color: #a7ce9b;
 }
 div.green-dark .label {
   font-weight: 400;
@@ -6797,6 +7001,40 @@ div.orange {
   color: #fef9f5;
   background-color: #D66E1E;
 }
+div.orange h1,
+div.orange .h1,
+div.orange h2,
+div.orange .h2,
+div.orange h3,
+div.orange .h3 {
+  color: #ffffff;
+}
+div.orange h1 small,
+div.orange .h1 small,
+div.orange h2 small,
+div.orange .h2 small,
+div.orange h3 small,
+div.orange .h3 small {
+  color: #ffffff;
+}
+div.orange h4,
+div.orange .h4,
+div.orange h5,
+div.orange .h5,
+div.orange h6,
+div.orange .h6 p,
+div.orange span {
+  color: #fef9f5;
+}
+div.orange h4 small,
+div.orange .h4 small,
+div.orange h5 small,
+div.orange .h5 small,
+div.orange h6 small,
+div.orange .h6 p small,
+div.orange span small {
+  color: #f7ddc9;
+}
 div.orange .label {
   font-weight: 400;
   color: #ffffff;
@@ -6808,6 +7046,40 @@ p.orange {
 div.red {
   color: #fde9ef;
   background-color: #D5124A;
+}
+div.red h1,
+div.red .h1,
+div.red h2,
+div.red .h2,
+div.red h3,
+div.red .h3 {
+  color: #ffffff;
+}
+div.red h1 small,
+div.red .h1 small,
+div.red h2 small,
+div.red .h2 small,
+div.red h3 small,
+div.red .h3 small {
+  color: #ffffff;
+}
+div.red h4,
+div.red .h4,
+div.red h5,
+div.red .h5,
+div.red h6,
+div.red .h6 p,
+div.red span {
+  color: #fde9ef;
+}
+div.red h4 small,
+div.red .h4 small,
+div.red h5 small,
+div.red .h5 small,
+div.red h6 small,
+div.red .h6 p small,
+div.red span small {
+  color: #f9bacc;
 }
 div.red .label {
   font-weight: 400;
@@ -6821,6 +7093,40 @@ div.red-dark {
   color: #f4b2c1;
   background-color: #931432;
 }
+div.red-dark h1,
+div.red-dark .h1,
+div.red-dark h2,
+div.red-dark .h2,
+div.red-dark h3,
+div.red-dark .h3 {
+  color: #ffffff;
+}
+div.red-dark h1 small,
+div.red-dark .h1 small,
+div.red-dark h2 small,
+div.red-dark .h2 small,
+div.red-dark h3 small,
+div.red-dark .h3 small {
+  color: #fef5f7;
+}
+div.red-dark h4,
+div.red-dark .h4,
+div.red-dark h5,
+div.red-dark .h5,
+div.red-dark h6,
+div.red-dark .h6 p,
+div.red-dark span {
+  color: #f4b2c1;
+}
+div.red-dark h4 small,
+div.red-dark .h4 small,
+div.red-dark h5 small,
+div.red-dark .h5 small,
+div.red-dark h6 small,
+div.red-dark .h6 p small,
+div.red-dark span small {
+  color: #ee859e;
+}
 div.red-dark .label {
   font-weight: 400;
   color: #ffffff;
@@ -6832,6 +7138,40 @@ p.red-dark {
 div.maroon {
   color: #e192af;
   background-color: #5B1931;
+}
+div.maroon h1,
+div.maroon .h1,
+div.maroon h2,
+div.maroon .h2,
+div.maroon h3,
+div.maroon .h3 {
+  color: #fdf6f8;
+}
+div.maroon h1 small,
+div.maroon .h1 small,
+div.maroon h2 small,
+div.maroon .h2 small,
+div.maroon h3 small,
+div.maroon .h3 small {
+  color: #f2cedb;
+}
+div.maroon h4,
+div.maroon .h4,
+div.maroon h5,
+div.maroon .h5,
+div.maroon h6,
+div.maroon .h6 p,
+div.maroon span {
+  color: #e192af;
+}
+div.maroon h4 small,
+div.maroon .h4 small,
+div.maroon h5 small,
+div.maroon .h5 small,
+div.maroon h6 small,
+div.maroon .h6 p small,
+div.maroon span small {
+  color: #d66a91;
 }
 div.maroon .label {
   font-weight: 400;
@@ -6845,6 +7185,40 @@ div.black {
   color: #808080;
   background-color: #000000;
 }
+div.black h1,
+div.black .h1,
+div.black h2,
+div.black .h2,
+div.black h3,
+div.black .h3 {
+  color: #bfbfbf;
+}
+div.black h1 small,
+div.black .h1 small,
+div.black h2 small,
+div.black .h2 small,
+div.black h3 small,
+div.black .h3 small {
+  color: #a6a6a6;
+}
+div.black h4,
+div.black .h4,
+div.black h5,
+div.black .h5,
+div.black h6,
+div.black .h6 p,
+div.black span {
+  color: #808080;
+}
+div.black h4 small,
+div.black .h4 small,
+div.black h5 small,
+div.black .h5 small,
+div.black h6 small,
+div.black .h6 p small,
+div.black span small {
+  color: #666666;
+}
 div.black .label {
   font-weight: 400;
   color: #bfbfbf;
@@ -6856,6 +7230,40 @@ p.black {
 div.gray-darker {
   color: #e6e6e7;
   background-color: #64666A;
+}
+div.gray-darker h1,
+div.gray-darker .h1,
+div.gray-darker h2,
+div.gray-darker .h2,
+div.gray-darker h3,
+div.gray-darker .h3 {
+  color: #ffffff;
+}
+div.gray-darker h1 small,
+div.gray-darker .h1 small,
+div.gray-darker h2 small,
+div.gray-darker .h2 small,
+div.gray-darker h3 small,
+div.gray-darker .h3 small {
+  color: #ffffff;
+}
+div.gray-darker h4,
+div.gray-darker .h4,
+div.gray-darker h5,
+div.gray-darker .h5,
+div.gray-darker h6,
+div.gray-darker .h6 p,
+div.gray-darker span {
+  color: #e6e6e7;
+}
+div.gray-darker h4 small,
+div.gray-darker .h4 small,
+div.gray-darker h5 small,
+div.gray-darker .h5 small,
+div.gray-darker h6 small,
+div.gray-darker .h6 p small,
+div.gray-darker span small {
+  color: #cccdce;
 }
 div.gray-darker .label {
   font-weight: 400;
@@ -6869,6 +7277,40 @@ div.gray-dark {
   color: #ffffff;
   background-color: #A7A7A7;
 }
+div.gray-dark h1,
+div.gray-dark .h1,
+div.gray-dark h2,
+div.gray-dark .h2,
+div.gray-dark h3,
+div.gray-dark .h3 {
+  color: #ffffff;
+}
+div.gray-dark h1 small,
+div.gray-dark .h1 small,
+div.gray-dark h2 small,
+div.gray-dark .h2 small,
+div.gray-dark h3 small,
+div.gray-dark .h3 small {
+  color: #ffffff;
+}
+div.gray-dark h4,
+div.gray-dark .h4,
+div.gray-dark h5,
+div.gray-dark .h5,
+div.gray-dark h6,
+div.gray-dark .h6 p,
+div.gray-dark span {
+  color: #ffffff;
+}
+div.gray-dark h4 small,
+div.gray-dark .h4 small,
+div.gray-dark h5 small,
+div.gray-dark .h5 small,
+div.gray-dark h6 small,
+div.gray-dark .h6 p small,
+div.gray-dark span small {
+  color: #ffffff;
+}
 div.gray-dark .label {
   font-weight: 400;
   color: #ffffff;
@@ -6880,6 +7322,40 @@ p.gray-dark {
 div.gray {
   color: #565656;
   background-color: #D5D5D5;
+}
+div.gray h1,
+div.gray .h1,
+div.gray h2,
+div.gray .h2,
+div.gray h3,
+div.gray .h3 {
+  color: #161616;
+}
+div.gray h1 small,
+div.gray .h1 small,
+div.gray h2 small,
+div.gray .h2 small,
+div.gray h3 small,
+div.gray .h3 small {
+  color: #2f2f2f;
+}
+div.gray h4,
+div.gray .h4,
+div.gray h5,
+div.gray .h5,
+div.gray h6,
+div.gray .h6 p,
+div.gray span {
+  color: #565656;
+}
+div.gray h4 small,
+div.gray .h4 small,
+div.gray h5 small,
+div.gray .h5 small,
+div.gray h6 small,
+div.gray .h6 p small,
+div.gray span small {
+  color: #6f6f6f;
 }
 div.gray .label {
   font-weight: 400;
@@ -6893,6 +7369,40 @@ div.gray-light {
   color: #676767;
   background-color: #E6E6E6;
 }
+div.gray-light h1,
+div.gray-light .h1,
+div.gray-light h2,
+div.gray-light .h2,
+div.gray-light h3,
+div.gray-light .h3 {
+  color: #272727;
+}
+div.gray-light h1 small,
+div.gray-light .h1 small,
+div.gray-light h2 small,
+div.gray-light .h2 small,
+div.gray-light h3 small,
+div.gray-light .h3 small {
+  color: #404040;
+}
+div.gray-light h4,
+div.gray-light .h4,
+div.gray-light h5,
+div.gray-light .h5,
+div.gray-light h6,
+div.gray-light .h6 p,
+div.gray-light span {
+  color: #676767;
+}
+div.gray-light h4 small,
+div.gray-light .h4 small,
+div.gray-light h5 small,
+div.gray-light .h5 small,
+div.gray-light h6 small,
+div.gray-light .h6 p small,
+div.gray-light span small {
+  color: #808080;
+}
 div.gray-light .label {
   font-weight: 400;
   color: #272727;
@@ -6904,6 +7414,40 @@ p.gray-light {
 div.gray-lighter {
   color: #797979;
   background-color: #F8F8F8;
+}
+div.gray-lighter h1,
+div.gray-lighter .h1,
+div.gray-lighter h2,
+div.gray-lighter .h2,
+div.gray-lighter h3,
+div.gray-lighter .h3 {
+  color: #393939;
+}
+div.gray-lighter h1 small,
+div.gray-lighter .h1 small,
+div.gray-lighter h2 small,
+div.gray-lighter .h2 small,
+div.gray-lighter h3 small,
+div.gray-lighter .h3 small {
+  color: #525252;
+}
+div.gray-lighter h4,
+div.gray-lighter .h4,
+div.gray-lighter h5,
+div.gray-lighter .h5,
+div.gray-lighter h6,
+div.gray-lighter .h6 p,
+div.gray-lighter span {
+  color: #797979;
+}
+div.gray-lighter h4 small,
+div.gray-lighter .h4 small,
+div.gray-lighter h5 small,
+div.gray-lighter .h5 small,
+div.gray-lighter h6 small,
+div.gray-lighter .h6 p small,
+div.gray-lighter span small {
+  color: #929292;
 }
 div.gray-lighter .label {
   font-weight: 400;
@@ -6917,6 +7461,40 @@ div.white {
   color: #808080;
   background-color: #FFFFFF;
 }
+div.white h1,
+div.white .h1,
+div.white h2,
+div.white .h2,
+div.white h3,
+div.white .h3 {
+  color: #404040;
+}
+div.white h1 small,
+div.white .h1 small,
+div.white h2 small,
+div.white .h2 small,
+div.white h3 small,
+div.white .h3 small {
+  color: #595959;
+}
+div.white h4,
+div.white .h4,
+div.white h5,
+div.white .h5,
+div.white h6,
+div.white .h6 p,
+div.white span {
+  color: #808080;
+}
+div.white h4 small,
+div.white .h4 small,
+div.white h5 small,
+div.white .h5 small,
+div.white h6 small,
+div.white .h6 p small,
+div.white span small {
+  color: #999999;
+}
 div.white .label {
   font-weight: 400;
   color: #404040;
@@ -6928,6 +7506,40 @@ p.white {
 div.brand-gray {
   color: #e6e6e7;
   background-color: #64666A;
+}
+div.brand-gray h1,
+div.brand-gray .h1,
+div.brand-gray h2,
+div.brand-gray .h2,
+div.brand-gray h3,
+div.brand-gray .h3 {
+  color: #ffffff;
+}
+div.brand-gray h1 small,
+div.brand-gray .h1 small,
+div.brand-gray h2 small,
+div.brand-gray .h2 small,
+div.brand-gray h3 small,
+div.brand-gray .h3 small {
+  color: #ffffff;
+}
+div.brand-gray h4,
+div.brand-gray .h4,
+div.brand-gray h5,
+div.brand-gray .h5,
+div.brand-gray h6,
+div.brand-gray .h6 p,
+div.brand-gray span {
+  color: #e6e6e7;
+}
+div.brand-gray h4 small,
+div.brand-gray .h4 small,
+div.brand-gray h5 small,
+div.brand-gray .h5 small,
+div.brand-gray h6 small,
+div.brand-gray .h6 p small,
+div.brand-gray span small {
+  color: #cccdce;
 }
 div.brand-gray .label {
   font-weight: 400;
@@ -6941,6 +7553,40 @@ div.brand-green {
   color: #ecf7df;
   background-color: #6FAE29;
 }
+div.brand-green h1,
+div.brand-green .h1,
+div.brand-green h2,
+div.brand-green .h2,
+div.brand-green h3,
+div.brand-green .h3 {
+  color: #ffffff;
+}
+div.brand-green h1 small,
+div.brand-green .h1 small,
+div.brand-green h2 small,
+div.brand-green .h2 small,
+div.brand-green h3 small,
+div.brand-green .h3 small {
+  color: #ffffff;
+}
+div.brand-green h4,
+div.brand-green .h4,
+div.brand-green h5,
+div.brand-green .h5,
+div.brand-green h6,
+div.brand-green .h6 p,
+div.brand-green span {
+  color: #ecf7df;
+}
+div.brand-green h4 small,
+div.brand-green .h4 small,
+div.brand-green h5 small,
+div.brand-green .h5 small,
+div.brand-green h6 small,
+div.brand-green .h6 p small,
+div.brand-green span small {
+  color: #d3eeb5;
+}
 div.brand-green .label {
   font-weight: 400;
   color: #ffffff;
@@ -6952,6 +7598,40 @@ p.brand-green {
 div.brand-blue {
   color: #ffffff;
   background-color: #3696E6;
+}
+div.brand-blue h1,
+div.brand-blue .h1,
+div.brand-blue h2,
+div.brand-blue .h2,
+div.brand-blue h3,
+div.brand-blue .h3 {
+  color: #ffffff;
+}
+div.brand-blue h1 small,
+div.brand-blue .h1 small,
+div.brand-blue h2 small,
+div.brand-blue .h2 small,
+div.brand-blue h3 small,
+div.brand-blue .h3 small {
+  color: #ffffff;
+}
+div.brand-blue h4,
+div.brand-blue .h4,
+div.brand-blue h5,
+div.brand-blue .h5,
+div.brand-blue h6,
+div.brand-blue .h6 p,
+div.brand-blue span {
+  color: #ffffff;
+}
+div.brand-blue h4 small,
+div.brand-blue .h4 small,
+div.brand-blue h5 small,
+div.brand-blue .h5 small,
+div.brand-blue h6 small,
+div.brand-blue .h6 p small,
+div.brand-blue span small {
+  color: #ebf5fd;
 }
 div.brand-blue .label {
   font-weight: 400;
@@ -6965,6 +7645,40 @@ div.graph-gray {
   color: #e6e6e7;
   background-color: #64666A;
 }
+div.graph-gray h1,
+div.graph-gray .h1,
+div.graph-gray h2,
+div.graph-gray .h2,
+div.graph-gray h3,
+div.graph-gray .h3 {
+  color: #ffffff;
+}
+div.graph-gray h1 small,
+div.graph-gray .h1 small,
+div.graph-gray h2 small,
+div.graph-gray .h2 small,
+div.graph-gray h3 small,
+div.graph-gray .h3 small {
+  color: #ffffff;
+}
+div.graph-gray h4,
+div.graph-gray .h4,
+div.graph-gray h5,
+div.graph-gray .h5,
+div.graph-gray h6,
+div.graph-gray .h6 p,
+div.graph-gray span {
+  color: #e6e6e7;
+}
+div.graph-gray h4 small,
+div.graph-gray .h4 small,
+div.graph-gray h5 small,
+div.graph-gray .h5 small,
+div.graph-gray h6 small,
+div.graph-gray .h6 p small,
+div.graph-gray span small {
+  color: #cccdce;
+}
 div.graph-gray .label {
   font-weight: 400;
   color: #ffffff;
@@ -6976,6 +7690,40 @@ p.graph-gray {
 div.graph-green {
   color: #c5dfbd;
   background-color: #406934;
+}
+div.graph-green h1,
+div.graph-green .h1,
+div.graph-green h2,
+div.graph-green .h2,
+div.graph-green h3,
+div.graph-green .h3 {
+  color: #ffffff;
+}
+div.graph-green h1 small,
+div.graph-green .h1 small,
+div.graph-green h2 small,
+div.graph-green .h2 small,
+div.graph-green h3 small,
+div.graph-green .h3 small {
+  color: #f2f8f1;
+}
+div.graph-green h4,
+div.graph-green .h4,
+div.graph-green h5,
+div.graph-green .h5,
+div.graph-green h6,
+div.graph-green .h6 p,
+div.graph-green span {
+  color: #c5dfbd;
+}
+div.graph-green h4 small,
+div.graph-green .h4 small,
+div.graph-green h5 small,
+div.graph-green .h5 small,
+div.graph-green h6 small,
+div.graph-green .h6 p small,
+div.graph-green span small {
+  color: #a7ce9b;
 }
 div.graph-green .label {
   font-weight: 400;
@@ -6989,6 +7737,40 @@ div.graph-red {
   color: #f4b2c1;
   background-color: #931432;
 }
+div.graph-red h1,
+div.graph-red .h1,
+div.graph-red h2,
+div.graph-red .h2,
+div.graph-red h3,
+div.graph-red .h3 {
+  color: #ffffff;
+}
+div.graph-red h1 small,
+div.graph-red .h1 small,
+div.graph-red h2 small,
+div.graph-red .h2 small,
+div.graph-red h3 small,
+div.graph-red .h3 small {
+  color: #fef5f7;
+}
+div.graph-red h4,
+div.graph-red .h4,
+div.graph-red h5,
+div.graph-red .h5,
+div.graph-red h6,
+div.graph-red .h6 p,
+div.graph-red span {
+  color: #f4b2c1;
+}
+div.graph-red h4 small,
+div.graph-red .h4 small,
+div.graph-red h5 small,
+div.graph-red .h5 small,
+div.graph-red h6 small,
+div.graph-red .h6 p small,
+div.graph-red span small {
+  color: #ee859e;
+}
 div.graph-red .label {
   font-weight: 400;
   color: #ffffff;
@@ -7000,6 +7782,40 @@ p.graph-red {
 div.graph-blue {
   color: #9ccefe;
   background-color: #014F9A;
+}
+div.graph-blue h1,
+div.graph-blue .h1,
+div.graph-blue h2,
+div.graph-blue .h2,
+div.graph-blue h3,
+div.graph-blue .h3 {
+  color: #ffffff;
+}
+div.graph-blue h1 small,
+div.graph-blue .h1 small,
+div.graph-blue h2 small,
+div.graph-blue .h2 small,
+div.graph-blue h3 small,
+div.graph-blue .h3 small {
+  color: #e8f3ff;
+}
+div.graph-blue h4,
+div.graph-blue .h4,
+div.graph-blue h5,
+div.graph-blue .h5,
+div.graph-blue h6,
+div.graph-blue .h6 p,
+div.graph-blue span {
+  color: #9ccefe;
+}
+div.graph-blue h4 small,
+div.graph-blue .h4 small,
+div.graph-blue h5 small,
+div.graph-blue .h5 small,
+div.graph-blue h6 small,
+div.graph-blue .h6 p small,
+div.graph-blue span small {
+  color: #69b5fe;
 }
 div.graph-blue .label {
   font-weight: 400;
@@ -7013,6 +7829,40 @@ div.brand-primary {
   color: #ffffff;
   background-color: #3696E6;
 }
+div.brand-primary h1,
+div.brand-primary .h1,
+div.brand-primary h2,
+div.brand-primary .h2,
+div.brand-primary h3,
+div.brand-primary .h3 {
+  color: #ffffff;
+}
+div.brand-primary h1 small,
+div.brand-primary .h1 small,
+div.brand-primary h2 small,
+div.brand-primary .h2 small,
+div.brand-primary h3 small,
+div.brand-primary .h3 small {
+  color: #ffffff;
+}
+div.brand-primary h4,
+div.brand-primary .h4,
+div.brand-primary h5,
+div.brand-primary .h5,
+div.brand-primary h6,
+div.brand-primary .h6 p,
+div.brand-primary span {
+  color: #ffffff;
+}
+div.brand-primary h4 small,
+div.brand-primary .h4 small,
+div.brand-primary h5 small,
+div.brand-primary .h5 small,
+div.brand-primary h6 small,
+div.brand-primary .h6 p small,
+div.brand-primary span small {
+  color: #ebf5fd;
+}
 div.brand-primary .label {
   font-weight: 400;
   color: #ffffff;
@@ -7024,6 +7874,40 @@ p.brand-primary {
 div.brand-success {
   color: #ecf7df;
   background-color: #6FAE29;
+}
+div.brand-success h1,
+div.brand-success .h1,
+div.brand-success h2,
+div.brand-success .h2,
+div.brand-success h3,
+div.brand-success .h3 {
+  color: #ffffff;
+}
+div.brand-success h1 small,
+div.brand-success .h1 small,
+div.brand-success h2 small,
+div.brand-success .h2 small,
+div.brand-success h3 small,
+div.brand-success .h3 small {
+  color: #ffffff;
+}
+div.brand-success h4,
+div.brand-success .h4,
+div.brand-success h5,
+div.brand-success .h5,
+div.brand-success h6,
+div.brand-success .h6 p,
+div.brand-success span {
+  color: #ecf7df;
+}
+div.brand-success h4 small,
+div.brand-success .h4 small,
+div.brand-success h5 small,
+div.brand-success .h5 small,
+div.brand-success h6 small,
+div.brand-success .h6 p small,
+div.brand-success span small {
+  color: #d3eeb5;
 }
 div.brand-success .label {
   font-weight: 400;
@@ -7037,6 +7921,40 @@ div.brand-info {
   color: #ffffff;
   background-color: #3696E6;
 }
+div.brand-info h1,
+div.brand-info .h1,
+div.brand-info h2,
+div.brand-info .h2,
+div.brand-info h3,
+div.brand-info .h3 {
+  color: #ffffff;
+}
+div.brand-info h1 small,
+div.brand-info .h1 small,
+div.brand-info h2 small,
+div.brand-info .h2 small,
+div.brand-info h3 small,
+div.brand-info .h3 small {
+  color: #ffffff;
+}
+div.brand-info h4,
+div.brand-info .h4,
+div.brand-info h5,
+div.brand-info .h5,
+div.brand-info h6,
+div.brand-info .h6 p,
+div.brand-info span {
+  color: #ffffff;
+}
+div.brand-info h4 small,
+div.brand-info .h4 small,
+div.brand-info h5 small,
+div.brand-info .h5 small,
+div.brand-info h6 small,
+div.brand-info .h6 p small,
+div.brand-info span small {
+  color: #ebf5fd;
+}
 div.brand-info .label {
   font-weight: 400;
   color: #ffffff;
@@ -7049,6 +7967,40 @@ div.brand-warning {
   color: #fef9f5;
   background-color: #D66E1E;
 }
+div.brand-warning h1,
+div.brand-warning .h1,
+div.brand-warning h2,
+div.brand-warning .h2,
+div.brand-warning h3,
+div.brand-warning .h3 {
+  color: #ffffff;
+}
+div.brand-warning h1 small,
+div.brand-warning .h1 small,
+div.brand-warning h2 small,
+div.brand-warning .h2 small,
+div.brand-warning h3 small,
+div.brand-warning .h3 small {
+  color: #ffffff;
+}
+div.brand-warning h4,
+div.brand-warning .h4,
+div.brand-warning h5,
+div.brand-warning .h5,
+div.brand-warning h6,
+div.brand-warning .h6 p,
+div.brand-warning span {
+  color: #fef9f5;
+}
+div.brand-warning h4 small,
+div.brand-warning .h4 small,
+div.brand-warning h5 small,
+div.brand-warning .h5 small,
+div.brand-warning h6 small,
+div.brand-warning .h6 p small,
+div.brand-warning span small {
+  color: #f7ddc9;
+}
 div.brand-warning .label {
   font-weight: 400;
   color: #ffffff;
@@ -7060,6 +8012,40 @@ p.brand-warning {
 div.brand-danger {
   color: #fde9ef;
   background-color: #D5124A;
+}
+div.brand-danger h1,
+div.brand-danger .h1,
+div.brand-danger h2,
+div.brand-danger .h2,
+div.brand-danger h3,
+div.brand-danger .h3 {
+  color: #ffffff;
+}
+div.brand-danger h1 small,
+div.brand-danger .h1 small,
+div.brand-danger h2 small,
+div.brand-danger .h2 small,
+div.brand-danger h3 small,
+div.brand-danger .h3 small {
+  color: #ffffff;
+}
+div.brand-danger h4,
+div.brand-danger .h4,
+div.brand-danger h5,
+div.brand-danger .h5,
+div.brand-danger h6,
+div.brand-danger .h6 p,
+div.brand-danger span {
+  color: #fde9ef;
+}
+div.brand-danger h4 small,
+div.brand-danger .h4 small,
+div.brand-danger h5 small,
+div.brand-danger .h5 small,
+div.brand-danger h6 small,
+div.brand-danger .h6 p small,
+div.brand-danger span small {
+  color: #f9bacc;
 }
 div.brand-danger .label {
   font-weight: 400;
@@ -7177,6 +8163,28 @@ blockquote {
     line-height: 35px;
   }
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .right {
   float: right;
+}
+figure img {
+  padding: 4px;
+  line-height: 1.25;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 6.5px;
+}
+figure figcaption {
+  font-size: 13px;
 }
