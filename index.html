@@ -29,94 +29,170 @@
       s.parentNode.insertBefore(ga, s);
     })();
   </script>
+
+  <style type="text/css">
+    /* Styles for this documentation page only */
+    /* Do not theme the kit here */
+    .bs-docs-section {
+      margin-bottom: 60px;
+    }
+    .bs-component {
+      margin-bottom: 15px;
+    }
+    .bs-docs-sidebar .nav {
+      border-left: 1px solid #767676;
+    }
+    .bs-docs-sidebar h2 {
+      margin-top: 0px;
+    }
+    .bs-docs-sidebar .nav>li>a {
+      display: block;
+      padding: 8px 20px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #767676;
+      border-width: 0px 0px 0px 4px;
+      border-style: solid;
+      border-color: transparent;
+    }
+    .bs-docs-sidebar .nav>li>a:hover {
+      color: #000000;
+      background-color: transparent;
+      border-color: transparent transparent transparent #000000;
+    }
+  </style>
 </head>
 
 <body>
 
-
   <div class="container">
     <div class="page-body">
       <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-4">
-          <div class="left-nav">
-            <div class="page-header" id="banner">
-              <h1>Default</h1>
-              <p class="lead">Basic Bootstrap</p>
-            </div>
-            <div class="list-group table-of-contents">
-              <a class="list-group-item" href="#navbar">Navbar</a>
-              <a class="list-group-item" href="#buttons">Buttons</a>
-              <a class="list-group-item" href="#typography">Typography</a>
-              <a class="list-group-item" href="#tables">Tables</a>
-              <a class="list-group-item" href="#forms">Forms</a>
-              <a class="list-group-item" href="#navs">Navs</a>
-              <a class="list-group-item" href="#indicators">Indicators</a>
-              <a class="list-group-item" href="#progress-bars">Progress bars</a>
-              <a class="list-group-item" href="#containers">Containers</a>
-              <a class="list-group-item" href="#dialogs">Dialogs</a>
-            </div>
-          </div>
+        <!-- Left Column Page Nav -->
+        <div class="col-md-3" role="complementary">
+          <h1>Smarter Balanced</h1>
+          <nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs affix">
+            <h2><small>Global UI Kit</small></h2>
+            <ul class="nav bs-docs-sidenav">
+              <li><a href="#navbar">Navbar</a></li>
+              <li><a href="#buttons">Buttons</a></li>
+              <li><a href="#typography">Typography</a></li>
+              <li><a href="#tables">Tables</a></li>
+              <li><a href="#forms">Forms</a></li>
+              <li><a href="#navs">Navs</a></li>
+              <li><a href="#indicators">Indicators</a></li>
+              <li><a href="#progress-bars">Progress bars</a></li>
+              <li><a href="#containers">Containers</a></li>
+              <li><a href="#dialogs">Dialogs</a></li>
+            </ul>
+          </nav>
         </div>
 
+        <!-- Right Column Content -->
         <div class="col-lg-9 col-md-9 col-sm-8">
-
           <!-- Colors -->
-          <h2>Colors</h2>
-          <div class="colors">
+          <div class="bs-docs-section clearfix">
+            <h2>Colors</h2>
             <div class="row">
-              <!-- Brand Colors -->
-              <div class="col-md-4">
-                <div class="panel panel-default small">
-                  <div class="panel-heading">Brand Colors</div>
-                  <div class="panel-body brand-blue"><span class="label">.brand-blue</span><span class="hex right">#0087B1</span></div>
-                  <div class="panel-body brand-green"><span class="label">.brand-green</span><span class="hex right">#00B400</span></div>
-                  <div class="panel-body brand-gray"><span class="label">.brand-gray</span><span class="hex right">#62666A</span></div>
+              <!-- Blues -->
+              <div class="col-md-3">
+                <div class="panel small">
+                  <div class="panel-heading">Blues</div>
+                  <div class="panel-body blue"><span class="label">.blue</span><span class="hex right">#014F9A</span></div>
+                  <div class="panel-body blue-dark"><span class="label">.blue-dark</span><span class="hex right">#104564</span></div>
+                  <div class="panel-body teal"><span class="label">.teal</span><span class="hex right">#0090B7</span></div>
+                  <div class="panel-body aqua"><span class="label">.aqua</span><span class="hex right">#3696E6</span></div>
+                  <div class="panel-footer">&nbsp;</div>
+                </div>
+              </div>
+              <!-- Greens -->
+              <div class="col-md-3">
+                <div class="panel small">
+                  <div class="panel-heading">Greens</div>
+                  <div class="panel-body green"><span class="label">.green</span><span class="hex right">#6FAE29</span></div>
+                  <div class="panel-body green-dark"><span class="label">.green-dark</span><span class="hex right">#406934</span></div>
+                  <div class="panel-footer">&nbsp;</div>
+                </div>
+              </div>
+              <!-- Hot Colors -->
+              <div class="col-md-3">
+                <div class="panel small">
+                  <div class="panel-heading">Hot Colors</div>
+                  <div class="panel-body orange"><span class="label">.orange</span><span class="hex right">#D66E1E</span></div>
+                  <div class="panel-body red"><span class="label">.red</span><span class="hex right">#D5124A</span></div>
+                  <div class="panel-body red-dark"><span class="label">.red-dark</span><span class="hex right">#931432</span></div>
+                  <div class="panel-body maroon"><span class="label">.maroon</span><span class="hex right">#5B1931</span></div>
+                  <div class="panel-footer">&nbsp;</div>
                 </div>
               </div>
               <!-- Neutrals -->
-              <div class="col-md-4">
-                <div class="panel panel-default small">
+              <div class="col-md-3">
+                <div class="panel small">
                   <div class="panel-heading">Neutrals</div>
                   <div class="panel-body black"><span class="label">.black</span><span class="hex right">#000000</span></div>
+                  <div class="panel-body gray-darkest"><span class="label">.gray-darkest</span><span class="hex right">#2a2b2d</span></div>
                   <div class="panel-body gray-darker"><span class="label">.gray-darker</span><span class="hex right">#64666A</span></div>
                   <div class="panel-body gray-dark"><span class="label">.gray-dark</span><span class="hex right">#A7A7A7</span></div>
-                  <div class="panel-body gray"><span class="label">.gray</span><span class="hex right">#D5D5D5</span></div>
-                  <div class="panel-body gray-light"><span class="label">.gray-light</span><span class="hex right">#E6E6E6</span></div>
-                  <div class="panel-body gray-lighter"><span class="label">.gray-lighter</span><span class="hex right">#F8F8F8</span></div>
+                  <div class="panel-body gray"><span class="label">.gray</span><span class="hex right">#B8B8B8</span></div>
+                  <div class="panel-body gray-light"><span class="label">.gray-light</span><span class="hex right">#D5D5D5</span></div>
+                  <div class="panel-body gray-lighter"><span class="label">.gray-lighter</span><span class="hex right">#E6E6E6</span></div>
+                  <div class="panel-body gray-lightest"><span class="label">.gray-lightest</span><span class="hex right">#F8F8F8</span></div>
                   <div class="panel-body white"><span class="label">.white</span><span class="hex right">#FFFFFF</span></div>
+                  <div class="panel-footer">&nbsp;</div>
                 </div>
               </div>
             </div>
+
+            <h3>Color Value Mappings</h3>
             <div class="row">
-                <!-- Blues -->
-                <div class="col-md-4">
-                  <div class="panel panel-default small">
-                    <div class="panel-heading">Blues</div>
-                    <div class="panel-body blue"><span class="label">.blue</span><span class="hex right">#014F9A</span></div>
-                    <div class="panel-body blue-dark"><span class="label">.blue-dark</span><span class="hex right">#104564</span></div>
-                    <div class="panel-body teal"><span class="label">.teal</span><span class="hex right">#0090B7</span></div>
-                    <div class="panel-body aqua"><span class="label">.aqua</span><span class="hex right">#3696E6</span></div>
-                  </div>
+              <!-- Brand Colors -->
+              <div class="col-md-4">
+                <div class="panel small">
+                  <div class="panel-heading">Brand Colors</div>
+                  <div class="panel-body aqua">Blue <span class="label">.aqua</span><span class="hex right">#3696E6</span></div>
+                  <div class="panel-body green">Green <span class="label">.green</span><span class="hex right">#6FAE29</span></div>
+                  <div class="panel-body gray-darker">Gray <span class="label">.gray-darker</span><span class="hex right">#64666A</span></div>
+                  <div class="panel-footer">&nbsp;</div>
                 </div>
-                <!-- Greens -->
-                <div class="col-md-4">
-                  <div class="panel panel-default small">
-                    <div class="panel-heading">Greens</div>
-                    <div class="panel-body green"><span class="label">.green</span><span class="hex right">#6FAE29</span></div>
-                    <div class="panel-body green-dark"><span class="label">.green-dark</span><span class="hex right">#406934</span></div>
-                  </div>
+                <div class="panel small">
+                  <div class="panel-heading">Graph Colors</div>
+                  <div class="panel-body gray-darker">Gray <span class="label">.gray-darker</span><span class="hex right">#64666A</span></div>
+                  <div class="panel-body green-dark">Green <span class="label">.green-dark</span><span class="hex right">#406934</span></div>
+                  <div class="panel-body red-dark">Red <span class="label">.red-dark</span><span class="hex right">#931432</span></div>
+                  <div class="panel-body blue">Blue <span class="label">.blue</span><span class="hex right">#014F9A</span></div>
+                  <div class="panel-footer">&nbsp;</div>
                 </div>
-                <!-- Hot Colors -->
-                <div class="col-md-4">
-                  <div class="panel panel-default small">
-                    <div class="panel-heading">Hot Colors</div>
-                    <div class="panel-body orange"><span class="label">.orange</span><span class="hex right">#D66E1E</span></div>
-                    <div class="panel-body red"><span class="label">.red</span><span class="hex right">#D5124A</span></div>
-                    <div class="panel-body red-dark"><span class="label">.red-dark</span><span class="hex right">#931432</span></div>
-                    <div class="panel-body maroon"><span class="label">.maroon</span><span class="hex right">#5B1931</span></div>
-                  </div>
+              </div>
+              <!-- Grade Colors -->
+              <div class="col-md-4">
+                <div class="panel small">
+                  <div class="panel-heading">Grade Colors</div>
+                  <div class="panel-body orange">Grade 3 <span class="label">.orange</span><span class="hex right">#D66E1E</span></div>
+                  <div class="panel-body green">Grade 4 <span class="label">.green</span><span class="hex right">#6FAE29</span></div>
+                  <div class="panel-body teal">Grade 5 <span class="label">.teal</span><span class="hex right">#0090B7</span></div>
+                  <div class="panel-body blue-dark">Grade 6 <span class="label">.blue-dark</span><span class="hex right">#014F9A</span></div>
+                  <div class="panel-body maroon">Grade 7 <span class="label">.maroon</span><span class="hex right">#5B1931</span></div>
+                  <div class="panel-body green-dark">Grade 8 <span class="label">.green-dark</span><span class="hex right">#406934</span></div>
+                  <div class="panel-body blue-dark">High School <span class="label">.blue-dark</span><span class="hex right">#104564</span></div>
+                  <div class="panel-footer">&nbsp;</div>
                 </div>
+              </div>
+              <!-- Bootstrap Colors -->
+              <div class="col-md-4">
+                <div class="panel small">
+                  <div class="panel-heading">Bootstrap Color Classes</div>
+                  <div class="panel-body hite">Default <span class="label">.white</span><span class="hex right">#FFFFFF</span></div>
+                  <div class="panel-body aqua">Primary <span class="label">.aqua</span><span class="hex right">#3696E6</span></div>
+                  <div class="panel-body green">Success <span class="label">.green</span><span class="hex right">#6FAE29</span></div>
+                  <div class="panel-body blue-dark">Info <span class="label">.blue-dark</span><span class="hex right">#104564</span></div>
+                  <div class="panel-body orange">Warning <span class="label">.orange</span><span class="hex right">#D66E1E</span></div>
+                  <div class="panel-body red">Danger <span class="label">.red</span><span class="hex right">#D5124A</span></div>
+                  <div class="panel-footer">&nbsp;</div>
+                </div>
+              </div>
             </div>
+
+
           </div>
 
           <!-- Color Class Examples -->
@@ -126,7 +202,7 @@
             <p>Use any of the color classes defined in the <strong>Colors</strong> section above on a block level element and it will apply appropriately to the elements within.</p>
             <div class="row">
               <div class="col-md-6">
-                <div class="panel panel-default gray-lighter">
+                <div class="panel gray-lighter">
                   <div class="panel-heading">
                     Light
                     <span class="right label">.gray-lighter</span>
@@ -149,7 +225,7 @@
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="panel panel-default gray-darker">
+                <div class="panel gray-darker">
                   <div class="panel-heading">
                     Dark
                     <span class="right label">.gray-darker</span>
@@ -176,7 +252,7 @@
             <p>Use any of the color classes defined in the <strong>Colors</strong> section above on an inline element and it will apply the specified color.</p>
             <div class="row">
               <div class="col-md-6">
-                <div class="panel panel-default">
+                <div class="panel gray-dark">
                   <div class="panel-heading">
                     Light
                     <span class="right label">.gray-light</span>
@@ -188,7 +264,7 @@
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="panel panel-default">
+                <div class="panel gray-light">
                   <div class="panel-heading">
                     Dark
                     <span class="right label">.gray-dark</span>
@@ -201,8 +277,6 @@
               </div>
             </div>
           </div>
-
-
 
           <!-- Navbar -->
           <div class="bs-docs-section clearfix">
@@ -305,175 +379,159 @@
             </div>
           </div>
 
-
           <!-- Buttons -->
-          <div class="bs-docs-section">
+          <div class="bs-docs-section clearfix">
             <div class="page-header">
-              <div class="row">
-                <div class="col-lg-12">
-                  <h1 id="buttons">Buttons</h1>
+              <h1 id="buttons">Buttons</h1>
+            </div>
+
+            <p class="bs-component">
+              <a href="#" class="btn btn-default">Default</a>
+              <a href="#" class="btn btn-primary">Primary</a>
+              <a href="#" class="btn btn-success">Success</a>
+              <a href="#" class="btn btn-info">Info</a>
+              <a href="#" class="btn btn-warning">Warning</a>
+              <a href="#" class="btn btn-danger">Danger</a>
+              <a href="#" class="btn btn-link">Link</a>
+            </p>
+
+            <p class="bs-component">
+              <a href="#" class="btn btn-default disabled">Default</a>
+              <a href="#" class="btn btn-primary disabled">Primary</a>
+              <a href="#" class="btn btn-success disabled">Success</a>
+              <a href="#" class="btn btn-info disabled">Info</a>
+              <a href="#" class="btn btn-warning disabled">Warning</a>
+              <a href="#" class="btn btn-danger disabled">Danger</a>
+              <a href="#" class="btn btn-link disabled">Link</a>
+            </p>
+
+            <div class="btn-toolbar bs-component">
+              <div class="btn-group">
+                <a href="#" class="btn btn-default">Default</a>
+                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+              <div class="btn-group">
+                <a href="#" class="btn btn-primary">Primary</a>
+                <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+              <div class="btn-group">
+                <a href="#" class="btn btn-success">Success</a>
+                <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+              <div class="btn-group">
+                <a href="#" class="btn btn-info">Info</a>
+                <a href="#" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+              <div class="btn-group">
+                <a href="#" class="btn btn-warning">Warning</a>
+                <a href="#" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="bs-component">
+              <a href="#" class="btn btn-primary btn-lg">Large button</a>
+              <a href="#" class="btn btn-primary">Default button</a>
+              <a href="#" class="btn btn-primary btn-sm">Small button</a>
+              <a href="#" class="btn btn-primary btn-xs">Mini button</a>
+            </p>
+
+            <p class="bs-component">
+              <a href="#" class="btn btn-default btn-lg btn-block">Block level button</a>
+            </p>
+
+
+            <div class="bs-component">
+              <div class="btn-group btn-group-justified">
+                <a href="#" class="btn btn-default">Left</a>
+                <a href="#" class="btn btn-default">Middle</a>
+                <a href="#" class="btn btn-default">Right</a>
+              </div>
+            </div>
+
+            <div class="bs-component">
+              <div class="btn-toolbar">
+                <div class="btn-group">
+                  <a href="#" class="btn btn-default">1</a>
+                  <a href="#" class="btn btn-default">2</a>
+                  <a href="#" class="btn btn-default">3</a>
+                  <a href="#" class="btn btn-default">4</a>
+                </div>
+
+                <div class="btn-group">
+                  <a href="#" class="btn btn-default">5</a>
+                  <a href="#" class="btn btn-default">6</a>
+                  <a href="#" class="btn btn-default">7</a>
+                </div>
+
+                <div class="btn-group">
+                  <a href="#" class="btn btn-default">8</a>
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  Dropdown
+                  <span class="caret"></span>
+                </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Dropdown link</a></li>
+                      <li><a href="#">Dropdown link</a></li>
+                      <li><a href="#">Dropdown link</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-lg-7">
-
-                <p class="bs-component">
-                  <a href="#" class="btn btn-default">Default</a>
-                  <a href="#" class="btn btn-primary">Primary</a>
-                  <a href="#" class="btn btn-success">Success</a>
-                  <a href="#" class="btn btn-info">Info</a>
-                  <a href="#" class="btn btn-warning">Warning</a>
-                  <a href="#" class="btn btn-danger">Danger</a>
-                  <a href="#" class="btn btn-link">Link</a>
-                </p>
-
-                <p class="bs-component">
-                  <a href="#" class="btn btn-default disabled">Default</a>
-                  <a href="#" class="btn btn-primary disabled">Primary</a>
-                  <a href="#" class="btn btn-success disabled">Success</a>
-                  <a href="#" class="btn btn-info disabled">Info</a>
-                  <a href="#" class="btn btn-warning disabled">Warning</a>
-                  <a href="#" class="btn btn-danger disabled">Danger</a>
-                  <a href="#" class="btn btn-link disabled">Link</a>
-                </p>
-
-
-                <div style="margin-bottom: 15px;">
-                  <div class="btn-toolbar bs-component" style="margin: 0;">
-                    <div class="btn-group">
-                      <a href="#" class="btn btn-default">Default</a>
-                      <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="btn-group">
-                      <a href="#" class="btn btn-primary">Primary</a>
-                      <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="btn-group">
-                      <a href="#" class="btn btn-success">Success</a>
-                      <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="btn-group">
-                      <a href="#" class="btn btn-info">Info</a>
-                      <a href="#" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="btn-group">
-                      <a href="#" class="btn btn-warning">Warning</a>
-                      <a href="#" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <p class="bs-component">
-                  <a href="#" class="btn btn-primary btn-lg">Large button</a>
-                  <a href="#" class="btn btn-primary">Default button</a>
-                  <a href="#" class="btn btn-primary btn-sm">Small button</a>
-                  <a href="#" class="btn btn-primary btn-xs">Mini button</a>
-                </p>
-
-              </div>
-              <div class="col-lg-5">
-
-                <p class="bs-component">
-                  <a href="#" class="btn btn-default btn-lg btn-block">Block level button</a>
-                </p>
-
-
-                <div class="bs-component" style="margin-bottom: 15px;">
-                  <div class="btn-group btn-group-justified">
-                    <a href="#" class="btn btn-default">Left</a>
-                    <a href="#" class="btn btn-default">Middle</a>
-                    <a href="#" class="btn btn-default">Right</a>
-                  </div>
-                </div>
-
-                <div class="bs-component" style="margin-bottom: 15px;">
-                  <div class="btn-toolbar">
-                    <div class="btn-group">
-                      <a href="#" class="btn btn-default">1</a>
-                      <a href="#" class="btn btn-default">2</a>
-                      <a href="#" class="btn btn-default">3</a>
-                      <a href="#" class="btn btn-default">4</a>
-                    </div>
-
-                    <div class="btn-group">
-                      <a href="#" class="btn btn-default">5</a>
-                      <a href="#" class="btn btn-default">6</a>
-                      <a href="#" class="btn btn-default">7</a>
-                    </div>
-
-                    <div class="btn-group">
-                      <a href="#" class="btn btn-default">8</a>
-                      <div class="btn-group">
-                        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                      Dropdown
-                      <span class="caret"></span>
-                    </a>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Dropdown link</a></li>
-                          <li><a href="#">Dropdown link</a></li>
-                          <li><a href="#">Dropdown link</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="bs-component">
-                  <div class="btn-group-vertical">
-                    <a href="#" class="btn btn-default">Button</a>
-                    <a href="#" class="btn btn-default">Button</a>
-                    <a href="#" class="btn btn-default">Button</a>
-                    <a href="#" class="btn btn-default">Button</a>
-                  </div>
-                </div>
-
+            <div class="bs-component">
+              <div class="btn-group-vertical">
+                <a href="#" class="btn btn-default">Button</a>
+                <a href="#" class="btn btn-default">Button</a>
+                <a href="#" class="btn btn-default">Button</a>
+                <a href="#" class="btn btn-default">Button</a>
               </div>
             </div>
+
           </div>
 
           <!-- Typography -->
-          <div class="bs-docs-section">
+          <div class="bs-docs-section clearfix">
             <div class="row">
               <div class="col-lg-12">
                 <div class="page-header">
@@ -548,9 +606,8 @@
             </div>
           </div>
 
-          <!-- Tables
-      ================================================== -->
-          <div class="bs-docs-section">
+          <!-- Tables -->
+          <div class="bs-docs-section clearfix">
 
             <div class="row">
               <div class="col-lg-12">
@@ -562,54 +619,42 @@
                   <table class="table table-striped table-hover ">
                     <thead>
                       <tr>
-                        <th>#</th>
-                        <th>Column heading</th>
-                        <th>Column heading</th>
-                        <th>Column heading</th>
+                        <th>#</th><th>Column heading</th><th>Column heading</th><th>Column heading</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>1</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
+                        <td>1</td><td>Column content</td><td>Column content</td><td>Column content</td>
                       </tr>
                       <tr>
-                        <td>2</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
+                        <td>2</td><td>Column content</td><td>Column content</td><td>Column content</td>
+                      </tr>
+                      <tr>
+                        <td>3</td><td>Column content</td><td>Column content</td><td>Column content</td>
+                      </tr>
+                      <tr>
+                        <td>4</td><td>Column content</td><td>Column content</td><td>Column content</td>
+                      </tr>
+                      <tr>
+                        <td>5</td><td>Column content</td><td>Column content</td><td>Column content</td>
+                      </tr>
+                      <tr>
+                        <td>6</td><td>Column content</td><td>Column content</td><td>Column content</td>
                       </tr>
                       <tr class="info">
-                        <td>3</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
+                        <td>7</td><td>Column content</td><td>Column content</td><td>Column content</td>
                       </tr>
                       <tr class="success">
-                        <td>4</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
+                        <td>8</td><td>Column content</td><td>Column content</td><td>Column content</td>
                       </tr>
                       <tr class="danger">
-                        <td>5</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
+                        <td>9</td><td>Column content</td><td>Column content</td><td>Column content</td>
                       </tr>
                       <tr class="warning">
-                        <td>6</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
+                        <td>10</td><td>Column content</td><td>Column content</td><td>Column content</td>
                       </tr>
                       <tr class="active">
-                        <td>7</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
+                        <td>11</td><td>Column content</td><td>Column content</td><td>Column content</td>
                       </tr>
                     </tbody>
                   </table>
@@ -619,9 +664,8 @@
             </div>
           </div>
 
-          <!-- Forms
-      ================================================== -->
-          <div class="bs-docs-section">
+          <!-- Forms -->
+          <div class="bs-docs-section clearfix">
             <div class="row">
               <div class="col-lg-12">
                 <div class="page-header">
@@ -766,9 +810,8 @@
             </div>
           </div>
 
-          <!-- Navs
-      ================================================== -->
-          <div class="bs-docs-section">
+          <!-- Navs -->
+          <div class="bs-docs-section clearfix">
 
             <div class="row">
               <div class="col-lg-12">
@@ -935,9 +978,8 @@
             </div>
           </div>
 
-          <!-- Indicators
-      ================================================== -->
-          <div class="bs-docs-section">
+          <!-- Indicators -->
+          <div class="bs-docs-section clearfix">
 
             <div class="row">
               <div class="col-lg-12">
@@ -1010,9 +1052,8 @@
             </div>
           </div>
 
-          <!-- Progress bars
-      ================================================== -->
-          <div class="bs-docs-section">
+          <!-- Progress bars -->
+          <div class="bs-docs-section clearfix">
 
             <div class="row">
               <div class="col-lg-12">
@@ -1084,9 +1125,8 @@
             </div>
           </div>
 
-          <!-- Containers
-      ================================================== -->
-          <div class="bs-docs-section">
+          <!-- Containers -->
+          <div class="bs-docs-section clearfix">
 
             <div class="row">
               <div class="col-lg-12">
@@ -1267,9 +1307,8 @@
             </div>
           </div>
 
-          <!-- Dialogs
-      ================================================== -->
-          <div class="bs-docs-section">
+          <!-- Dialogs -->
+          <div class="bs-docs-section clearfix">
 
             <div class="row">
               <div class="col-lg-12">
@@ -1363,14 +1402,11 @@
 
           </footer>
 
-
         </div>
       </div>
     </div>
 
-
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
-
 </html>

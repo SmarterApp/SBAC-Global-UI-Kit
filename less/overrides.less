@@ -18,3 +18,52 @@ figure {
     font-size: @font-size-small;
   }
 }
+
+// Buttons
+.btn {
+  font-family: @font-family-sans-serif;
+  border-color: transparent;
+  &:hover {
+    border-color: transparent;
+  }
+  &.btn-default {
+    border-color: @gray-light;
+  }
+}
+
+// Tables
+/* ------------------------------
+NOTE
+TFOOT element is currently not used in any mockups
+So we are rounding the last row's edge cells instead of TFOOT
+This will need to be resolved if TFOOT becomes necessary
+-AS
+------------------------------ */
+.table {
+  > thead,
+  > tfoot {
+    > tr {
+      > th {
+        background-color: @gray-light;
+      }
+    }
+  }
+  > thead > tr > th {
+    &:first-child {
+      border-top-left-radius: @border-radius-base;
+    }
+    &:last-child {
+      border-top-right-radius: @border-radius-base;
+    }
+  }
+  // Normally this would be the TFOOT rounding class
+  // See note above
+  tr:last-child > td {
+    &:first-child {
+      border-bottom-left-radius: @border-radius-base;
+    }
+    &:last-child {
+      border-bottom-right-radius: @border-radius-base;
+    }
+  }
+}

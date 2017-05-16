@@ -2,10 +2,101 @@
 // Variables
 // --------------------------------------------------
 
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               @gray-lightest;
+//** Global text color on `<body>`.
+@text-color:            @gray-darkest;
+
 //== Components
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
+@padding-base-vertical:     (@font-size-base * 0.42);
+@padding-base-horizontal:   (@font-size-base * 0.84);
+
+@padding-large-vertical:    (@font-size-large * 0.42);
+@padding-large-horizontal:  (@font-size-large * 0.84);
+
+@padding-small-vertical:    (@font-size-small * 0.42);
+@padding-small-horizontal:  (@font-size-small * 0.84);
+
+@padding-xs-vertical:       (@font-size-small * 0.21);
+@padding-xs-horizontal:     (@font-size-small * 0.42);
+
 @border-radius-base:        5px;
 @border-radius-large:       7px;
 @border-radius-small:       3px;
+
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+
+//** Padding for `<th>`s and `<td>`s.
+@table-cell-padding:            (@font-size-base * 0.84);
+//** Padding for cells in `.table-condensed`.
+@table-condensed-cell-padding:  (@font-size-base * 0.42);
+
+//** Default background color used for all tables.
+@table-bg:                      transparent;
+//** Background color used for `.table-striped`.
+@table-bg-accent:               #f9f9f9;
+//** Background color used for `.table-hover`.
+@table-bg-hover:                @gray-light;
+@table-bg-active:               @table-bg-hover;
+
+//** Border color for table and cell borders.
+@table-border-color:            @gray-light;
+
+//== Panels
+//
+//##
+
+@panel-bg:                    #fff;
+@panel-body-padding:          @font-size-base;
+@panel-heading-padding:       (@font-size-base * 0.75) @font-size-base;
+@panel-footer-padding:        @panel-heading-padding;
+@panel-border-radius:         @border-radius-base;
+
+//** Border color for elements within panels
+@panel-inner-border:          #ddd;
+@panel-footer-bg:             @white;
+
+@panel-default-text:          @gray-darker;
+@panel-default-border:        transparent;
+@panel-default-heading-bg:    @white;
+
+//== Code
+//
+//##
+
+@code-color:                  @white;
+@code-bg:                     @gray-darker;
+
+@pre-bg:                      @gray-darker;
+@pre-color:                   @white;
+@pre-border-color:            @black;
+
+//== Type
+//
+//##
+
+//** Horizontal offset for forms and lists.
+@component-offset-horizontal: 180px;
+//** Text muted color
+@text-muted:                  @gray-darker;
+//** Abbreviations and acronyms border color
+@abbr-border-color:           @gray-darker;
+//** Headings small color
+@headings-small-color:        @gray-darker;
+//** Blockquote small color
+@blockquote-small-color:      @gray-darker;
+//** Blockquote border color
+@blockquote-border-color:     @gray-dark;
+//** Page header border color
+@page-header-border-color:    @gray-dark;
+//** Horizontal line color.
+@hr-border:                   @gray-dark;
