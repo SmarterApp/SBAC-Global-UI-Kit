@@ -1,0 +1,94 @@
+// ------------------------------
+// Colors
+// ------------------------------
+
+// Blues
+@blue:                  #014F9A;
+@blue-dark:             #104564;
+@teal:                  #0090B7;
+@aqua:                  #3696E6;
+
+// Greens
+@green:                 #6FAE29;
+@green-dark:            #406934;
+
+// Hot Colors
+@orange:                #D66E1E;
+@red:                   #D5124A;
+@red-dark:              #931432;
+@maroon:                #5B1931;
+
+// Neutrals
+@black:                 #000000;
+@gray-darkest:          #2a2b2d;
+@gray-darker:           #64666A;
+@gray-dark:             #A7A7A7;
+@gray:                  #B8B8B8;
+@gray-light:            #D5D5D5;
+@gray-lighter:          #E6E6E6;
+@gray-lightest:         #F8F8F8;
+@white:                 #FFFFFF;
+
+// Bootstrap Color Vars
+@brand-primary:         @aqua;
+@brand-success:         @green;
+@brand-info:            @blue-dark;
+@brand-warning:         @orange;
+@brand-danger:          @red;
+
+
+// ------------------------------
+// Color Mixin
+// ------------------------------
+.colorElement(@colorName) {
+  div&,
+  .panel& .panel-header,
+  .panel& .panel-footer {
+    color: contrast(@colorName, darken(@colorName, 50%), lighten(@colorName, 50%));
+    background-color: @colorName;
+    h1, .h1,
+    h2, .h2,
+    h3, .h3 {
+        color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
+        small {
+          color: contrast(@colorName, darken(@colorName, 65%), lighten(@colorName, 65%));
+        }
+    }
+    h4, .h4,
+    h5, .h5,
+    h6, .h6
+    p,
+    span {
+      color: contrast(@colorName, darken(@colorName, 50%), lighten(@colorName, 50%));
+      small {
+        color: contrast(@colorName, darken(@colorName, 40%), lighten(@colorName, 40%));
+      }
+    }
+    .label {
+      font-weight: 400;
+      color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
+      background-color: contrast(@colorName, darken(@colorName, 15%), lighten(@colorName, 15%));
+    }
+  }
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6,
+  p&,  {
+    color: @colorName;
+  }
+}
+@colorVars: blue, blue-dark, teal, aqua, green, green-dark, orange, red, red-dark, maroon, black, gray-darkest, gray-darker, gray-dark, gray, gray-light, gray-lighter, gray-lightest, white;
+// Call the generator mixin
+// Yes, it's supposed to be called in recursive order
+.generate-color-classes(@colorVars, 1);
+// Generate color classes based on declared names above
+.generate-color-classes(@colorName, @i) when (@i =< length(@colorName)) {
+  @name: extract(@colorName, @i);
+  .@{name} {
+    .colorElement(@@name);
+  }
+  .generate-color-classes(@colorName, (@i + 1));
+}
