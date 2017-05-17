@@ -1,0 +1,56 @@
+// ------------------------------
+// Color Mixin
+// ------------------------------
+.colorElement(@colorName) {
+  div&,
+  .panel& .panel-header,
+  .panel& .panel-footer {
+    color: contrast(@colorName, darken(@colorName, 50%), lighten(@colorName, 50%));
+    background-color: @colorName;
+    h1, .h1,
+    h2, .h2,
+    h3, .h3 {
+        color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
+        small {
+          color: contrast(@colorName, darken(@colorName, 65%), lighten(@colorName, 65%));
+        }
+    }
+    h4, .h4,
+    h5, .h5,
+    h6, .h6
+    p,
+    span {
+      color: contrast(@colorName, darken(@colorName, 50%), lighten(@colorName, 50%));
+      small {
+        color: contrast(@colorName, darken(@colorName, 40%), lighten(@colorName, 40%));
+      }
+    }
+    .label {
+      font-weight: 400;
+      color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
+      background-color: contrast(@colorName, darken(@colorName, 15%), lighten(@colorName, 15%));
+    }
+  }
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6,
+  p&,  {
+    color: @colorName;
+  }
+}
+
+
+// ------------------------------
+// Width classes for data attributes
+// ------------------------------
+.generate-width-classes(100, 0);
+
+.generate-width-classes(@n, @i: 0) when (@i =< @n) {
+  [data-width="@{i}"] {
+    width: (@i * 1%);
+  }
+  .generate-width-classes(@n, (@i + 1));
+}

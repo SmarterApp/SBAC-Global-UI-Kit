@@ -39,8 +39,11 @@
     .bs-component {
       margin-bottom: 15px;
     }
-    .bs-docs-sidebar .nav {
+    .bs-docs-sidebar .nav li {
       border-left: 1px solid #767676;
+    }
+    .bs-docs-sidebar .nav li.divider {
+      border-left: none;
     }
     .bs-docs-sidebar h2 {
       margin-top: 0px;
@@ -71,7 +74,7 @@
         <!-- Left Column Page Nav -->
         <div class="col-md-3" role="complementary">
           <h1>Smarter Balanced</h1>
-          <nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs affix">
+          <nav class="vertical bs-docs-sidebar hidden-print hidden-sm hidden-xs affix">
             <h2><small>Global UI Kit</small></h2>
             <ul class="nav bs-docs-sidenav">
               <li><a href="#navbar">Navbar</a></li>
@@ -84,6 +87,8 @@
               <li><a href="#progress-bars">Progress bars</a></li>
               <li><a href="#containers">Containers</a></li>
               <li><a href="#dialogs">Dialogs</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#top"><small><i class="fa fa-chevron-up"></i> Back to top</small></a></li>
             </ul>
           </nav>
         </div>
@@ -1028,7 +1033,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-md-6">
                 <h2>Labels</h2>
                 <div class="bs-component" style="margin-bottom: 40px;">
                   <span class="label label-default">Default</span>
@@ -1039,7 +1044,7 @@
                   <span class="label label-info">Info</span>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-6">
                 <h2>Badges</h2>
                 <div class="bs-component">
                   <ul class="nav nav-pills">
@@ -1305,6 +1310,21 @@
                 </div>
               </div>
             </div>
+
+            <!-- Well Group -->
+            <h3>Well Group</h3>
+            <div class="well-group">
+              <div class="well">
+                <div class="well-body">Test</div>
+              </div>
+              <div class="well gray-lightest">
+                <div class="well-body">Test</div>
+              </div>
+              <div class="well gray-lighter">
+                <div class="well-body">Test</div>
+              </div>
+            </div>
+
           </div>
 
           <!-- Dialogs -->
@@ -1320,21 +1340,24 @@
             <div class="row">
               <div class="col-lg-6">
                 <h2>Modals</h2>
-                <div class="bs-component">
-                  <div class="modal">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                          <h4 class="modal-title">Modal title</h4>
-                        </div>
-                        <div class="modal-body">
-                          <p>One fine body…</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                  Launch demo modal
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
                       </div>
                     </div>
                   </div>
@@ -1366,36 +1389,43 @@
             </div>
           </div>
 
-          <div id="source-modal" class="modal fade">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  <h4 class="modal-title">Source Code</h4>
+          <!-- RDW Components -->
+          <div class="bs-docs-section clearfix">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="page-header">
+                  <h1 id="tables">RDW Components</h1>
                 </div>
-                <div class="modal-body">
-                  <pre></pre>
+
+                <h3>Score Bar</h3>
+                <div class="bs-component">
+                  <div class="score-bar">
+                    <div class="bar-container">
+                      <!-- NOTE
+                      The below elements are set to display:inline-block; so there needs to be no white-space between the .bar spans, including returns. Otherwise you will get default space between the elements and the %s will no longer fit on one line together -->
+                      <span class="bar bar-below-standard" data-width="28">
+                        <span class="percentage">28%</span>
+                        <span class="label">Below Standard</span>
+                      </span><span class="bar bar-near-standard" data-width="55">
+                        <span class="percentage">55%</span>
+                        <span class="label">Near Standard</span>
+                      </span><span class="bar bar-above-standard" data-width="17">
+                        <span class="percentage">17%</span>
+                        <span class="label">Above Standard</span>
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- Footer -->
           <footer>
             <div class="row">
               <div class="col-lg-12">
 
-                <ul class="list-unstyled">
-                  <li class="pull-right"><a href="#top">Back to top</a></li>
-                  <li><a href="http://news.bootswatch.com" onclick="pageTracker._link(this.href); return false;">Blog</a></li>
-                  <li><a href="http://feeds.feedburner.com/bootswatch">RSS</a></li>
-                  <li><a href="https://twitter.com/bootswatch">Twitter</a></li>
-                  <li><a href="https://github.com/thomaspark/bootswatch/">GitHub</a></li>
-                  <li><a href="../help/#api">API</a></li>
-                  <li><a href="../help/#support">Support</a></li>
-                </ul>
-                <p>Made by <a href="http://thomaspark.co" rel="nofollow">Thomas Park</a>. Contact him at <a href="/cdn-cgi/l/email-protection#c4b0acaba9a5b784a6ababb0b7b3a5b0a7aceaa7aba9"><span class="__cf_email__" data-cfemail="17637f787a7664577578786364607663747f3974787a">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a>.</p>
-                <p>Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE">MIT License</a>.</p>
-                <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
+                <p class="small">Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
 
               </div>
             </div>
