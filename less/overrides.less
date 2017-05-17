@@ -31,12 +31,63 @@ figure {
   }
 }
 
+// Header
+header {
+  background-color: @white;
+  .box-shadow(0px 3px 6px rgba(0,0,0,.16));
+  nav.navbar {
+    margin-bottom: 0px;
+    .navbar-header {
+      display: flex;
+      align-items: center;
+    }
+    .navbar-brand {
+      padding: 0px;
+      float: none;
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+  .application-title {
+    .h3;
+    margin: 0px 0px 0px @font-size-h3;
+    padding: 0px;
+    color: @green-dark;
+    font-family: @font-family-sans-serif;
+  }
+}
+
 // Nav
+nav.navbar {
+  padding: @font-size-base 0px;
+}
 nav.vertical li.divider {
   height: 1px;
   margin: @font-size-base 0px;
   overflow: hidden;
   background-color: @gray-light;
+}
+
+// Dropdowns
+.dropdown {
+  .dropdown-toggle .caret {
+    border: none;
+    width: auto;
+    height: auto;
+    margin: 0;
+    .fa-icon();
+    font-size: 90%;
+    &:before {
+      content: @fa-var-chevron-down;
+    }
+  }
+  &.open {
+    .dropdown-toggle .caret:before {
+      content: @fa-var-chevron-up;
+    }
+  }
 }
 
 // Tables
@@ -94,19 +145,17 @@ This will need to be resolved if TFOOT becomes necessary
 // Well Group
 .well-group {
   margin-bottom: (@font-size-base *2);
+  border: 1px solid @well-border;
   border-radius: @border-radius-base;
+  overflow: hidden;
   .box-shadow(0px 3px 6px rgba(0,0,0,.16));
   .well {
     margin-bottom: 0px;
-    border-width: 0px 1px 1px 1px;
+    border-width: 1px 0px 0px 0px;
     border-radius: 0px;
     .box-shadow(none);
     &:first-child {
-      border-width: 1px;
-      .border-top-radius(@border-radius-base);
-    }
-    &:last-child {
-      .border-bottom-radius(@border-radius-base);
+      border: none;
     }
   }
 }
