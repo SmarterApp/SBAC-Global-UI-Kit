@@ -11847,3 +11847,12 @@ This will need to be resolved if TFOOT becomes necessary
 .well-group .well:first-child {
   border: none;
 }
+footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
+  font-size: 16px;
+  padding: 16px;
+  border: 1px solid #D5D5D5;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
