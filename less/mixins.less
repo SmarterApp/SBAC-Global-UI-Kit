@@ -73,3 +73,23 @@
   }
   .generate-left-position-classes(@n, (@i + 1));
 }
+
+
+/* ------------------------------
+ * Table column centering and right aligning classes
+------------------------------ */
+.table-cols(@n, @i: 1) when (@i =< @n) {
+  .table-center-col-@{i} {
+    tr > td:nth-child(@{i}) {
+      text-align: center;
+    }
+  }
+  .table-right-col-@{i} {
+    tr > td:nth-child(@{i}) {
+      text-align: right;
+    }
+  }
+  // Continue the iteration
+  .table-cols(@n, (@i + 1));
+}
+.table-cols(16);
