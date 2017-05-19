@@ -1,6 +1,6 @@
-// ------------------------------
-// Color Mixin
-// ------------------------------
+/* ------------------------------
+ * Color Mixin
+------------------------------ */
 .colorElement(@colorName) {
   div&,
   .panel& .panel-header,
@@ -30,6 +30,12 @@
       color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
       background-color: contrast(@colorName, darken(@colorName, 15%), lighten(@colorName, 15%));
     }
+    .bar-data {
+      color: @colorName;
+      &:before {
+        border-color: @colorName;
+      }
+    }
   }
   h1, .h1,
   h2, .h2,
@@ -43,9 +49,9 @@
 }
 
 
-// ------------------------------
-// Width classes for data attributes
-// ------------------------------
+/* ------------------------------
+ * Width Classes from Data Attributes
+------------------------------ */
 .generate-width-classes(100, 0);
 
 .generate-width-classes(@n, @i: 0) when (@i =< @n) {
@@ -53,4 +59,17 @@
     width: (@i * 1%);
   }
   .generate-width-classes(@n, (@i + 1));
+}
+
+
+/* ------------------------------
+ * Position Classes from Data Attributes
+------------------------------ */
+.generate-left-position-classes(100, 0);
+
+.generate-left-position-classes(@n, @i : 0) when (@i =< @n) {
+  [data-left="@{i}"] {
+    left: (@i * 1%);
+  }
+  .generate-left-position-classes(@n, (@i + 1));
 }
