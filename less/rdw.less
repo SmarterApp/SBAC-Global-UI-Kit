@@ -188,4 +188,41 @@
       }
     }
   }
+  td & {
+    .scale-title,
+    .scale-description,
+    .bar-data,
+    .bar-label,
+    .error-band-block:before,
+    .error-band-block:after {
+      .sr-only;
+    }
+    .bar-container {
+      padding-top: 18px;
+      padding-bottom: 0px;
+      .score {
+        top: 2px;
+        font-size: @font-size-small;
+      }
+      .error-band-mask {
+        height: 26px;
+        .error-band,
+        .error-band .error-band-block {
+          height: 18px;
+        }
+        .error-band:before {
+          top: 18px;
+          width: 20px;
+          border-width: 5px 10px 0 10px;
+        }
+      }
+      .bar {
+        height: 8px;
+        border-width: 1px;
+        &.middle {
+          border-width: 1px;
+        }
+      }
+    }
+  }
 }

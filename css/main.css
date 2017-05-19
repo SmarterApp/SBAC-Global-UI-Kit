@@ -12701,6 +12701,48 @@ blockquote {
 .bar-scale.blend-middle .bar.green.blue-dark {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAOklEQVQoU2PMX6f5f+F0awYQiM88CqaR+YwgBeiCyHxGAdeU/9h0whSBFeAyHiRO2ASCbiDoC0JuAAACHTn9xCS38wAAAABJRU5ErkJggg==) repeat;
 }
+td .bar-scale .scale-title,
+td .bar-scale .scale-description,
+td .bar-scale .bar-data,
+td .bar-scale .bar-label,
+td .bar-scale .error-band-block:before,
+td .bar-scale .error-band-block:after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+td .bar-scale .bar-container {
+  padding-top: 18px;
+  padding-bottom: 0px;
+}
+td .bar-scale .bar-container .score {
+  top: 2px;
+  font-size: 13px;
+}
+td .bar-scale .bar-container .error-band-mask {
+  height: 26px;
+}
+td .bar-scale .bar-container .error-band-mask .error-band,
+td .bar-scale .bar-container .error-band-mask .error-band .error-band-block {
+  height: 18px;
+}
+td .bar-scale .bar-container .error-band-mask .error-band:before {
+  top: 18px;
+  width: 20px;
+  border-width: 5px 10px 0 10px;
+}
+td .bar-scale .bar-container .bar {
+  height: 8px;
+  border-width: 1px;
+}
+td .bar-scale .bar-container .bar.middle {
+  border-width: 1px;
+}
 img {
   display: block;
   max-width: 100%;

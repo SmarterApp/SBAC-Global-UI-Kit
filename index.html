@@ -123,6 +123,7 @@
               <li><a href="#progress-bars">Progress bars</a></li>
               <li><a href="#containers">Containers</a></li>
               <li><a href="#dialogs">Dialogs</a></li>
+              <li><a href="#rdw">RDW Components</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="#top"><small><i class="fa fa-chevron-up"></i> Back to top</small></a></li>
             </ul>
@@ -1377,7 +1378,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-12">
                 <h2>Modals</h2>
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -1401,8 +1402,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-6">
                 <h2>Popovers</h2>
                 <div class="bs-component">
                   <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
@@ -1441,7 +1440,7 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="page-header">
-                  <h1 id="tables">RDW Components</h1>
+                  <h1 id="rdw">RDW Components</h1>
                 </div>
 
                 <h3>Score Bar</h3>
@@ -1515,6 +1514,54 @@
                     </div>
                   </div>
                 </div>
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Student</th>
+                      <th>Date</th>
+                      <th>Session</th>
+                      <th>Enrolled Grade</th>
+                      <th>Status</th>
+                      <th>Scale Score</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><i class="user"></i> <strong>Cleveland, </strong> David</td>
+                      <td><strong>Nov 2, </strong> 2017</td>
+                      <td>ma-06</td>
+                      <td>4</td>
+                      <td><span class="label">Standardized</span></td>
+                      <td>
+                        <div class="bar-scale rounded blend-middle">
+                          <p class="scale-title">Average Scale Score</p>
+                          <p class="scale-description">6 Students</p>
+                          <div class="bar-container">
+                            <span class="score" data-left="10" data-width="15">2335</span>
+                            <span class="error-band-mask">
+                              <span class="error-band" data-left="10" data-width="15">
+                                <span class="error-band-block"></span>
+                              </span>
+                            </span>
+                            <div class="bar green left-side" data-width="28">
+                              <span class="bar-data">28%</span>
+                              <span class="bar-label">Below Standard</span>
+                            </div>
+                            <div class="bar middle green blue-dark" data-width="55">
+                              <span class="bar-data">55%</span>
+                              <span class="bar-label">Near Standard</span>
+                            </div>
+                            <div class="bar blue-dark right-side" data-width="17">
+                              <span class="bar-data">17%</span>
+                              <span class="bar-label">Above Standard</span>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
 
               </div>
             </div>
