@@ -58,11 +58,11 @@
             top: 0px;
             left: 100%;
             display: block;
-            width: 100px;
+            width: 50px;
             height: 8px;
             border-bottom: 1px solid @black;
             font-size: @font-size-small;
-            text-indent: 108px;
+            text-indent: 58px;
             font-family: @font-family-sans-serif;
             font-weight: 700;
             white-space: nowrap;
@@ -103,7 +103,7 @@
                 right: 100%;
                 direction: rtl;
                 text-align: right;
-                text-indent: 108px;
+                text-indent: 58px;
               }
             }
           }
@@ -121,7 +121,8 @@
       .bar-data,
       .bar-label {
         position: absolute;
-        display: block;
+        display: flex;
+        justify-content: center;
         width: 100%;
         overflow: visible;
         text-align: center;
@@ -175,6 +176,12 @@
   }
   &.blend-middle {
     .bar {
+      &.middle .bar-data {
+        color: @gray-darker;
+        &:before {
+          border-bottom-color: @gray-darker;
+        }
+      }
       &.green.blue-dark {
         // created with http://www.patternify.com/
         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAOklEQVQoU2PMX6f5f+F0awYQiM88CqaR+YwgBeiCyHxGAdeU/9h0whSBFeAyHiRO2ASCbiDoC0JuAAACHTn9xCS38wAAAABJRU5ErkJggg==) repeat;
