@@ -9693,99 +9693,131 @@ button.close {
 /* ------------------------------
  * Table column centering and right aligning classes
 ------------------------------ */
+.table-center-col-1 tr > th:nth-child(1),
 .table-center-col-1 tr > td:nth-child(1) {
   text-align: center;
 }
+.table-right-col-1 tr > th:nth-child(1),
 .table-right-col-1 tr > td:nth-child(1) {
   text-align: right;
 }
+.table-center-col-2 tr > th:nth-child(2),
 .table-center-col-2 tr > td:nth-child(2) {
   text-align: center;
 }
+.table-right-col-2 tr > th:nth-child(2),
 .table-right-col-2 tr > td:nth-child(2) {
   text-align: right;
 }
+.table-center-col-3 tr > th:nth-child(3),
 .table-center-col-3 tr > td:nth-child(3) {
   text-align: center;
 }
+.table-right-col-3 tr > th:nth-child(3),
 .table-right-col-3 tr > td:nth-child(3) {
   text-align: right;
 }
+.table-center-col-4 tr > th:nth-child(4),
 .table-center-col-4 tr > td:nth-child(4) {
   text-align: center;
 }
+.table-right-col-4 tr > th:nth-child(4),
 .table-right-col-4 tr > td:nth-child(4) {
   text-align: right;
 }
+.table-center-col-5 tr > th:nth-child(5),
 .table-center-col-5 tr > td:nth-child(5) {
   text-align: center;
 }
+.table-right-col-5 tr > th:nth-child(5),
 .table-right-col-5 tr > td:nth-child(5) {
   text-align: right;
 }
+.table-center-col-6 tr > th:nth-child(6),
 .table-center-col-6 tr > td:nth-child(6) {
   text-align: center;
 }
+.table-right-col-6 tr > th:nth-child(6),
 .table-right-col-6 tr > td:nth-child(6) {
   text-align: right;
 }
+.table-center-col-7 tr > th:nth-child(7),
 .table-center-col-7 tr > td:nth-child(7) {
   text-align: center;
 }
+.table-right-col-7 tr > th:nth-child(7),
 .table-right-col-7 tr > td:nth-child(7) {
   text-align: right;
 }
+.table-center-col-8 tr > th:nth-child(8),
 .table-center-col-8 tr > td:nth-child(8) {
   text-align: center;
 }
+.table-right-col-8 tr > th:nth-child(8),
 .table-right-col-8 tr > td:nth-child(8) {
   text-align: right;
 }
+.table-center-col-9 tr > th:nth-child(9),
 .table-center-col-9 tr > td:nth-child(9) {
   text-align: center;
 }
+.table-right-col-9 tr > th:nth-child(9),
 .table-right-col-9 tr > td:nth-child(9) {
   text-align: right;
 }
+.table-center-col-10 tr > th:nth-child(10),
 .table-center-col-10 tr > td:nth-child(10) {
   text-align: center;
 }
+.table-right-col-10 tr > th:nth-child(10),
 .table-right-col-10 tr > td:nth-child(10) {
   text-align: right;
 }
+.table-center-col-11 tr > th:nth-child(11),
 .table-center-col-11 tr > td:nth-child(11) {
   text-align: center;
 }
+.table-right-col-11 tr > th:nth-child(11),
 .table-right-col-11 tr > td:nth-child(11) {
   text-align: right;
 }
+.table-center-col-12 tr > th:nth-child(12),
 .table-center-col-12 tr > td:nth-child(12) {
   text-align: center;
 }
+.table-right-col-12 tr > th:nth-child(12),
 .table-right-col-12 tr > td:nth-child(12) {
   text-align: right;
 }
+.table-center-col-13 tr > th:nth-child(13),
 .table-center-col-13 tr > td:nth-child(13) {
   text-align: center;
 }
+.table-right-col-13 tr > th:nth-child(13),
 .table-right-col-13 tr > td:nth-child(13) {
   text-align: right;
 }
+.table-center-col-14 tr > th:nth-child(14),
 .table-center-col-14 tr > td:nth-child(14) {
   text-align: center;
 }
+.table-right-col-14 tr > th:nth-child(14),
 .table-right-col-14 tr > td:nth-child(14) {
   text-align: right;
 }
+.table-center-col-15 tr > th:nth-child(15),
 .table-center-col-15 tr > td:nth-child(15) {
   text-align: center;
 }
+.table-right-col-15 tr > th:nth-child(15),
 .table-right-col-15 tr > td:nth-child(15) {
   text-align: right;
 }
+.table-center-col-16 tr > th:nth-child(16),
 .table-center-col-16 tr > td:nth-child(16) {
   text-align: center;
 }
+.table-right-col-16 tr > th:nth-child(16),
 .table-right-col-16 tr > td:nth-child(16) {
   text-align: right;
 }

@@ -80,11 +80,13 @@
 ------------------------------ */
 .table-cols(@n, @i: 1) when (@i =< @n) {
   .table-center-col-@{i} {
+    tr > th:nth-child(@{i}), 
     tr > td:nth-child(@{i}) {
       text-align: center;
     }
   }
   .table-right-col-@{i} {
+    tr > th:nth-child(@{i}),
     tr > td:nth-child(@{i}) {
       text-align: right;
     }
