@@ -15,6 +15,71 @@
   }
 }
 
+// Deselected Buttons
+.btn.deselected {
+  .button-variant(@white; @gray-dark; @gray-dark);
+  border-color: transparent !important;
+  .label {
+    .button-variant(@white; @gray-darker; @gray-darker);
+  }
+  &:hover {
+    .button-variant(@white; darken(@gray-dark, 10%); darken(@gray-dark, 10%));
+    .label {
+      .button-variant(@white; darken(@gray-darker, 10%); darken(@gray-darker, 10%));
+    }
+  }
+}
+
+// Button Toggles
+.toggle-group {
+  .btn-primary {
+    color: @gray-darker;
+    background-color: @white;
+    border-color: @gray-light;
+    &:active,
+    &.active {
+      color: @btn-primary-color;
+      background-color: @btn-primary-bg;
+      border-color: @btn-primary-border;
+      .box-shadow(none);
+    }
+  }
+}
+
+// Nested Button Groups
+.btn-group {
+  .btn-group {
+    padding: 3px 2px 2px 3px;
+    background-color: @gray-light;
+    .border-right-radius(@border-radius-base);
+    > .btn,
+    > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle),
+    > .btn:first-child:not(:last-child):not(.dropdown-toggle),
+    > .btn:last-child:not(:first-child):not(.dropdown-toggle) {
+      border-radius: @border-radius-base;
+      font-size: 0.8em;
+      margin: 0 1px;
+    }
+  }
+}
+
+// Vertical Nested Button Groups
+.btn-group.vertical {
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid @brand-primary;
+    background-color: transparent;
+    > .btn,
+    > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle),
+    > .btn:first-child:not(:last-child):not(.dropdown-toggle),
+    > .btn:last-child:not(:first-child):not(.dropdown-toggle) {
+      display: inline-table;
+      margin-bottom: 2px;
+    }
+  }
+}
+
 // Button Labels
 // --------------------------------------------------
 

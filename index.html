@@ -37,7 +37,7 @@
       margin-bottom: 60px;
     }
     .bs-component {
-      margin-bottom: 15px;
+      margin-bottom: 30px;
     }
     .bs-docs-sidebar .nav li {
       border-left: 1px solid #767676;
@@ -427,6 +427,7 @@
               <h1 id="buttons">Buttons</h1>
             </div>
 
+            <h4>Default Button Classes</h4>
             <p class="bs-component">
               <a href="#" class="btn btn-default">Default</a>
               <a href="#" class="btn btn-primary">Primary</a>
@@ -437,6 +438,7 @@
               <a href="#" class="btn btn-link">Link</a>
             </p>
 
+            <h4>Default Button Classes Disabled</h4>
             <p class="bs-component">
               <a href="#" class="btn btn-default disabled">Default</a>
               <a href="#" class="btn btn-primary disabled">Primary</a>
@@ -447,6 +449,7 @@
               <a href="#" class="btn btn-link disabled">Link</a>
             </p>
 
+            <h4>Button Dropdowns</h4>
             <div class="btn-toolbar bs-component">
               <div class="btn-group">
                 <a href="#" class="btn btn-default">Default</a>
@@ -509,6 +512,7 @@
               </div>
             </div>
 
+            <h4>Button Sizes</h4>
             <p class="bs-component">
               <a href="#" class="btn btn-primary btn-lg">Large button</a>
               <a href="#" class="btn btn-primary">Default button</a>
@@ -516,22 +520,87 @@
               <a href="#" class="btn btn-primary btn-xs">Mini button</a>
             </p>
 
+            <h4>Flex Button<br />
+            <small>Multiple Interior Elements</small></h4>
             <div class="bs-component">
               <a href="#" class="btn btn-primary btn-flex text-left">
                 <span class="col"><span class="text"><strong>Oct 9, 2017</strong><br /><small>MA-03</small></span></span>
                 <span class="col"><span class="label"><i class="fa fa-minus"></i></span></span>
               </a>
-              <a href="#" class="btn btn-default btn-flex text-left">
+              <a href="#" class="btn btn-default btn-flex text-left deselected">
                 <span class="col"><span class="text"><strong>Oct 9, 2017</strong><br /><small>MA-03</small></span></span>
                 <span class="col"><span class="label"><i class="fa fa-plus"></i></span></span>
               </a>
             </div>
 
+            <h4>Boolean Toggle</h4>
+            <div class="bs-component">
+              <div class="btn-group toggle-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                  <input type="radio" name="boolean-toggle" id="option1" autocomplete="off" checked> On
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="boolean-toggle" id="option2" autocomplete="off"> Off
+                </label>
+              </div>
+            </div>
+
+            <h4>Nested Group</h4>
+            <div class="bs-component">
+              <div class="btn-group toggle-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                  <input type="radio" name="nested-group" id="option1" autocomplete="off" checked> All
+                </label>
+                <div class="btn-group">
+                  <label class="btn btn-primary">
+                    <input type="radio" name="nested-group" id="option2" autocomplete="off"> Complete
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="radio" name="nested-group" id="option2" autocomplete="off"> Partial
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <h4>Vertical Nested Group<br />
+              <small>Multi-select</small></h4>
+            <div class="bs-component">
+              <div class="btn-group toggle-group vertical" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                  <input type="checkbox" autocomplete="off" checked> All
+                </label>
+                <div class="btn-group">
+                  <label class="btn btn-primary">
+                    <input type="checkbox" autocomplete="off"> Hispanic / Latino
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="checkbox" autocomplete="off"> American Indian or Alaska Native
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="checkbox" autocomplete="off"> Asian
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="checkbox" autocomplete="off"> Black or African American
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="checkbox" autocomplete="off"> Filipino
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="checkbox" autocomplete="off"> Native Hawaiian or Pacific Islander
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="checkbox" autocomplete="off"> White
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <h4>Block Level Button</h4>
             <p class="bs-component">
               <a href="#" class="btn btn-default btn-lg btn-block">Block level button</a>
             </p>
 
-
+            <h4>Button Group</h4>
             <div class="bs-component">
               <div class="btn-group btn-group-justified">
                 <a href="#" class="btn btn-default">Left</a>
@@ -540,6 +609,7 @@
               </div>
             </div>
 
+            <h4>Button Toolbar</h4>
             <div class="bs-component">
               <div class="btn-toolbar">
                 <div class="btn-group">
@@ -572,6 +642,7 @@
               </div>
             </div>
 
+            <h4>Button Group Vertical</h4>
             <div class="bs-component">
               <div class="btn-group-vertical">
                 <a href="#" class="btn btn-default">Button</a>
