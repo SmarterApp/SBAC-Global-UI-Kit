@@ -135,7 +135,7 @@
             <p><strong>Note: </strong> classes beginning with <code>.bs-*</code> are custom styles for this page and do not need to be copied to production code.</p>
             <p>Smarter Balanced <a href="css/main.css" class="btn btn-primary btn-xs" target="_blank">CSS</a>
             Bootstrap <a href="http://getbootstrap.com/" class="btn btn-primary btn-xs" target="_blank">Docs</a>
-            Font Awesome <a href="http://fontawesome.io/" class="btn btn-primary btn-xs" target="_blank">Docs</a> <a href="http://fontawesome.io/cheatsheet/" class="btn btn-primary btn-xs">Cheat Sheet</a></p>
+            Font Awesome <a href="http://fontawesome.io/" class="btn btn-primary btn-xs" target="_blank">Docs</a> <a href="http://fontawesome.io/cheatsheet/" class="btn btn-primary btn-xs" target="_blank">Cheat Sheet</a></p>
 
             <!-- Colors -->
             <div class="bs-docs-section clearfix">
@@ -528,13 +528,27 @@
               <h4>Flex Button<br />
               <small>Multiple Interior Elements</small></h4>
               <div class="bs-component">
-                <a href="#" class="btn btn-primary btn-flex text-left">
-                  <span class="col"><span class="text"><strong>Oct 9, 2017</strong><br /><small>MA-03</small></span></span>
-                  <span class="col"><span class="label"><i class="fa fa-minus"></i></span></span>
+                <a href="#" class="btn btn-primary flex-children text-left">
+                  <span class="text block-children">
+                    <strong>Oct 9, 2017</strong>
+                    <small>MA-03</small>
+                  </span>
+                  <span class="label-col ml-sm">
+                    <span class="label label-primary">
+                      <i class="fa fa-minus"></i>
+                    </span>
+                  </span>
                 </a>
-                <a href="#" class="btn btn-default btn-flex text-left deselected">
-                  <span class="col"><span class="text"><strong>Oct 9, 2017</strong><br /><small>MA-03</small></span></span>
-                  <span class="col"><span class="label"><i class="fa fa-plus"></i></span></span>
+                <a href="#" class="btn btn-default flex-children text-left deselected">
+                  <span class="text block-children">
+                    <strong>Oct 9, 2017</strong>
+                    <small>MA-03</small>
+                  </span>
+                  <span class="label-col ml-sm">
+                    <span class="label label-primary">
+                      <i class="fa fa-minus"></i>
+                    </span>
+                  </span>
                 </a>
               </div>
 
@@ -1665,29 +1679,80 @@
                   <h3>Borders</h3>
                   <p>Combine <code>.border-{side}</code> and <code>.{color-class}</code> to add a border to any element.</p>
                   <div class="bs-component">
-                    <div class="flex-container">
-                      <div class="flex-item">
-                        <p class="gray-darkest border-color-aqua border-top">Top</p>
-                      </div>
-                      <div class="flex-item">
-                        <p class="gray-darkest border-right">Right</p>
-                      </div>
-                      <div class="flex-item">
-                        <p class="gray-darkest border-bottom">Bottom</p>
-                      </div>
-                      <div class="flex-item">
-                        <p class="gray-darkest border-left">Left</p>
-                      </div>
-                      <div class="flex-item">
-                        <p class="gray-darkest border-vertical">Vertical</p>
-                      </div>
-                      <div class="flex-item">
-                        <p class="gray-darkest border-horizontal">Horizontal</p>
-                      </div>
-                      <div class="flex-item">
-                        <p class="gray-darkest border-all">All</p>
-                      </div>
+                    <div class="flex-children flex-cols-7">
+                      <p class="gray-darkest border-color-aqua border-top">Top</p>
+                      <p class="gray-darkest border-right">Right</p>
+                      <p class="gray-darkest border-bottom">Bottom</p>
+                      <p class="gray-darkest border-left">Left</p>
+                      <p class="gray-darkest border-vertical">Vertical</p>
+                      <p class="gray-darkest border-horizontal">Horizontal</p>
+                      <p class="gray-darkest border-all">All</p>
                     </div>
+                  </div>
+
+                  <!-- Flex Container -->
+                  <h3>Flex &amp; Block Children</h3>
+                  <div class="flex-children flex-cols-5">
+                    <a href="#" class="btn btn-default block-children">
+                      <span class="h4">Evidence Based Select Response</span>
+                      <span class="h5">EBSR</span>
+                      <i class="fa fa-list fa-3x"></i>
+                    </a>
+                    <a href="#" class="btn btn-default block-children">
+                      <span class="h4">Equation</span>
+                      <span class="h5">EQ</span>
+                      <i class="fa fa-list fa-3x"></i>
+                    </a>
+                    <a href="#" class="btn btn-default block-children">
+                      <span class="h4">Grid Item</span>
+                      <span class="h5">GI</span>
+                      <i class="fa fa-list fa-3x"></i>
+                    </a>
+                    <a href="#" class="btn btn-default block-children">
+                      <span class="h4">Hot Text</span>
+                      <span class="h5">HTQ</span>
+                      <i class="fa fa-list fa-3x"></i>
+                    </a>
+                    <a href="#" class="btn btn-default block-children">
+                      <span class="h4">Multiple Choice</span>
+                      <span class="h5">MC</span>
+                      <i class="fa fa-list fa-3x"></i>
+                    </a>
+                    <a href="#" class="btn btn-default block-children">
+                      <span class="h4">Multiple Select</span>
+                      <span class="h5">MS</span>
+                      <i class="fa fa-list fa-3x"></i>
+                    </a>
+                    <a href="#" class="btn btn-default block-children">
+                      <span class="h4">Math Interaction</span></span>
+                      <span class="h5">MI</span>
+                      <i class="fa fa-list fa-3x"></i>
+                    </a>
+                    <a href="#" class="btn btn-default block-children">
+                      <span class="h4">Short Answer</span>
+                      <span class="h5">SA</span>
+                      <i class="fa fa-list fa-3x"></i>
+                    </a>
+                    <a href="#" class="btn btn-default block-children">
+                      <span class="h4">Table Interaction</span>
+                      <span class="h5">TI</span>
+                      <i class="fa fa-list fa-3x"></i>
+                    </a>
+                    <a href="#" class="btn btn-default block-children">
+                      <span class="h4">Writing Extended Response</span>
+                      <span class="h5">WER</span>
+                      <i class="fa fa-list fa-3x"></i>
+                    </a>
+                    <a href="#" class="btn btn-default block-children">
+                      <span class="h4">Stimulus</span>
+                      <span class="h5">STIM</span>
+                      <i class="fa fa-list fa-3x"></i>
+                    </a>
+                    <a href="#" class="btn btn-default block-children">
+                      <span class="h4">Tutorial</span>
+                      <span class="h5">Tut</span>
+                      <i class="fa fa-list fa-3x"></i>
+                    </a>
                   </div>
                 </div>
               </div>
