@@ -46,6 +46,66 @@
   p&,  {
     color: @colorName;
   }
+  &[class*="border-"] {
+    border-color: @colorName;
+  }
+}
+
+/* ------------------------------
+ * Flex Container
+------------------------------ */
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  .flex-item {
+
+  }
+}
+
+/* ------------------------------
+ * No Background
+------------------------------ */
+.bg-transparent {
+  background: transparent none;
+}
+
+/* ------------------------------
+ * Border Classes
+------------------------------ */
+[class*="border-"] {
+  border-width: 0px;
+  border-style: solid;
+}
+.border-top {
+  border-top-width: 1px;
+  padding-top: 0.5em;
+}
+.border-right {
+  border-right-width: 1px;
+  padding-right: 0.5em;
+}
+.border-bottom {
+  border-bottom-width: 1px;
+  padding-bottom: 0.5em;
+}
+.border-left {
+  border-left-width: 1px;
+  padding-left: 0.5em;
+}
+.border-vertical {
+  .border-top;
+  .border-bottom;
+}
+.border-horizontal {
+  .border-right;
+  .border-left;
+}
+.border-all {
+  .border-top;
+  .border-right;
+  .border-bottom;
+  .border-left;
 }
 
 
@@ -80,7 +140,7 @@
 ------------------------------ */
 .table-cols(@n, @i: 1) when (@i =< @n) {
   .table-center-col-@{i} {
-    tr > th:nth-child(@{i}), 
+    tr > th:nth-child(@{i}),
     tr > td:nth-child(@{i}) {
       text-align: center;
     }

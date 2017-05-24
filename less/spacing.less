@@ -1,0 +1,116 @@
+/* ----------------------------------------
+  Concept:         Bootstrap 4's Spacing Classes
+  LESS Conversion: Answer from Bass Jobsen via
+  https://stackoverflow.com/questions/31571924/bootstrap-responsive-margins-padding-less-css
+  Extended by:     AS @ Fairway Technologies
+---------------------------------------- */
+
+// Margins and Padding
+// -------------------------
+
+// Horizontal and Vertical Offset Values
+@x-0:       0;
+@x-xs:      (@grid-gutter-width / 4);
+@x-sm:      (@grid-gutter-width / 2);
+@x-md:      @grid-gutter-width;
+@x-lg:      (@grid-gutter-width * 2);
+@x-xl:      (@grid-gutter-width * 4);
+
+@y-0:       0;
+@y-xs:      (@line-height-computed / 4);
+@y-sm:      (@line-height-computed / 2);
+@y-md:      @line-height-computed;
+@y-lg:      (@line-height-computed * 2);
+@y-xl:      (@line-height-computed * 4);
+
+@positions: t top, r right, b bottom, l left;
+@grids: 0, xs, md, lg, xl;
+
+.what(@i) when (mod(@i, 2) = 0) {
+  @what: x;
+}
+.what(@i) when (default()) {
+  @what: y;
+}
+
+.properties(@prefix, @postfix, @whitespace, @what, @position, @grids, @i: 1) when (@i <= length(@grids)) {
+
+  @grid: extract(@grids,@i);
+
+  .m@{prefix}-@{grid}@{postfix} {
+    @var: ~"@{what}-@{grid}";
+    @{whitespace}-@{position}: @@var;
+
+  }
+
+  .properties(@prefix, @postfix, @whitespace, @what, @position, @grids, (@i + 1));
+}
+
+.whitespace(@positions, @whitespace: margin, @postfix: ~"", @i: 1) when (@i <= length(@positions)) {
+
+  @class: extract(extract(@positions, @i), 1);
+  @position: extract(extract(@positions, @i), 2);
+
+  .what(@i);
+  .properties(@class, @postfix, @whitespace, @what, @position, @grids);
+
+  .whitespace(@positions, @whitespace, @postfix, (@i + 1));
+}
+
+.whitespace(@positions);
+.whitespace(@positions, padding);
+
+// Responsive
+@media (max-width: @screen-xs-max) {
+  .whitespace(@positions, margin, -sm);
+  .whitespace(@positions, padding, -sm);
+}
+
+@media (max-width: @screen-sm-max) {
+  .whitespace(@positions, margin, -md);
+  .whitespace(@positions, padding, -md);
+}
+
+
+mt
+
+.mt-0 { margin-top: 0; }
+.mt-xs { margin-top: 5px; }
+.mt-md { margin-top: 20px; }
+.mt-lg { margin-top: 40px; }
+.mt-xl { margin-top: 80px; }
+.mr-0 { margin-right: 0; }
+.mr-xs { margin-right: 7.5px; }
+.mr-md { margin-right: 30px; }
+.mr-lg { margin-right: 60px; }
+.mr-xl { margin-right: 120px; }
+.mb-0 { margin-bottom: 0; }
+.mb-xs { margin-bottom: 5px; }
+.mb-md { margin-bottom: 20px; }
+.mb-lg { margin-bottom: 40px; }
+.mb-xl { margin-bottom: 80px; }
+.ml-0 { margin-left: 0; }
+.ml-xs { margin-left: 7.5px; }
+.ml-md { margin-left: 30px; }
+.ml-lg { margin-left: 60px; }
+.ml-xl { margin-left: 120px; }
+.mt-0 { padding-top: 0; }
+.mt-xs { padding-top: 5px; }
+.mt-md { padding-top: 20px; }
+.mt-lg { padding-top: 40px; }
+.mt-xl { padding-top: 80px; }
+.mr-0 { padding-right: 0; }
+.mr-xs { padding-right: 7.5px; }
+.mr-md { padding-right: 30px; }
+.mr-lg { padding-right: 60px; }
+.mr-xl { padding-right: 120px; }
+.mb-0 { padding-bottom: 0; }
+.mb-xs { padding-bottom: 5px; }
+.mb-md { padding-bottom: 20px; }
+.mb-lg { padding-bottom: 40px; }
+.mb-xl { padding-bottom: 80px; }
+.ml-0 { padding-left: 0; }
+.ml-xs { padding-left: 7.5px; }
+.ml-md { padding-left: 30px; }
+.ml-lg { padding-left: 60px; }
+.ml-xl { padding-left: 120px; }
