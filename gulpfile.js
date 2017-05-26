@@ -2,8 +2,9 @@ var gulp = require('gulp'),
     clean = require('gulp-clean'),
     less = require('gulp-less'),
     imagemin = require('gulp-imagemin'),
-    src = 'src/',
-    dist = 'dist/',
+    rename = require('gulp-rename'),
+    src = 'src',
+    dist = 'dist',
     paths = {
         styles: ['src/less/main.less'],
         fonts: [
@@ -23,13 +24,14 @@ gulp.task('clean', function() {
 gulp.task('less', ['clean'], function () {
     return gulp.src(paths.styles)
         .pipe(less())
-        .pipe(gulp.dest(dist + 'css/'));
+        .pipe(rename('sbac-ui-kit.min.css'))
+        .pipe(gulp.dest(`${dist}/css`));
 });
 
 // Fonts
 gulp.task('fonts', ['clean'], function() {
     return gulp.src(paths.fonts)
-        .pipe(gulp.dest(dist + 'fonts/'));
+        .pipe(gulp.dest(`${dist}/fonts`));
 });
 
 
@@ -37,7 +39,7 @@ gulp.task('fonts', ['clean'], function() {
 gulp.task('imagemin', ['clean'], function() {
     gulp.src(paths.images)
         .pipe(imagemin())
-        .pipe(gulp.dest(dist + 'images/'));
+        .pipe(gulp.dest(`${dist}/images`));
 });
 
 gulp.task('watch', function () {
