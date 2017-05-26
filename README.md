@@ -1,4 +1,10 @@
 # SBAC-Global-UI-Kit
+### Demo
+Demo the UI components and styles by cloning the repository and opening index.html
+```bash
+git clone https://github.com/SmarterApp/SBAC-Global-UI-Kit.git
+open SBAC-Global-UI-Kit/index.html
+```
 ### Development Installation
 #### Angular 2+
 Run the following NPM command in your project root directory
