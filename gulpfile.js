@@ -6,7 +6,10 @@ var gulp = require('gulp'),
     dist = 'dist/',
     paths = {
         styles: ['src/less/main.less'],
-        fonts: ['node_modules/font-awesome/fonts/**/*'],
+        fonts: [
+            'node_modules/bootstrap/fonts/**/*',
+            'node_modules/font-awesome/fonts/**/*'
+        ],
         images: ['src/images/**/*.png']
     };
 
