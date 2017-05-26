@@ -30,6 +30,12 @@ To use the style kit's styles and images add these entries into .angular-cli.jso
   }
 ]
 ```
+Next you will need to rebuild your Angular project using the following commands:
+```bash
+npm install
+ng build
+```
+
 Example HTML using styles and images:
 ```html
 <i class="fa fa-user-circle"></i>
