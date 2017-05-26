@@ -35,6 +35,7 @@ Example HTML using styles and images:
 <ol>
     <li>Install node.js (https://nodejs.org/en/)</li>
 </ol>
+
 #### Instructions
 ```bash
 npm install
