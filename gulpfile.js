@@ -46,4 +46,4 @@ gulp.task('watch', function () {
     gulp.watch('less/**/*.less', ['less']);
 });
 
-gulp.task('build', ['clean', 'less', 'fonts', 'imagemin']);
+gulp.task('build', ['less', 'fonts', 'imagemin']);
