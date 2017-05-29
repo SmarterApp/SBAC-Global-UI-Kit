@@ -6,18 +6,24 @@ git clone https://github.com/SmarterApp/SBAC-Global-UI-Kit.git
 open SBAC-Global-UI-Kit/index.html
 ```
 ### Development Installation
-#### Angular 2+
-Run the following NPM command in your project root directory
+To install development versions, clone the github repository and link it to your local npm repository.
 ```bash
-npm install --save-dev git+https://github.com/SmarterApp/SBAC-Global-UI-Kit.git#develop
+git clone https://github.com/SmarterApp/SBAC-Global-UI-Kit.git
+cd SBAC-Global-UI-kit
+npm link
 ```
-Or you can manually add the following entry to your package.json
+Next, run the following npm command in the project using the sbac-ui-kit
+```bash
+npm link sbac-ui-kit
+```
+Finally, make sure your project has the dependency declaration in it's package.json
 ```javascript
 "devDependencies": {
-    "sbac-ui-kit": "git+https://github.com/SmarterApp/SBAC-Global-UI-Kit.git#develop"
+    "sbac-ui-kit": "0.0.1"
 }
 ```
-To use the style kit's styles and images add these entries into .angular-cli.json
+#### Angular 2+
+To use the style kit's styles and images in an Angular project, add these entries into .angular-cli.json
 ```javascript
 "apps": [
   {
@@ -32,7 +38,6 @@ To use the style kit's styles and images add these entries into .angular-cli.jso
 ```
 Next you will need to rebuild your Angular project using the following commands:
 ```bash
-npm install
 ng build
 ```
 
@@ -45,7 +50,7 @@ Example HTML using styles and images:
 ### Build
 #### Prerequisites
 <ol>
-    <li>Install node.js (https://nodejs.org/en/)</li>
+    <li>Install <a href="https://nodejs.org/">node.js</a></li>
 </ol>
 
 #### Instructions
