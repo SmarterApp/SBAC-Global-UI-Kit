@@ -6,21 +6,9 @@ git clone https://github.com/SmarterApp/SBAC-Global-UI-Kit.git
 open SBAC-Global-UI-Kit/index.html
 ```
 ### Development Installation
-To install development versions, clone the github repository and link it to your local npm repository.
+To install a development versions of the style kit, run the following command where TAG_NAME points to a specific development release. See <a href="https://github.com/SmarterApp/SBAC-Global-UI-Kit/releases">releases</a>
 ```bash
-git clone https://github.com/SmarterApp/SBAC-Global-UI-Kit.git
-cd SBAC-Global-UI-kit
-npm link
-```
-Next, run the following npm command in the project using the sbac-ui-kit
-```bash
-npm link sbac-ui-kit
-```
-Finally, make sure your project has the dependency declaration in it's package.json
-```javascript
-"devDependencies": {
-    "sbac-ui-kit": "0.0.1"
-}
+npm install --save-dev git+https://github.com/SmarterApp/SBAC-Global-UI-Kit.git#TAG_NAME
 ```
 #### Angular 2+
 To use the style kit's styles and images in an Angular project, add these entries into .angular-cli.json
@@ -57,4 +45,11 @@ Example HTML using styles and images:
 ```bash
 npm install
 npm run build
+```
+### Release
+#### Development Releases
+To publish a development release simply create a lightweight tag on your latest commit. Example:
+```bash
+git tag v0.0.1
+git push origin v0.0.1
 ```
