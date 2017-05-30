@@ -25,7 +25,6 @@ section.main {
   // make sure inline elements with set to flex are still inline
   a& {
     display: inline-flex;
-    justify-content: space-around;
     margin: inherit;
     > * {
       margin: 0px;
@@ -37,7 +36,7 @@ section.main {
   .flex-cols-@{i} {
     margin: -0.5%;
     > *,
-    > .flex-children {
+    .flex-children {
       width: floor(((100 - (@i - 1)) / @i) * 1%);
       margin: 0.5%;
     }
