@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>SBAC UI Kit</title>
-  <meta name="viewport" content="width=devicyessie-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="dist/css/sbac-ui-kit.min.css">
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
       <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -81,7 +81,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand hidden-xs" href="/" title="Reporting System Dashboard"><img src="/img/SmarterBalanced-Logo.png" alt="Smarter Balanced Assessment Consortium"></a>
+              <a class="navbar-brand hidden-xs" href="/" title="Reporting System Dashboard"><img src="dist/images/SmarterBalanced-Logo.png" alt="Smarter Balanced Assessment Consortium"></a>
               <span class="application-title">Assessment Reporting System</span>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -1797,8 +1797,12 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="js/bootstrap/bootstrap.min.js"></script>
-  <script src="js/bootstrap/tooltip.js"></script>
-  <script src="js/main.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+      $(function () {
+          $('[data-toggle="tooltip"]').tooltip();
+          $('[data-toggle="popover"]').popover();
+      })
+  </script>
 </body>
 </html>

@@ -1,15 +1,25 @@
 {
-  "name": "sb-ui-kit",
-  "version": "1.0.0",
-  "description": "",
+  "name": "sbac-ui-kit",
+  "version": "0.0.1",
+  "description": "Common web styling and assets for SBAC projects",
+  "author": "Smarter Balanced Assessment Consortium",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build"
   },
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-less": "^3.3.0",
-    "gulp-watch": "^4.3.11"
+    "gulp-clean": "^0.3.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-watch": "^4.3.11",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SmarterApp/SBAC-Global-UI-Kit.git"
   }
 }
