@@ -35,8 +35,7 @@ section.main {
 .make-flex-columns(@n, @i: 1) when (@i =< @n) {
   .flex-cols-@{i} {
     margin: -0.5%;
-    > *,
-    .flex-children {
+    > * {
       width: floor(((100 - (@i - 1)) / @i) * 1%);
       margin: 0.5%;
     }
