@@ -14518,6 +14518,7 @@ section.main {
 }
 a.flex-children {
   display: inline-flex;
+  justify-content: space-around;
   margin: inherit;
 }
 a.flex-children > * {
@@ -14527,7 +14528,7 @@ a.flex-children > * {
   margin: -0.5%;
 }
 .flex-cols-1 > *,
-.flex-cols-1 .flex-children {
+.flex-cols-1 > .flex-children {
   width: 100%;
   margin: 0.5%;
 }
@@ -14535,7 +14536,7 @@ a.flex-children > * {
   margin: -0.5%;
 }
 .flex-cols-2 > *,
-.flex-cols-2 .flex-children {
+.flex-cols-2 > .flex-children {
   width: 49%;
   margin: 0.5%;
 }
@@ -14543,7 +14544,7 @@ a.flex-children > * {
   margin: -0.5%;
 }
 .flex-cols-3 > *,
-.flex-cols-3 .flex-children {
+.flex-cols-3 > .flex-children {
   width: 32%;
   margin: 0.5%;
 }
@@ -14551,7 +14552,7 @@ a.flex-children > * {
   margin: -0.5%;
 }
 .flex-cols-4 > *,
-.flex-cols-4 .flex-children {
+.flex-cols-4 > .flex-children {
   width: 24%;
   margin: 0.5%;
 }
@@ -14559,7 +14560,7 @@ a.flex-children > * {
   margin: -0.5%;
 }
 .flex-cols-5 > *,
-.flex-cols-5 .flex-children {
+.flex-cols-5 > .flex-children {
   width: 19%;
   margin: 0.5%;
 }
@@ -14567,7 +14568,7 @@ a.flex-children > * {
   margin: -0.5%;
 }
 .flex-cols-6 > *,
-.flex-cols-6 .flex-children {
+.flex-cols-6 > .flex-children {
   width: 15%;
   margin: 0.5%;
 }
@@ -14575,7 +14576,7 @@ a.flex-children > * {
   margin: -0.5%;
 }
 .flex-cols-7 > *,
-.flex-cols-7 .flex-children {
+.flex-cols-7 > .flex-children {
   width: 13%;
   margin: 0.5%;
 }
@@ -14583,7 +14584,7 @@ a.flex-children > * {
   margin: -0.5%;
 }
 .flex-cols-8 > *,
-.flex-cols-8 .flex-children {
+.flex-cols-8 > .flex-children {
   width: 11%;
   margin: 0.5%;
 }
@@ -14591,7 +14592,7 @@ a.flex-children > * {
   margin: -0.5%;
 }
 .flex-cols-9 > *,
-.flex-cols-9 .flex-children {
+.flex-cols-9 > .flex-children {
   width: 10%;
   margin: 0.5%;
 }
@@ -14599,7 +14600,7 @@ a.flex-children > * {
   margin: -0.5%;
 }
 .flex-cols-10 > *,
-.flex-cols-10 .flex-children {
+.flex-cols-10 > .flex-children {
   width: 9%;
   margin: 0.5%;
 }
@@ -14607,7 +14608,7 @@ a.flex-children > * {
   margin: -0.5%;
 }
 .flex-cols-11 > *,
-.flex-cols-11 .flex-children {
+.flex-cols-11 > .flex-children {
   width: 8%;
   margin: 0.5%;
 }
@@ -14615,7 +14616,7 @@ a.flex-children > * {
   margin: -0.5%;
 }
 .flex-cols-12 > *,
-.flex-cols-12 .flex-children {
+.flex-cols-12 > .flex-children {
   width: 7%;
   margin: 0.5%;
 }
