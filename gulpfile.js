@@ -43,7 +43,7 @@ gulp.task('imagemin', ['clean'], function() {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('less/**/*.less', ['less']);
+    gulp.watch('src/less/**/*.less', ['less']);
 });
 
 gulp.task('build', ['less', 'fonts', 'imagemin']);
