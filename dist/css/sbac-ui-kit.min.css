@@ -13234,6 +13234,53 @@ fieldset[disabled] .btn.deselected:hover .label.focus {
   color: #4b4d50;
   background-color: #FFFFFF;
 }
+.btn.img-circle {
+  border-radius: 50% !important;
+}
+.icon-only {
+  padding: 6.72px 6.72px;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 5px;
+}
+.icon-only i {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.icon-only.btn-lg {
+  padding: 8.4px 8.4px;
+  font-size: 20px;
+  line-height: 20px;
+  border-radius: 9px;
+}
+.icon-only.btn-lg i {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.icon-only.btn-sm {
+  padding: 5.46px 5.46px;
+  font-size: 13px;
+  line-height: 13px;
+  border-radius: 3px;
+}
+.icon-only.btn-sm i {
+  display: block;
+  width: 13px;
+  height: 13px;
+}
+.icon-only.btn-xs {
+  padding: 2.73px 2.73px;
+  font-size: 13px;
+  line-height: 13px;
+  border-radius: 3px;
+}
+.icon-only.btn-xs i {
+  display: block;
+  width: 13px;
+  height: 13px;
+}
 .toggle-group .btn-primary {
   color: #64666A;
   background-color: #FFFFFF;

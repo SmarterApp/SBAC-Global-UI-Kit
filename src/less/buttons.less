@@ -27,6 +27,29 @@
   }
 }
 
+// Enforce Circular Styles for Buttons
+.btn.img-circle {
+  border-radius: 50% !important;
+}
+
+// Icon Only Buttons
+.icon-only {
+  .button-size(@padding-base-vertical; @padding-base-vertical; @font-size-base; @font-size-base;  @btn-border-radius-base);
+  i { display: block; .square(@font-size-base); }
+  &.btn-lg {
+    .button-size(@padding-large-vertical; @padding-large-vertical; @font-size-large; @font-size-large;  @btn-border-radius-large);
+    i { display: block; .square(@font-size-large); }
+  }
+  &.btn-sm {
+    .button-size(@padding-small-vertical; @padding-small-vertical; @font-size-small; @font-size-small;  @btn-border-radius-small);
+    i { display: block; .square(@font-size-small); }
+  }
+  &.btn-xs {
+    .button-size(@padding-xs-vertical; @padding-xs-vertical; @font-size-small; @font-size-small;  @btn-border-radius-small);
+    i { display: block; .square(@font-size-small); }
+  }
+}
+
 // Button Toggles
 .toggle-group {
   .btn-primary {
