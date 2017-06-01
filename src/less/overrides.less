@@ -5,22 +5,41 @@ section.main {
   padding-bottom: (@font-size-h1 * 2);
 }
 
-.flex-container {
-  display: flex;
-  .flex-item,
-  > * {
-    // .flex-item styles
-  }
-}
 .block-children > * {
   display: block;
 }
+
 .flex-children {
   display: flex;
   flex-wrap: wrap;
-  margin: ceil((@grid-gutter-width / -2)) ceil((@grid-gutter-width / -2)) floor((@grid-gutter-width / -2)) floor((@grid-gutter-width / -2));
-  > * {
-    margin: ceil((@grid-gutter-width / 2)) ceil((@grid-gutter-width / 2)) floor((@grid-gutter-width / 2)) floor((@grid-gutter-width / 2));
+  margin: -0.5%;
+  > *,
+  .flex-children {
+    margin: 0.5%;
+  }
+  &.gutter-xs {
+    margin: ceil((@grid-gutter-width / -2)) ceil((@grid-gutter-width / -2)) floor((@grid-gutter-width / -2)) floor((@grid-gutter-width / -2));
+    > * {
+      margin: ceil((@grid-gutter-width / 2)) ceil((@grid-gutter-width / 2)) floor((@grid-gutter-width / 2)) floor((@grid-gutter-width / 2));
+    }
+  }
+  &.gutter-sm {
+    margin: ceil((@grid-gutter-width / -1)) ceil((@grid-gutter-width / -1)) floor((@grid-gutter-width / -1)) floor((@grid-gutter-width / -1));
+    > * {
+      margin: ceil((@grid-gutter-width / 1)) ceil((@grid-gutter-width / 1)) floor((@grid-gutter-width / 1)) floor((@grid-gutter-width / 1));
+    }
+  }
+  &.gutter-lg {
+    margin: ceil((@grid-gutter-width * -1)) ceil((@grid-gutter-width * -1)) floor((@grid-gutter-width * -1)) floor((@grid-gutter-width * -1));
+    > * {
+      margin: ceil((@grid-gutter-width * 1)) ceil((@grid-gutter-width * 1)) floor((@grid-gutter-width * 1)) floor((@grid-gutter-width * 1));
+    }
+  }
+  &.gutter-xl {
+    margin: ceil((@grid-gutter-width * -2)) ceil((@grid-gutter-width * -2)) floor((@grid-gutter-width * -2)) floor((@grid-gutter-width * -2));
+    > * {
+      margin: ceil((@grid-gutter-width * 2)) ceil((@grid-gutter-width * 2)) floor((@grid-gutter-width * 2)) floor((@grid-gutter-width * 2));
+    }
   }
   // make sure inline elements with set to flex are still inline
   a& {
@@ -28,7 +47,7 @@ section.main {
     justify-content: space-around;
     margin: inherit;
     > * {
-      margin: 0px;
+      margin: 0;
     }
   }
 }
@@ -48,7 +67,7 @@ section.main {
 .make-flex-columns(@grid-columns);
 
 .flex-children *,
-[class^='flex-cols'] * {
+[class^='flex-cols-'] * {
   white-space: normal;
   @media (max-width: @screen-sm-min) {
     display: block;
@@ -222,9 +241,10 @@ This will need to be resolved if TFOOT becomes necessary
     margin-bottom: 0px;
     border-width: 1px 0px 0px 0px;
     border-radius: 0px;
-    .box-shadow(none);
+    .box-shadow(0 6px 6px -6px rgba(0,0,0,.16) inset);
     &:first-child {
       border: none;
+      .box-shadow(none);
     }
   }
 }

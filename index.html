@@ -523,7 +523,7 @@
               </p>
 
               <h4>Icon Only &amp; Rounded Buttons</h4>
-              <p><code>.icon-only</code> has been designed specifically for use with single icons. If you use the class on a text button it will not display correctly.</p>
+              <p><code>.icon-only</code> has been designed specifically for use with single icons. If you use the class on a text button it will not display correctly. <code>.img-circle</code> when used on an element with  <code>.btn</code> will enforce <code>border-radius: 50%;</code> over the parent <code>.btn</code> class border-radius value.</p>
               <p class="bs-component">
                 <a href="#" class="btn btn-primary icon-only img-circle btn-lg"><i class="fa fa-plus"></i></a>
                 <a href="#" class="btn btn-primary icon-only img-circle"><i class="fa fa-plus"></i></a>
@@ -539,8 +539,8 @@
                     <strong>Oct 9, 2017</strong>
                     <small>MA-03</small>
                   </span>
-                  <span class="ml-sm">
-                    <span class="label label-primary">
+                  <span class="pl-sm">
+                    <span class="btn btn-primary btn-xs icon-only">
                       <i class="fa fa-minus"></i>
                     </span>
                   </span>
@@ -550,8 +550,8 @@
                     <strong>Oct 9, 2017</strong>
                     <small>MA-03</small>
                   </span>
-                  <span class="ml-sm">
-                    <span class="label label-primary">
+                  <span class="pl-sm">
+                    <span class="btn btn-primary btn-xs icon-only">
                       <i class="fa fa-minus"></i>
                     </span>
                   </span>
@@ -560,7 +560,7 @@
 
               <h4>Boolean Toggle</h4>
               <div class="bs-component">
-                <div class="btn-group toggle-group" data-toggle="buttons">
+                <div class="btn-group nested-btn-group-sm toggle-group" data-toggle="buttons">
                   <label class="btn btn-primary active">
                     <input type="radio" name="boolean-toggle" id="option1" autocomplete="off" checked> On
                   </label>
@@ -572,7 +572,7 @@
 
               <h4>Nested Group</h4>
               <div class="bs-component">
-                <div class="btn-group toggle-group" data-toggle="buttons">
+                <div class="btn-group nested-btn-group-sm toggle-group" data-toggle="buttons">
                   <label class="btn btn-primary active">
                     <input type="radio" name="nested-group" id="option1" autocomplete="off" checked> All
                   </label>
@@ -590,7 +590,7 @@
               <h4>Vertical Nested Group<br />
                 <small>Multi-select</small></h4>
               <div class="bs-component">
-                <div class="btn-group toggle-group vertical" data-toggle="buttons">
+                <div class="btn-group btn-group-sm toggle-group vertical" data-toggle="buttons">
                   <label class="btn btn-primary active">
                     <input type="checkbox" autocomplete="off" checked> All
                   </label>
@@ -836,7 +836,6 @@
               <div class="page-header">
                 <h1 id="forms">Forms</h1>
               </div>
-
               <div class="row">
                 <div class="col-lg-6">
                   <div class="well bs-component">
@@ -998,7 +997,7 @@
                         </ul>
                       </li>
                     </ul>
-                    <div id="myTabContent" class="tab-content">
+                    <div id="myTabContent" class="tab-content well">
                       <div class="tab-pane fade active in" id="home">
                         <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher
                           synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
@@ -1655,6 +1654,8 @@
 
               <!-- Flex Container -->
               <h3>Flex Container with Block Children</h3>
+              <p>Use <code>.flex-cols-n</code> where 1 < n < 12 to force flex children into a specific number of columns if necessary.</p>
+              <p>Use <code>.gutter-{size}</code> where size = xs, sm, lg, or xl to add margin between child elements. Warning: this will override the margin from the <code>.flex-cols-n</code> class.</p>
               <div class="flex-children flex-cols-5">
                 <a href="#" class="btn btn-default block-children">
                   <span class="h4">Evidence Based Select Response</span>
@@ -1718,14 +1719,14 @@
                 </a>
               </div>
               <h3>Flex Container with Flex Children</h3>
-              <div class="flex-children flex-cols-5">
+              <div class="flex-children">
                 <a href="#" class="btn btn-primary flex-children text-left">
                   <span class="text block-children">
                     <strong>Oct 9, 2017</strong>
                     <small>MA-03</small>
                   </span>
-                  <span class="ml-sm">
-                    <span class="label label-primary">
+                  <span class="pl-sm">
+                    <span class="btn btn-xs icon-only">
                       <i class="fa fa-minus"></i>
                     </span>
                   </span>
@@ -1735,8 +1736,8 @@
                     <strong>Oct 9, 2017</strong>
                     <small>MA-03</small>
                   </span>
-                  <span class="ml-sm">
-                    <span class="label label-primary">
+                  <span class="pl-sm">
+                    <span class="btn btn-xs icon-only">
                       <i class="fa fa-minus"></i>
                     </span>
                   </span>
@@ -1746,8 +1747,8 @@
                     <strong>Oct 9, 2017</strong>
                     <small>MA-03</small>
                   </span>
-                  <span class="ml-sm">
-                    <span class="label label-primary">
+                  <span class="pl-sm">
+                    <span class="btn btn-xs icon-only">
                       <i class="fa fa-minus"></i>
                     </span>
                   </span>
@@ -1757,8 +1758,8 @@
                     <strong>Oct 9, 2017</strong>
                     <small>MA-03</small>
                   </span>
-                  <span class="ml-sm">
-                    <span class="label label-primary">
+                  <span class="pl-sm">
+                    <span class="btn btn-xs icon-only">
                       <i class="fa fa-minus"></i>
                     </span>
                   </span>
@@ -1768,8 +1769,8 @@
                     <strong>Oct 9, 2017</strong>
                     <small>MA-03</small>
                   </span>
-                  <span class="ml-sm">
-                    <span class="label label-primary">
+                  <span class="pl-sm">
+                    <span class="btn btn-xs icon-only">
                       <i class="fa fa-minus"></i>
                     </span>
                   </span>
@@ -1779,8 +1780,8 @@
                     <strong>Oct 9, 2017</strong>
                     <small>MA-03</small>
                   </span>
-                  <span class="ml-sm">
-                    <span class="label label-primary">
+                  <span class="pl-sm">
+                    <span class="btn btn-xs icon-only">
                       <i class="fa fa-minus"></i>
                     </span>
                   </span>
@@ -1790,8 +1791,8 @@
                     <strong>Oct 9, 2017</strong>
                     <small>MA-03</small>
                   </span>
-                  <span class="ml-sm">
-                    <span class="label label-primary">
+                  <span class="pl-sm">
+                    <span class="btn btn-xs icon-only">
                       <i class="fa fa-minus"></i>
                     </span>
                   </span>
@@ -1801,8 +1802,8 @@
                     <strong>Oct 9, 2017</strong>
                     <small>MA-03</small>
                   </span>
-                  <span class="ml-sm">
-                    <span class="label label-primary">
+                  <span class="pl-sm">
+                    <span class="btn btn-xs icon-only">
                       <i class="fa fa-minus"></i>
                     </span>
                   </span>
@@ -1812,8 +1813,8 @@
                     <strong>Oct 9, 2017</strong>
                     <small>MA-03</small>
                   </span>
-                  <span class="ml-sm">
-                    <span class="label label-primary">
+                  <span class="pl-sm">
+                    <span class="btn btn-xs icon-only">
                       <i class="fa fa-minus"></i>
                     </span>
                   </span>
@@ -1823,8 +1824,8 @@
                     <strong>Oct 9, 2017</strong>
                     <small>MA-03</small>
                   </span>
-                  <span class="ml-sm">
-                    <span class="label label-primary">
+                  <span class="pl-sm">
+                    <span class="btn btn-xs icon-only">
                       <i class="fa fa-minus"></i>
                     </span>
                   </span>
@@ -1834,30 +1835,8 @@
                     <strong>Oct 9, 2017</strong>
                     <small>MA-03</small>
                   </span>
-                  <span class="ml-sm">
-                    <span class="label label-primary">
-                      <i class="fa fa-minus"></i>
-                    </span>
-                  </span>
-                </a>
-                <a href="#" class="btn btn-primary flex-children text-left deselected">
-                  <span class="text block-children">
-                    <strong>Oct 9, 2017</strong>
-                    <small>MA-03</small>
-                  </span>
-                  <span class="ml-sm">
-                    <span class="label label-primary">
-                      <i class="fa fa-minus"></i>
-                    </span>
-                  </span>
-                </a>
-                <a href="#" class="btn btn-primary flex-children text-left deselected">
-                  <span class="text block-children">
-                    <strong>Oct 9, 2017</strong>
-                    <small>MA-03</small>
-                  </span>
-                  <span class="ml-sm">
-                    <span class="label label-primary">
+                  <span class="pl-sm">
+                    <span class="btn btn-xs icon-only">
                       <i class="fa fa-minus"></i>
                     </span>
                   </span>
@@ -1880,9 +1859,6 @@
                 <br />
                 example: <code>.mt-xs</code> = margin-top extra-small
               </p>
-              <div class="bs-component">
-
-              </div>
             </div>
 
             <!-- Loaders -->
