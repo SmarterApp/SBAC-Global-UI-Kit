@@ -56,6 +56,9 @@
       color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
       background-color: @colorName;
       border-color: @colorName;
+      .label {
+        background-color: darken(@colorName, 20%);
+      }
     }
   }
   .tag.reverse& {

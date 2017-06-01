@@ -56,6 +56,11 @@
     color: @gray-darker;
     background-color: @white;
     border-color: @gray-light;
+    &:hover {
+      color: @white;
+      background-color: @gray-darker;
+      border-color: @gray-darker;
+    }
     &:active,
     &.active {
       color: @btn-primary-color;
@@ -170,11 +175,19 @@
   .btn;
   .button-variant(inherit, @white, @gray-light);
   .flex-children;
-  padding: 0.1em 0.28em;
+  line-height: 1.8;
+  margin-right: 0.5%;
+  &.slim {
+    padding: 0.1em 0.28em;
+  }
   .label {
     font-size: 80%;
     margin-right: 0.5em;
     padding: 0.5em;
+    align-self: center;
+  }
+  .block-children {
+    line-height: 1.65;
   }
   .icon {
     .icon-only;
@@ -182,8 +195,11 @@
     background-color: @gray-dark;
     background-color: rgba(0,0,0,0.2);
     margin-left: 1em;
-    padding: 0.28em;
-    transform: scale(0.8);
+    transform: scale(0.75);
+    align-self: flex-start;
+    i {
+      align-self: center;
+    }
   }
   &:hover {
     background-color: @gray-darker;

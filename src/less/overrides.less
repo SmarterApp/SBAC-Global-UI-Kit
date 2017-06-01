@@ -7,7 +7,22 @@ section.main {
 
 .block-children > * {
   display: block;
+  white-space: normal;
 }
+
+.make-flex-columns(@n, @i: 1) when (@i =< @n) {
+  .flex-cols-@{i} {
+    margin: -0.5%;
+    > *,
+    > .flex-children {
+      width: floor(((100 - (@i - 1)) / @i) * 1%);
+      margin: 0.5% 0.5% 0.5% 0.5%;
+    }
+  }
+  // Continue the iteration
+  .make-flex-columns(@n, (@i + 1));
+}
+.make-flex-columns(@grid-columns);
 
 .flex-children {
   display: flex;
@@ -15,8 +30,15 @@ section.main {
   margin: -0.5%;
   > *,
   .flex-children {
-    margin: 0.5%;
-    align-self: center;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+  }
+  .flex-children *,
+  [class^='flex-cols-'] * {
+    white-space: normal;
+    @media (max-width: @screen-sm-min) {
+      display: block;
+      width: 100%;
+    }
   }
   &.gutter-xs {
     margin: ceil((@grid-gutter-width / -2)) ceil((@grid-gutter-width / -2)) floor((@grid-gutter-width / -2)) floor((@grid-gutter-width / -2));
@@ -46,33 +68,9 @@ section.main {
   a& {
     display: inline-flex;
     justify-content: space-around;
-    margin: inherit;
     > * {
       margin: 0;
     }
-  }
-}
-
-.make-flex-columns(@n, @i: 1) when (@i =< @n) {
-  .flex-cols-@{i} {
-    margin: -0.5%;
-    > *,
-    > .flex-children {
-      width: floor(((100 - (@i - 1)) / @i) * 1%);
-      margin: 0.5%;
-    }
-  }
-  // Continue the iteration
-  .make-flex-columns(@n, (@i + 1));
-}
-.make-flex-columns(@grid-columns);
-
-.flex-children *,
-[class^='flex-cols-'] * {
-  white-space: normal;
-  @media (max-width: @screen-sm-min) {
-    display: block;
-    width: 100%;
   }
 }
 
