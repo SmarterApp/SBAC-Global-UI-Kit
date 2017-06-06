@@ -149,6 +149,7 @@ header {
 // Nav
 nav.navbar {
   padding: @font-size-base 0px;
+  border: none;
 }
 nav.vertical li.divider {
   height: 1px;
@@ -210,6 +211,22 @@ This will need to be resolved if TFOOT becomes necessary
     }
     &:last-child {
       border-bottom-right-radius: @border-radius-base;
+    }
+  }
+}
+
+//
+// Nav Tabs
+// --------------------------------------------------
+.nav-tabs {
+  margin-left: (@grid-gutter-width / 4);
+  // assumed use-case is that .nav-tabs will be attached to .wells so the bottom border is being removed
+  // if you need a border, please reset it to the default button border color
+  // -AS
+  border-bottom: none;
+  li {
+    &.active a {
+      background-color: @white;
     }
   }
 }
