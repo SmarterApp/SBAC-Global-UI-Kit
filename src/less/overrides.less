@@ -110,6 +110,7 @@ figure {
 .btn {
   font-family: @font-family-sans-serif;
   border-color: transparent;
+  line-height: 1.57;
   &:hover {
     border-color: transparent;
   }
@@ -344,4 +345,19 @@ footer {
 }
 .input-group-addon {
   height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+}
+
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+.breadcrumb-container {
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: @gray-light;
+  background-color: @gray-lighter;
+  .box-shadow(0 6px 6px -6px rgba(0,0,0,.16) inset, 0 1px 1px 1px rgba(255,255,255,.95););
+  .breadcrumb {
+    margin-bottom: 0px;
+  }
 }

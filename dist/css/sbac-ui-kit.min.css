@@ -18261,6 +18261,7 @@ fieldset[disabled] .btn-danger:hover .btn.focus {
   line-height: 1.65;
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-color: transparent;
+  line-height: 1.57;
   color: inherit;
   background-color: #FFFFFF;
   border-color: #D5D5D5;
@@ -19248,6 +19249,7 @@ figure figcaption {
 .btn {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-color: transparent;
+  line-height: 1.57;
 }
 .btn:hover {
   border-color: transparent;
@@ -19454,4 +19456,15 @@ input.form-control {
 }
 .input-group-addon {
   height: 38.44px;
+}
+.breadcrumb-container {
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #D5D5D5;
+  background-color: #E6E6E6;
+  -webkit-box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.16) inset, 0 1px 1px 1px rgba(255, 255, 255, 0.95);
+  box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.16) inset, 0 1px 1px 1px rgba(255, 255, 255, 0.95);
+}
+.breadcrumb-container .breadcrumb {
+  margin-bottom: 0px;
 }
