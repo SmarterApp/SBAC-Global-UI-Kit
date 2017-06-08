@@ -19467,4 +19467,6 @@ input.form-control {
 }
 .breadcrumb-container .breadcrumb {
   margin-bottom: 0px;
+  background-color: transparent;
+  border-radius: 0px;
 }
