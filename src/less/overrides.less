@@ -336,9 +336,11 @@ footer {
 // Forms
 // --------------------------------------------------
 .form-control {
-  height: auto;
   font-family: @font-family-sans-serif;
   .box-shadow(none);
+  input& {
+    height: auto;
+  }
 }
 .input-group-addon {
   height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)

@@ -19445,10 +19445,12 @@ footer {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .form-control {
-  height: auto;
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+input.form-control {
+  height: auto;
 }
 .input-group-addon {
   height: 38.44px;
