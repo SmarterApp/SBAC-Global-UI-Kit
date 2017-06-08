@@ -109,9 +109,9 @@
 //** Default background color used for all tables.
 @table-bg:                      transparent;
 //** Background color used for `.table-striped`.
-@table-bg-accent:               #f9f9f9;
+@table-bg-accent:               @gray-lightest;
 //** Background color used for `.table-hover`.
-@table-bg-hover:                @gray-light;
+@table-bg-hover:                @white;
 @table-bg-active:               @table-bg-hover;
 
 //** Border color for table and cell borders.
@@ -193,9 +193,9 @@
 @input-bg-disabled:              @gray-lighter;
 
 //** Text color for `<input>`s
-@input-color:                    @gray;
+@input-color:                    @gray-darker;
 //** `<input>` border color
-@input-border:                   @gray-lighter;
+@input-border:                   @gray-light;
 
 // TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -210,7 +210,7 @@
 @input-border-focus:             @brand-primary;
 
 //** Placeholder text color
-@input-color-placeholder:        @gray-darker;
+@input-color-placeholder:        @gray;
 
 //** Default `.form-control` height
 @input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);

@@ -187,11 +187,13 @@ This will need to be resolved if TFOOT becomes necessary
 -AS
 ------------------------------ */
 .table {
+  border-collapse: separate;
+  border-radius: @border-radius-base;
   > thead,
   > tfoot {
     > tr {
       > th {
-        background-color: @gray-light;
+        background-color: @gray-lighter;
       }
     }
   }
@@ -203,6 +205,12 @@ This will need to be resolved if TFOOT becomes necessary
       border-top-right-radius: @border-radius-base;
     }
   }
+  > tbody > tr {
+    background-color: darken(@gray-lightest, 2%);
+    > td {
+      .box-shadow(0 6px 6px -6px rgba(255,255,255,0.95) inset);
+    }
+  }
   // Normally this would be the TFOOT rounding class
   // See note above
   tr:last-child > td {
@@ -212,6 +220,22 @@ This will need to be resolved if TFOOT becomes necessary
     &:last-child {
       border-bottom-right-radius: @border-radius-base;
     }
+  }
+}
+// adding an outside border to .table
+.table tr {
+  th {
+    border-top: 1px solid @table-border-color !important;
+  }
+  th,
+  td {
+    &:first-child { border-left: 1px solid @table-border-color; }
+    &:last-child { border-right: 1px solid @table-border-color; }
+  }
+  // Normally this would be the TFOOT rounding class
+  // See note above
+  &:last-child td {
+    border-bottom: 1px solid @table-border-color;
   }
 }
 
@@ -311,7 +335,11 @@ footer {
 //
 // Forms
 // --------------------------------------------------
-
+.form-control {
+  height: auto;
+  font-family: @font-family-sans-serif;
+  .box-shadow(none);
+}
 .input-group-addon {
   height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
 }
