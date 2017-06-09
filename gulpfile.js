@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     src = 'src',
     dist = 'dist',
     paths = {
-        styles: ['src/less/bundle.less'],
+        styles: ['src/less/sbac-ui-kit.less'],
         fonts: [
             'node_modules/bootstrap/fonts/**/*',
             'node_modules/font-awesome/fonts/**/*'
