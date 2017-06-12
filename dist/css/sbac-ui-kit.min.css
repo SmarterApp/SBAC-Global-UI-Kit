@@ -17459,44 +17459,146 @@ fieldset[disabled] .btn.deselected:hover .btn.focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.btn-group {
-  transform-origin: top left;
+.nested-btn-group {
+  display: table;
+  margin-bottom: 5px;
 }
-.btn-group .btn-group {
-  padding: 3px 2px 2px 3px;
-  background-color: #D5D5D5;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
+.nested-btn-group > label:first-child {
+  padding: 8.4px 16.8px;
+  font-size: 20px;
+  line-height: 1.3333333;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 9px;
+  border-top-left-radius: 9px;
 }
-.btn-group .btn-group > .btn,
-.btn-group .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle),
-.btn-group .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle),
-.btn-group .btn-group > .btn:last-child:not(:first-child):not(.dropdown-toggle) {
-  border-radius: 5px;
-  font-size: 0.8em;
+.nested-btn-group .btn-group {
   margin: 0 1px;
+  padding: 6.3px 4.2px;
+  border-bottom-right-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
 }
-.btn-group.vertical .btn-group {
+.nested-btn-group .btn-group .btn {
+  margin-right: 12.6px;
+  padding: 6.3px 16.8px;
+  font-size: 20px;
+  line-height: 1.3333333;
+  border-radius: 9px !important;
+}
+.nested-btn-group .btn-group .btn:last-child {
+  margin-right: 0px;
+}
+.nested-btn-group > label:first-child,
+.nested-btn-group .btn-group {
+  display: table-cell;
+}
+.nested-btn-group .btn-group {
+  background-color: #D5D5D5;
+}
+.nested-btn-group.btn-group-lg > label:first-child {
+  padding: 8.4px 16.8px;
+  font-size: 20px;
+  line-height: 1.3333333;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 9px;
+  border-top-left-radius: 9px;
+}
+.nested-btn-group.btn-group-lg .btn-group {
+  margin: 0 1px;
+  padding: 6.3px 4.2px;
+  border-bottom-right-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.nested-btn-group.btn-group-lg .btn-group .btn {
+  margin-right: 12.6px;
+  padding: 6.3px 16.8px;
+  font-size: 20px;
+  line-height: 1.3333333;
+  border-radius: 9px !important;
+}
+.nested-btn-group.btn-group-lg .btn-group .btn:last-child {
+  margin-right: 0px;
+}
+.nested-btn-group.btn-group-sm > label:first-child {
+  padding: 5.46px 10.92px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.nested-btn-group.btn-group-sm .btn-group {
+  margin: 0 1px;
+  padding: 4.095px 2.73px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.nested-btn-group.btn-group-sm .btn-group .btn {
+  margin-right: 8.19px;
+  padding: 4.095px 10.92px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 3px !important;
+}
+.nested-btn-group.btn-group-sm .btn-group .btn:last-child {
+  margin-right: 0px;
+}
+.nested-btn-group.btn-group-xs > label:first-child {
+  padding: 2.73px 5.46px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.nested-btn-group.btn-group-xs .btn-group {
+  margin: 0 1px;
+  padding: 2.0475px 1.365px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.nested-btn-group.btn-group-xs .btn-group .btn {
+  margin-right: 4.095px;
+  padding: 2.0475px 5.46px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 3px !important;
+}
+.nested-btn-group.btn-group-xs .btn-group .btn:last-child {
+  margin-right: 0px;
+}
+.nested-btn-group.vertical {
   display: flex;
-  flex-direction: column;
-  border-left: 1px solid #3696E6;
-  background-color: transparent;
 }
-.btn-group.vertical .btn-group > .btn,
-.btn-group.vertical .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle),
-.btn-group.vertical .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle),
-.btn-group.vertical .btn-group > .btn:last-child:not(:first-child):not(.dropdown-toggle) {
+.nested-btn-group.vertical > label:first-child,
+.nested-btn-group.vertical .btn-group {
+  display: flex;
+}
+.nested-btn-group.vertical > label:first-child {
+  align-self: flex-start;
+}
+.nested-btn-group.vertical .btn-group {
+  flex-direction: column;
+  border-left: 1px solid #64666A;
+  background-color: transparent;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+.nested-btn-group.vertical .btn-group .btn {
   display: inline-table;
   margin-bottom: 2px;
-}
-.nested-btn-group-xs {
-  transform: scale(0.7);
-}
-.nested-btn-group-sm {
-  transform: scale(0.8);
-}
-.nested-btn-group-lg {
-  transform: scale(1.2);
 }
 .btn-default .btn {
   color: #64666A;

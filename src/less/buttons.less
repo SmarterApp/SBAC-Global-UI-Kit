@@ -71,37 +71,77 @@
   }
 }
 
-// Nested Button Groups
-.btn-group {
-  transform-origin: top left;
+// Nested Button Group Sizes
+.nested-button-group-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
+  > label:first-child {
+    padding: @padding-vertical @padding-horizontal;
+    font-size: @font-size;
+    line-height: @line-height;
+    .border-right-radius(0px);
+    .border-left-radius(@border-radius);
+  }
   .btn-group {
-    padding: 3px 2px 2px 3px;
-    background-color: @gray-light;
-    .border-right-radius(@border-radius-base);
-    > .btn,
-    > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle),
-    > .btn:first-child:not(:last-child):not(.dropdown-toggle),
-    > .btn:last-child:not(:first-child):not(.dropdown-toggle) {
-      border-radius: @border-radius-base;
-      font-size: 0.8em;
-      margin: 0 1px;
+    margin: 0 1px;
+    padding: (@padding-vertical * 0.75) (@padding-horizontal * 0.25);
+    .border-right-radius(@border-radius);
+    .border-left-radius(0px);
+    .btn {
+      margin-right: (@padding-horizontal * 0.75);
+      padding: (@padding-vertical * 0.75) @padding-horizontal;
+      font-size: @font-size;
+      line-height: @line-height;
+      border-radius: @border-radius !important;
+      &:last-child {
+        margin-right: 0px;
+      }
     }
   }
 }
 
-// Vertical Nested Button Groups
-.btn-group.vertical {
+// Nested Button Groups
+.nested-btn-group {
+  .nested-button-group-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @btn-border-radius-large);
+  display: table;
+  margin-bottom: 5px;
+  > label:first-child,
   .btn-group {
+    display: table-cell;
+  }
+  .btn-group {
+    background-color: @gray-light;
+  }
+  &.btn-group-lg {
+    // line-height: ensure even-numbered height of button next to large input
+    .nested-button-group-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @btn-border-radius-large);
+  }
+  &.btn-group-sm {
+    // line-height: ensure proper height of button next to small input
+    .nested-button-group-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
+  }
+  &.btn-group-xs {
+    .nested-button-group-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
+  }
+  // Vertical Nested Button Groups
+  &.vertical {
     display: flex;
-    flex-direction: column;
-    border-left: 1px solid @brand-primary;
-    background-color: transparent;
-    > .btn,
-    > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle),
-    > .btn:first-child:not(:last-child):not(.dropdown-toggle),
-    > .btn:last-child:not(:first-child):not(.dropdown-toggle) {
-      display: inline-table;
-      margin-bottom: 2px;
+    > label:first-child,
+    .btn-group {
+      display: flex;
+    }
+    > label:first-child {
+      align-self: flex-start;
+    }
+    .btn-group {
+      flex-direction: column;
+      border-left: 1px solid @gray-darker;
+      background-color: transparent;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      .btn {
+        display: inline-table;
+        margin-bottom: 2px;
+      }
     }
   }
 }
@@ -110,10 +150,8 @@
 //
 // Remix the default button sizing classes into new ones for easier manipulation.
 // Extending to include nested button group styles
-
-.nested-btn-group-xs { transform: scale(0.7); }
-.nested-btn-group-sm { transform: scale(0.8); }
-.nested-btn-group-lg { transform: scale(1.2); }
+.nested-btn-group {
+}
 
 // Button Labels
 // --------------------------------------------------
