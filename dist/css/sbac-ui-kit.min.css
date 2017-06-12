@@ -18472,6 +18472,9 @@ fieldset[disabled] .tag.focus {
 .tag .flex-children {
   margin: 0.5% 0.5% 0.5% 0.5%;
 }
+.tag .grow {
+  flex-grow: 1;
+}
 .tag .flex-children *,
 .tag [class^='flex-cols-'] * {
   white-space: normal;
@@ -19302,6 +19305,9 @@ section.main {
 .flex-children > *,
 .flex-children .flex-children {
   margin: 0.5% 0.5% 0.5% 0.5%;
+}
+.flex-children .grow {
+  flex-grow: 1;
 }
 .flex-children .flex-children *,
 .flex-children [class^='flex-cols-'] * {
