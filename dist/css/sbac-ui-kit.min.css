@@ -19446,6 +19446,9 @@ footer {
   color: #A7A7A7;
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+label {
+  font-size: 13px;
+}
 .form-control {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-box-shadow: none;
@@ -19466,7 +19469,12 @@ input.form-control {
   box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.16) inset, 0 1px 1px 1px rgba(255, 255, 255, 0.95);
 }
 .breadcrumb-container .breadcrumb {
+  padding-right: 0px;
+  padding-left: 0px;
   margin-bottom: 0px;
   background-color: transparent;
   border-radius: 0px;
+}
+.breadcrumb-container .breadcrumb li {
+  color: #64666A;
 }

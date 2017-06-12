@@ -336,6 +336,9 @@ footer {
 //
 // Forms
 // --------------------------------------------------
+label {
+  font-size: @font-size-small;
+}
 .form-control {
   font-family: @font-family-sans-serif;
   .box-shadow(none);
@@ -358,8 +361,13 @@ footer {
   background-color: @gray-lighter;
   .box-shadow(0 6px 6px -6px rgba(0,0,0,.16) inset, 0 1px 1px 1px rgba(255,255,255,.95););
   .breadcrumb {
+    padding-right: 0px;
+    padding-left: 0px;
     margin-bottom: 0px;
     background-color: transparent;
     border-radius: 0px;
+    li {
+      color: @gray-darker;
+    }
   }
 }
