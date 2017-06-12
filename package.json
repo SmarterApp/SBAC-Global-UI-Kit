@@ -9,14 +9,16 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-imagemin": "^3.2.0",
     "gulp-less": "^3.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
   },
   "repository": {
     "type": "git",
