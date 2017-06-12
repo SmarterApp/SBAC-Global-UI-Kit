@@ -18372,6 +18372,45 @@ fieldset[disabled] .btn-danger:hover .btn.focus {
   margin: -0.5%;
   line-height: 1.8;
   margin-right: 0.5%;
+  align-items: center;
+}
+.tag .icon,
+.tag .label {
+  padding: 6.72px 10.08px;
+  border-radius: 5px;
+}
+.tag.tag-lg {
+  padding: 8.4px 16.8px;
+  font-size: 20px;
+  line-height: 1.3333333;
+  border-radius: 9px;
+}
+.tag.tag-lg .icon,
+.tag.tag-lg .label {
+  padding: 8.4px 12.6px;
+  border-radius: 9px;
+}
+.tag.tag-sm {
+  padding: 5.46px 10.92px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.tag.tag-sm .icon,
+.tag.tag-sm .label {
+  padding: 5.46px 8.19px;
+  border-radius: 3px;
+}
+.tag.tag-xs {
+  padding: 2.73px 5.46px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.tag.tag-xs .icon,
+.tag.tag-xs .label {
+  padding: 2.73px 4.095px;
+  border-radius: 3px;
 }
 .tag:focus,
 .tag:active:focus,
@@ -18511,9 +18550,6 @@ a.tag {
 }
 a.tag > * {
   margin: 0;
-}
-.tag.slim {
-  padding: 0.1em 0.28em;
 }
 .tag .label {
   font-size: 80%;

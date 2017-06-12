@@ -209,15 +209,36 @@
 
 // Tags
 // --------------------------------------------------
+
+// Tag sizes
+.tag-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
+  padding: @padding-vertical @padding-horizontal;
+  font-size: @font-size;
+  line-height: @line-height;
+  border-radius: @border-radius;
+  .icon,
+  .label {
+    padding: @padding-vertical (@padding-horizontal * 0.75);
+    border-radius: @border-radius;
+  }
+}
 .tag {
+  .tag-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
+  &.tag-lg {
+    .tag-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @btn-border-radius-large);
+  }
+  &.tag-sm {
+    .tag-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
+  }
+  &.tag-xs {
+    .tag-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
+  }
   .btn;
   .button-variant(inherit, @white, @gray-light);
   .flex-children;
   line-height: 1.8;
   margin-right: 0.5%;
-  &.slim {
-    padding: 0.1em 0.28em;
-  }
+  align-items: center;
   .label {
     font-size: 80%;
     margin-right: 0.5em;
