@@ -17856,9 +17856,10 @@ span.tag > * {
   border-radius: 3px;
 }
 .tag:not(a).tag:not(button) {
-  pointer-events: none;
+  padding: 0px;
   border: none;
   background-color: transparent;
+  pointer-events: none;
 }
 .tag .label {
   font-size: 80%;
