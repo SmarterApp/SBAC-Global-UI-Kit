@@ -42,6 +42,10 @@
       color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
       background-color: contrast(@colorName, darken(@colorName, 15%), lighten(@colorName, 15%));
     }
+    &.border-only {
+      color: @colorName;
+      border-color: @colorName;
+    }
     .bar-data {
       color: @colorName;
       &:before {
