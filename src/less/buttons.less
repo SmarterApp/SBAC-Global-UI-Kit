@@ -146,13 +146,6 @@
   }
 }
 
-// Button Group Sizing
-//
-// Remix the default button sizing classes into new ones for easier manipulation.
-// Extending to include nested button group styles
-.nested-btn-group {
-}
-
 // Button Labels
 // --------------------------------------------------
 .btn-default {
@@ -240,6 +233,11 @@
     .tag-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
   }
   padding-right: 1em !important; // add right padding by default, we'll remove later if an icon is added
+  &:not(a)&:not(button) {
+    pointer-events: none;
+    border: none;
+    background-color: transparent;
+  }
   .label {
     font-size: 80%;
     margin-right: 0.5em;

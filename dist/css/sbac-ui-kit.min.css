@@ -10022,9 +10022,6 @@ div.blue .bar-data:before,
 .label.blue .bar-data:before {
   border-color: #014F9A;
 }
-.tag.blue:not(a).tag.blue:not(button) {
-  pointer-events: none;
-}
 .tag.blue .label {
   color: #ffffff;
   background-color: #014F9A;
@@ -10326,9 +10323,6 @@ div.blue-dark .bar-data:before,
 .panel.blue-dark .panel-footer .bar-data:before,
 .label.blue-dark .bar-data:before {
   border-color: #104564;
-}
-.tag.blue-dark:not(a).tag.blue-dark:not(button) {
-  pointer-events: none;
 }
 .tag.blue-dark .label {
   color: #f5fafd;
@@ -10632,9 +10626,6 @@ div.teal .bar-data:before,
 .label.teal .bar-data:before {
   border-color: #0090B7;
 }
-.tag.teal:not(a).tag.teal:not(button) {
-  pointer-events: none;
-}
 .tag.teal .label {
   color: #ffffff;
   background-color: #0090B7;
@@ -10936,9 +10927,6 @@ div.aqua .bar-data:before,
 .panel.aqua .panel-footer .bar-data:before,
 .label.aqua .bar-data:before {
   border-color: #3696E6;
-}
-.tag.aqua:not(a).tag.aqua:not(button) {
-  pointer-events: none;
 }
 .tag.aqua .label {
   color: #ffffff;
@@ -11242,9 +11230,6 @@ div.green .bar-data:before,
 .label.green .bar-data:before {
   border-color: #6FAE29;
 }
-.tag.green:not(a).tag.green:not(button) {
-  pointer-events: none;
-}
 .tag.green .label {
   color: #ffffff;
   background-color: #6FAE29;
@@ -11546,9 +11531,6 @@ div.green-dark .bar-data:before,
 .panel.green-dark .panel-footer .bar-data:before,
 .label.green-dark .bar-data:before {
   border-color: #406934;
-}
-.tag.green-dark:not(a).tag.green-dark:not(button) {
-  pointer-events: none;
 }
 .tag.green-dark .label {
   color: #ffffff;
@@ -11852,9 +11834,6 @@ div.orange .bar-data:before,
 .label.orange .bar-data:before {
   border-color: #D66E1E;
 }
-.tag.orange:not(a).tag.orange:not(button) {
-  pointer-events: none;
-}
 .tag.orange .label {
   color: #ffffff;
   background-color: #D66E1E;
@@ -12156,9 +12135,6 @@ div.red .bar-data:before,
 .panel.red .panel-footer .bar-data:before,
 .label.red .bar-data:before {
   border-color: #D5124A;
-}
-.tag.red:not(a).tag.red:not(button) {
-  pointer-events: none;
 }
 .tag.red .label {
   color: #ffffff;
@@ -12462,9 +12438,6 @@ div.red-dark .bar-data:before,
 .label.red-dark .bar-data:before {
   border-color: #931432;
 }
-.tag.red-dark:not(a).tag.red-dark:not(button) {
-  pointer-events: none;
-}
 .tag.red-dark .label {
   color: #ffffff;
   background-color: #931432;
@@ -12766,9 +12739,6 @@ div.maroon .bar-data:before,
 .panel.maroon .panel-footer .bar-data:before,
 .label.maroon .bar-data:before {
   border-color: #5B1931;
-}
-.tag.maroon:not(a).tag.maroon:not(button) {
-  pointer-events: none;
 }
 .tag.maroon .label {
   color: #fdf6f8;
@@ -13072,9 +13042,6 @@ div.black .bar-data:before,
 .label.black .bar-data:before {
   border-color: #000000;
 }
-.tag.black:not(a).tag.black:not(button) {
-  pointer-events: none;
-}
 .tag.black .label {
   color: #bfbfbf;
   background-color: #000000;
@@ -13376,9 +13343,6 @@ div.gray-darkest .bar-data:before,
 .panel.gray-darkest .panel-footer .bar-data:before,
 .label.gray-darkest .bar-data:before {
   border-color: #2a2b2d;
-}
-.tag.gray-darkest:not(a).tag.gray-darkest:not(button) {
-  pointer-events: none;
 }
 .tag.gray-darkest .label {
   color: #eaebeb;
@@ -13682,9 +13646,6 @@ div.gray-darker .bar-data:before,
 .label.gray-darker .bar-data:before {
   border-color: #64666A;
 }
-.tag.gray-darker:not(a).tag.gray-darker:not(button) {
-  pointer-events: none;
-}
 .tag.gray-darker .label {
   color: #ffffff;
   background-color: #64666A;
@@ -13986,9 +13947,6 @@ div.gray-dark .bar-data:before,
 .panel.gray-dark .panel-footer .bar-data:before,
 .label.gray-dark .bar-data:before {
   border-color: #A7A7A7;
-}
-.tag.gray-dark:not(a).tag.gray-dark:not(button) {
-  pointer-events: none;
 }
 .tag.gray-dark .label {
   color: #ffffff;
@@ -14292,9 +14250,6 @@ div.gray .bar-data:before,
 .label.gray .bar-data:before {
   border-color: #B8B8B8;
 }
-.tag.gray:not(a).tag.gray:not(button) {
-  pointer-events: none;
-}
 .tag.gray .label {
   color: #000000;
   background-color: #B8B8B8;
@@ -14596,9 +14551,6 @@ div.gray-light .bar-data:before,
 .panel.gray-light .panel-footer .bar-data:before,
 .label.gray-light .bar-data:before {
   border-color: #D5D5D5;
-}
-.tag.gray-light:not(a).tag.gray-light:not(button) {
-  pointer-events: none;
 }
 .tag.gray-light .label {
   color: #161616;
@@ -14902,9 +14854,6 @@ div.gray-lighter .bar-data:before,
 .label.gray-lighter .bar-data:before {
   border-color: #E6E6E6;
 }
-.tag.gray-lighter:not(a).tag.gray-lighter:not(button) {
-  pointer-events: none;
-}
 .tag.gray-lighter .label {
   color: #272727;
   background-color: #E6E6E6;
@@ -15207,9 +15156,6 @@ div.gray-lightest .bar-data:before,
 .label.gray-lightest .bar-data:before {
   border-color: #F8F8F8;
 }
-.tag.gray-lightest:not(a).tag.gray-lightest:not(button) {
-  pointer-events: none;
-}
 .tag.gray-lightest .label {
   color: #393939;
   background-color: #F8F8F8;
@@ -15511,9 +15457,6 @@ div.white .bar-data:before,
 .panel.white .panel-footer .bar-data:before,
 .label.white .bar-data:before {
   border-color: #FFFFFF;
-}
-.tag.white:not(a).tag.white:not(button) {
-  pointer-events: none;
 }
 .tag.white .label {
   color: #404040;
@@ -17778,6 +17721,11 @@ span.tag > * {
 .tag.tag-xs .label {
   padding: 2.73px 4.095px;
   border-radius: 3px;
+}
+.tag:not(a).tag:not(button) {
+  pointer-events: none;
+  border: none;
+  background-color: transparent;
 }
 .tag .label {
   font-size: 80%;
