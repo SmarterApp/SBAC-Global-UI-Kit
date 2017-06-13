@@ -14,13 +14,9 @@
     color: @colorName;
   }
   div&,
-  .label&,
-  .tag&,
   .panel& .panel-header,
   .panel& .panel-footer,
-  *& .label,
-  *& .tag,
-  .reverse& {
+  .label& {
     color: contrast(@colorName, darken(@colorName, 50%), lighten(@colorName, 50%));
     background-color: @colorName;
     h1, .h1,
@@ -54,6 +50,10 @@
     }
   }
   .tag& {
+    .label {
+      color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
+      background-color: @colorName;
+    }
     &:hover {
       color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
       background-color: @colorName;
@@ -62,12 +62,22 @@
         background-color: darken(@colorName, 20%);
       }
     }
-  }
-  .tag.reverse& {
-    &:hover {
+    &.reverse& {
       color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
-      background-color: darken(@colorName, 20%);
-      border-color: darken(@colorName, 20%);
+      background-color: @colorName;
+      border-color: @colorName;
+      .label {
+        color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
+        background-color: darken(@colorName, 20%);
+      }
+      &:hover {
+        color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
+        background-color: darken(@colorName, 20%);
+        border-color: darken(@colorName, 20%);
+        .label {
+          background-color: darken(@colorName, 30%);
+        }
+      }
     }
   }
   .btn& {
