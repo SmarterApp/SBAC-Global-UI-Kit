@@ -17818,7 +17818,7 @@ span.tag > * {
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 50px;
-  padding-bottom: 63px;
+  padding-bottom: 68px;
 }
 .bar-scale .bar-container .score {
   position: absolute;
@@ -18272,7 +18272,7 @@ span.tag > * {
   white-space: nowrap;
 }
 .bar-scale .bar-container .bar .bar-data {
-  bottom: -50px;
+  bottom: -60px;
   font-size: 32px;
   font-weight: 700;
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -18280,7 +18280,7 @@ span.tag > * {
 .bar-scale .bar-container .bar .bar-data:before {
   content: '';
   position: absolute;
-  top: -14px;
+  top: -6px;
   left: 50%;
   margin-left: -8.25px;
   display: block;
@@ -18294,7 +18294,7 @@ span.tag > * {
   opacity: 0.36;
 }
 .bar-scale .bar-container .bar .bar-label {
-  bottom: -63px;
+  bottom: -68px;
   color: #64666A;
   font-size: 13px;
 }
