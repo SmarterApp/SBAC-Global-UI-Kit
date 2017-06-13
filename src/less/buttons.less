@@ -239,6 +239,7 @@
   &.tag-xs {
     .tag-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
   }
+  padding-right: 1em !important; // add right padding by default, we'll remove later if an icon is added
   .label {
     font-size: 80%;
     margin-right: 0.5em;
@@ -253,7 +254,8 @@
     color: @white;
     background-color: @gray-dark;
     background-color: rgba(0,0,0,0.2);
-    margin-left: 1em;
+    margin-left: 0.5em;
+    margin-right: -0.5em; // pull back to the right to account for forced right padding on tags
     transform: scale(0.75);
     align-self: flex-start;
     i {

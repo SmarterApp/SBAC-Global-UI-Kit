@@ -50,6 +50,9 @@
     }
   }
   .tag& {
+    &:not(a)&:not(button) {
+      pointer-events: none;
+    }
     .label {
       color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
       background-color: @colorName;
