@@ -34,18 +34,26 @@
 
 // Icon Only Buttons
 .icon-only {
-  .button-size(@padding-base-vertical; @padding-base-vertical; @font-size-base; @font-size-base;  @btn-border-radius-base);
+  // .button-size(@padding-base-vertical; @padding-base-vertical; @font-size-base; @font-size-base;  @btn-border-radius-base);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  .square(@font-size-base + (@padding-base-vertical * 2));
   i { display: block; .square(@font-size-base); }
   &.btn-lg {
-    .button-size(@padding-large-vertical; @padding-large-vertical; @font-size-large; @font-size-large;  @btn-border-radius-large);
+    // .button-size(@padding-large-vertical; @padding-large-vertical; @font-size-large; @font-size-large;  @btn-border-radius-large);
+    .square(@font-size-base + (@padding-large-vertical * 2));
     i { display: block; .square(@font-size-large); }
   }
   &.btn-sm {
-    .button-size(@padding-small-vertical; @padding-small-vertical; @font-size-small; @font-size-small;  @btn-border-radius-small);
+    // .button-size(@padding-small-vertical; @padding-small-vertical; @font-size-small; @font-size-small;  @btn-border-radius-small);
+    .square(@font-size-base + (@padding-small-vertical * 2));
     i { display: block; .square(@font-size-small); }
   }
   &.btn-xs {
-    .button-size(@padding-xs-vertical; @padding-xs-vertical; @font-size-small; @font-size-small;  @btn-border-radius-small);
+    // .button-size(@padding-xs-vertical; @padding-xs-vertical; @font-size-small; @font-size-small;  @btn-border-radius-small);
+    .square(@font-size-base + (@padding-xs-vertical * 2));
     i { display: block; .square(@font-size-small); }
   }
 }
