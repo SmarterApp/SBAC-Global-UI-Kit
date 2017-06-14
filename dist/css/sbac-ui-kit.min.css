@@ -17131,7 +17131,12 @@ span.tag > * {
 }
 .tag .icon,
 .tag .label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 6.72px 10.08px;
+  line-height: 0;
+  height: 29.44px;
   border-radius: 5px;
 }
 .tag.tag-lg {
@@ -17142,7 +17147,12 @@ span.tag > * {
 }
 .tag.tag-lg .icon,
 .tag.tag-lg .label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 8.4px 12.6px;
+  line-height: 0;
+  height: 36.8px;
   border-radius: 9px;
 }
 .tag.tag-sm {
@@ -17153,7 +17163,12 @@ span.tag > * {
 }
 .tag.tag-sm .icon,
 .tag.tag-sm .label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 5.46px 8.19px;
+  line-height: 0;
+  height: 23.92px;
   border-radius: 3px;
 }
 .tag.tag-xs {
@@ -17164,7 +17179,12 @@ span.tag > * {
 }
 .tag.tag-xs .icon,
 .tag.tag-xs .label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 2.73px 4.095px;
+  line-height: 0;
+  height: 18.46px;
   border-radius: 3px;
 }
 .tag:not(a).tag:not(button) {
@@ -17188,7 +17208,6 @@ span.tag > * {
 .tag .label {
   font-size: 80%;
   margin-right: 0.5em;
-  padding: 0.5em;
   align-self: center;
 }
 .tag .block-children {
@@ -17243,6 +17262,8 @@ span.tag > * {
 }
 .tag .icon i {
   align-self: center;
+  line-height: 0;
+  height: auto;
 }
 .tag:hover {
   background-color: #64666A;

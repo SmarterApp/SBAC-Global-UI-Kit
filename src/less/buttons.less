@@ -219,7 +219,12 @@
   border-radius: @border-radius;
   .icon,
   .label {
-    padding: @padding-vertical (@padding-horizontal * 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: @padding-vertical @padding-horizontal * 0.75;
+    line-height: 0;
+    height: (@font-size + (@padding-vertical * 2));
     border-radius: @border-radius;
   }
 }
@@ -261,7 +266,6 @@
   .label {
     font-size: 80%;
     margin-right: 0.5em;
-    padding: 0.5em;
     align-self: center;
   }
   .block-children {
@@ -278,6 +282,8 @@
     align-self: flex-start;
     i {
       align-self: center;
+      line-height: 0;
+      height: auto;
     }
   }
   &:hover {
