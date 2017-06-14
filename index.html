@@ -219,7 +219,7 @@
                     <div class="panel-body orange">Grade 3 <span class="label">.orange</span><span class="hex right">#D66E1E</span></div>
                     <div class="panel-body green">Grade 4 <span class="label">.green</span><span class="hex right">#6FAE29</span></div>
                     <div class="panel-body teal">Grade 5 <span class="label">.teal</span><span class="hex right">#0090B7</span></div>
-                    <div class="panel-body blue-dark">Grade 6 <span class="label">.blue-dark</span><span class="hex right">#014F9A</span></div>
+                    <div class="panel-body blue">Grade 6 <span class="label">.blue</span><span class="hex right">#014F9A</span></div>
                     <div class="panel-body maroon">Grade 7 <span class="label">.maroon</span><span class="hex right">#5B1931</span></div>
                     <div class="panel-body green-dark">Grade 8 <span class="label">.green-dark</span><span class="hex right">#406934</span></div>
                     <div class="panel-body blue-dark">High School <span class="label">.blue-dark</span><span class="hex right">#104564</span></div>
@@ -1752,125 +1752,213 @@
                 <h1 id="rdw">RDW Components</h1>
               </div>
 
-              <h3>Score Bar</h3>
-              <div class="bar-scale square">
-                <div class="bar-container">
-                  <div class="bar red-dark" data-width="42">
-                    <span class="bar-data">42%</span>
-                    <span class="bar-label">Level 1</span>
-                  </div>
-                  <div class="bar gray-darker" data-width="12">
-                    <span class="bar-data">12%</span>
-                    <span class="bar-label">Level 2</span>
-                  </div>
-                  <div class="bar green-dark" data-width="17">
-                    <span class="bar-data">17%</span>
-                    <span class="bar-label">Level 3</span>
-                  </div>
-                  <div class="bar blue" data-width="29">
-                    <span class="bar-data">29%</span>
-                    <span class="bar-label">Level 4</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="bar-scale rounded blend-middle">
-                <p class="scale-title">Average Scale Score</p>
-                <p class="scale-description">6 Students</p>
-                <div class="bar-container">
-                  <span class="score" data-left="10" data-width="15">2335</span>
-                  <span class="error-band-mask">
-                      <span class="error-band" data-left="10" data-width="15">
-                        <span class="error-band-block"></span>
-                  </span>
-                  </span>
-                  <div class="bar green left-side" data-width="28">
-                    <span class="bar-data">28%</span>
-                    <span class="bar-label">Below Standard</span>
-                  </div>
-                  <div class="bar middle green blue-dark" data-width="55">
-                    <span class="bar-data">55%</span>
-                    <span class="bar-label">Near Standard</span>
-                  </div>
-                  <div class="bar blue-dark right-side" data-width="17">
-                    <span class="bar-data">17%</span>
-                    <span class="bar-label">Above Standard</span>
+              <!-- Square Scale -->
+              <h3>Scale Score</h3>
+              <div class="bs-component">
+                <div class="bar-scale square">
+                  <div class="bar-container">
+                    <div class="bar red-dark" data-width="42">
+                      <span class="bar-data">42%</span>
+                      <span class="bar-label">Level 1</span>
+                    </div>
+                    <div class="bar gray-darker" data-width="12">
+                      <span class="bar-data">12%</span>
+                      <span class="bar-label">Level 2</span>
+                    </div>
+                    <div class="bar green-dark" data-width="17">
+                      <span class="bar-data">17%</span>
+                      <span class="bar-label">Level 3</span>
+                    </div>
+                    <div class="bar blue" data-width="29">
+                      <span class="bar-data">29%</span>
+                      <span class="bar-label">Level 4</span>
+                    </div>
                   </div>
                 </div>
               </div>
-
-              <div class="bar-scale rounded blend-middle">
-                <p class="scale-title">Average Scale Score</p>
-                <p class="scale-description">6 Students</p>
-                <div class="bar-container">
-                  <span class="score" data-left="60" data-width="15">2335</span>
-                  <span class="error-band-mask">
-                      <span class="error-band" data-left="60" data-width="15">
-                        <span class="error-band-block"></span>
-                  </span>
-                  </span>
-                  <div class="bar green left-side" data-width="28">
-                    <span class="bar-data">28%</span>
-                    <span class="bar-label">Below Standard</span>
-                  </div>
-                  <div class="bar middle green blue-dark" data-width="55">
-                    <span class="bar-data">55%</span>
-                    <span class="bar-label">Near Standard</span>
-                  </div>
-                  <div class="bar blue-dark right-side" data-width="17">
-                    <span class="bar-data">17%</span>
-                    <span class="bar-label">Above Standard</span>
+              <!-- Rounded Scale -->
+              <h3>Rounded Scale Score</h3>
+              <div class="bs-component">
+                <div class="bar-scale rounded blend-middle">
+                  <p class="scale-title">Average Scale Score</p>
+                  <p class="scale-description">6 Students</p>
+                  <div class="bar-container">
+                    <span class="score" data-left="10" data-width="15">2335</span>
+                    <span class="error-band-mask">
+                        <span class="error-band" data-left="10" data-width="15">
+                          <span class="error-band-block"></span>
+                    </span>
+                    </span>
+                    <div class="bar green left-side" data-width="28">
+                      <span class="bar-data">28%</span>
+                      <span class="bar-label">Below Standard</span>
+                    </div>
+                    <div class="bar middle green blue-dark" data-width="55">
+                      <span class="bar-data">55%</span>
+                      <span class="bar-label">Near Standard</span>
+                    </div>
+                    <div class="bar blue-dark right-side" data-width="17">
+                      <span class="bar-data">17%</span>
+                      <span class="bar-label">Above Standard</span>
+                    </div>
                   </div>
                 </div>
               </div>
-
-              <table class="table table-center-col-4 table-right-col-6">
-                <thead>
-                  <tr>
-                    <th>Student</th>
-                    <th>Date</th>
-                    <th>Session</th>
-                    <th>Enrolled Grade</th>
-                    <th>Status</th>
-                    <th>Scale Score</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><i class="fa fa-user"></i> <strong>Cleveland, </strong> David</td>
-                    <td><strong>Nov 2, </strong> 2017</td>
-                    <td>ma-06</td>
-                    <td>4</td>
-                    <td><span class="label label-default">Standardized</span></td>
-                    <td>
-                      <div class="bar-scale rounded blend-middle">
-                        <p class="scale-title">Average Scale Score</p>
-                        <p class="scale-description">6 Students</p>
-                        <div class="bar-container">
-                          <span class="score" data-left="10" data-width="15">2335</span>
-                          <span class="error-band-mask">
-                              <span class="error-band" data-left="10" data-width="15">
-                                <span class="error-band-block"></span>
-                          </span>
-                          </span>
-                          <div class="bar green left-side" data-width="28">
-                            <span class="bar-data">28%</span>
-                            <span class="bar-label">Below Standard</span>
-                          </div>
-                          <div class="bar middle green blue-dark" data-width="55">
-                            <span class="bar-data">55%</span>
-                            <span class="bar-label">Near Standard</span>
-                          </div>
-                          <div class="bar blue-dark right-side" data-width="17">
-                            <span class="bar-data">17%</span>
-                            <span class="bar-label">Above Standard</span>
+              <!-- Rounded Scale in a Table Cell -->
+              <h3>Rounded Scale Score in a Table Cell</h3>
+              <div class="bs-component">
+                <table class="table table-center-col-4 table-right-col-6">
+                  <thead>
+                    <tr>
+                      <th>Student</th>
+                      <th>Date</th>
+                      <th>Session</th>
+                      <th>Enrolled Grade</th>
+                      <th>Status</th>
+                      <th>Scale Score</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><i class="fa fa-user"></i> <strong>Cleveland, </strong> David</td>
+                      <td><strong>Nov 2, </strong> 2017</td>
+                      <td>ma-06</td>
+                      <td>4</td>
+                      <td><span class="label label-default">Standardized</span></td>
+                      <td>
+                        <div class="bar-scale rounded blend-middle">
+                          <p class="scale-title">Average Scale Score</p>
+                          <p class="scale-description">6 Students</p>
+                          <div class="bar-container">
+                            <span class="score" data-left="10" data-width="15">2335</span>
+                            <span class="error-band-mask">
+                                <span class="error-band" data-left="10" data-width="15">
+                                  <span class="error-band-block"></span>
+                            </span>
+                            </span>
+                            <div class="bar green left-side" data-width="28">
+                              <span class="bar-data">28%</span>
+                              <span class="bar-label">Below Standard</span>
+                            </div>
+                            <div class="bar middle green blue-dark" data-width="55">
+                              <span class="bar-data">55%</span>
+                              <span class="bar-label">Near Standard</span>
+                            </div>
+                            <div class="bar blue-dark right-side" data-width="17">
+                              <span class="bar-data">17%</span>
+                              <span class="bar-label">Above Standard</span>
+                            </div>
                           </div>
                         </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- Assessment Filter Panels -->
+              <div class="well gray-lighter">
+                <div>
+                  <a href="#" class="btn btn-default btn-sm icon-only pull-right"><i class="fa fa-close"></i><span class="sr-only">Close panel</span></a>
+                  <p>Click an assessment to add or remove it from your list of selections above. note: grayed-out assessment titles do not contain data.</p>
+                </div>
+                <div class="panel-grid">
+                  <div class="panel orange">
+                    <div class="panel-heading"><span class="panel-title">Grade 3</span></div>
+                    <div class="panel-body">
+                      <div class="tag-menu">
+                        <a href="#" class="tag tag-xs orange">Operations &amp; Algebraic Thinking</a>
+                        <a href="#" class="tag tag-xs orange active">Number &amp; Operations - Fractions</a>
+                        <a href="#" class="tag tag-xs orange active">Measurement &amp; Data</a>
+                        <a href="#" class="tag tag-xs orange">Number &amp; Operations in Base 10</a>
+                        <a href="#" class="tag tag-xs orange disabled">Mathematics Performance Task</a>
                       </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                    </div>
+                    <div class="panel-footer"></div>
+                  </div>
+                  <div class="panel green">
+                    <div class="panel-heading"><span class="panel-title">Grade 4</span></div>
+                    <div class="panel-body">
+                      <div class="tag-menu">
+                        <a href="#" class="tag tag-xs green">Operations &amp; Algebraic Thinking</a>
+                        <a href="#" class="tag tag-xs green active">Number &amp; Operations - Fractions</a>
+                        <a href="#" class="tag tag-xs green active">Measurement &amp; Data</a>
+                        <a href="#" class="tag tag-xs green">Number &amp; Operations in Base 10</a>
+                        <a href="#" class="tag tag-xs green">Geometry</a>
+                        <a href="#" class="tag tag-xs green disabled">Mathematics Performance Task</a>
+                      </div>
+                    </div>
+                    <div class="panel-footer"></div>
+                  </div>
+                  <div class="panel teal">
+                    <div class="panel-heading"><span class="panel-title">Grade 5</span></div>
+                    <div class="panel-body">
+                      <div class="tag-menu">
+                        <a href="#" class="tag tag-xs teal">Operations &amp; Algebraic Thinking</a>
+                        <a href="#" class="tag tag-xs teal active">Number &amp; Operations - Fractions</a>
+                        <a href="#" class="tag tag-xs teal active">Measurement &amp; Data</a>
+                        <a href="#" class="tag tag-xs teal disabled">Number &amp; Operations in Base 10</a>
+                        <a href="#" class="tag tag-xs teal disabled">Geometry</a>
+                        <a href="#" class="tag tag-xs teal disabled">Mathematics Performance Task</a>
+                      </div>
+                    </div>
+                    <div class="panel-footer"></div>
+                  </div>
+                  <div class="panel blue">
+                    <div class="panel-heading"><span class="panel-title">Grade 6</span></div>
+                    <div class="panel-body">
+                      <div class="tag-menu">
+                        <a href="#" class="tag tag-xs blue">Ratios &amp; Proportional Relationships</a>
+                        <a href="#" class="tag tag-xs blue">The Number System</a>
+                        <a href="#" class="tag tag-xs blue">Expressions &amp; Equations</a>
+                        <a href="#" class="tag tag-xs blue">Geometry</a>
+                        <a href="#" class="tag tag-xs blue">Statistics &amp; Probability</a>
+                        <a href="#" class="tag tag-xs blue">Mathemeatics Performance Task</a>
+                      </div>
+                    </div>
+                    <div class="panel-footer"></div>
+                  </div>
+                  <div class="panel maroon">
+                    <div class="panel-heading"><span class="panel-title">Grade 7</span></div>
+                    <div class="panel-body">
+                      <div class="tag-menu">
+                        <a href="#" class="tag tag-xs maroon">Ratios &amp; Proportional Relationships</a>
+                        <a href="#" class="tag tag-xs maroon">The Number System</a>
+                        <a href="#" class="tag tag-xs maroon">Expressions &amp; Equations</a>
+                        <a href="#" class="tag tag-xs maroon">Geometry</a>
+                        <a href="#" class="tag tag-xs maroon">Statistics &amp; Probability</a>
+                        <a href="#" class="tag tag-xs maroon">Mathemeatics Performance Task</a>
+                      </div>
+                    </div>
+                    <div class="panel-footer"></div>
+                  </div>
+                  <div class="panel green-dark">
+                    <div class="panel-heading"><span class="panel-title">Grade 8</span></div>
+                    <div class="panel-body">
+                      <div class="tag-menu">
+                        <a href="#" class="tag tag-xs green-dark">Expressions &amp; Equations I</a>
+                        <a href="#" class="tag tag-xs green-dark"><span class="block-children">Expressions &amp; Equations II <small>Probability &amp; Statistics</small></span></a>
+                        <a href="#" class="tag tag-xs green-dark">Functions</a>
+                        <a href="#" class="tag tag-xs green-dark">Geometry</a>
+                        <a href="#" class="tag tag-xs green-dark">Mathemeatics Performance Task</a>
+                      </div>
+                    </div>
+                    <div class="panel-footer"></div>
+                  </div>
+                  <div class="panel blue-dark">
+                    <div class="panel-heading"><span class="panel-title">High School</span></div>
+                    <div class="panel-body">
+                      <div class="tag-menu">
+                        <a href="#" class="tag tag-xs blue-dark"><span class="block-children">Algebra &amp; Functions I <small>Linear Functions, Equations &amp; Inequalities</small></span></a>
+                        <a href="#" class="tag tag-xs blue-dark"><span class="block-children">Algebra &amp; Functions II <small>Quadratic Functions, Equations &amp; Inequalities</small></span></a>
+                        <a href="#" class="tag tag-xs blue-dark">Functions</a>
+                        <a href="#" class="tag tag-xs blue-dark">Geometry</a>
+                        <a href="#" class="tag tag-xs blue-dark">Mathemeatics Performance Task</a>
+                      </div>
+                    </div>
+                    <div class="panel-footer"></div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <!-- Helper Classes -->

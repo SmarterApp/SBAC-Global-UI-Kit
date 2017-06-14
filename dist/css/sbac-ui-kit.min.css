@@ -9884,148 +9884,86 @@ a.blue {
   color: #014F9A;
 }
 div.blue,
-.panel.blue .panel-header,
-.panel.blue .panel-footer,
 .label.blue {
   color: #9ccefe;
   background-color: #014F9A;
 }
 div.blue h1,
-.panel.blue .panel-header h1,
-.panel.blue .panel-footer h1,
 .label.blue h1,
 div.blue .h1,
-.panel.blue .panel-header .h1,
-.panel.blue .panel-footer .h1,
 .label.blue .h1,
 div.blue h2,
-.panel.blue .panel-header h2,
-.panel.blue .panel-footer h2,
 .label.blue h2,
 div.blue .h2,
-.panel.blue .panel-header .h2,
-.panel.blue .panel-footer .h2,
 .label.blue .h2,
 div.blue h3,
-.panel.blue .panel-header h3,
-.panel.blue .panel-footer h3,
 .label.blue h3,
 div.blue .h3,
-.panel.blue .panel-header .h3,
-.panel.blue .panel-footer .h3,
 .label.blue .h3 {
   color: #ffffff;
 }
 div.blue h1 small,
-.panel.blue .panel-header h1 small,
-.panel.blue .panel-footer h1 small,
 .label.blue h1 small,
 div.blue .h1 small,
-.panel.blue .panel-header .h1 small,
-.panel.blue .panel-footer .h1 small,
 .label.blue .h1 small,
 div.blue h2 small,
-.panel.blue .panel-header h2 small,
-.panel.blue .panel-footer h2 small,
 .label.blue h2 small,
 div.blue .h2 small,
-.panel.blue .panel-header .h2 small,
-.panel.blue .panel-footer .h2 small,
 .label.blue .h2 small,
 div.blue h3 small,
-.panel.blue .panel-header h3 small,
-.panel.blue .panel-footer h3 small,
 .label.blue h3 small,
 div.blue .h3 small,
-.panel.blue .panel-header .h3 small,
-.panel.blue .panel-footer .h3 small,
 .label.blue .h3 small {
   color: #e8f3ff;
 }
 div.blue h4,
-.panel.blue .panel-header h4,
-.panel.blue .panel-footer h4,
 .label.blue h4,
 div.blue .h4,
-.panel.blue .panel-header .h4,
-.panel.blue .panel-footer .h4,
 .label.blue .h4,
 div.blue h5,
-.panel.blue .panel-header h5,
-.panel.blue .panel-footer h5,
 .label.blue h5,
 div.blue .h5,
-.panel.blue .panel-header .h5,
-.panel.blue .panel-footer .h5,
 .label.blue .h5,
 div.blue h6,
-.panel.blue .panel-header h6,
-.panel.blue .panel-footer h6,
 .label.blue h6,
 div.blue .h6 p,
-.panel.blue .panel-header .h6 p,
-.panel.blue .panel-footer .h6 p,
 .label.blue .h6 p,
 div.blue span,
-.panel.blue .panel-header span,
-.panel.blue .panel-footer span,
 .label.blue span {
   color: #9ccefe;
 }
 div.blue h4 small,
-.panel.blue .panel-header h4 small,
-.panel.blue .panel-footer h4 small,
 .label.blue h4 small,
 div.blue .h4 small,
-.panel.blue .panel-header .h4 small,
-.panel.blue .panel-footer .h4 small,
 .label.blue .h4 small,
 div.blue h5 small,
-.panel.blue .panel-header h5 small,
-.panel.blue .panel-footer h5 small,
 .label.blue h5 small,
 div.blue .h5 small,
-.panel.blue .panel-header .h5 small,
-.panel.blue .panel-footer .h5 small,
 .label.blue .h5 small,
 div.blue h6 small,
-.panel.blue .panel-header h6 small,
-.panel.blue .panel-footer h6 small,
 .label.blue h6 small,
 div.blue .h6 p small,
-.panel.blue .panel-header .h6 p small,
-.panel.blue .panel-footer .h6 p small,
 .label.blue .h6 p small,
 div.blue span small,
-.panel.blue .panel-header span small,
-.panel.blue .panel-footer span small,
 .label.blue span small {
   color: #69b5fe;
 }
 div.blue .label,
-.panel.blue .panel-header .label,
-.panel.blue .panel-footer .label,
 .label.blue .label {
   font-weight: 400;
   color: #ffffff;
   background-color: #0176e6;
 }
 div.blue.border-only,
-.panel.blue .panel-header.border-only,
-.panel.blue .panel-footer.border-only,
 .label.blue.border-only {
   color: #014F9A;
   border-color: #014F9A;
 }
 div.blue .bar-data,
-.panel.blue .panel-header .bar-data,
-.panel.blue .panel-footer .bar-data,
 .label.blue .bar-data {
   color: #014F9A;
 }
 div.blue .bar-data:before,
-.panel.blue .panel-header .bar-data:before,
-.panel.blue .panel-footer .bar-data:before,
 .label.blue .bar-data:before {
   border-color: #014F9A;
 }
@@ -10044,25 +9982,45 @@ div.blue .bar-data:before,
 .tag.blue:hover .label {
   background-color: #001b35;
 }
-.tag.blue.reverse.tag.blue {
+.tag.blue.reverse.tag.blue,
+.tag.blue.active.tag.blue {
   color: #ffffff;
   background-color: #014F9A;
   border-color: #014F9A;
 }
-.tag.blue.reverse.tag.blue .label {
+.tag.blue.reverse.tag.blue .label,
+.tag.blue.active.tag.blue .label {
   color: #ffffff;
   background-color: #001b35;
 }
-.tag.blue.reverse.tag.blue span:not(.icon):not(.label) {
+.tag.blue.reverse.tag.blue span:not(.icon):not(.label),
+.tag.blue.active.tag.blue span:not(.icon):not(.label) {
   color: #ffffff;
 }
-.tag.blue.reverse.tag.blue:hover {
+.tag.blue.reverse.tag.blue:hover,
+.tag.blue.active.tag.blue:hover {
   color: #ffffff;
-  background-color: #001b35;
-  border-color: #001b35;
+  background-color: #014281;
+  border-color: #013567;
 }
-.tag.blue.reverse.tag.blue:hover .label {
-  background-color: #000102;
+.tag.blue.reverse.tag.blue:hover .label,
+.tag.blue.active.tag.blue:hover .label {
+  background-color: #013567;
+}
+.panel.blue {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.blue .panel-heading {
+  background-color: #014F9A;
+}
+.panel.blue .panel-heading * {
+  color: #ffffff;
+}
+.panel.blue .panel-body,
+.panel.blue .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.blue {
   color: #ffffff;
@@ -10199,148 +10157,86 @@ a.blue-dark {
   color: #104564;
 }
 div.blue-dark,
-.panel.blue-dark .panel-header,
-.panel.blue-dark .panel-footer,
 .label.blue-dark {
   color: #87c7ec;
   background-color: #104564;
 }
 div.blue-dark h1,
-.panel.blue-dark .panel-header h1,
-.panel.blue-dark .panel-footer h1,
 .label.blue-dark h1,
 div.blue-dark .h1,
-.panel.blue-dark .panel-header .h1,
-.panel.blue-dark .panel-footer .h1,
 .label.blue-dark .h1,
 div.blue-dark h2,
-.panel.blue-dark .panel-header h2,
-.panel.blue-dark .panel-footer h2,
 .label.blue-dark h2,
 div.blue-dark .h2,
-.panel.blue-dark .panel-header .h2,
-.panel.blue-dark .panel-footer .h2,
 .label.blue-dark .h2,
 div.blue-dark h3,
-.panel.blue-dark .panel-header h3,
-.panel.blue-dark .panel-footer h3,
 .label.blue-dark h3,
 div.blue-dark .h3,
-.panel.blue-dark .panel-header .h3,
-.panel.blue-dark .panel-footer .h3,
 .label.blue-dark .h3 {
   color: #f5fafd;
 }
 div.blue-dark h1 small,
-.panel.blue-dark .panel-header h1 small,
-.panel.blue-dark .panel-footer h1 small,
 .label.blue-dark h1 small,
 div.blue-dark .h1 small,
-.panel.blue-dark .panel-header .h1 small,
-.panel.blue-dark .panel-footer .h1 small,
 .label.blue-dark .h1 small,
 div.blue-dark h2 small,
-.panel.blue-dark .panel-header h2 small,
-.panel.blue-dark .panel-footer h2 small,
 .label.blue-dark h2 small,
 div.blue-dark .h2 small,
-.panel.blue-dark .panel-header .h2 small,
-.panel.blue-dark .panel-footer .h2 small,
 .label.blue-dark .h2 small,
 div.blue-dark h3 small,
-.panel.blue-dark .panel-header h3 small,
-.panel.blue-dark .panel-footer h3 small,
 .label.blue-dark h3 small,
 div.blue-dark .h3 small,
-.panel.blue-dark .panel-header .h3 small,
-.panel.blue-dark .panel-footer .h3 small,
 .label.blue-dark .h3 small {
   color: #c9e6f6;
 }
 div.blue-dark h4,
-.panel.blue-dark .panel-header h4,
-.panel.blue-dark .panel-footer h4,
 .label.blue-dark h4,
 div.blue-dark .h4,
-.panel.blue-dark .panel-header .h4,
-.panel.blue-dark .panel-footer .h4,
 .label.blue-dark .h4,
 div.blue-dark h5,
-.panel.blue-dark .panel-header h5,
-.panel.blue-dark .panel-footer h5,
 .label.blue-dark h5,
 div.blue-dark .h5,
-.panel.blue-dark .panel-header .h5,
-.panel.blue-dark .panel-footer .h5,
 .label.blue-dark .h5,
 div.blue-dark h6,
-.panel.blue-dark .panel-header h6,
-.panel.blue-dark .panel-footer h6,
 .label.blue-dark h6,
 div.blue-dark .h6 p,
-.panel.blue-dark .panel-header .h6 p,
-.panel.blue-dark .panel-footer .h6 p,
 .label.blue-dark .h6 p,
 div.blue-dark span,
-.panel.blue-dark .panel-header span,
-.panel.blue-dark .panel-footer span,
 .label.blue-dark span {
   color: #87c7ec;
 }
 div.blue-dark h4 small,
-.panel.blue-dark .panel-header h4 small,
-.panel.blue-dark .panel-footer h4 small,
 .label.blue-dark h4 small,
 div.blue-dark .h4 small,
-.panel.blue-dark .panel-header .h4 small,
-.panel.blue-dark .panel-footer .h4 small,
 .label.blue-dark .h4 small,
 div.blue-dark h5 small,
-.panel.blue-dark .panel-header h5 small,
-.panel.blue-dark .panel-footer h5 small,
 .label.blue-dark h5 small,
 div.blue-dark .h5 small,
-.panel.blue-dark .panel-header .h5 small,
-.panel.blue-dark .panel-footer .h5 small,
 .label.blue-dark .h5 small,
 div.blue-dark h6 small,
-.panel.blue-dark .panel-header h6 small,
-.panel.blue-dark .panel-footer h6 small,
 .label.blue-dark h6 small,
 div.blue-dark .h6 p small,
-.panel.blue-dark .panel-header .h6 p small,
-.panel.blue-dark .panel-footer .h6 p small,
 .label.blue-dark .h6 p small,
 div.blue-dark span small,
-.panel.blue-dark .panel-header span small,
-.panel.blue-dark .panel-footer span small,
 .label.blue-dark span small {
   color: #5bb2e5;
 }
 div.blue-dark .label,
-.panel.blue-dark .panel-header .label,
-.panel.blue-dark .panel-footer .label,
 .label.blue-dark .label {
   font-weight: 400;
   color: #f5fafd;
   background-color: #1b73a6;
 }
 div.blue-dark.border-only,
-.panel.blue-dark .panel-header.border-only,
-.panel.blue-dark .panel-footer.border-only,
 .label.blue-dark.border-only {
   color: #104564;
   border-color: #104564;
 }
 div.blue-dark .bar-data,
-.panel.blue-dark .panel-header .bar-data,
-.panel.blue-dark .panel-footer .bar-data,
 .label.blue-dark .bar-data {
   color: #104564;
 }
 div.blue-dark .bar-data:before,
-.panel.blue-dark .panel-header .bar-data:before,
-.panel.blue-dark .panel-footer .bar-data:before,
 .label.blue-dark .bar-data:before {
   border-color: #104564;
 }
@@ -10359,25 +10255,45 @@ div.blue-dark .bar-data:before,
 .tag.blue-dark:hover .label {
   background-color: #02080c;
 }
-.tag.blue-dark.reverse.tag.blue-dark {
+.tag.blue-dark.reverse.tag.blue-dark,
+.tag.blue-dark.active.tag.blue-dark {
   color: #f5fafd;
   background-color: #104564;
   border-color: #104564;
 }
-.tag.blue-dark.reverse.tag.blue-dark .label {
+.tag.blue-dark.reverse.tag.blue-dark .label,
+.tag.blue-dark.active.tag.blue-dark .label {
   color: #f5fafd;
   background-color: #02080c;
 }
-.tag.blue-dark.reverse.tag.blue-dark span:not(.icon):not(.label) {
+.tag.blue-dark.reverse.tag.blue-dark span:not(.icon):not(.label),
+.tag.blue-dark.active.tag.blue-dark span:not(.icon):not(.label) {
   color: #f5fafd;
 }
-.tag.blue-dark.reverse.tag.blue-dark:hover {
-  color: #f5fafd;
-  background-color: #02080c;
-  border-color: #02080c;
+.tag.blue-dark.reverse.tag.blue-dark:hover,
+.tag.blue-dark.active.tag.blue-dark:hover {
+  color: #ffffff;
+  background-color: #0c364e;
+  border-color: #092738;
 }
-.tag.blue-dark.reverse.tag.blue-dark:hover .label {
-  background-color: #000000;
+.tag.blue-dark.reverse.tag.blue-dark:hover .label,
+.tag.blue-dark.active.tag.blue-dark:hover .label {
+  background-color: #092738;
+}
+.panel.blue-dark {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.blue-dark .panel-heading {
+  background-color: #104564;
+}
+.panel.blue-dark .panel-heading * {
+  color: #ffffff;
+}
+.panel.blue-dark .panel-body,
+.panel.blue-dark .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.blue-dark {
   color: #f5fafd;
@@ -10514,148 +10430,86 @@ a.teal {
   color: #0090B7;
 }
 div.teal,
-.panel.teal .panel-header,
-.panel.teal .panel-footer,
 .label.teal {
   color: #b7f0ff;
   background-color: #0090B7;
 }
 div.teal h1,
-.panel.teal .panel-header h1,
-.panel.teal .panel-footer h1,
 .label.teal h1,
 div.teal .h1,
-.panel.teal .panel-header .h1,
-.panel.teal .panel-footer .h1,
 .label.teal .h1,
 div.teal h2,
-.panel.teal .panel-header h2,
-.panel.teal .panel-footer h2,
 .label.teal h2,
 div.teal .h2,
-.panel.teal .panel-header .h2,
-.panel.teal .panel-footer .h2,
 .label.teal .h2,
 div.teal h3,
-.panel.teal .panel-header h3,
-.panel.teal .panel-footer h3,
 .label.teal h3,
 div.teal .h3,
-.panel.teal .panel-header .h3,
-.panel.teal .panel-footer .h3,
 .label.teal .h3 {
   color: #ffffff;
 }
 div.teal h1 small,
-.panel.teal .panel-header h1 small,
-.panel.teal .panel-footer h1 small,
 .label.teal h1 small,
 div.teal .h1 small,
-.panel.teal .panel-header .h1 small,
-.panel.teal .panel-footer .h1 small,
 .label.teal .h1 small,
 div.teal h2 small,
-.panel.teal .panel-header h2 small,
-.panel.teal .panel-footer h2 small,
 .label.teal h2 small,
 div.teal .h2 small,
-.panel.teal .panel-header .h2 small,
-.panel.teal .panel-footer .h2 small,
 .label.teal .h2 small,
 div.teal h3 small,
-.panel.teal .panel-header h3 small,
-.panel.teal .panel-footer h3 small,
 .label.teal h3 small,
 div.teal .h3 small,
-.panel.teal .panel-header .h3 small,
-.panel.teal .panel-footer .h3 small,
 .label.teal .h3 small {
   color: #ffffff;
 }
 div.teal h4,
-.panel.teal .panel-header h4,
-.panel.teal .panel-footer h4,
 .label.teal h4,
 div.teal .h4,
-.panel.teal .panel-header .h4,
-.panel.teal .panel-footer .h4,
 .label.teal .h4,
 div.teal h5,
-.panel.teal .panel-header h5,
-.panel.teal .panel-footer h5,
 .label.teal h5,
 div.teal .h5,
-.panel.teal .panel-header .h5,
-.panel.teal .panel-footer .h5,
 .label.teal .h5,
 div.teal h6,
-.panel.teal .panel-header h6,
-.panel.teal .panel-footer h6,
 .label.teal h6,
 div.teal .h6 p,
-.panel.teal .panel-header .h6 p,
-.panel.teal .panel-footer .h6 p,
 .label.teal .h6 p,
 div.teal span,
-.panel.teal .panel-header span,
-.panel.teal .panel-footer span,
 .label.teal span {
   color: #b7f0ff;
 }
 div.teal h4 small,
-.panel.teal .panel-header h4 small,
-.panel.teal .panel-footer h4 small,
 .label.teal h4 small,
 div.teal .h4 small,
-.panel.teal .panel-header .h4 small,
-.panel.teal .panel-footer .h4 small,
 .label.teal .h4 small,
 div.teal h5 small,
-.panel.teal .panel-header h5 small,
-.panel.teal .panel-footer h5 small,
 .label.teal h5 small,
 div.teal .h5 small,
-.panel.teal .panel-header .h5 small,
-.panel.teal .panel-footer .h5 small,
 .label.teal .h5 small,
 div.teal h6 small,
-.panel.teal .panel-header h6 small,
-.panel.teal .panel-footer h6 small,
 .label.teal h6 small,
 div.teal .h6 p small,
-.panel.teal .panel-header .h6 p small,
-.panel.teal .panel-footer .h6 p small,
 .label.teal .h6 p small,
 div.teal span small,
-.panel.teal .panel-header span small,
-.panel.teal .panel-footer span small,
 .label.teal span small {
   color: #84e5ff;
 }
 div.teal .label,
-.panel.teal .panel-header .label,
-.panel.teal .panel-footer .label,
 .label.teal .label {
   font-weight: 400;
   color: #ffffff;
   background-color: #04caff;
 }
 div.teal.border-only,
-.panel.teal .panel-header.border-only,
-.panel.teal .panel-footer.border-only,
 .label.teal.border-only {
   color: #0090B7;
   border-color: #0090B7;
 }
 div.teal .bar-data,
-.panel.teal .panel-header .bar-data,
-.panel.teal .panel-footer .bar-data,
 .label.teal .bar-data {
   color: #0090B7;
 }
 div.teal .bar-data:before,
-.panel.teal .panel-header .bar-data:before,
-.panel.teal .panel-footer .bar-data:before,
 .label.teal .bar-data:before {
   border-color: #0090B7;
 }
@@ -10674,25 +10528,45 @@ div.teal .bar-data:before,
 .tag.teal:hover .label {
   background-color: #004051;
 }
-.tag.teal.reverse.tag.teal {
+.tag.teal.reverse.tag.teal,
+.tag.teal.active.tag.teal {
   color: #ffffff;
   background-color: #0090B7;
   border-color: #0090B7;
 }
-.tag.teal.reverse.tag.teal .label {
+.tag.teal.reverse.tag.teal .label,
+.tag.teal.active.tag.teal .label {
   color: #ffffff;
   background-color: #004051;
 }
-.tag.teal.reverse.tag.teal span:not(.icon):not(.label) {
+.tag.teal.reverse.tag.teal span:not(.icon):not(.label),
+.tag.teal.active.tag.teal span:not(.icon):not(.label) {
   color: #ffffff;
 }
-.tag.teal.reverse.tag.teal:hover {
+.tag.teal.reverse.tag.teal:hover,
+.tag.teal.active.tag.teal:hover {
   color: #ffffff;
-  background-color: #004051;
-  border-color: #004051;
+  background-color: #007c9e;
+  border-color: #006884;
 }
-.tag.teal.reverse.tag.teal:hover .label {
-  background-color: #00181e;
+.tag.teal.reverse.tag.teal:hover .label,
+.tag.teal.active.tag.teal:hover .label {
+  background-color: #006884;
+}
+.panel.teal {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.teal .panel-heading {
+  background-color: #0090B7;
+}
+.panel.teal .panel-heading * {
+  color: #ffffff;
+}
+.panel.teal .panel-body,
+.panel.teal .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.teal {
   color: #ffffff;
@@ -10829,148 +10703,86 @@ a.aqua {
   color: #3696E6;
 }
 div.aqua,
-.panel.aqua .panel-header,
-.panel.aqua .panel-footer,
 .label.aqua {
   color: #ffffff;
   background-color: #3696E6;
 }
 div.aqua h1,
-.panel.aqua .panel-header h1,
-.panel.aqua .panel-footer h1,
 .label.aqua h1,
 div.aqua .h1,
-.panel.aqua .panel-header .h1,
-.panel.aqua .panel-footer .h1,
 .label.aqua .h1,
 div.aqua h2,
-.panel.aqua .panel-header h2,
-.panel.aqua .panel-footer h2,
 .label.aqua h2,
 div.aqua .h2,
-.panel.aqua .panel-header .h2,
-.panel.aqua .panel-footer .h2,
 .label.aqua .h2,
 div.aqua h3,
-.panel.aqua .panel-header h3,
-.panel.aqua .panel-footer h3,
 .label.aqua h3,
 div.aqua .h3,
-.panel.aqua .panel-header .h3,
-.panel.aqua .panel-footer .h3,
 .label.aqua .h3 {
   color: #ffffff;
 }
 div.aqua h1 small,
-.panel.aqua .panel-header h1 small,
-.panel.aqua .panel-footer h1 small,
 .label.aqua h1 small,
 div.aqua .h1 small,
-.panel.aqua .panel-header .h1 small,
-.panel.aqua .panel-footer .h1 small,
 .label.aqua .h1 small,
 div.aqua h2 small,
-.panel.aqua .panel-header h2 small,
-.panel.aqua .panel-footer h2 small,
 .label.aqua h2 small,
 div.aqua .h2 small,
-.panel.aqua .panel-header .h2 small,
-.panel.aqua .panel-footer .h2 small,
 .label.aqua .h2 small,
 div.aqua h3 small,
-.panel.aqua .panel-header h3 small,
-.panel.aqua .panel-footer h3 small,
 .label.aqua h3 small,
 div.aqua .h3 small,
-.panel.aqua .panel-header .h3 small,
-.panel.aqua .panel-footer .h3 small,
 .label.aqua .h3 small {
   color: #ffffff;
 }
 div.aqua h4,
-.panel.aqua .panel-header h4,
-.panel.aqua .panel-footer h4,
 .label.aqua h4,
 div.aqua .h4,
-.panel.aqua .panel-header .h4,
-.panel.aqua .panel-footer .h4,
 .label.aqua .h4,
 div.aqua h5,
-.panel.aqua .panel-header h5,
-.panel.aqua .panel-footer h5,
 .label.aqua h5,
 div.aqua .h5,
-.panel.aqua .panel-header .h5,
-.panel.aqua .panel-footer .h5,
 .label.aqua .h5,
 div.aqua h6,
-.panel.aqua .panel-header h6,
-.panel.aqua .panel-footer h6,
 .label.aqua h6,
 div.aqua .h6 p,
-.panel.aqua .panel-header .h6 p,
-.panel.aqua .panel-footer .h6 p,
 .label.aqua .h6 p,
 div.aqua span,
-.panel.aqua .panel-header span,
-.panel.aqua .panel-footer span,
 .label.aqua span {
   color: #ffffff;
 }
 div.aqua h4 small,
-.panel.aqua .panel-header h4 small,
-.panel.aqua .panel-footer h4 small,
 .label.aqua h4 small,
 div.aqua .h4 small,
-.panel.aqua .panel-header .h4 small,
-.panel.aqua .panel-footer .h4 small,
 .label.aqua .h4 small,
 div.aqua h5 small,
-.panel.aqua .panel-header h5 small,
-.panel.aqua .panel-footer h5 small,
 .label.aqua h5 small,
 div.aqua .h5 small,
-.panel.aqua .panel-header .h5 small,
-.panel.aqua .panel-footer .h5 small,
 .label.aqua .h5 small,
 div.aqua h6 small,
-.panel.aqua .panel-header h6 small,
-.panel.aqua .panel-footer h6 small,
 .label.aqua h6 small,
 div.aqua .h6 p small,
-.panel.aqua .panel-header .h6 p small,
-.panel.aqua .panel-footer .h6 p small,
 .label.aqua .h6 p small,
 div.aqua span small,
-.panel.aqua .panel-header span small,
-.panel.aqua .panel-footer span small,
 .label.aqua span small {
   color: #ebf5fd;
 }
 div.aqua .label,
-.panel.aqua .panel-header .label,
-.panel.aqua .panel-footer .label,
 .label.aqua .label {
   font-weight: 400;
   color: #ffffff;
   background-color: #7abaee;
 }
 div.aqua.border-only,
-.panel.aqua .panel-header.border-only,
-.panel.aqua .panel-footer.border-only,
 .label.aqua.border-only {
   color: #3696E6;
   border-color: #3696E6;
 }
 div.aqua .bar-data,
-.panel.aqua .panel-header .bar-data,
-.panel.aqua .panel-footer .bar-data,
 .label.aqua .bar-data {
   color: #3696E6;
 }
 div.aqua .bar-data:before,
-.panel.aqua .panel-header .bar-data:before,
-.panel.aqua .panel-footer .bar-data:before,
 .label.aqua .bar-data:before {
   border-color: #3696E6;
 }
@@ -10989,25 +10801,45 @@ div.aqua .bar-data:before,
 .tag.aqua:hover .label {
   background-color: #1461a2;
 }
-.tag.aqua.reverse.tag.aqua {
+.tag.aqua.reverse.tag.aqua,
+.tag.aqua.active.tag.aqua {
   color: #ffffff;
   background-color: #3696E6;
   border-color: #3696E6;
 }
-.tag.aqua.reverse.tag.aqua .label {
+.tag.aqua.reverse.tag.aqua .label,
+.tag.aqua.active.tag.aqua .label {
   color: #ffffff;
   background-color: #1461a2;
 }
-.tag.aqua.reverse.tag.aqua span:not(.icon):not(.label) {
+.tag.aqua.reverse.tag.aqua span:not(.icon):not(.label),
+.tag.aqua.active.tag.aqua span:not(.icon):not(.label) {
   color: #ffffff;
 }
-.tag.aqua.reverse.tag.aqua:hover {
+.tag.aqua.reverse.tag.aqua:hover,
+.tag.aqua.active.tag.aqua:hover {
   color: #ffffff;
-  background-color: #1461a2;
-  border-color: #1461a2;
+  background-color: #1f8ae3;
+  border-color: #1a7dcf;
 }
-.tag.aqua.reverse.tag.aqua:hover .label {
-  background-color: #0e4675;
+.tag.aqua.reverse.tag.aqua:hover .label,
+.tag.aqua.active.tag.aqua:hover .label {
+  background-color: #1a7dcf;
+}
+.panel.aqua {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.aqua .panel-heading {
+  background-color: #3696E6;
+}
+.panel.aqua .panel-heading * {
+  color: #ffffff;
+}
+.panel.aqua .panel-body,
+.panel.aqua .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.aqua {
   color: #ffffff;
@@ -11144,148 +10976,86 @@ a.green {
   color: #6FAE29;
 }
 div.green,
-.panel.green .panel-header,
-.panel.green .panel-footer,
 .label.green {
   color: #ecf7df;
   background-color: #6FAE29;
 }
 div.green h1,
-.panel.green .panel-header h1,
-.panel.green .panel-footer h1,
 .label.green h1,
 div.green .h1,
-.panel.green .panel-header .h1,
-.panel.green .panel-footer .h1,
 .label.green .h1,
 div.green h2,
-.panel.green .panel-header h2,
-.panel.green .panel-footer h2,
 .label.green h2,
 div.green .h2,
-.panel.green .panel-header .h2,
-.panel.green .panel-footer .h2,
 .label.green .h2,
 div.green h3,
-.panel.green .panel-header h3,
-.panel.green .panel-footer h3,
 .label.green h3,
 div.green .h3,
-.panel.green .panel-header .h3,
-.panel.green .panel-footer .h3,
 .label.green .h3 {
   color: #ffffff;
 }
 div.green h1 small,
-.panel.green .panel-header h1 small,
-.panel.green .panel-footer h1 small,
 .label.green h1 small,
 div.green .h1 small,
-.panel.green .panel-header .h1 small,
-.panel.green .panel-footer .h1 small,
 .label.green .h1 small,
 div.green h2 small,
-.panel.green .panel-header h2 small,
-.panel.green .panel-footer h2 small,
 .label.green h2 small,
 div.green .h2 small,
-.panel.green .panel-header .h2 small,
-.panel.green .panel-footer .h2 small,
 .label.green .h2 small,
 div.green h3 small,
-.panel.green .panel-header h3 small,
-.panel.green .panel-footer h3 small,
 .label.green h3 small,
 div.green .h3 small,
-.panel.green .panel-header .h3 small,
-.panel.green .panel-footer .h3 small,
 .label.green .h3 small {
   color: #ffffff;
 }
 div.green h4,
-.panel.green .panel-header h4,
-.panel.green .panel-footer h4,
 .label.green h4,
 div.green .h4,
-.panel.green .panel-header .h4,
-.panel.green .panel-footer .h4,
 .label.green .h4,
 div.green h5,
-.panel.green .panel-header h5,
-.panel.green .panel-footer h5,
 .label.green h5,
 div.green .h5,
-.panel.green .panel-header .h5,
-.panel.green .panel-footer .h5,
 .label.green .h5,
 div.green h6,
-.panel.green .panel-header h6,
-.panel.green .panel-footer h6,
 .label.green h6,
 div.green .h6 p,
-.panel.green .panel-header .h6 p,
-.panel.green .panel-footer .h6 p,
 .label.green .h6 p,
 div.green span,
-.panel.green .panel-header span,
-.panel.green .panel-footer span,
 .label.green span {
   color: #ecf7df;
 }
 div.green h4 small,
-.panel.green .panel-header h4 small,
-.panel.green .panel-footer h4 small,
 .label.green h4 small,
 div.green .h4 small,
-.panel.green .panel-header .h4 small,
-.panel.green .panel-footer .h4 small,
 .label.green .h4 small,
 div.green h5 small,
-.panel.green .panel-header h5 small,
-.panel.green .panel-footer h5 small,
 .label.green h5 small,
 div.green .h5 small,
-.panel.green .panel-header .h5 small,
-.panel.green .panel-footer .h5 small,
 .label.green .h5 small,
 div.green h6 small,
-.panel.green .panel-header h6 small,
-.panel.green .panel-footer h6 small,
 .label.green h6 small,
 div.green .h6 p small,
-.panel.green .panel-header .h6 p small,
-.panel.green .panel-footer .h6 p small,
 .label.green .h6 p small,
 div.green span small,
-.panel.green .panel-header span small,
-.panel.green .panel-footer span small,
 .label.green span small {
   color: #d3eeb5;
 }
 div.green .label,
-.panel.green .panel-header .label,
-.panel.green .panel-footer .label,
 .label.green .label {
   font-weight: 400;
   color: #ffffff;
   background-color: #95d54e;
 }
 div.green.border-only,
-.panel.green .panel-header.border-only,
-.panel.green .panel-footer.border-only,
 .label.green.border-only {
   color: #6FAE29;
   border-color: #6FAE29;
 }
 div.green .bar-data,
-.panel.green .panel-header .bar-data,
-.panel.green .panel-footer .bar-data,
 .label.green .bar-data {
   color: #6FAE29;
 }
 div.green .bar-data:before,
-.panel.green .panel-header .bar-data:before,
-.panel.green .panel-footer .bar-data:before,
 .label.green .bar-data:before {
   border-color: #6FAE29;
 }
@@ -11304,25 +11074,45 @@ div.green .bar-data:before,
 .tag.green:hover .label {
   background-color: #3a5b16;
 }
-.tag.green.reverse.tag.green {
+.tag.green.reverse.tag.green,
+.tag.green.active.tag.green {
   color: #ffffff;
   background-color: #6FAE29;
   border-color: #6FAE29;
 }
-.tag.green.reverse.tag.green .label {
+.tag.green.reverse.tag.green .label,
+.tag.green.active.tag.green .label {
   color: #ffffff;
   background-color: #3a5b16;
 }
-.tag.green.reverse.tag.green span:not(.icon):not(.label) {
+.tag.green.reverse.tag.green span:not(.icon):not(.label),
+.tag.green.active.tag.green span:not(.icon):not(.label) {
   color: #ffffff;
 }
-.tag.green.reverse.tag.green:hover {
+.tag.green.reverse.tag.green:hover,
+.tag.green.active.tag.green:hover {
   color: #ffffff;
-  background-color: #3a5b16;
-  border-color: #3a5b16;
+  background-color: #629924;
+  border-color: #55851f;
 }
-.tag.green.reverse.tag.green:hover .label {
-  background-color: #20320c;
+.tag.green.reverse.tag.green:hover .label,
+.tag.green.active.tag.green:hover .label {
+  background-color: #55851f;
+}
+.panel.green {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.green .panel-heading {
+  background-color: #6FAE29;
+}
+.panel.green .panel-heading * {
+  color: #ffffff;
+}
+.panel.green .panel-body,
+.panel.green .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.green {
   color: #ffffff;
@@ -11459,148 +11249,86 @@ a.green-dark {
   color: #406934;
 }
 div.green-dark,
-.panel.green-dark .panel-header,
-.panel.green-dark .panel-footer,
 .label.green-dark {
   color: #c5dfbd;
   background-color: #406934;
 }
 div.green-dark h1,
-.panel.green-dark .panel-header h1,
-.panel.green-dark .panel-footer h1,
 .label.green-dark h1,
 div.green-dark .h1,
-.panel.green-dark .panel-header .h1,
-.panel.green-dark .panel-footer .h1,
 .label.green-dark .h1,
 div.green-dark h2,
-.panel.green-dark .panel-header h2,
-.panel.green-dark .panel-footer h2,
 .label.green-dark h2,
 div.green-dark .h2,
-.panel.green-dark .panel-header .h2,
-.panel.green-dark .panel-footer .h2,
 .label.green-dark .h2,
 div.green-dark h3,
-.panel.green-dark .panel-header h3,
-.panel.green-dark .panel-footer h3,
 .label.green-dark h3,
 div.green-dark .h3,
-.panel.green-dark .panel-header .h3,
-.panel.green-dark .panel-footer .h3,
 .label.green-dark .h3 {
   color: #ffffff;
 }
 div.green-dark h1 small,
-.panel.green-dark .panel-header h1 small,
-.panel.green-dark .panel-footer h1 small,
 .label.green-dark h1 small,
 div.green-dark .h1 small,
-.panel.green-dark .panel-header .h1 small,
-.panel.green-dark .panel-footer .h1 small,
 .label.green-dark .h1 small,
 div.green-dark h2 small,
-.panel.green-dark .panel-header h2 small,
-.panel.green-dark .panel-footer h2 small,
 .label.green-dark h2 small,
 div.green-dark .h2 small,
-.panel.green-dark .panel-header .h2 small,
-.panel.green-dark .panel-footer .h2 small,
 .label.green-dark .h2 small,
 div.green-dark h3 small,
-.panel.green-dark .panel-header h3 small,
-.panel.green-dark .panel-footer h3 small,
 .label.green-dark h3 small,
 div.green-dark .h3 small,
-.panel.green-dark .panel-header .h3 small,
-.panel.green-dark .panel-footer .h3 small,
 .label.green-dark .h3 small {
   color: #f2f8f1;
 }
 div.green-dark h4,
-.panel.green-dark .panel-header h4,
-.panel.green-dark .panel-footer h4,
 .label.green-dark h4,
 div.green-dark .h4,
-.panel.green-dark .panel-header .h4,
-.panel.green-dark .panel-footer .h4,
 .label.green-dark .h4,
 div.green-dark h5,
-.panel.green-dark .panel-header h5,
-.panel.green-dark .panel-footer h5,
 .label.green-dark h5,
 div.green-dark .h5,
-.panel.green-dark .panel-header .h5,
-.panel.green-dark .panel-footer .h5,
 .label.green-dark .h5,
 div.green-dark h6,
-.panel.green-dark .panel-header h6,
-.panel.green-dark .panel-footer h6,
 .label.green-dark h6,
 div.green-dark .h6 p,
-.panel.green-dark .panel-header .h6 p,
-.panel.green-dark .panel-footer .h6 p,
 .label.green-dark .h6 p,
 div.green-dark span,
-.panel.green-dark .panel-header span,
-.panel.green-dark .panel-footer span,
 .label.green-dark span {
   color: #c5dfbd;
 }
 div.green-dark h4 small,
-.panel.green-dark .panel-header h4 small,
-.panel.green-dark .panel-footer h4 small,
 .label.green-dark h4 small,
 div.green-dark .h4 small,
-.panel.green-dark .panel-header .h4 small,
-.panel.green-dark .panel-footer .h4 small,
 .label.green-dark .h4 small,
 div.green-dark h5 small,
-.panel.green-dark .panel-header h5 small,
-.panel.green-dark .panel-footer h5 small,
 .label.green-dark h5 small,
 div.green-dark .h5 small,
-.panel.green-dark .panel-header .h5 small,
-.panel.green-dark .panel-footer .h5 small,
 .label.green-dark .h5 small,
 div.green-dark h6 small,
-.panel.green-dark .panel-header h6 small,
-.panel.green-dark .panel-footer h6 small,
 .label.green-dark h6 small,
 div.green-dark .h6 p small,
-.panel.green-dark .panel-header .h6 p small,
-.panel.green-dark .panel-footer .h6 p small,
 .label.green-dark .h6 p small,
 div.green-dark span small,
-.panel.green-dark .panel-header span small,
-.panel.green-dark .panel-footer span small,
 .label.green-dark span small {
   color: #a7ce9b;
 }
 div.green-dark .label,
-.panel.green-dark .panel-header .label,
-.panel.green-dark .panel-footer .label,
 .label.green-dark .label {
   font-weight: 400;
   color: #ffffff;
   background-color: #5f9c4d;
 }
 div.green-dark.border-only,
-.panel.green-dark .panel-header.border-only,
-.panel.green-dark .panel-footer.border-only,
 .label.green-dark.border-only {
   color: #406934;
   border-color: #406934;
 }
 div.green-dark .bar-data,
-.panel.green-dark .panel-header .bar-data,
-.panel.green-dark .panel-footer .bar-data,
 .label.green-dark .bar-data {
   color: #406934;
 }
 div.green-dark .bar-data:before,
-.panel.green-dark .panel-header .bar-data:before,
-.panel.green-dark .panel-footer .bar-data:before,
 .label.green-dark .bar-data:before {
   border-color: #406934;
 }
@@ -11619,25 +11347,45 @@ div.green-dark .bar-data:before,
 .tag.green-dark:hover .label {
   background-color: #162512;
 }
-.tag.green-dark.reverse.tag.green-dark {
+.tag.green-dark.reverse.tag.green-dark,
+.tag.green-dark.active.tag.green-dark {
   color: #ffffff;
   background-color: #406934;
   border-color: #406934;
 }
-.tag.green-dark.reverse.tag.green-dark .label {
+.tag.green-dark.reverse.tag.green-dark .label,
+.tag.green-dark.active.tag.green-dark .label {
   color: #ffffff;
   background-color: #162512;
 }
-.tag.green-dark.reverse.tag.green-dark span:not(.icon):not(.label) {
+.tag.green-dark.reverse.tag.green-dark span:not(.icon):not(.label),
+.tag.green-dark.active.tag.green-dark span:not(.icon):not(.label) {
   color: #ffffff;
 }
-.tag.green-dark.reverse.tag.green-dark:hover {
+.tag.green-dark.reverse.tag.green-dark:hover,
+.tag.green-dark.active.tag.green-dark:hover {
   color: #ffffff;
-  background-color: #162512;
-  border-color: #162512;
+  background-color: #36582c;
+  border-color: #2b4723;
 }
-.tag.green-dark.reverse.tag.green-dark:hover .label {
-  background-color: #020301;
+.tag.green-dark.reverse.tag.green-dark:hover .label,
+.tag.green-dark.active.tag.green-dark:hover .label {
+  background-color: #2b4723;
+}
+.panel.green-dark {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.green-dark .panel-heading {
+  background-color: #406934;
+}
+.panel.green-dark .panel-heading * {
+  color: #ffffff;
+}
+.panel.green-dark .panel-body,
+.panel.green-dark .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.green-dark {
   color: #ffffff;
@@ -11774,148 +11522,86 @@ a.orange {
   color: #D66E1E;
 }
 div.orange,
-.panel.orange .panel-header,
-.panel.orange .panel-footer,
 .label.orange {
   color: #fef9f5;
   background-color: #D66E1E;
 }
 div.orange h1,
-.panel.orange .panel-header h1,
-.panel.orange .panel-footer h1,
 .label.orange h1,
 div.orange .h1,
-.panel.orange .panel-header .h1,
-.panel.orange .panel-footer .h1,
 .label.orange .h1,
 div.orange h2,
-.panel.orange .panel-header h2,
-.panel.orange .panel-footer h2,
 .label.orange h2,
 div.orange .h2,
-.panel.orange .panel-header .h2,
-.panel.orange .panel-footer .h2,
 .label.orange .h2,
 div.orange h3,
-.panel.orange .panel-header h3,
-.panel.orange .panel-footer h3,
 .label.orange h3,
 div.orange .h3,
-.panel.orange .panel-header .h3,
-.panel.orange .panel-footer .h3,
 .label.orange .h3 {
   color: #ffffff;
 }
 div.orange h1 small,
-.panel.orange .panel-header h1 small,
-.panel.orange .panel-footer h1 small,
 .label.orange h1 small,
 div.orange .h1 small,
-.panel.orange .panel-header .h1 small,
-.panel.orange .panel-footer .h1 small,
 .label.orange .h1 small,
 div.orange h2 small,
-.panel.orange .panel-header h2 small,
-.panel.orange .panel-footer h2 small,
 .label.orange h2 small,
 div.orange .h2 small,
-.panel.orange .panel-header .h2 small,
-.panel.orange .panel-footer .h2 small,
 .label.orange .h2 small,
 div.orange h3 small,
-.panel.orange .panel-header h3 small,
-.panel.orange .panel-footer h3 small,
 .label.orange h3 small,
 div.orange .h3 small,
-.panel.orange .panel-header .h3 small,
-.panel.orange .panel-footer .h3 small,
 .label.orange .h3 small {
   color: #ffffff;
 }
 div.orange h4,
-.panel.orange .panel-header h4,
-.panel.orange .panel-footer h4,
 .label.orange h4,
 div.orange .h4,
-.panel.orange .panel-header .h4,
-.panel.orange .panel-footer .h4,
 .label.orange .h4,
 div.orange h5,
-.panel.orange .panel-header h5,
-.panel.orange .panel-footer h5,
 .label.orange h5,
 div.orange .h5,
-.panel.orange .panel-header .h5,
-.panel.orange .panel-footer .h5,
 .label.orange .h5,
 div.orange h6,
-.panel.orange .panel-header h6,
-.panel.orange .panel-footer h6,
 .label.orange h6,
 div.orange .h6 p,
-.panel.orange .panel-header .h6 p,
-.panel.orange .panel-footer .h6 p,
 .label.orange .h6 p,
 div.orange span,
-.panel.orange .panel-header span,
-.panel.orange .panel-footer span,
 .label.orange span {
   color: #fef9f5;
 }
 div.orange h4 small,
-.panel.orange .panel-header h4 small,
-.panel.orange .panel-footer h4 small,
 .label.orange h4 small,
 div.orange .h4 small,
-.panel.orange .panel-header .h4 small,
-.panel.orange .panel-footer .h4 small,
 .label.orange .h4 small,
 div.orange h5 small,
-.panel.orange .panel-header h5 small,
-.panel.orange .panel-footer h5 small,
 .label.orange h5 small,
 div.orange .h5 small,
-.panel.orange .panel-header .h5 small,
-.panel.orange .panel-footer .h5 small,
 .label.orange .h5 small,
 div.orange h6 small,
-.panel.orange .panel-header h6 small,
-.panel.orange .panel-footer h6 small,
 .label.orange h6 small,
 div.orange .h6 p small,
-.panel.orange .panel-header .h6 p small,
-.panel.orange .panel-footer .h6 p small,
 .label.orange .h6 p small,
 div.orange span small,
-.panel.orange .panel-header span small,
-.panel.orange .panel-footer span small,
 .label.orange span small {
   color: #f7ddc9;
 }
 div.orange .label,
-.panel.orange .panel-header .label,
-.panel.orange .panel-footer .label,
 .label.orange .label {
   font-weight: 400;
   color: #ffffff;
   background-color: #e89759;
 }
 div.orange.border-only,
-.panel.orange .panel-header.border-only,
-.panel.orange .panel-footer.border-only,
 .label.orange.border-only {
   color: #D66E1E;
   border-color: #D66E1E;
 }
 div.orange .bar-data,
-.panel.orange .panel-header .bar-data,
-.panel.orange .panel-footer .bar-data,
 .label.orange .bar-data {
   color: #D66E1E;
 }
 div.orange .bar-data:before,
-.panel.orange .panel-header .bar-data:before,
-.panel.orange .panel-footer .bar-data:before,
 .label.orange .bar-data:before {
   border-color: #D66E1E;
 }
@@ -11934,25 +11620,45 @@ div.orange .bar-data:before,
 .tag.orange:hover .label {
   background-color: #7d4011;
 }
-.tag.orange.reverse.tag.orange {
+.tag.orange.reverse.tag.orange,
+.tag.orange.active.tag.orange {
   color: #ffffff;
   background-color: #D66E1E;
   border-color: #D66E1E;
 }
-.tag.orange.reverse.tag.orange .label {
+.tag.orange.reverse.tag.orange .label,
+.tag.orange.active.tag.orange .label {
   color: #ffffff;
   background-color: #7d4011;
 }
-.tag.orange.reverse.tag.orange span:not(.icon):not(.label) {
+.tag.orange.reverse.tag.orange span:not(.icon):not(.label),
+.tag.orange.active.tag.orange span:not(.icon):not(.label) {
   color: #ffffff;
 }
-.tag.orange.reverse.tag.orange:hover {
+.tag.orange.reverse.tag.orange:hover,
+.tag.orange.active.tag.orange:hover {
   color: #ffffff;
-  background-color: #7d4011;
-  border-color: #7d4011;
+  background-color: #c0631b;
+  border-color: #a95718;
 }
-.tag.orange.reverse.tag.orange:hover .label {
-  background-color: #50290b;
+.tag.orange.reverse.tag.orange:hover .label,
+.tag.orange.active.tag.orange:hover .label {
+  background-color: #a95718;
+}
+.panel.orange {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.orange .panel-heading {
+  background-color: #D66E1E;
+}
+.panel.orange .panel-heading * {
+  color: #ffffff;
+}
+.panel.orange .panel-body,
+.panel.orange .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.orange {
   color: #ffffff;
@@ -12089,148 +11795,86 @@ a.red {
   color: #D5124A;
 }
 div.red,
-.panel.red .panel-header,
-.panel.red .panel-footer,
 .label.red {
   color: #fde9ef;
   background-color: #D5124A;
 }
 div.red h1,
-.panel.red .panel-header h1,
-.panel.red .panel-footer h1,
 .label.red h1,
 div.red .h1,
-.panel.red .panel-header .h1,
-.panel.red .panel-footer .h1,
 .label.red .h1,
 div.red h2,
-.panel.red .panel-header h2,
-.panel.red .panel-footer h2,
 .label.red h2,
 div.red .h2,
-.panel.red .panel-header .h2,
-.panel.red .panel-footer .h2,
 .label.red .h2,
 div.red h3,
-.panel.red .panel-header h3,
-.panel.red .panel-footer h3,
 .label.red h3,
 div.red .h3,
-.panel.red .panel-header .h3,
-.panel.red .panel-footer .h3,
 .label.red .h3 {
   color: #ffffff;
 }
 div.red h1 small,
-.panel.red .panel-header h1 small,
-.panel.red .panel-footer h1 small,
 .label.red h1 small,
 div.red .h1 small,
-.panel.red .panel-header .h1 small,
-.panel.red .panel-footer .h1 small,
 .label.red .h1 small,
 div.red h2 small,
-.panel.red .panel-header h2 small,
-.panel.red .panel-footer h2 small,
 .label.red h2 small,
 div.red .h2 small,
-.panel.red .panel-header .h2 small,
-.panel.red .panel-footer .h2 small,
 .label.red .h2 small,
 div.red h3 small,
-.panel.red .panel-header h3 small,
-.panel.red .panel-footer h3 small,
 .label.red h3 small,
 div.red .h3 small,
-.panel.red .panel-header .h3 small,
-.panel.red .panel-footer .h3 small,
 .label.red .h3 small {
   color: #ffffff;
 }
 div.red h4,
-.panel.red .panel-header h4,
-.panel.red .panel-footer h4,
 .label.red h4,
 div.red .h4,
-.panel.red .panel-header .h4,
-.panel.red .panel-footer .h4,
 .label.red .h4,
 div.red h5,
-.panel.red .panel-header h5,
-.panel.red .panel-footer h5,
 .label.red h5,
 div.red .h5,
-.panel.red .panel-header .h5,
-.panel.red .panel-footer .h5,
 .label.red .h5,
 div.red h6,
-.panel.red .panel-header h6,
-.panel.red .panel-footer h6,
 .label.red h6,
 div.red .h6 p,
-.panel.red .panel-header .h6 p,
-.panel.red .panel-footer .h6 p,
 .label.red .h6 p,
 div.red span,
-.panel.red .panel-header span,
-.panel.red .panel-footer span,
 .label.red span {
   color: #fde9ef;
 }
 div.red h4 small,
-.panel.red .panel-header h4 small,
-.panel.red .panel-footer h4 small,
 .label.red h4 small,
 div.red .h4 small,
-.panel.red .panel-header .h4 small,
-.panel.red .panel-footer .h4 small,
 .label.red .h4 small,
 div.red h5 small,
-.panel.red .panel-header h5 small,
-.panel.red .panel-footer h5 small,
 .label.red h5 small,
 div.red .h5 small,
-.panel.red .panel-header .h5 small,
-.panel.red .panel-footer .h5 small,
 .label.red .h5 small,
 div.red h6 small,
-.panel.red .panel-header h6 small,
-.panel.red .panel-footer h6 small,
 .label.red h6 small,
 div.red .h6 p small,
-.panel.red .panel-header .h6 p small,
-.panel.red .panel-footer .h6 p small,
 .label.red .h6 p small,
 div.red span small,
-.panel.red .panel-header span small,
-.panel.red .panel-footer span small,
 .label.red span small {
   color: #f9bacc;
 }
 div.red .label,
-.panel.red .panel-header .label,
-.panel.red .panel-footer .label,
 .label.red .label {
   font-weight: 400;
   color: #ffffff;
   background-color: #ef4475;
 }
 div.red.border-only,
-.panel.red .panel-header.border-only,
-.panel.red .panel-footer.border-only,
 .label.red.border-only {
   color: #D5124A;
   border-color: #D5124A;
 }
 div.red .bar-data,
-.panel.red .panel-header .bar-data,
-.panel.red .panel-footer .bar-data,
 .label.red .bar-data {
   color: #D5124A;
 }
 div.red .bar-data:before,
-.panel.red .panel-header .bar-data:before,
-.panel.red .panel-footer .bar-data:before,
 .label.red .bar-data:before {
   border-color: #D5124A;
 }
@@ -12249,25 +11893,45 @@ div.red .bar-data:before,
 .tag.red:hover .label {
   background-color: #770a29;
 }
-.tag.red.reverse.tag.red {
+.tag.red.reverse.tag.red,
+.tag.red.active.tag.red {
   color: #ffffff;
   background-color: #D5124A;
   border-color: #D5124A;
 }
-.tag.red.reverse.tag.red .label {
+.tag.red.reverse.tag.red .label,
+.tag.red.active.tag.red .label {
   color: #ffffff;
   background-color: #770a29;
 }
-.tag.red.reverse.tag.red span:not(.icon):not(.label) {
+.tag.red.reverse.tag.red span:not(.icon):not(.label),
+.tag.red.active.tag.red span:not(.icon):not(.label) {
   color: #ffffff;
 }
-.tag.red.reverse.tag.red:hover {
+.tag.red.reverse.tag.red:hover,
+.tag.red.active.tag.red:hover {
   color: #ffffff;
-  background-color: #770a29;
-  border-color: #770a29;
+  background-color: #bd1042;
+  border-color: #a60e3a;
 }
-.tag.red.reverse.tag.red:hover .label {
-  background-color: #480619;
+.tag.red.reverse.tag.red:hover .label,
+.tag.red.active.tag.red:hover .label {
+  background-color: #a60e3a;
+}
+.panel.red {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.red .panel-heading {
+  background-color: #D5124A;
+}
+.panel.red .panel-heading * {
+  color: #ffffff;
+}
+.panel.red .panel-body,
+.panel.red .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.red {
   color: #ffffff;
@@ -12404,148 +12068,86 @@ a.red-dark {
   color: #931432;
 }
 div.red-dark,
-.panel.red-dark .panel-header,
-.panel.red-dark .panel-footer,
 .label.red-dark {
   color: #f4b2c1;
   background-color: #931432;
 }
 div.red-dark h1,
-.panel.red-dark .panel-header h1,
-.panel.red-dark .panel-footer h1,
 .label.red-dark h1,
 div.red-dark .h1,
-.panel.red-dark .panel-header .h1,
-.panel.red-dark .panel-footer .h1,
 .label.red-dark .h1,
 div.red-dark h2,
-.panel.red-dark .panel-header h2,
-.panel.red-dark .panel-footer h2,
 .label.red-dark h2,
 div.red-dark .h2,
-.panel.red-dark .panel-header .h2,
-.panel.red-dark .panel-footer .h2,
 .label.red-dark .h2,
 div.red-dark h3,
-.panel.red-dark .panel-header h3,
-.panel.red-dark .panel-footer h3,
 .label.red-dark h3,
 div.red-dark .h3,
-.panel.red-dark .panel-header .h3,
-.panel.red-dark .panel-footer .h3,
 .label.red-dark .h3 {
   color: #ffffff;
 }
 div.red-dark h1 small,
-.panel.red-dark .panel-header h1 small,
-.panel.red-dark .panel-footer h1 small,
 .label.red-dark h1 small,
 div.red-dark .h1 small,
-.panel.red-dark .panel-header .h1 small,
-.panel.red-dark .panel-footer .h1 small,
 .label.red-dark .h1 small,
 div.red-dark h2 small,
-.panel.red-dark .panel-header h2 small,
-.panel.red-dark .panel-footer h2 small,
 .label.red-dark h2 small,
 div.red-dark .h2 small,
-.panel.red-dark .panel-header .h2 small,
-.panel.red-dark .panel-footer .h2 small,
 .label.red-dark .h2 small,
 div.red-dark h3 small,
-.panel.red-dark .panel-header h3 small,
-.panel.red-dark .panel-footer h3 small,
 .label.red-dark h3 small,
 div.red-dark .h3 small,
-.panel.red-dark .panel-header .h3 small,
-.panel.red-dark .panel-footer .h3 small,
 .label.red-dark .h3 small {
   color: #fef5f7;
 }
 div.red-dark h4,
-.panel.red-dark .panel-header h4,
-.panel.red-dark .panel-footer h4,
 .label.red-dark h4,
 div.red-dark .h4,
-.panel.red-dark .panel-header .h4,
-.panel.red-dark .panel-footer .h4,
 .label.red-dark .h4,
 div.red-dark h5,
-.panel.red-dark .panel-header h5,
-.panel.red-dark .panel-footer h5,
 .label.red-dark h5,
 div.red-dark .h5,
-.panel.red-dark .panel-header .h5,
-.panel.red-dark .panel-footer .h5,
 .label.red-dark .h5,
 div.red-dark h6,
-.panel.red-dark .panel-header h6,
-.panel.red-dark .panel-footer h6,
 .label.red-dark h6,
 div.red-dark .h6 p,
-.panel.red-dark .panel-header .h6 p,
-.panel.red-dark .panel-footer .h6 p,
 .label.red-dark .h6 p,
 div.red-dark span,
-.panel.red-dark .panel-header span,
-.panel.red-dark .panel-footer span,
 .label.red-dark span {
   color: #f4b2c1;
 }
 div.red-dark h4 small,
-.panel.red-dark .panel-header h4 small,
-.panel.red-dark .panel-footer h4 small,
 .label.red-dark h4 small,
 div.red-dark .h4 small,
-.panel.red-dark .panel-header .h4 small,
-.panel.red-dark .panel-footer .h4 small,
 .label.red-dark .h4 small,
 div.red-dark h5 small,
-.panel.red-dark .panel-header h5 small,
-.panel.red-dark .panel-footer h5 small,
 .label.red-dark h5 small,
 div.red-dark .h5 small,
-.panel.red-dark .panel-header .h5 small,
-.panel.red-dark .panel-footer .h5 small,
 .label.red-dark .h5 small,
 div.red-dark h6 small,
-.panel.red-dark .panel-header h6 small,
-.panel.red-dark .panel-footer h6 small,
 .label.red-dark h6 small,
 div.red-dark .h6 p small,
-.panel.red-dark .panel-header .h6 p small,
-.panel.red-dark .panel-footer .h6 p small,
 .label.red-dark .h6 p small,
 div.red-dark span small,
-.panel.red-dark .panel-header span small,
-.panel.red-dark .panel-footer span small,
 .label.red-dark span small {
   color: #ee859e;
 }
 div.red-dark .label,
-.panel.red-dark .panel-header .label,
-.panel.red-dark .panel-footer .label,
 .label.red-dark .label {
   font-weight: 400;
   color: #ffffff;
   background-color: #d61d49;
 }
 div.red-dark.border-only,
-.panel.red-dark .panel-header.border-only,
-.panel.red-dark .panel-footer.border-only,
 .label.red-dark.border-only {
   color: #931432;
   border-color: #931432;
 }
 div.red-dark .bar-data,
-.panel.red-dark .panel-header .bar-data,
-.panel.red-dark .panel-footer .bar-data,
 .label.red-dark .bar-data {
   color: #931432;
 }
 div.red-dark .bar-data:before,
-.panel.red-dark .panel-header .bar-data:before,
-.panel.red-dark .panel-footer .bar-data:before,
 .label.red-dark .bar-data:before {
   border-color: #931432;
 }
@@ -12564,25 +12166,45 @@ div.red-dark .bar-data:before,
 .tag.red-dark:hover .label {
   background-color: #390813;
 }
-.tag.red-dark.reverse.tag.red-dark {
+.tag.red-dark.reverse.tag.red-dark,
+.tag.red-dark.active.tag.red-dark {
   color: #ffffff;
   background-color: #931432;
   border-color: #931432;
 }
-.tag.red-dark.reverse.tag.red-dark .label {
+.tag.red-dark.reverse.tag.red-dark .label,
+.tag.red-dark.active.tag.red-dark .label {
   color: #ffffff;
   background-color: #390813;
 }
-.tag.red-dark.reverse.tag.red-dark span:not(.icon):not(.label) {
+.tag.red-dark.reverse.tag.red-dark span:not(.icon):not(.label),
+.tag.red-dark.active.tag.red-dark span:not(.icon):not(.label) {
   color: #ffffff;
 }
-.tag.red-dark.reverse.tag.red-dark:hover {
+.tag.red-dark.reverse.tag.red-dark:hover,
+.tag.red-dark.active.tag.red-dark:hover {
   color: #ffffff;
-  background-color: #390813;
-  border-color: #390813;
+  background-color: #7d112a;
+  border-color: #660e23;
 }
-.tag.red-dark.reverse.tag.red-dark:hover .label {
-  background-color: #0c0204;
+.tag.red-dark.reverse.tag.red-dark:hover .label,
+.tag.red-dark.active.tag.red-dark:hover .label {
+  background-color: #660e23;
+}
+.panel.red-dark {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.red-dark .panel-heading {
+  background-color: #931432;
+}
+.panel.red-dark .panel-heading * {
+  color: #ffffff;
+}
+.panel.red-dark .panel-body,
+.panel.red-dark .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.red-dark {
   color: #ffffff;
@@ -12719,148 +12341,86 @@ a.maroon {
   color: #5B1931;
 }
 div.maroon,
-.panel.maroon .panel-header,
-.panel.maroon .panel-footer,
 .label.maroon {
   color: #e192af;
   background-color: #5B1931;
 }
 div.maroon h1,
-.panel.maroon .panel-header h1,
-.panel.maroon .panel-footer h1,
 .label.maroon h1,
 div.maroon .h1,
-.panel.maroon .panel-header .h1,
-.panel.maroon .panel-footer .h1,
 .label.maroon .h1,
 div.maroon h2,
-.panel.maroon .panel-header h2,
-.panel.maroon .panel-footer h2,
 .label.maroon h2,
 div.maroon .h2,
-.panel.maroon .panel-header .h2,
-.panel.maroon .panel-footer .h2,
 .label.maroon .h2,
 div.maroon h3,
-.panel.maroon .panel-header h3,
-.panel.maroon .panel-footer h3,
 .label.maroon h3,
 div.maroon .h3,
-.panel.maroon .panel-header .h3,
-.panel.maroon .panel-footer .h3,
 .label.maroon .h3 {
   color: #fdf6f8;
 }
 div.maroon h1 small,
-.panel.maroon .panel-header h1 small,
-.panel.maroon .panel-footer h1 small,
 .label.maroon h1 small,
 div.maroon .h1 small,
-.panel.maroon .panel-header .h1 small,
-.panel.maroon .panel-footer .h1 small,
 .label.maroon .h1 small,
 div.maroon h2 small,
-.panel.maroon .panel-header h2 small,
-.panel.maroon .panel-footer h2 small,
 .label.maroon h2 small,
 div.maroon .h2 small,
-.panel.maroon .panel-header .h2 small,
-.panel.maroon .panel-footer .h2 small,
 .label.maroon .h2 small,
 div.maroon h3 small,
-.panel.maroon .panel-header h3 small,
-.panel.maroon .panel-footer h3 small,
 .label.maroon h3 small,
 div.maroon .h3 small,
-.panel.maroon .panel-header .h3 small,
-.panel.maroon .panel-footer .h3 small,
 .label.maroon .h3 small {
   color: #f2cedb;
 }
 div.maroon h4,
-.panel.maroon .panel-header h4,
-.panel.maroon .panel-footer h4,
 .label.maroon h4,
 div.maroon .h4,
-.panel.maroon .panel-header .h4,
-.panel.maroon .panel-footer .h4,
 .label.maroon .h4,
 div.maroon h5,
-.panel.maroon .panel-header h5,
-.panel.maroon .panel-footer h5,
 .label.maroon h5,
 div.maroon .h5,
-.panel.maroon .panel-header .h5,
-.panel.maroon .panel-footer .h5,
 .label.maroon .h5,
 div.maroon h6,
-.panel.maroon .panel-header h6,
-.panel.maroon .panel-footer h6,
 .label.maroon h6,
 div.maroon .h6 p,
-.panel.maroon .panel-header .h6 p,
-.panel.maroon .panel-footer .h6 p,
 .label.maroon .h6 p,
 div.maroon span,
-.panel.maroon .panel-header span,
-.panel.maroon .panel-footer span,
 .label.maroon span {
   color: #e192af;
 }
 div.maroon h4 small,
-.panel.maroon .panel-header h4 small,
-.panel.maroon .panel-footer h4 small,
 .label.maroon h4 small,
 div.maroon .h4 small,
-.panel.maroon .panel-header .h4 small,
-.panel.maroon .panel-footer .h4 small,
 .label.maroon .h4 small,
 div.maroon h5 small,
-.panel.maroon .panel-header h5 small,
-.panel.maroon .panel-footer h5 small,
 .label.maroon h5 small,
 div.maroon .h5 small,
-.panel.maroon .panel-header .h5 small,
-.panel.maroon .panel-footer .h5 small,
 .label.maroon .h5 small,
 div.maroon h6 small,
-.panel.maroon .panel-header h6 small,
-.panel.maroon .panel-footer h6 small,
 .label.maroon h6 small,
 div.maroon .h6 p small,
-.panel.maroon .panel-header .h6 p small,
-.panel.maroon .panel-footer .h6 p small,
 .label.maroon .h6 p small,
 div.maroon span small,
-.panel.maroon .panel-header span small,
-.panel.maroon .panel-footer span small,
 .label.maroon span small {
   color: #d66a91;
 }
 div.maroon .label,
-.panel.maroon .panel-header .label,
-.panel.maroon .panel-footer .label,
 .label.maroon .label {
   font-weight: 400;
   color: #fdf6f8;
   background-color: #972951;
 }
 div.maroon.border-only,
-.panel.maroon .panel-header.border-only,
-.panel.maroon .panel-footer.border-only,
 .label.maroon.border-only {
   color: #5B1931;
   border-color: #5B1931;
 }
 div.maroon .bar-data,
-.panel.maroon .panel-header .bar-data,
-.panel.maroon .panel-footer .bar-data,
 .label.maroon .bar-data {
   color: #5B1931;
 }
 div.maroon .bar-data:before,
-.panel.maroon .panel-header .bar-data:before,
-.panel.maroon .panel-footer .bar-data:before,
 .label.maroon .bar-data:before {
   border-color: #5B1931;
 }
@@ -12879,25 +12439,45 @@ div.maroon .bar-data:before,
 .tag.maroon:hover .label {
   background-color: #0b0306;
 }
-.tag.maroon.reverse.tag.maroon {
+.tag.maroon.reverse.tag.maroon,
+.tag.maroon.active.tag.maroon {
   color: #fdf6f8;
   background-color: #5B1931;
   border-color: #5B1931;
 }
-.tag.maroon.reverse.tag.maroon .label {
+.tag.maroon.reverse.tag.maroon .label,
+.tag.maroon.active.tag.maroon .label {
   color: #fdf6f8;
   background-color: #0b0306;
 }
-.tag.maroon.reverse.tag.maroon span:not(.icon):not(.label) {
+.tag.maroon.reverse.tag.maroon span:not(.icon):not(.label),
+.tag.maroon.active.tag.maroon span:not(.icon):not(.label) {
   color: #fdf6f8;
 }
-.tag.maroon.reverse.tag.maroon:hover {
-  color: #fdf6f8;
-  background-color: #0b0306;
-  border-color: #0b0306;
+.tag.maroon.reverse.tag.maroon:hover,
+.tag.maroon.active.tag.maroon:hover {
+  color: #ffffff;
+  background-color: #471426;
+  border-color: #330e1b;
 }
-.tag.maroon.reverse.tag.maroon:hover .label {
-  background-color: #000000;
+.tag.maroon.reverse.tag.maroon:hover .label,
+.tag.maroon.active.tag.maroon:hover .label {
+  background-color: #330e1b;
+}
+.panel.maroon {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.maroon .panel-heading {
+  background-color: #5B1931;
+}
+.panel.maroon .panel-heading * {
+  color: #ffffff;
+}
+.panel.maroon .panel-body,
+.panel.maroon .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.maroon {
   color: #fdf6f8;
@@ -13034,148 +12614,86 @@ a.black {
   color: #000000;
 }
 div.black,
-.panel.black .panel-header,
-.panel.black .panel-footer,
 .label.black {
   color: #808080;
   background-color: #000000;
 }
 div.black h1,
-.panel.black .panel-header h1,
-.panel.black .panel-footer h1,
 .label.black h1,
 div.black .h1,
-.panel.black .panel-header .h1,
-.panel.black .panel-footer .h1,
 .label.black .h1,
 div.black h2,
-.panel.black .panel-header h2,
-.panel.black .panel-footer h2,
 .label.black h2,
 div.black .h2,
-.panel.black .panel-header .h2,
-.panel.black .panel-footer .h2,
 .label.black .h2,
 div.black h3,
-.panel.black .panel-header h3,
-.panel.black .panel-footer h3,
 .label.black h3,
 div.black .h3,
-.panel.black .panel-header .h3,
-.panel.black .panel-footer .h3,
 .label.black .h3 {
   color: #bfbfbf;
 }
 div.black h1 small,
-.panel.black .panel-header h1 small,
-.panel.black .panel-footer h1 small,
 .label.black h1 small,
 div.black .h1 small,
-.panel.black .panel-header .h1 small,
-.panel.black .panel-footer .h1 small,
 .label.black .h1 small,
 div.black h2 small,
-.panel.black .panel-header h2 small,
-.panel.black .panel-footer h2 small,
 .label.black h2 small,
 div.black .h2 small,
-.panel.black .panel-header .h2 small,
-.panel.black .panel-footer .h2 small,
 .label.black .h2 small,
 div.black h3 small,
-.panel.black .panel-header h3 small,
-.panel.black .panel-footer h3 small,
 .label.black h3 small,
 div.black .h3 small,
-.panel.black .panel-header .h3 small,
-.panel.black .panel-footer .h3 small,
 .label.black .h3 small {
   color: #a6a6a6;
 }
 div.black h4,
-.panel.black .panel-header h4,
-.panel.black .panel-footer h4,
 .label.black h4,
 div.black .h4,
-.panel.black .panel-header .h4,
-.panel.black .panel-footer .h4,
 .label.black .h4,
 div.black h5,
-.panel.black .panel-header h5,
-.panel.black .panel-footer h5,
 .label.black h5,
 div.black .h5,
-.panel.black .panel-header .h5,
-.panel.black .panel-footer .h5,
 .label.black .h5,
 div.black h6,
-.panel.black .panel-header h6,
-.panel.black .panel-footer h6,
 .label.black h6,
 div.black .h6 p,
-.panel.black .panel-header .h6 p,
-.panel.black .panel-footer .h6 p,
 .label.black .h6 p,
 div.black span,
-.panel.black .panel-header span,
-.panel.black .panel-footer span,
 .label.black span {
   color: #808080;
 }
 div.black h4 small,
-.panel.black .panel-header h4 small,
-.panel.black .panel-footer h4 small,
 .label.black h4 small,
 div.black .h4 small,
-.panel.black .panel-header .h4 small,
-.panel.black .panel-footer .h4 small,
 .label.black .h4 small,
 div.black h5 small,
-.panel.black .panel-header h5 small,
-.panel.black .panel-footer h5 small,
 .label.black h5 small,
 div.black .h5 small,
-.panel.black .panel-header .h5 small,
-.panel.black .panel-footer .h5 small,
 .label.black .h5 small,
 div.black h6 small,
-.panel.black .panel-header h6 small,
-.panel.black .panel-footer h6 small,
 .label.black h6 small,
 div.black .h6 p small,
-.panel.black .panel-header .h6 p small,
-.panel.black .panel-footer .h6 p small,
 .label.black .h6 p small,
 div.black span small,
-.panel.black .panel-header span small,
-.panel.black .panel-footer span small,
 .label.black span small {
   color: #666666;
 }
 div.black .label,
-.panel.black .panel-header .label,
-.panel.black .panel-footer .label,
 .label.black .label {
   font-weight: 400;
   color: #bfbfbf;
   background-color: #262626;
 }
 div.black.border-only,
-.panel.black .panel-header.border-only,
-.panel.black .panel-footer.border-only,
 .label.black.border-only {
   color: #000000;
   border-color: #000000;
 }
 div.black .bar-data,
-.panel.black .panel-header .bar-data,
-.panel.black .panel-footer .bar-data,
 .label.black .bar-data {
   color: #000000;
 }
 div.black .bar-data:before,
-.panel.black .panel-header .bar-data:before,
-.panel.black .panel-footer .bar-data:before,
 .label.black .bar-data:before {
   border-color: #000000;
 }
@@ -13194,25 +12712,45 @@ div.black .bar-data:before,
 .tag.black:hover .label {
   background-color: #000000;
 }
-.tag.black.reverse.tag.black {
+.tag.black.reverse.tag.black,
+.tag.black.active.tag.black {
   color: #bfbfbf;
   background-color: #000000;
   border-color: #000000;
 }
-.tag.black.reverse.tag.black .label {
+.tag.black.reverse.tag.black .label,
+.tag.black.active.tag.black .label {
   color: #bfbfbf;
   background-color: #000000;
 }
-.tag.black.reverse.tag.black span:not(.icon):not(.label) {
+.tag.black.reverse.tag.black span:not(.icon):not(.label),
+.tag.black.active.tag.black span:not(.icon):not(.label) {
   color: #bfbfbf;
 }
-.tag.black.reverse.tag.black:hover {
-  color: #bfbfbf;
+.tag.black.reverse.tag.black:hover,
+.tag.black.active.tag.black:hover {
+  color: #ffffff;
   background-color: #000000;
   border-color: #000000;
 }
-.tag.black.reverse.tag.black:hover .label {
+.tag.black.reverse.tag.black:hover .label,
+.tag.black.active.tag.black:hover .label {
   background-color: #000000;
+}
+.panel.black {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.black .panel-heading {
+  background-color: #000000;
+}
+.panel.black .panel-heading * {
+  color: #ffffff;
+}
+.panel.black .panel-body,
+.panel.black .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.black {
   color: #bfbfbf;
@@ -13349,148 +12887,86 @@ a.gray-darkest {
   color: #2a2b2d;
 }
 div.gray-darkest,
-.panel.gray-darkest .panel-header,
-.panel.gray-darkest .panel-footer,
 .label.gray-darkest {
   color: #a8aaae;
   background-color: #2a2b2d;
 }
 div.gray-darkest h1,
-.panel.gray-darkest .panel-header h1,
-.panel.gray-darkest .panel-footer h1,
 .label.gray-darkest h1,
 div.gray-darkest .h1,
-.panel.gray-darkest .panel-header .h1,
-.panel.gray-darkest .panel-footer .h1,
 .label.gray-darkest .h1,
 div.gray-darkest h2,
-.panel.gray-darkest .panel-header h2,
-.panel.gray-darkest .panel-footer h2,
 .label.gray-darkest h2,
 div.gray-darkest .h2,
-.panel.gray-darkest .panel-header .h2,
-.panel.gray-darkest .panel-footer .h2,
 .label.gray-darkest .h2,
 div.gray-darkest h3,
-.panel.gray-darkest .panel-header h3,
-.panel.gray-darkest .panel-footer h3,
 .label.gray-darkest h3,
 div.gray-darkest .h3,
-.panel.gray-darkest .panel-header .h3,
-.panel.gray-darkest .panel-footer .h3,
 .label.gray-darkest .h3 {
   color: #eaebeb;
 }
 div.gray-darkest h1 small,
-.panel.gray-darkest .panel-header h1 small,
-.panel.gray-darkest .panel-footer h1 small,
 .label.gray-darkest h1 small,
 div.gray-darkest .h1 small,
-.panel.gray-darkest .panel-header .h1 small,
-.panel.gray-darkest .panel-footer .h1 small,
 .label.gray-darkest .h1 small,
 div.gray-darkest h2 small,
-.panel.gray-darkest .panel-header h2 small,
-.panel.gray-darkest .panel-footer h2 small,
 .label.gray-darkest h2 small,
 div.gray-darkest .h2 small,
-.panel.gray-darkest .panel-header .h2 small,
-.panel.gray-darkest .panel-footer .h2 small,
 .label.gray-darkest .h2 small,
 div.gray-darkest h3 small,
-.panel.gray-darkest .panel-header h3 small,
-.panel.gray-darkest .panel-footer h3 small,
 .label.gray-darkest h3 small,
 div.gray-darkest .h3 small,
-.panel.gray-darkest .panel-header .h3 small,
-.panel.gray-darkest .panel-footer .h3 small,
 .label.gray-darkest .h3 small {
   color: #d0d1d3;
 }
 div.gray-darkest h4,
-.panel.gray-darkest .panel-header h4,
-.panel.gray-darkest .panel-footer h4,
 .label.gray-darkest h4,
 div.gray-darkest .h4,
-.panel.gray-darkest .panel-header .h4,
-.panel.gray-darkest .panel-footer .h4,
 .label.gray-darkest .h4,
 div.gray-darkest h5,
-.panel.gray-darkest .panel-header h5,
-.panel.gray-darkest .panel-footer h5,
 .label.gray-darkest h5,
 div.gray-darkest .h5,
-.panel.gray-darkest .panel-header .h5,
-.panel.gray-darkest .panel-footer .h5,
 .label.gray-darkest .h5,
 div.gray-darkest h6,
-.panel.gray-darkest .panel-header h6,
-.panel.gray-darkest .panel-footer h6,
 .label.gray-darkest h6,
 div.gray-darkest .h6 p,
-.panel.gray-darkest .panel-header .h6 p,
-.panel.gray-darkest .panel-footer .h6 p,
 .label.gray-darkest .h6 p,
 div.gray-darkest span,
-.panel.gray-darkest .panel-header span,
-.panel.gray-darkest .panel-footer span,
 .label.gray-darkest span {
   color: #a8aaae;
 }
 div.gray-darkest h4 small,
-.panel.gray-darkest .panel-header h4 small,
-.panel.gray-darkest .panel-footer h4 small,
 .label.gray-darkest h4 small,
 div.gray-darkest .h4 small,
-.panel.gray-darkest .panel-header .h4 small,
-.panel.gray-darkest .panel-footer .h4 small,
 .label.gray-darkest .h4 small,
 div.gray-darkest h5 small,
-.panel.gray-darkest .panel-header h5 small,
-.panel.gray-darkest .panel-footer h5 small,
 .label.gray-darkest h5 small,
 div.gray-darkest .h5 small,
-.panel.gray-darkest .panel-header .h5 small,
-.panel.gray-darkest .panel-footer .h5 small,
 .label.gray-darkest .h5 small,
 div.gray-darkest h6 small,
-.panel.gray-darkest .panel-header h6 small,
-.panel.gray-darkest .panel-footer h6 small,
 .label.gray-darkest h6 small,
 div.gray-darkest .h6 p small,
-.panel.gray-darkest .panel-header .h6 p small,
-.panel.gray-darkest .panel-footer .h6 p small,
 .label.gray-darkest .h6 p small,
 div.gray-darkest span small,
-.panel.gray-darkest .panel-header span small,
-.panel.gray-darkest .panel-footer span small,
 .label.gray-darkest span small {
   color: #8e9095;
 }
 div.gray-darkest .label,
-.panel.gray-darkest .panel-header .label,
-.panel.gray-darkest .panel-footer .label,
 .label.gray-darkest .label {
   font-weight: 400;
   color: #eaebeb;
   background-color: #4f5155;
 }
 div.gray-darkest.border-only,
-.panel.gray-darkest .panel-header.border-only,
-.panel.gray-darkest .panel-footer.border-only,
 .label.gray-darkest.border-only {
   color: #2a2b2d;
   border-color: #2a2b2d;
 }
 div.gray-darkest .bar-data,
-.panel.gray-darkest .panel-header .bar-data,
-.panel.gray-darkest .panel-footer .bar-data,
 .label.gray-darkest .bar-data {
   color: #2a2b2d;
 }
 div.gray-darkest .bar-data:before,
-.panel.gray-darkest .panel-header .bar-data:before,
-.panel.gray-darkest .panel-footer .bar-data:before,
 .label.gray-darkest .bar-data:before {
   border-color: #2a2b2d;
 }
@@ -13509,25 +12985,45 @@ div.gray-darkest .bar-data:before,
 .tag.gray-darkest:hover .label {
   background-color: #000000;
 }
-.tag.gray-darkest.reverse.tag.gray-darkest {
+.tag.gray-darkest.reverse.tag.gray-darkest,
+.tag.gray-darkest.active.tag.gray-darkest {
   color: #eaebeb;
   background-color: #2a2b2d;
   border-color: #2a2b2d;
 }
-.tag.gray-darkest.reverse.tag.gray-darkest .label {
+.tag.gray-darkest.reverse.tag.gray-darkest .label,
+.tag.gray-darkest.active.tag.gray-darkest .label {
   color: #eaebeb;
   background-color: #000000;
 }
-.tag.gray-darkest.reverse.tag.gray-darkest span:not(.icon):not(.label) {
+.tag.gray-darkest.reverse.tag.gray-darkest span:not(.icon):not(.label),
+.tag.gray-darkest.active.tag.gray-darkest span:not(.icon):not(.label) {
   color: #eaebeb;
 }
-.tag.gray-darkest.reverse.tag.gray-darkest:hover {
-  color: #eaebeb;
-  background-color: #000000;
-  border-color: #000000;
+.tag.gray-darkest.reverse.tag.gray-darkest:hover,
+.tag.gray-darkest.active.tag.gray-darkest:hover {
+  color: #ffffff;
+  background-color: #1e1e20;
+  border-color: #111213;
 }
-.tag.gray-darkest.reverse.tag.gray-darkest:hover .label {
-  background-color: #000000;
+.tag.gray-darkest.reverse.tag.gray-darkest:hover .label,
+.tag.gray-darkest.active.tag.gray-darkest:hover .label {
+  background-color: #111213;
+}
+.panel.gray-darkest {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.gray-darkest .panel-heading {
+  background-color: #2a2b2d;
+}
+.panel.gray-darkest .panel-heading * {
+  color: #ffffff;
+}
+.panel.gray-darkest .panel-body,
+.panel.gray-darkest .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.gray-darkest {
   color: #eaebeb;
@@ -13664,148 +13160,86 @@ a.gray-darker {
   color: #64666A;
 }
 div.gray-darker,
-.panel.gray-darker .panel-header,
-.panel.gray-darker .panel-footer,
 .label.gray-darker {
   color: #e6e6e7;
   background-color: #64666A;
 }
 div.gray-darker h1,
-.panel.gray-darker .panel-header h1,
-.panel.gray-darker .panel-footer h1,
 .label.gray-darker h1,
 div.gray-darker .h1,
-.panel.gray-darker .panel-header .h1,
-.panel.gray-darker .panel-footer .h1,
 .label.gray-darker .h1,
 div.gray-darker h2,
-.panel.gray-darker .panel-header h2,
-.panel.gray-darker .panel-footer h2,
 .label.gray-darker h2,
 div.gray-darker .h2,
-.panel.gray-darker .panel-header .h2,
-.panel.gray-darker .panel-footer .h2,
 .label.gray-darker .h2,
 div.gray-darker h3,
-.panel.gray-darker .panel-header h3,
-.panel.gray-darker .panel-footer h3,
 .label.gray-darker h3,
 div.gray-darker .h3,
-.panel.gray-darker .panel-header .h3,
-.panel.gray-darker .panel-footer .h3,
 .label.gray-darker .h3 {
   color: #ffffff;
 }
 div.gray-darker h1 small,
-.panel.gray-darker .panel-header h1 small,
-.panel.gray-darker .panel-footer h1 small,
 .label.gray-darker h1 small,
 div.gray-darker .h1 small,
-.panel.gray-darker .panel-header .h1 small,
-.panel.gray-darker .panel-footer .h1 small,
 .label.gray-darker .h1 small,
 div.gray-darker h2 small,
-.panel.gray-darker .panel-header h2 small,
-.panel.gray-darker .panel-footer h2 small,
 .label.gray-darker h2 small,
 div.gray-darker .h2 small,
-.panel.gray-darker .panel-header .h2 small,
-.panel.gray-darker .panel-footer .h2 small,
 .label.gray-darker .h2 small,
 div.gray-darker h3 small,
-.panel.gray-darker .panel-header h3 small,
-.panel.gray-darker .panel-footer h3 small,
 .label.gray-darker h3 small,
 div.gray-darker .h3 small,
-.panel.gray-darker .panel-header .h3 small,
-.panel.gray-darker .panel-footer .h3 small,
 .label.gray-darker .h3 small {
   color: #ffffff;
 }
 div.gray-darker h4,
-.panel.gray-darker .panel-header h4,
-.panel.gray-darker .panel-footer h4,
 .label.gray-darker h4,
 div.gray-darker .h4,
-.panel.gray-darker .panel-header .h4,
-.panel.gray-darker .panel-footer .h4,
 .label.gray-darker .h4,
 div.gray-darker h5,
-.panel.gray-darker .panel-header h5,
-.panel.gray-darker .panel-footer h5,
 .label.gray-darker h5,
 div.gray-darker .h5,
-.panel.gray-darker .panel-header .h5,
-.panel.gray-darker .panel-footer .h5,
 .label.gray-darker .h5,
 div.gray-darker h6,
-.panel.gray-darker .panel-header h6,
-.panel.gray-darker .panel-footer h6,
 .label.gray-darker h6,
 div.gray-darker .h6 p,
-.panel.gray-darker .panel-header .h6 p,
-.panel.gray-darker .panel-footer .h6 p,
 .label.gray-darker .h6 p,
 div.gray-darker span,
-.panel.gray-darker .panel-header span,
-.panel.gray-darker .panel-footer span,
 .label.gray-darker span {
   color: #e6e6e7;
 }
 div.gray-darker h4 small,
-.panel.gray-darker .panel-header h4 small,
-.panel.gray-darker .panel-footer h4 small,
 .label.gray-darker h4 small,
 div.gray-darker .h4 small,
-.panel.gray-darker .panel-header .h4 small,
-.panel.gray-darker .panel-footer .h4 small,
 .label.gray-darker .h4 small,
 div.gray-darker h5 small,
-.panel.gray-darker .panel-header h5 small,
-.panel.gray-darker .panel-footer h5 small,
 .label.gray-darker h5 small,
 div.gray-darker .h5 small,
-.panel.gray-darker .panel-header .h5 small,
-.panel.gray-darker .panel-footer .h5 small,
 .label.gray-darker .h5 small,
 div.gray-darker h6 small,
-.panel.gray-darker .panel-header h6 small,
-.panel.gray-darker .panel-footer h6 small,
 .label.gray-darker h6 small,
 div.gray-darker .h6 p small,
-.panel.gray-darker .panel-header .h6 p small,
-.panel.gray-darker .panel-footer .h6 p small,
 .label.gray-darker .h6 p small,
 div.gray-darker span small,
-.panel.gray-darker .panel-header span small,
-.panel.gray-darker .panel-footer span small,
 .label.gray-darker span small {
   color: #cccdce;
 }
 div.gray-darker .label,
-.panel.gray-darker .panel-header .label,
-.panel.gray-darker .panel-footer .label,
 .label.gray-darker .label {
   font-weight: 400;
   color: #ffffff;
   background-color: #8a8c91;
 }
 div.gray-darker.border-only,
-.panel.gray-darker .panel-header.border-only,
-.panel.gray-darker .panel-footer.border-only,
 .label.gray-darker.border-only {
   color: #64666A;
   border-color: #64666A;
 }
 div.gray-darker .bar-data,
-.panel.gray-darker .panel-header .bar-data,
-.panel.gray-darker .panel-footer .bar-data,
 .label.gray-darker .bar-data {
   color: #64666A;
 }
 div.gray-darker .bar-data:before,
-.panel.gray-darker .panel-header .bar-data:before,
-.panel.gray-darker .panel-footer .bar-data:before,
 .label.gray-darker .bar-data:before {
   border-color: #64666A;
 }
@@ -13824,25 +13258,45 @@ div.gray-darker .bar-data:before,
 .tag.gray-darker:hover .label {
   background-color: #323336;
 }
-.tag.gray-darker.reverse.tag.gray-darker {
+.tag.gray-darker.reverse.tag.gray-darker,
+.tag.gray-darker.active.tag.gray-darker {
   color: #ffffff;
   background-color: #64666A;
   border-color: #64666A;
 }
-.tag.gray-darker.reverse.tag.gray-darker .label {
+.tag.gray-darker.reverse.tag.gray-darker .label,
+.tag.gray-darker.active.tag.gray-darker .label {
   color: #ffffff;
   background-color: #323336;
 }
-.tag.gray-darker.reverse.tag.gray-darker span:not(.icon):not(.label) {
+.tag.gray-darker.reverse.tag.gray-darker span:not(.icon):not(.label),
+.tag.gray-darker.active.tag.gray-darker span:not(.icon):not(.label) {
   color: #ffffff;
 }
-.tag.gray-darker.reverse.tag.gray-darker:hover {
+.tag.gray-darker.reverse.tag.gray-darker:hover,
+.tag.gray-darker.active.tag.gray-darker:hover {
   color: #ffffff;
-  background-color: #323336;
-  border-color: #323336;
+  background-color: #58595d;
+  border-color: #4b4d50;
 }
-.tag.gray-darker.reverse.tag.gray-darker:hover .label {
-  background-color: #1a1a1b;
+.tag.gray-darker.reverse.tag.gray-darker:hover .label,
+.tag.gray-darker.active.tag.gray-darker:hover .label {
+  background-color: #4b4d50;
+}
+.panel.gray-darker {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.gray-darker .panel-heading {
+  background-color: #64666A;
+}
+.panel.gray-darker .panel-heading * {
+  color: #ffffff;
+}
+.panel.gray-darker .panel-body,
+.panel.gray-darker .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.gray-darker {
   color: #ffffff;
@@ -13979,148 +13433,86 @@ a.gray-dark {
   color: #A7A7A7;
 }
 div.gray-dark,
-.panel.gray-dark .panel-header,
-.panel.gray-dark .panel-footer,
 .label.gray-dark {
   color: #ffffff;
   background-color: #A7A7A7;
 }
 div.gray-dark h1,
-.panel.gray-dark .panel-header h1,
-.panel.gray-dark .panel-footer h1,
 .label.gray-dark h1,
 div.gray-dark .h1,
-.panel.gray-dark .panel-header .h1,
-.panel.gray-dark .panel-footer .h1,
 .label.gray-dark .h1,
 div.gray-dark h2,
-.panel.gray-dark .panel-header h2,
-.panel.gray-dark .panel-footer h2,
 .label.gray-dark h2,
 div.gray-dark .h2,
-.panel.gray-dark .panel-header .h2,
-.panel.gray-dark .panel-footer .h2,
 .label.gray-dark .h2,
 div.gray-dark h3,
-.panel.gray-dark .panel-header h3,
-.panel.gray-dark .panel-footer h3,
 .label.gray-dark h3,
 div.gray-dark .h3,
-.panel.gray-dark .panel-header .h3,
-.panel.gray-dark .panel-footer .h3,
 .label.gray-dark .h3 {
   color: #ffffff;
 }
 div.gray-dark h1 small,
-.panel.gray-dark .panel-header h1 small,
-.panel.gray-dark .panel-footer h1 small,
 .label.gray-dark h1 small,
 div.gray-dark .h1 small,
-.panel.gray-dark .panel-header .h1 small,
-.panel.gray-dark .panel-footer .h1 small,
 .label.gray-dark .h1 small,
 div.gray-dark h2 small,
-.panel.gray-dark .panel-header h2 small,
-.panel.gray-dark .panel-footer h2 small,
 .label.gray-dark h2 small,
 div.gray-dark .h2 small,
-.panel.gray-dark .panel-header .h2 small,
-.panel.gray-dark .panel-footer .h2 small,
 .label.gray-dark .h2 small,
 div.gray-dark h3 small,
-.panel.gray-dark .panel-header h3 small,
-.panel.gray-dark .panel-footer h3 small,
 .label.gray-dark h3 small,
 div.gray-dark .h3 small,
-.panel.gray-dark .panel-header .h3 small,
-.panel.gray-dark .panel-footer .h3 small,
 .label.gray-dark .h3 small {
   color: #ffffff;
 }
 div.gray-dark h4,
-.panel.gray-dark .panel-header h4,
-.panel.gray-dark .panel-footer h4,
 .label.gray-dark h4,
 div.gray-dark .h4,
-.panel.gray-dark .panel-header .h4,
-.panel.gray-dark .panel-footer .h4,
 .label.gray-dark .h4,
 div.gray-dark h5,
-.panel.gray-dark .panel-header h5,
-.panel.gray-dark .panel-footer h5,
 .label.gray-dark h5,
 div.gray-dark .h5,
-.panel.gray-dark .panel-header .h5,
-.panel.gray-dark .panel-footer .h5,
 .label.gray-dark .h5,
 div.gray-dark h6,
-.panel.gray-dark .panel-header h6,
-.panel.gray-dark .panel-footer h6,
 .label.gray-dark h6,
 div.gray-dark .h6 p,
-.panel.gray-dark .panel-header .h6 p,
-.panel.gray-dark .panel-footer .h6 p,
 .label.gray-dark .h6 p,
 div.gray-dark span,
-.panel.gray-dark .panel-header span,
-.panel.gray-dark .panel-footer span,
 .label.gray-dark span {
   color: #ffffff;
 }
 div.gray-dark h4 small,
-.panel.gray-dark .panel-header h4 small,
-.panel.gray-dark .panel-footer h4 small,
 .label.gray-dark h4 small,
 div.gray-dark .h4 small,
-.panel.gray-dark .panel-header .h4 small,
-.panel.gray-dark .panel-footer .h4 small,
 .label.gray-dark .h4 small,
 div.gray-dark h5 small,
-.panel.gray-dark .panel-header h5 small,
-.panel.gray-dark .panel-footer h5 small,
 .label.gray-dark h5 small,
 div.gray-dark .h5 small,
-.panel.gray-dark .panel-header .h5 small,
-.panel.gray-dark .panel-footer .h5 small,
 .label.gray-dark .h5 small,
 div.gray-dark h6 small,
-.panel.gray-dark .panel-header h6 small,
-.panel.gray-dark .panel-footer h6 small,
 .label.gray-dark h6 small,
 div.gray-dark .h6 p small,
-.panel.gray-dark .panel-header .h6 p small,
-.panel.gray-dark .panel-footer .h6 p small,
 .label.gray-dark .h6 p small,
 div.gray-dark span small,
-.panel.gray-dark .panel-header span small,
-.panel.gray-dark .panel-footer span small,
 .label.gray-dark span small {
   color: #ffffff;
 }
 div.gray-dark .label,
-.panel.gray-dark .panel-header .label,
-.panel.gray-dark .panel-footer .label,
 .label.gray-dark .label {
   font-weight: 400;
   color: #ffffff;
   background-color: #cdcdcd;
 }
 div.gray-dark.border-only,
-.panel.gray-dark .panel-header.border-only,
-.panel.gray-dark .panel-footer.border-only,
 .label.gray-dark.border-only {
   color: #A7A7A7;
   border-color: #A7A7A7;
 }
 div.gray-dark .bar-data,
-.panel.gray-dark .panel-header .bar-data,
-.panel.gray-dark .panel-footer .bar-data,
 .label.gray-dark .bar-data {
   color: #A7A7A7;
 }
 div.gray-dark .bar-data:before,
-.panel.gray-dark .panel-header .bar-data:before,
-.panel.gray-dark .panel-footer .bar-data:before,
 .label.gray-dark .bar-data:before {
   border-color: #A7A7A7;
 }
@@ -14139,25 +13531,45 @@ div.gray-dark .bar-data:before,
 .tag.gray-dark:hover .label {
   background-color: #747474;
 }
-.tag.gray-dark.reverse.tag.gray-dark {
+.tag.gray-dark.reverse.tag.gray-dark,
+.tag.gray-dark.active.tag.gray-dark {
   color: #ffffff;
   background-color: #A7A7A7;
   border-color: #A7A7A7;
 }
-.tag.gray-dark.reverse.tag.gray-dark .label {
+.tag.gray-dark.reverse.tag.gray-dark .label,
+.tag.gray-dark.active.tag.gray-dark .label {
   color: #ffffff;
   background-color: #747474;
 }
-.tag.gray-dark.reverse.tag.gray-dark span:not(.icon):not(.label) {
+.tag.gray-dark.reverse.tag.gray-dark span:not(.icon):not(.label),
+.tag.gray-dark.active.tag.gray-dark span:not(.icon):not(.label) {
   color: #ffffff;
 }
-.tag.gray-dark.reverse.tag.gray-dark:hover {
+.tag.gray-dark.reverse.tag.gray-dark:hover,
+.tag.gray-dark.active.tag.gray-dark:hover {
   color: #ffffff;
-  background-color: #747474;
-  border-color: #747474;
+  background-color: #9a9a9a;
+  border-color: #8e8e8e;
 }
-.tag.gray-dark.reverse.tag.gray-dark:hover .label {
-  background-color: #5b5b5b;
+.tag.gray-dark.reverse.tag.gray-dark:hover .label,
+.tag.gray-dark.active.tag.gray-dark:hover .label {
+  background-color: #8e8e8e;
+}
+.panel.gray-dark {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.gray-dark .panel-heading {
+  background-color: #A7A7A7;
+}
+.panel.gray-dark .panel-heading * {
+  color: #ffffff;
+}
+.panel.gray-dark .panel-body,
+.panel.gray-dark .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.gray-dark {
   color: #ffffff;
@@ -14294,148 +13706,86 @@ a.gray {
   color: #B8B8B8;
 }
 div.gray,
-.panel.gray .panel-header,
-.panel.gray .panel-footer,
 .label.gray {
   color: #393939;
   background-color: #B8B8B8;
 }
 div.gray h1,
-.panel.gray .panel-header h1,
-.panel.gray .panel-footer h1,
 .label.gray h1,
 div.gray .h1,
-.panel.gray .panel-header .h1,
-.panel.gray .panel-footer .h1,
 .label.gray .h1,
 div.gray h2,
-.panel.gray .panel-header h2,
-.panel.gray .panel-footer h2,
 .label.gray h2,
 div.gray .h2,
-.panel.gray .panel-header .h2,
-.panel.gray .panel-footer .h2,
 .label.gray .h2,
 div.gray h3,
-.panel.gray .panel-header h3,
-.panel.gray .panel-footer h3,
 .label.gray h3,
 div.gray .h3,
-.panel.gray .panel-header .h3,
-.panel.gray .panel-footer .h3,
 .label.gray .h3 {
   color: #000000;
 }
 div.gray h1 small,
-.panel.gray .panel-header h1 small,
-.panel.gray .panel-footer h1 small,
 .label.gray h1 small,
 div.gray .h1 small,
-.panel.gray .panel-header .h1 small,
-.panel.gray .panel-footer .h1 small,
 .label.gray .h1 small,
 div.gray h2 small,
-.panel.gray .panel-header h2 small,
-.panel.gray .panel-footer h2 small,
 .label.gray h2 small,
 div.gray .h2 small,
-.panel.gray .panel-header .h2 small,
-.panel.gray .panel-footer .h2 small,
 .label.gray .h2 small,
 div.gray h3 small,
-.panel.gray .panel-header h3 small,
-.panel.gray .panel-footer h3 small,
 .label.gray h3 small,
 div.gray .h3 small,
-.panel.gray .panel-header .h3 small,
-.panel.gray .panel-footer .h3 small,
 .label.gray .h3 small {
   color: #121212;
 }
 div.gray h4,
-.panel.gray .panel-header h4,
-.panel.gray .panel-footer h4,
 .label.gray h4,
 div.gray .h4,
-.panel.gray .panel-header .h4,
-.panel.gray .panel-footer .h4,
 .label.gray .h4,
 div.gray h5,
-.panel.gray .panel-header h5,
-.panel.gray .panel-footer h5,
 .label.gray h5,
 div.gray .h5,
-.panel.gray .panel-header .h5,
-.panel.gray .panel-footer .h5,
 .label.gray .h5,
 div.gray h6,
-.panel.gray .panel-header h6,
-.panel.gray .panel-footer h6,
 .label.gray h6,
 div.gray .h6 p,
-.panel.gray .panel-header .h6 p,
-.panel.gray .panel-footer .h6 p,
 .label.gray .h6 p,
 div.gray span,
-.panel.gray .panel-header span,
-.panel.gray .panel-footer span,
 .label.gray span {
   color: #393939;
 }
 div.gray h4 small,
-.panel.gray .panel-header h4 small,
-.panel.gray .panel-footer h4 small,
 .label.gray h4 small,
 div.gray .h4 small,
-.panel.gray .panel-header .h4 small,
-.panel.gray .panel-footer .h4 small,
 .label.gray .h4 small,
 div.gray h5 small,
-.panel.gray .panel-header h5 small,
-.panel.gray .panel-footer h5 small,
 .label.gray h5 small,
 div.gray .h5 small,
-.panel.gray .panel-header .h5 small,
-.panel.gray .panel-footer .h5 small,
 .label.gray .h5 small,
 div.gray h6 small,
-.panel.gray .panel-header h6 small,
-.panel.gray .panel-footer h6 small,
 .label.gray h6 small,
 div.gray .h6 p small,
-.panel.gray .panel-header .h6 p small,
-.panel.gray .panel-footer .h6 p small,
 .label.gray .h6 p small,
 div.gray span small,
-.panel.gray .panel-header span small,
-.panel.gray .panel-footer span small,
 .label.gray span small {
   color: #525252;
 }
 div.gray .label,
-.panel.gray .panel-header .label,
-.panel.gray .panel-footer .label,
 .label.gray .label {
   font-weight: 400;
   color: #000000;
   background-color: #929292;
 }
 div.gray.border-only,
-.panel.gray .panel-header.border-only,
-.panel.gray .panel-footer.border-only,
 .label.gray.border-only {
   color: #B8B8B8;
   border-color: #B8B8B8;
 }
 div.gray .bar-data,
-.panel.gray .panel-header .bar-data,
-.panel.gray .panel-footer .bar-data,
 .label.gray .bar-data {
   color: #B8B8B8;
 }
 div.gray .bar-data:before,
-.panel.gray .panel-header .bar-data:before,
-.panel.gray .panel-footer .bar-data:before,
 .label.gray .bar-data:before {
   border-color: #B8B8B8;
 }
@@ -14454,25 +13804,45 @@ div.gray .bar-data:before,
 .tag.gray:hover .label {
   background-color: #858585;
 }
-.tag.gray.reverse.tag.gray {
+.tag.gray.reverse.tag.gray,
+.tag.gray.active.tag.gray {
   color: #000000;
   background-color: #B8B8B8;
   border-color: #B8B8B8;
 }
-.tag.gray.reverse.tag.gray .label {
+.tag.gray.reverse.tag.gray .label,
+.tag.gray.active.tag.gray .label {
   color: #000000;
   background-color: #858585;
 }
-.tag.gray.reverse.tag.gray span:not(.icon):not(.label) {
+.tag.gray.reverse.tag.gray span:not(.icon):not(.label),
+.tag.gray.active.tag.gray span:not(.icon):not(.label) {
   color: #000000;
 }
-.tag.gray.reverse.tag.gray:hover {
+.tag.gray.reverse.tag.gray:hover,
+.tag.gray.active.tag.gray:hover {
   color: #000000;
-  background-color: #858585;
-  border-color: #858585;
+  background-color: #ababab;
+  border-color: #9f9f9f;
 }
-.tag.gray.reverse.tag.gray:hover .label {
-  background-color: #6c6c6c;
+.tag.gray.reverse.tag.gray:hover .label,
+.tag.gray.active.tag.gray:hover .label {
+  background-color: #9f9f9f;
+}
+.panel.gray {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.gray .panel-heading {
+  background-color: #B8B8B8;
+}
+.panel.gray .panel-heading * {
+  color: #000000;
+}
+.panel.gray .panel-body,
+.panel.gray .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.gray {
   color: #000000;
@@ -14609,148 +13979,86 @@ a.gray-light {
   color: #D5D5D5;
 }
 div.gray-light,
-.panel.gray-light .panel-header,
-.panel.gray-light .panel-footer,
 .label.gray-light {
   color: #565656;
   background-color: #D5D5D5;
 }
 div.gray-light h1,
-.panel.gray-light .panel-header h1,
-.panel.gray-light .panel-footer h1,
 .label.gray-light h1,
 div.gray-light .h1,
-.panel.gray-light .panel-header .h1,
-.panel.gray-light .panel-footer .h1,
 .label.gray-light .h1,
 div.gray-light h2,
-.panel.gray-light .panel-header h2,
-.panel.gray-light .panel-footer h2,
 .label.gray-light h2,
 div.gray-light .h2,
-.panel.gray-light .panel-header .h2,
-.panel.gray-light .panel-footer .h2,
 .label.gray-light .h2,
 div.gray-light h3,
-.panel.gray-light .panel-header h3,
-.panel.gray-light .panel-footer h3,
 .label.gray-light h3,
 div.gray-light .h3,
-.panel.gray-light .panel-header .h3,
-.panel.gray-light .panel-footer .h3,
 .label.gray-light .h3 {
   color: #161616;
 }
 div.gray-light h1 small,
-.panel.gray-light .panel-header h1 small,
-.panel.gray-light .panel-footer h1 small,
 .label.gray-light h1 small,
 div.gray-light .h1 small,
-.panel.gray-light .panel-header .h1 small,
-.panel.gray-light .panel-footer .h1 small,
 .label.gray-light .h1 small,
 div.gray-light h2 small,
-.panel.gray-light .panel-header h2 small,
-.panel.gray-light .panel-footer h2 small,
 .label.gray-light h2 small,
 div.gray-light .h2 small,
-.panel.gray-light .panel-header .h2 small,
-.panel.gray-light .panel-footer .h2 small,
 .label.gray-light .h2 small,
 div.gray-light h3 small,
-.panel.gray-light .panel-header h3 small,
-.panel.gray-light .panel-footer h3 small,
 .label.gray-light h3 small,
 div.gray-light .h3 small,
-.panel.gray-light .panel-header .h3 small,
-.panel.gray-light .panel-footer .h3 small,
 .label.gray-light .h3 small {
   color: #2f2f2f;
 }
 div.gray-light h4,
-.panel.gray-light .panel-header h4,
-.panel.gray-light .panel-footer h4,
 .label.gray-light h4,
 div.gray-light .h4,
-.panel.gray-light .panel-header .h4,
-.panel.gray-light .panel-footer .h4,
 .label.gray-light .h4,
 div.gray-light h5,
-.panel.gray-light .panel-header h5,
-.panel.gray-light .panel-footer h5,
 .label.gray-light h5,
 div.gray-light .h5,
-.panel.gray-light .panel-header .h5,
-.panel.gray-light .panel-footer .h5,
 .label.gray-light .h5,
 div.gray-light h6,
-.panel.gray-light .panel-header h6,
-.panel.gray-light .panel-footer h6,
 .label.gray-light h6,
 div.gray-light .h6 p,
-.panel.gray-light .panel-header .h6 p,
-.panel.gray-light .panel-footer .h6 p,
 .label.gray-light .h6 p,
 div.gray-light span,
-.panel.gray-light .panel-header span,
-.panel.gray-light .panel-footer span,
 .label.gray-light span {
   color: #565656;
 }
 div.gray-light h4 small,
-.panel.gray-light .panel-header h4 small,
-.panel.gray-light .panel-footer h4 small,
 .label.gray-light h4 small,
 div.gray-light .h4 small,
-.panel.gray-light .panel-header .h4 small,
-.panel.gray-light .panel-footer .h4 small,
 .label.gray-light .h4 small,
 div.gray-light h5 small,
-.panel.gray-light .panel-header h5 small,
-.panel.gray-light .panel-footer h5 small,
 .label.gray-light h5 small,
 div.gray-light .h5 small,
-.panel.gray-light .panel-header .h5 small,
-.panel.gray-light .panel-footer .h5 small,
 .label.gray-light .h5 small,
 div.gray-light h6 small,
-.panel.gray-light .panel-header h6 small,
-.panel.gray-light .panel-footer h6 small,
 .label.gray-light h6 small,
 div.gray-light .h6 p small,
-.panel.gray-light .panel-header .h6 p small,
-.panel.gray-light .panel-footer .h6 p small,
 .label.gray-light .h6 p small,
 div.gray-light span small,
-.panel.gray-light .panel-header span small,
-.panel.gray-light .panel-footer span small,
 .label.gray-light span small {
   color: #6f6f6f;
 }
 div.gray-light .label,
-.panel.gray-light .panel-header .label,
-.panel.gray-light .panel-footer .label,
 .label.gray-light .label {
   font-weight: 400;
   color: #161616;
   background-color: #afafaf;
 }
 div.gray-light.border-only,
-.panel.gray-light .panel-header.border-only,
-.panel.gray-light .panel-footer.border-only,
 .label.gray-light.border-only {
   color: #D5D5D5;
   border-color: #D5D5D5;
 }
 div.gray-light .bar-data,
-.panel.gray-light .panel-header .bar-data,
-.panel.gray-light .panel-footer .bar-data,
 .label.gray-light .bar-data {
   color: #D5D5D5;
 }
 div.gray-light .bar-data:before,
-.panel.gray-light .panel-header .bar-data:before,
-.panel.gray-light .panel-footer .bar-data:before,
 .label.gray-light .bar-data:before {
   border-color: #D5D5D5;
 }
@@ -14769,25 +14077,45 @@ div.gray-light .bar-data:before,
 .tag.gray-light:hover .label {
   background-color: #a2a2a2;
 }
-.tag.gray-light.reverse.tag.gray-light {
+.tag.gray-light.reverse.tag.gray-light,
+.tag.gray-light.active.tag.gray-light {
   color: #161616;
   background-color: #D5D5D5;
   border-color: #D5D5D5;
 }
-.tag.gray-light.reverse.tag.gray-light .label {
+.tag.gray-light.reverse.tag.gray-light .label,
+.tag.gray-light.active.tag.gray-light .label {
   color: #161616;
   background-color: #a2a2a2;
 }
-.tag.gray-light.reverse.tag.gray-light span:not(.icon):not(.label) {
+.tag.gray-light.reverse.tag.gray-light span:not(.icon):not(.label),
+.tag.gray-light.active.tag.gray-light span:not(.icon):not(.label) {
   color: #161616;
 }
-.tag.gray-light.reverse.tag.gray-light:hover {
-  color: #161616;
-  background-color: #a2a2a2;
-  border-color: #a2a2a2;
+.tag.gray-light.reverse.tag.gray-light:hover,
+.tag.gray-light.active.tag.gray-light:hover {
+  color: #000000;
+  background-color: #c8c8c8;
+  border-color: #bcbcbc;
 }
-.tag.gray-light.reverse.tag.gray-light:hover .label {
-  background-color: #898989;
+.tag.gray-light.reverse.tag.gray-light:hover .label,
+.tag.gray-light.active.tag.gray-light:hover .label {
+  background-color: #bcbcbc;
+}
+.panel.gray-light {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.gray-light .panel-heading {
+  background-color: #D5D5D5;
+}
+.panel.gray-light .panel-heading * {
+  color: #000000;
+}
+.panel.gray-light .panel-body,
+.panel.gray-light .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.gray-light {
   color: #161616;
@@ -14924,148 +14252,86 @@ a.gray-lighter {
   color: #E6E6E6;
 }
 div.gray-lighter,
-.panel.gray-lighter .panel-header,
-.panel.gray-lighter .panel-footer,
 .label.gray-lighter {
   color: #676767;
   background-color: #E6E6E6;
 }
 div.gray-lighter h1,
-.panel.gray-lighter .panel-header h1,
-.panel.gray-lighter .panel-footer h1,
 .label.gray-lighter h1,
 div.gray-lighter .h1,
-.panel.gray-lighter .panel-header .h1,
-.panel.gray-lighter .panel-footer .h1,
 .label.gray-lighter .h1,
 div.gray-lighter h2,
-.panel.gray-lighter .panel-header h2,
-.panel.gray-lighter .panel-footer h2,
 .label.gray-lighter h2,
 div.gray-lighter .h2,
-.panel.gray-lighter .panel-header .h2,
-.panel.gray-lighter .panel-footer .h2,
 .label.gray-lighter .h2,
 div.gray-lighter h3,
-.panel.gray-lighter .panel-header h3,
-.panel.gray-lighter .panel-footer h3,
 .label.gray-lighter h3,
 div.gray-lighter .h3,
-.panel.gray-lighter .panel-header .h3,
-.panel.gray-lighter .panel-footer .h3,
 .label.gray-lighter .h3 {
   color: #272727;
 }
 div.gray-lighter h1 small,
-.panel.gray-lighter .panel-header h1 small,
-.panel.gray-lighter .panel-footer h1 small,
 .label.gray-lighter h1 small,
 div.gray-lighter .h1 small,
-.panel.gray-lighter .panel-header .h1 small,
-.panel.gray-lighter .panel-footer .h1 small,
 .label.gray-lighter .h1 small,
 div.gray-lighter h2 small,
-.panel.gray-lighter .panel-header h2 small,
-.panel.gray-lighter .panel-footer h2 small,
 .label.gray-lighter h2 small,
 div.gray-lighter .h2 small,
-.panel.gray-lighter .panel-header .h2 small,
-.panel.gray-lighter .panel-footer .h2 small,
 .label.gray-lighter .h2 small,
 div.gray-lighter h3 small,
-.panel.gray-lighter .panel-header h3 small,
-.panel.gray-lighter .panel-footer h3 small,
 .label.gray-lighter h3 small,
 div.gray-lighter .h3 small,
-.panel.gray-lighter .panel-header .h3 small,
-.panel.gray-lighter .panel-footer .h3 small,
 .label.gray-lighter .h3 small {
   color: #404040;
 }
 div.gray-lighter h4,
-.panel.gray-lighter .panel-header h4,
-.panel.gray-lighter .panel-footer h4,
 .label.gray-lighter h4,
 div.gray-lighter .h4,
-.panel.gray-lighter .panel-header .h4,
-.panel.gray-lighter .panel-footer .h4,
 .label.gray-lighter .h4,
 div.gray-lighter h5,
-.panel.gray-lighter .panel-header h5,
-.panel.gray-lighter .panel-footer h5,
 .label.gray-lighter h5,
 div.gray-lighter .h5,
-.panel.gray-lighter .panel-header .h5,
-.panel.gray-lighter .panel-footer .h5,
 .label.gray-lighter .h5,
 div.gray-lighter h6,
-.panel.gray-lighter .panel-header h6,
-.panel.gray-lighter .panel-footer h6,
 .label.gray-lighter h6,
 div.gray-lighter .h6 p,
-.panel.gray-lighter .panel-header .h6 p,
-.panel.gray-lighter .panel-footer .h6 p,
 .label.gray-lighter .h6 p,
 div.gray-lighter span,
-.panel.gray-lighter .panel-header span,
-.panel.gray-lighter .panel-footer span,
 .label.gray-lighter span {
   color: #676767;
 }
 div.gray-lighter h4 small,
-.panel.gray-lighter .panel-header h4 small,
-.panel.gray-lighter .panel-footer h4 small,
 .label.gray-lighter h4 small,
 div.gray-lighter .h4 small,
-.panel.gray-lighter .panel-header .h4 small,
-.panel.gray-lighter .panel-footer .h4 small,
 .label.gray-lighter .h4 small,
 div.gray-lighter h5 small,
-.panel.gray-lighter .panel-header h5 small,
-.panel.gray-lighter .panel-footer h5 small,
 .label.gray-lighter h5 small,
 div.gray-lighter .h5 small,
-.panel.gray-lighter .panel-header .h5 small,
-.panel.gray-lighter .panel-footer .h5 small,
 .label.gray-lighter .h5 small,
 div.gray-lighter h6 small,
-.panel.gray-lighter .panel-header h6 small,
-.panel.gray-lighter .panel-footer h6 small,
 .label.gray-lighter h6 small,
 div.gray-lighter .h6 p small,
-.panel.gray-lighter .panel-header .h6 p small,
-.panel.gray-lighter .panel-footer .h6 p small,
 .label.gray-lighter .h6 p small,
 div.gray-lighter span small,
-.panel.gray-lighter .panel-header span small,
-.panel.gray-lighter .panel-footer span small,
 .label.gray-lighter span small {
   color: #808080;
 }
 div.gray-lighter .label,
-.panel.gray-lighter .panel-header .label,
-.panel.gray-lighter .panel-footer .label,
 .label.gray-lighter .label {
   font-weight: 400;
   color: #272727;
   background-color: #c0c0c0;
 }
 div.gray-lighter.border-only,
-.panel.gray-lighter .panel-header.border-only,
-.panel.gray-lighter .panel-footer.border-only,
 .label.gray-lighter.border-only {
   color: #E6E6E6;
   border-color: #E6E6E6;
 }
 div.gray-lighter .bar-data,
-.panel.gray-lighter .panel-header .bar-data,
-.panel.gray-lighter .panel-footer .bar-data,
 .label.gray-lighter .bar-data {
   color: #E6E6E6;
 }
 div.gray-lighter .bar-data:before,
-.panel.gray-lighter .panel-header .bar-data:before,
-.panel.gray-lighter .panel-footer .bar-data:before,
 .label.gray-lighter .bar-data:before {
   border-color: #E6E6E6;
 }
@@ -15084,25 +14350,45 @@ div.gray-lighter .bar-data:before,
 .tag.gray-lighter:hover .label {
   background-color: #b3b3b3;
 }
-.tag.gray-lighter.reverse.tag.gray-lighter {
+.tag.gray-lighter.reverse.tag.gray-lighter,
+.tag.gray-lighter.active.tag.gray-lighter {
   color: #272727;
   background-color: #E6E6E6;
   border-color: #E6E6E6;
 }
-.tag.gray-lighter.reverse.tag.gray-lighter .label {
+.tag.gray-lighter.reverse.tag.gray-lighter .label,
+.tag.gray-lighter.active.tag.gray-lighter .label {
   color: #272727;
   background-color: #b3b3b3;
 }
-.tag.gray-lighter.reverse.tag.gray-lighter span:not(.icon):not(.label) {
+.tag.gray-lighter.reverse.tag.gray-lighter span:not(.icon):not(.label),
+.tag.gray-lighter.active.tag.gray-lighter span:not(.icon):not(.label) {
   color: #272727;
 }
-.tag.gray-lighter.reverse.tag.gray-lighter:hover {
-  color: #272727;
-  background-color: #b3b3b3;
-  border-color: #b3b3b3;
+.tag.gray-lighter.reverse.tag.gray-lighter:hover,
+.tag.gray-lighter.active.tag.gray-lighter:hover {
+  color: #000000;
+  background-color: #d9d9d9;
+  border-color: #cdcdcd;
 }
-.tag.gray-lighter.reverse.tag.gray-lighter:hover .label {
-  background-color: #9a9a9a;
+.tag.gray-lighter.reverse.tag.gray-lighter:hover .label,
+.tag.gray-lighter.active.tag.gray-lighter:hover .label {
+  background-color: #cdcdcd;
+}
+.panel.gray-lighter {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.gray-lighter .panel-heading {
+  background-color: #E6E6E6;
+}
+.panel.gray-lighter .panel-heading * {
+  color: #000000;
+}
+.panel.gray-lighter .panel-body,
+.panel.gray-lighter .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.gray-lighter {
   color: #272727;
@@ -15239,148 +14525,86 @@ a.gray-lightest {
   color: #F8F8F8;
 }
 div.gray-lightest,
-.panel.gray-lightest .panel-header,
-.panel.gray-lightest .panel-footer,
 .label.gray-lightest {
   color: #797979;
   background-color: #F8F8F8;
 }
 div.gray-lightest h1,
-.panel.gray-lightest .panel-header h1,
-.panel.gray-lightest .panel-footer h1,
 .label.gray-lightest h1,
 div.gray-lightest .h1,
-.panel.gray-lightest .panel-header .h1,
-.panel.gray-lightest .panel-footer .h1,
 .label.gray-lightest .h1,
 div.gray-lightest h2,
-.panel.gray-lightest .panel-header h2,
-.panel.gray-lightest .panel-footer h2,
 .label.gray-lightest h2,
 div.gray-lightest .h2,
-.panel.gray-lightest .panel-header .h2,
-.panel.gray-lightest .panel-footer .h2,
 .label.gray-lightest .h2,
 div.gray-lightest h3,
-.panel.gray-lightest .panel-header h3,
-.panel.gray-lightest .panel-footer h3,
 .label.gray-lightest h3,
 div.gray-lightest .h3,
-.panel.gray-lightest .panel-header .h3,
-.panel.gray-lightest .panel-footer .h3,
 .label.gray-lightest .h3 {
   color: #393939;
 }
 div.gray-lightest h1 small,
-.panel.gray-lightest .panel-header h1 small,
-.panel.gray-lightest .panel-footer h1 small,
 .label.gray-lightest h1 small,
 div.gray-lightest .h1 small,
-.panel.gray-lightest .panel-header .h1 small,
-.panel.gray-lightest .panel-footer .h1 small,
 .label.gray-lightest .h1 small,
 div.gray-lightest h2 small,
-.panel.gray-lightest .panel-header h2 small,
-.panel.gray-lightest .panel-footer h2 small,
 .label.gray-lightest h2 small,
 div.gray-lightest .h2 small,
-.panel.gray-lightest .panel-header .h2 small,
-.panel.gray-lightest .panel-footer .h2 small,
 .label.gray-lightest .h2 small,
 div.gray-lightest h3 small,
-.panel.gray-lightest .panel-header h3 small,
-.panel.gray-lightest .panel-footer h3 small,
 .label.gray-lightest h3 small,
 div.gray-lightest .h3 small,
-.panel.gray-lightest .panel-header .h3 small,
-.panel.gray-lightest .panel-footer .h3 small,
 .label.gray-lightest .h3 small {
   color: #525252;
 }
 div.gray-lightest h4,
-.panel.gray-lightest .panel-header h4,
-.panel.gray-lightest .panel-footer h4,
 .label.gray-lightest h4,
 div.gray-lightest .h4,
-.panel.gray-lightest .panel-header .h4,
-.panel.gray-lightest .panel-footer .h4,
 .label.gray-lightest .h4,
 div.gray-lightest h5,
-.panel.gray-lightest .panel-header h5,
-.panel.gray-lightest .panel-footer h5,
 .label.gray-lightest h5,
 div.gray-lightest .h5,
-.panel.gray-lightest .panel-header .h5,
-.panel.gray-lightest .panel-footer .h5,
 .label.gray-lightest .h5,
 div.gray-lightest h6,
-.panel.gray-lightest .panel-header h6,
-.panel.gray-lightest .panel-footer h6,
 .label.gray-lightest h6,
 div.gray-lightest .h6 p,
-.panel.gray-lightest .panel-header .h6 p,
-.panel.gray-lightest .panel-footer .h6 p,
 .label.gray-lightest .h6 p,
 div.gray-lightest span,
-.panel.gray-lightest .panel-header span,
-.panel.gray-lightest .panel-footer span,
 .label.gray-lightest span {
   color: #797979;
 }
 div.gray-lightest h4 small,
-.panel.gray-lightest .panel-header h4 small,
-.panel.gray-lightest .panel-footer h4 small,
 .label.gray-lightest h4 small,
 div.gray-lightest .h4 small,
-.panel.gray-lightest .panel-header .h4 small,
-.panel.gray-lightest .panel-footer .h4 small,
 .label.gray-lightest .h4 small,
 div.gray-lightest h5 small,
-.panel.gray-lightest .panel-header h5 small,
-.panel.gray-lightest .panel-footer h5 small,
 .label.gray-lightest h5 small,
 div.gray-lightest .h5 small,
-.panel.gray-lightest .panel-header .h5 small,
-.panel.gray-lightest .panel-footer .h5 small,
 .label.gray-lightest .h5 small,
 div.gray-lightest h6 small,
-.panel.gray-lightest .panel-header h6 small,
-.panel.gray-lightest .panel-footer h6 small,
 .label.gray-lightest h6 small,
 div.gray-lightest .h6 p small,
-.panel.gray-lightest .panel-header .h6 p small,
-.panel.gray-lightest .panel-footer .h6 p small,
 .label.gray-lightest .h6 p small,
 div.gray-lightest span small,
-.panel.gray-lightest .panel-header span small,
-.panel.gray-lightest .panel-footer span small,
 .label.gray-lightest span small {
   color: #929292;
 }
 div.gray-lightest .label,
-.panel.gray-lightest .panel-header .label,
-.panel.gray-lightest .panel-footer .label,
 .label.gray-lightest .label {
   font-weight: 400;
   color: #393939;
   background-color: #d2d2d2;
 }
 div.gray-lightest.border-only,
-.panel.gray-lightest .panel-header.border-only,
-.panel.gray-lightest .panel-footer.border-only,
 .label.gray-lightest.border-only {
   color: #F8F8F8;
   border-color: #F8F8F8;
 }
 div.gray-lightest .bar-data,
-.panel.gray-lightest .panel-header .bar-data,
-.panel.gray-lightest .panel-footer .bar-data,
 .label.gray-lightest .bar-data {
   color: #F8F8F8;
 }
 div.gray-lightest .bar-data:before,
-.panel.gray-lightest .panel-header .bar-data:before,
-.panel.gray-lightest .panel-footer .bar-data:before,
 .label.gray-lightest .bar-data:before {
   border-color: #F8F8F8;
 }
@@ -15399,25 +14623,45 @@ div.gray-lightest .bar-data:before,
 .tag.gray-lightest:hover .label {
   background-color: #c5c5c5;
 }
-.tag.gray-lightest.reverse.tag.gray-lightest {
+.tag.gray-lightest.reverse.tag.gray-lightest,
+.tag.gray-lightest.active.tag.gray-lightest {
   color: #393939;
   background-color: #F8F8F8;
   border-color: #F8F8F8;
 }
-.tag.gray-lightest.reverse.tag.gray-lightest .label {
+.tag.gray-lightest.reverse.tag.gray-lightest .label,
+.tag.gray-lightest.active.tag.gray-lightest .label {
   color: #393939;
   background-color: #c5c5c5;
 }
-.tag.gray-lightest.reverse.tag.gray-lightest span:not(.icon):not(.label) {
+.tag.gray-lightest.reverse.tag.gray-lightest span:not(.icon):not(.label),
+.tag.gray-lightest.active.tag.gray-lightest span:not(.icon):not(.label) {
   color: #393939;
 }
-.tag.gray-lightest.reverse.tag.gray-lightest:hover {
-  color: #393939;
-  background-color: #c5c5c5;
-  border-color: #c5c5c5;
+.tag.gray-lightest.reverse.tag.gray-lightest:hover,
+.tag.gray-lightest.active.tag.gray-lightest:hover {
+  color: #000000;
+  background-color: #ebebeb;
+  border-color: #dfdfdf;
 }
-.tag.gray-lightest.reverse.tag.gray-lightest:hover .label {
-  background-color: #acacac;
+.tag.gray-lightest.reverse.tag.gray-lightest:hover .label,
+.tag.gray-lightest.active.tag.gray-lightest:hover .label {
+  background-color: #dfdfdf;
+}
+.panel.gray-lightest {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.gray-lightest .panel-heading {
+  background-color: #F8F8F8;
+}
+.panel.gray-lightest .panel-heading * {
+  color: #000000;
+}
+.panel.gray-lightest .panel-body,
+.panel.gray-lightest .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.gray-lightest {
   color: #393939;
@@ -15554,148 +14798,86 @@ a.white {
   color: #FFFFFF;
 }
 div.white,
-.panel.white .panel-header,
-.panel.white .panel-footer,
 .label.white {
   color: #808080;
   background-color: #FFFFFF;
 }
 div.white h1,
-.panel.white .panel-header h1,
-.panel.white .panel-footer h1,
 .label.white h1,
 div.white .h1,
-.panel.white .panel-header .h1,
-.panel.white .panel-footer .h1,
 .label.white .h1,
 div.white h2,
-.panel.white .panel-header h2,
-.panel.white .panel-footer h2,
 .label.white h2,
 div.white .h2,
-.panel.white .panel-header .h2,
-.panel.white .panel-footer .h2,
 .label.white .h2,
 div.white h3,
-.panel.white .panel-header h3,
-.panel.white .panel-footer h3,
 .label.white h3,
 div.white .h3,
-.panel.white .panel-header .h3,
-.panel.white .panel-footer .h3,
 .label.white .h3 {
   color: #404040;
 }
 div.white h1 small,
-.panel.white .panel-header h1 small,
-.panel.white .panel-footer h1 small,
 .label.white h1 small,
 div.white .h1 small,
-.panel.white .panel-header .h1 small,
-.panel.white .panel-footer .h1 small,
 .label.white .h1 small,
 div.white h2 small,
-.panel.white .panel-header h2 small,
-.panel.white .panel-footer h2 small,
 .label.white h2 small,
 div.white .h2 small,
-.panel.white .panel-header .h2 small,
-.panel.white .panel-footer .h2 small,
 .label.white .h2 small,
 div.white h3 small,
-.panel.white .panel-header h3 small,
-.panel.white .panel-footer h3 small,
 .label.white h3 small,
 div.white .h3 small,
-.panel.white .panel-header .h3 small,
-.panel.white .panel-footer .h3 small,
 .label.white .h3 small {
   color: #595959;
 }
 div.white h4,
-.panel.white .panel-header h4,
-.panel.white .panel-footer h4,
 .label.white h4,
 div.white .h4,
-.panel.white .panel-header .h4,
-.panel.white .panel-footer .h4,
 .label.white .h4,
 div.white h5,
-.panel.white .panel-header h5,
-.panel.white .panel-footer h5,
 .label.white h5,
 div.white .h5,
-.panel.white .panel-header .h5,
-.panel.white .panel-footer .h5,
 .label.white .h5,
 div.white h6,
-.panel.white .panel-header h6,
-.panel.white .panel-footer h6,
 .label.white h6,
 div.white .h6 p,
-.panel.white .panel-header .h6 p,
-.panel.white .panel-footer .h6 p,
 .label.white .h6 p,
 div.white span,
-.panel.white .panel-header span,
-.panel.white .panel-footer span,
 .label.white span {
   color: #808080;
 }
 div.white h4 small,
-.panel.white .panel-header h4 small,
-.panel.white .panel-footer h4 small,
 .label.white h4 small,
 div.white .h4 small,
-.panel.white .panel-header .h4 small,
-.panel.white .panel-footer .h4 small,
 .label.white .h4 small,
 div.white h5 small,
-.panel.white .panel-header h5 small,
-.panel.white .panel-footer h5 small,
 .label.white h5 small,
 div.white .h5 small,
-.panel.white .panel-header .h5 small,
-.panel.white .panel-footer .h5 small,
 .label.white .h5 small,
 div.white h6 small,
-.panel.white .panel-header h6 small,
-.panel.white .panel-footer h6 small,
 .label.white h6 small,
 div.white .h6 p small,
-.panel.white .panel-header .h6 p small,
-.panel.white .panel-footer .h6 p small,
 .label.white .h6 p small,
 div.white span small,
-.panel.white .panel-header span small,
-.panel.white .panel-footer span small,
 .label.white span small {
   color: #999999;
 }
 div.white .label,
-.panel.white .panel-header .label,
-.panel.white .panel-footer .label,
 .label.white .label {
   font-weight: 400;
   color: #404040;
   background-color: #d9d9d9;
 }
 div.white.border-only,
-.panel.white .panel-header.border-only,
-.panel.white .panel-footer.border-only,
 .label.white.border-only {
   color: #FFFFFF;
   border-color: #FFFFFF;
 }
 div.white .bar-data,
-.panel.white .panel-header .bar-data,
-.panel.white .panel-footer .bar-data,
 .label.white .bar-data {
   color: #FFFFFF;
 }
 div.white .bar-data:before,
-.panel.white .panel-header .bar-data:before,
-.panel.white .panel-footer .bar-data:before,
 .label.white .bar-data:before {
   border-color: #FFFFFF;
 }
@@ -15714,25 +14896,45 @@ div.white .bar-data:before,
 .tag.white:hover .label {
   background-color: #cccccc;
 }
-.tag.white.reverse.tag.white {
+.tag.white.reverse.tag.white,
+.tag.white.active.tag.white {
   color: #404040;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
 }
-.tag.white.reverse.tag.white .label {
+.tag.white.reverse.tag.white .label,
+.tag.white.active.tag.white .label {
   color: #404040;
   background-color: #cccccc;
 }
-.tag.white.reverse.tag.white span:not(.icon):not(.label) {
+.tag.white.reverse.tag.white span:not(.icon):not(.label),
+.tag.white.active.tag.white span:not(.icon):not(.label) {
   color: #404040;
 }
-.tag.white.reverse.tag.white:hover {
-  color: #404040;
-  background-color: #cccccc;
-  border-color: #cccccc;
+.tag.white.reverse.tag.white:hover,
+.tag.white.active.tag.white:hover {
+  color: #000000;
+  background-color: #f2f2f2;
+  border-color: #e6e6e6;
 }
-.tag.white.reverse.tag.white:hover .label {
-  background-color: #b3b3b3;
+.tag.white.reverse.tag.white:hover .label,
+.tag.white.active.tag.white:hover .label {
+  background-color: #e6e6e6;
+}
+.panel.white {
+  background-color: #FFFFFF;
+  border: none;
+}
+.panel.white .panel-heading {
+  background-color: #FFFFFF;
+}
+.panel.white .panel-heading * {
+  color: #000000;
+}
+.panel.white .panel-body,
+.panel.white .panel-footer {
+  background-color: #FFFFFF;
+  color: #2a2b2d;
 }
 .btn.white {
   color: #404040;
@@ -17975,6 +17177,18 @@ span.tag > * {
   background-color: transparent;
   pointer-events: none;
 }
+.tag.active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.tag.disabled {
+  color: #64666A;
+  border-color: #64666A;
+  background-color: #FFFFFF;
+}
+.tag small {
+  display: block;
+}
 .tag .label {
   font-size: 80%;
   margin-right: 0.5em;
@@ -18718,6 +17932,10 @@ section.main {
   width: 7%;
   margin: 0.5% 0.5% 0.5% 0.5%;
 }
+ul.no-bullet {
+  list-style: none;
+  padding-left: 0px;
+}
 .flex-children {
   display: flex;
   flex-wrap: wrap;
@@ -19076,4 +18294,52 @@ input.form-control {
 }
 .breadcrumb-container .breadcrumb li {
   color: #64666A;
+}
+.panel {
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.panel .panel-heading * {
+  font-size: 18px;
+  font-weight: 700;
+}
+.panel .panel-body,
+.panel .panel-footer {
+  font-size: 13px;
+}
+.panel .panel-footer {
+  border-top: none;
+}
+.panel-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px;
+  justify-content: flex-start;
+}
+.panel-grid > .panel {
+  flex: 0 0 auto;
+  margin: 8px;
+}
+.tag-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: -4px;
+}
+.tag-menu > .tag {
+  flex: 1;
+  margin: 4px;
+}
+.tag-menu .tag {
+  text-align: left;
+  color: #2a2b2d;
+  border-color: transparent;
+  padding-top: 0.25em;
+  padding-right: 0.5em !important;
+  padding-bottom: 0.25em;
+  padding-left: 0.5em;
+}
+.tag-menu .tag:hover {
+  color: #2a2b2d;
+  background-color: #F8F8F8;
+  border-color: #E6E6E6;
 }

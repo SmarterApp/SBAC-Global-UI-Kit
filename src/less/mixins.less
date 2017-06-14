@@ -14,8 +14,6 @@
     color: @colorName;
   }
   div&,
-  .panel& .panel-header,
-  .panel& .panel-footer,
   .label& {
     color: contrast(@colorName, darken(@colorName, 50%), lighten(@colorName, 50%));
     background-color: @colorName;
@@ -69,7 +67,8 @@
         background-color: darken(@colorName, 20%);
       }
     }
-    &.reverse& {
+    &.reverse&,
+    &.active& {
       color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
       background-color: @colorName;
       border-color: @colorName;
@@ -81,13 +80,28 @@
         color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
       }
       &:hover {
-        color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
-        background-color: darken(@colorName, 20%);
-        border-color: darken(@colorName, 20%);
+        color: contrast(@colorName, darken(@colorName, 100%), lighten(@colorName, 100%));
+        background-color: darken(@colorName, 5%);
+        border-color: darken(@colorName, 10%);
         .label {
-          background-color: darken(@colorName, 30%);
+          background-color: darken(@colorName, 10%);
         }
       }
+    }
+  }
+  .panel& {
+    background-color: @white;
+    border: none;
+    .panel-heading {
+      background-color: @colorName;
+      * {
+        color: contrast(@colorName, darken(@colorName, 100%), lighten(@colorName, 100%));
+      }
+    }
+    .panel-body,
+    .panel-footer {
+      background-color: @white;
+      color: @text-color;
     }
   }
   .btn& {

@@ -239,6 +239,17 @@
     background-color: transparent;
     pointer-events: none;
   }
+  &.active {
+    .box-shadow(none);
+  }
+  &.disabled {
+    color: @gray-darker;
+    border-color: @gray-darker;
+    background-color: @white;
+  }
+  small {
+    display: block;
+  }
   .label {
     font-size: 80%;
     margin-right: 0.5em;

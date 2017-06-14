@@ -24,6 +24,11 @@ section.main {
 }
 .make-flex-columns(@grid-columns);
 
+ul.no-bullet {
+  list-style: none;
+  padding-left: 0px;
+}
+
 .flex-children {
   display: flex;
   flex-wrap: wrap;
@@ -385,6 +390,65 @@ label {
     border-radius: 0px;
     li {
       color: @gray-darker;
+    }
+  }
+}
+
+//
+// Panels
+// --------------------------------------------------
+
+.panel {
+  font-family: @font-family-sans-serif;
+  .panel-heading {
+    * {
+      font-size: @font-size-h4;
+      font-weight: 700;
+    }
+  }
+  .panel-body,
+  .panel-footer {
+    font-size: @font-size-small;
+  }
+  .panel-footer {
+    border-top: none;
+  }
+}
+
+// Panel Grid
+.panel-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: ((@grid-gutter-width / 2) * -1);
+  justify-content: flex-start;
+  > .panel {
+    flex: 0 0 auto;
+    margin: (@grid-gutter-width / 2);
+  }
+}
+
+// Tag Menu
+.tag-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: ((@grid-gutter-width / 4) * -1);
+  > .tag {
+    flex: 1;
+    margin: (@grid-gutter-width / 4);
+  }
+  .tag {
+    text-align: left;
+    color: @gray-darkest;
+    border-color: transparent;
+    padding-top: 0.25em;
+    padding-right: 0.5em !important; // evening out the padding that was put in for labelled tags
+    padding-bottom: 0.25em;
+    padding-left: 0.5em;
+    &:hover {
+      color: @gray-darkest;
+      background-color: @gray-lightest;
+      border-color: @gray-lighter;
     }
   }
 }
