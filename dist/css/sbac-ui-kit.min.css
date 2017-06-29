@@ -18189,8 +18189,8 @@ This will need to be resolved if TFOOT becomes necessary
 }
 .well {
   min-height: 32px;
-  padding: 32px;
-  margin-bottom: 32px;
+  padding: 16px;
+  margin-bottom: 16px;
   background-color: #FFFFFF;
   border: 1px solid #D5D5D5;
   border-radius: 5px;
