@@ -18189,7 +18189,10 @@ This will need to be resolved if TFOOT becomes necessary
 }
 .well {
   min-height: 32px;
-  padding: 16px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
   margin-bottom: 16px;
   background-color: #FFFFFF;
   border: 1px solid #D5D5D5;
