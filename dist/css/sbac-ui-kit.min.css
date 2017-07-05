@@ -18161,6 +18161,26 @@ This will need to be resolved if TFOOT becomes necessary
 .table tr:last-child td {
   border-bottom: 1px solid #D5D5D5;
 }
+.table tr th.level-down,
+.table tr td.level-down {
+  -webkit-box-shadow: inset 15px 0px 8px -8px rgba(0, 0, 0, 0.12);
+  box-shadow: inset 15px 0px 8px -8px rgba(0, 0, 0, 0.12);
+}
+.table tr th.level-down {
+  position: relative;
+}
+.table tr th.level-down:before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 17px 0 17px 7px;
+  border-color: transparent transparent transparent #E6E6E6;
+}
 .nav-tabs {
   margin-left: 4px;
   border-bottom: none;
