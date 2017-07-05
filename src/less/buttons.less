@@ -58,6 +58,39 @@
   }
 }
 
+.btn.btn-borderless {
+  border-color: transparent;
+  background-color: transparent;
+  &.btn-default {
+    color: @btn-default-color;
+    &:hover { color: darken(@btn-default-color, 10%); }
+  }
+  &.btn-primary {
+    color: @btn-primary-bg;
+    &:hover { color: darken(@btn-primary-bg, 20%); }
+  }
+  &.btn-success {
+    color: @btn-success-bg;
+    &:hover { color: darken(@btn-success-bg, 20%); }
+  }
+  &.btn-info {
+    color: @btn-info-bg;
+    &:hover { color: darken(@btn-info-bg, 20%); }
+  }
+  &.btn-warning {
+    color: @btn-warning-bg;
+    &:hover { color: darken(@btn-warning-bg, 20%); }
+  }
+  &.btn-danger {
+    color: @btn-danger-bg;
+    &:hover { color: darken(@btn-danger-bg, 20%); }
+  }
+  &:hover {
+    border-color: transparent;
+    background-color: transparent;
+  }
+}
+
 // Button Toggles
 .toggle-group {
   .btn-primary {
@@ -158,13 +191,10 @@
 // --------------------------------------------------
 .btn-default {
   .btn {
-    .button-variant(@btn-default-color; @btn-default-bg; transparent);
+    .button-variant(darken(@btn-default-color, 10%); darken(@btn-default-bg, 10%); transparent);
   }
-  &:hover {
-    .button-variant(@white; @gray-darker; @gray-darker);
-    .btn {
-      .button-variant(darken(@btn-default-color, 10%); darken(@btn-default-bg, 10%); transparent);
-    }
+  &:hover .btn {
+    .button-variant(darken(@btn-default-color, 20%); darken(@btn-default-bg, 20%); transparent);
   }
 }
 .btn-primary {
