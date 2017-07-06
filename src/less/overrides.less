@@ -411,6 +411,21 @@ label {
 .input-group-addon {
   height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
 }
+// Flex Aligned Forms
+.form-group .flex-children {
+  align-items: stretch;
+  .flex-child {
+    align-self: flex-end;
+    &.grow {
+      flex-grow: 1;
+    }
+  }
+}
+.form-control.btn {
+  display: block;
+  width: auto;
+}
+
 
 //
 // Breadcrumbs

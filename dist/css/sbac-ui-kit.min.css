@@ -18313,6 +18313,19 @@ input.form-control {
 .input-group-addon {
   height: 38.44px;
 }
+.form-group .flex-children {
+  align-items: stretch;
+}
+.form-group .flex-children .flex-child {
+  align-self: flex-end;
+}
+.form-group .flex-children .flex-child.grow {
+  flex-grow: 1;
+}
+.form-control.btn {
+  display: block;
+  width: auto;
+}
 .breadcrumb-container {
   border-width: 1px 0px;
   border-style: solid;
