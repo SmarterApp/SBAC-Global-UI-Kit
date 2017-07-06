@@ -18239,6 +18239,12 @@ This will need to be resolved if TFOOT becomes necessary
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.well-group .well:last-child {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .label {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;

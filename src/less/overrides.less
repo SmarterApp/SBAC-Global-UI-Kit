@@ -335,6 +335,10 @@ This will need to be resolved if TFOOT becomes necessary
     &:first-child {
       border: none;
       .box-shadow(none);
+      .border-top-radius(@border-radius-base);
+    }
+    &:last-child {
+      .border-bottom-radius(@border-radius-base);
     }
   }
 }
