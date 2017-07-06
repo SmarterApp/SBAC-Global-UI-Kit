@@ -18161,10 +18161,16 @@ This will need to be resolved if TFOOT becomes necessary
 .table tr:last-child td {
   border-bottom: 1px solid #D5D5D5;
 }
+.table tr th.level-up,
+.table tr td.level-up {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIsAAABHCAYAAAA3M7QwAAABiklEQVR4Xu3aQQqDQBBE0Z54/zNPMCq4CKEWQjPhLYLEpfRU//o65pyjql5VtV+387r/v37uez6fWRi3YTEwDsgVHF+D4j4sEkSC/NwoksXqjTeKZDlYDaMFz0GySBbJos09n5iSRbJIFskiWYjCRhjXhoIWwHAfbRGzYBbMglkwC2bBLN52r/DWH7NgFsyCWTALZsEsmAWzEF5/9UEZg2ug44HWhrQhbUgb0oa0IW1IG9KGwGMMjyt8BqENGeh4oLUhbUgb0oa0IW1IG9KGtCHwGMOjNtQYmZgFs2CWxgPIs1iV8arkWXgWngWzYBbMgll4Fp4FPMbwyLM0RiZmwSyYpfEA8ixWZbwqeRaehWfBLJgFs2AWnoVnAY8xPPIsjZGJWTALZmk8gDyLVRmvSp6FZ+FZMAtmwSyYhWfhWcBjDI88S2NkYhbMglkaDyDPYlXGq5Jn4Vl4FsyCWTALZuFZeBbwGMMjz9IYmZgFs2CWxgPIs1iV8arkWXgWngWzYBbMgll4lhU8yxv+SRr0ShxFMwAAAABJRU5ErkJggg==);
+  background-position: center right;
+  background-repeat: repeat-y;
+}
 .table tr th.level-down,
 .table tr td.level-down {
-  -webkit-box-shadow: inset 15px 0px 8px -8px rgba(0, 0, 0, 0.12);
-  box-shadow: inset 15px 0px 8px -8px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: inset 12px 0px 8px -8px rgba(0, 0, 0, 0.12);
+  box-shadow: inset 12px 0px 8px -8px rgba(0, 0, 0, 0.12);
 }
 .table tr th.level-down {
   position: relative;
@@ -18179,7 +18185,15 @@ This will need to be resolved if TFOOT becomes necessary
   height: 0;
   border-style: solid;
   border-width: 17px 0 17px 7px;
-  border-color: transparent transparent transparent #E6E6E6;
+  border-color: transparent transparent transparent #FFFFFF;
+}
+.table tr td.row-end {
+  border-right: 5px solid #E6E6E6;
+}
+.table tr td.row-end ~ td {
+  content: '';
+  background-color: #F8F8F8;
+  border-top-color: #F8F8F8;
 }
 .nav-tabs {
   margin-left: 4px;

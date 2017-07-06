@@ -246,14 +246,19 @@ This will need to be resolved if TFOOT becomes necessary
   }
 }
 
-// level down style for table cells
+// level up and down styles for table cells
 // adds a shadow on the left side and an arrow in the header
 // used for horizontal subsets of information
 .table tr {
   th,
   td {
+    &.level-up {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIsAAABHCAYAAAA3M7QwAAABiklEQVR4Xu3aQQqDQBBE0Z54/zNPMCq4CKEWQjPhLYLEpfRU//o65pyjql5VtV+387r/v37uez6fWRi3YTEwDsgVHF+D4j4sEkSC/NwoksXqjTeKZDlYDaMFz0GySBbJos09n5iSRbJIFskiWYjCRhjXhoIWwHAfbRGzYBbMglkwC2bBLN52r/DWH7NgFsyCWTALZsEsmAWzEF5/9UEZg2ug44HWhrQhbUgb0oa0IW1IG9KGwGMMjyt8BqENGeh4oLUhbUgb0oa0IW1IG9KGtCHwGMOjNtQYmZgFs2CWxgPIs1iV8arkWXgWngWzYBbMgll4Fp4FPMbwyLM0RiZmwSyYpfEA8ixWZbwqeRaehWfBLJgFs2AWnoVnAY8xPPIsjZGJWTALZmk8gDyLVRmvSp6FZ+FZMAtmwSyYhWfhWcBjDI88S2NkYhbMglkaDyDPYlXGq5Jn4Vl4FsyCWTALZuFZeBbwGMMjz9IYmZgFs2CWxgPIs1iV8arkWXgWngWzYBbMgll4lhU8yxv+SRr0ShxFMwAAAABJRU5ErkJggg==);
+      background-position: center right;
+      background-repeat: repeat-y;
+    }
     &.level-down {
-      .box-shadow(inset 15px 0px 8px -8px rgba(0,0,0,.12));
+      .box-shadow(inset 12px 0px 8px -8px rgba(0,0,0,.12));
     }
   }
   th.level-down {
@@ -268,7 +273,15 @@ This will need to be resolved if TFOOT becomes necessary
       height: 0;
       border-style: solid;
       border-width: 17px 0 17px 7px;
-      border-color: transparent transparent transparent @gray-lighter;
+      border-color: transparent transparent transparent @white;
+    }
+  }
+  td.row-end {
+    border-right: 5px solid @gray-lighter;
+    & ~ td {
+      content: '';
+      background-color: @gray-lightest;
+      border-top-color: @gray-lightest;
     }
   }
 }
