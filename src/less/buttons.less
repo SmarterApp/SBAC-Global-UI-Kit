@@ -90,6 +90,9 @@
     background-color: transparent;
   }
 }
+.btn-group.open .dropdown-toggle.btn-borderless {
+  .box-shadow(none);
+}
 
 // Button Toggles
 .toggle-group {
@@ -254,7 +257,7 @@
     justify-content: center;
     padding: @padding-vertical @padding-horizontal * 0.75;
     line-height: 0;
-    height: (@font-size + (@padding-vertical * 2));
+    height: ((@font-size * @line-height) + (@padding-vertical * 2));
     border-radius: @border-radius;
   }
 }

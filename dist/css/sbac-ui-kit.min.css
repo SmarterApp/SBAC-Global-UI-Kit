@@ -16100,6 +16100,10 @@ fieldset[disabled] .btn.deselected:hover .btn.focus {
   border-color: transparent;
   background-color: transparent;
 }
+.btn-group.open .dropdown-toggle.btn-borderless {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .toggle-group .btn-primary {
   color: #64666A;
   background-color: #FFFFFF;
@@ -17126,7 +17130,7 @@ span.tag > * {
   justify-content: center;
   padding: 6.72px 10.08px;
   line-height: 0;
-  height: 29.44px;
+  height: 37.12px;
   border-radius: 5px;
 }
 .tag.tag-lg {
@@ -17142,7 +17146,7 @@ span.tag > * {
   justify-content: center;
   padding: 8.4px 12.6px;
   line-height: 0;
-  height: 36.8px;
+  height: 43.466666px;
   border-radius: 9px;
 }
 .tag.tag-sm {
@@ -17158,7 +17162,7 @@ span.tag > * {
   justify-content: center;
   padding: 5.46px 8.19px;
   line-height: 0;
-  height: 23.92px;
+  height: 30.42px;
   border-radius: 3px;
 }
 .tag.tag-xs {
@@ -17174,7 +17178,7 @@ span.tag > * {
   justify-content: center;
   padding: 2.73px 4.095px;
   line-height: 0;
-  height: 18.46px;
+  height: 24.96px;
   border-radius: 3px;
 }
 .tag:not(a).tag:not(button) {
