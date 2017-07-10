@@ -241,6 +241,16 @@
   }
 }
 
+// Button Icons
+.btn:not(.icon-only) {
+  i.fa {
+    font-size: @font-size-base * 0.75;
+    .btn-lg & { font-size: @font-size-large * 0.75; }
+    .btn-sm &,
+    .btn-xs & { font-size: @font-size-small * 0.75; }
+  }
+}
+
 // positioning buttons when we pull them right in a header
 .btn.pull-right {
   h1 & { margin-top: (@line-height-h1 - @font-size-h1); }
