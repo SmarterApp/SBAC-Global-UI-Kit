@@ -4469,6 +4469,24 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: right;
     margin-right: -15px;
   }
+  h1 .navbar-right {
+    margin-top: 8px;
+  }
+  h2 .navbar-right {
+    margin-top: 3px;
+  }
+  h3 .navbar-right {
+    margin-top: 3px;
+  }
+  h4 .navbar-right {
+    margin-top: 1px;
+  }
+  h5 .navbar-right {
+    margin-top: 0px;
+  }
+  h6 .navbar-right {
+    margin-top: 0px;
+  }
   .navbar-right ~ .navbar-right {
     margin-right: 0;
   }
@@ -16957,22 +16975,22 @@ fieldset[disabled] .btn-danger:hover .btn.focus {
 .btn-xs .btn:not(.icon-only) i.fa {
   font-size: 9.75px;
 }
-h1 .btn.pull-right {
+h1 .pull-right {
   margin-top: 8px;
 }
-h2 .btn.pull-right {
+h2 .pull-right {
   margin-top: 3px;
 }
-h3 .btn.pull-right {
+h3 .pull-right {
   margin-top: 3px;
 }
-h4 .btn.pull-right {
+h4 .pull-right {
   margin-top: 1px;
 }
-h5 .btn.pull-right {
+h5 .pull-right {
   margin-top: 0px;
 }
-h6 .btn.pull-right {
+h6 .pull-right {
   margin-top: 0px;
 }
 .tag {
