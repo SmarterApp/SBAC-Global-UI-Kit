@@ -16947,6 +16947,24 @@ fieldset[disabled] .btn-danger:hover .btn.focus {
   color: #770a29;
   background-color: #cccccc;
 }
+h1 .btn.pull-right {
+  margin-top: 8px;
+}
+h2 .btn.pull-right {
+  margin-top: 3px;
+}
+h3 .btn.pull-right {
+  margin-top: 3px;
+}
+h4 .btn.pull-right {
+  margin-top: 1px;
+}
+h5 .btn.pull-right {
+  margin-top: 0px;
+}
+h6 .btn.pull-right {
+  margin-top: 0px;
+}
 .tag {
   display: inline-block;
   margin-bottom: 0;
