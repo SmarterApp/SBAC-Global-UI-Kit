@@ -18418,20 +18418,18 @@ input.form-control {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  justify-content: flex-start;
 }
 .panel-grid > .panel {
-  flex: 0 0 auto;
+  flex: 1 0 0;
   margin: 15px;
 }
 .tag-menu {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-wrap: wrap;
   margin: -7.5px;
 }
 .tag-menu > .tag {
-  flex: 1;
+  display: inline-flex;
   margin: 7.5px;
 }
 .tag-menu .tag {
