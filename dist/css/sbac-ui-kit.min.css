@@ -18258,43 +18258,62 @@ This will need to be resolved if TFOOT becomes necessary
 .nav-tabs li.active a {
   background-color: #FFFFFF;
 }
-.well {
+.well,
+.well-group,
+.well-group--horizontal {
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin-bottom: 16px;
+  border: 1px solid #D5D5D5;
+  border-radius: 5px;
+}
+.well,
+.well-group .well,
+.well-group--horizontal .well .well-body {
   min-height: 32px;
   padding-top: 16px;
   padding-right: 32px;
   padding-bottom: 16px;
   padding-left: 32px;
-  margin-bottom: 16px;
-  background-color: #FFFFFF;
-  border: 1px solid #D5D5D5;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
-.well-group {
-  margin-bottom: 32px;
-  border: 1px solid #D5D5D5;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+.well {
+  background-color: #FFFFFF;
 }
 .well-group .well {
   margin-bottom: 0px;
   border-width: 1px 0px 0px 0px;
   border-radius: 0px;
+}
+.well-group .well:not(:first-child) {
   -webkit-box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.16) inset;
   box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.16) inset;
 }
 .well-group .well:first-child {
   border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
 .well-group .well:last-child {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+.well-group--horizontal .well {
+  padding: 0px;
+  margin-bottom: 0px;
+  border-width: 0px 0px 0px 1px;
+  border-radius: 0px;
+}
+.well-group--horizontal .well:not(:first-child) {
+  -webkit-box-shadow: 6px 0 6px -6px rgba(0, 0, 0, 0.16) inset;
+  box-shadow: 6px 0 6px -6px rgba(0, 0, 0, 0.16) inset;
+}
+.well-group--horizontal .well:first-child {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.well-group--horizontal .well:last-child {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .label {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;

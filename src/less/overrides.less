@@ -307,38 +307,65 @@ This will need to be resolved if TFOOT becomes necessary
 // Wells
 // --------------------------------------------------
 
-// Base class
-.well {
+// Shared properties
+.well,
+.well-group,
+.well-group--horizontal {
+  .box-shadow(0px 3px 6px rgba(0,0,0,.16));
+  margin-bottom: (@font-size-base);
+  border: 1px solid @well-border;
+  border-radius: @border-radius-base;
+}
+
+// Base
+.well,
+.well-group .well,
+.well-group--horizontal .well .well-body {
   min-height: (@font-size-base *2);
   padding-top: (@font-size-base);
   padding-right: (@font-size-base*2);
   padding-bottom: (@font-size-base);
   padding-left: (@font-size-base*2);
-  margin-bottom: (@font-size-base);
+}
+
+.well {
   background-color: @well-bg;
-  border: 1px solid @well-border;
-  border-radius: @border-radius-base;
-  .box-shadow(0px 3px 6px rgba(0,0,0,.16));
 }
 
 // Well Group
 .well-group {
-  margin-bottom: (@font-size-base *2);
-  border: 1px solid @well-border;
-  border-radius: @border-radius-base;
-  .box-shadow(0px 3px 6px rgba(0,0,0,.16));
   .well {
     margin-bottom: 0px;
     border-width: 1px 0px 0px 0px;
     border-radius: 0px;
-    .box-shadow(0 6px 6px -6px rgba(0,0,0,.16) inset);
+    &:not(:first-child) {
+      .box-shadow(0 6px 6px -6px rgba(0,0,0,.16) inset);
+    }
     &:first-child {
       border: none;
-      .box-shadow(none);
       .border-top-radius(@border-radius-base);
     }
     &:last-child {
       .border-bottom-radius(@border-radius-base);
+    }
+  }
+}
+
+// Horizontal Well Group
+.well-group--horizontal {
+  .well {
+    padding: 0px;
+    margin-bottom: 0px;
+    border-width: 0px 0px 0px 1px;
+    border-radius: 0px;
+    &:not(:first-child) {
+      .box-shadow(6px 0 6px -6px rgba(0,0,0,.16) inset);
+    }
+    &:first-child {
+      .border-left-radius(@border-radius-base);
+    }
+    &:last-child {
+      .border-right-radius(@border-radius-base);
     }
   }
 }
