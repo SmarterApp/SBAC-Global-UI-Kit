@@ -17011,7 +17011,6 @@ h6 .pull-right {
   user-select: none;
   line-height: 1.65;
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-color: transparent;
   line-height: 1.57;
   color: inherit;
   background-color: #FFFFFF;
@@ -17062,9 +17061,6 @@ fieldset[disabled] .tag {
 a.tag.disabled,
 fieldset[disabled] a.tag {
   pointer-events: none;
-}
-.tag:hover {
-  border-color: transparent;
 }
 .tag:focus,
 .tag.focus {
@@ -18087,11 +18083,7 @@ figure figcaption {
 }
 .btn {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-color: transparent;
   line-height: 1.57;
-}
-.btn:hover {
-  border-color: transparent;
 }
 header {
   background-color: #FFFFFF;
