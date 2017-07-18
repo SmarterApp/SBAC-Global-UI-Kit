@@ -18235,10 +18235,10 @@ This will need to be resolved if TFOOT becomes necessary
   border-width: 17px 0 17px 7px;
   border-color: transparent transparent transparent #FFFFFF;
 }
-.table tr td.row-end {
-  border-right: 5px solid #E6E6E6;
+.table tr td:empty {
+  border-left: 5px solid #E6E6E6;
 }
-.table tr td.row-end ~ td {
+.table tr td:empty ~ td {
   content: '';
   background-color: #F8F8F8;
   border-top-color: #F8F8F8;
