@@ -9885,7 +9885,7 @@ a.blue {
 }
 div.blue,
 .label.blue {
-  color: #9ccefe;
+  color: #ffffff;
   background-color: #014F9A;
 }
 div.blue h1,
@@ -10168,7 +10168,7 @@ a.blue-dark {
 }
 div.blue-dark,
 .label.blue-dark {
-  color: #87c7ec;
+  color: #f5fafd;
   background-color: #104564;
 }
 div.blue-dark h1,
@@ -10451,7 +10451,7 @@ a.teal {
 }
 div.teal,
 .label.teal {
-  color: #b7f0ff;
+  color: #ffffff;
   background-color: #0090B7;
 }
 div.teal h1,
@@ -11017,7 +11017,7 @@ a.green {
 }
 div.green,
 .label.green {
-  color: #ecf7df;
+  color: #ffffff;
   background-color: #6FAE29;
 }
 div.green h1,
@@ -11300,7 +11300,7 @@ a.green-dark {
 }
 div.green-dark,
 .label.green-dark {
-  color: #c5dfbd;
+  color: #ffffff;
   background-color: #406934;
 }
 div.green-dark h1,
@@ -11583,7 +11583,7 @@ a.orange {
 }
 div.orange,
 .label.orange {
-  color: #fef9f5;
+  color: #ffffff;
   background-color: #D66E1E;
 }
 div.orange h1,
@@ -11866,7 +11866,7 @@ a.red {
 }
 div.red,
 .label.red {
-  color: #fde9ef;
+  color: #ffffff;
   background-color: #D5124A;
 }
 div.red h1,
@@ -12149,7 +12149,7 @@ a.red-dark {
 }
 div.red-dark,
 .label.red-dark {
-  color: #f4b2c1;
+  color: #ffffff;
   background-color: #931432;
 }
 div.red-dark h1,
@@ -12432,7 +12432,7 @@ a.maroon {
 }
 div.maroon,
 .label.maroon {
-  color: #e192af;
+  color: #fdf6f8;
   background-color: #5B1931;
 }
 div.maroon h1,
@@ -12715,7 +12715,7 @@ a.black {
 }
 div.black,
 .label.black {
-  color: #808080;
+  color: #bfbfbf;
   background-color: #000000;
 }
 div.black h1,
@@ -12998,7 +12998,7 @@ a.gray-darkest {
 }
 div.gray-darkest,
 .label.gray-darkest {
-  color: #a8aaae;
+  color: #eaebeb;
   background-color: #2a2b2d;
 }
 div.gray-darkest h1,
@@ -13281,7 +13281,7 @@ a.gray-darker {
 }
 div.gray-darker,
 .label.gray-darker {
-  color: #e6e6e7;
+  color: #ffffff;
   background-color: #64666A;
 }
 div.gray-darker h1,
@@ -13847,7 +13847,7 @@ a.gray {
 }
 div.gray,
 .label.gray {
-  color: #393939;
+  color: #000000;
   background-color: #B8B8B8;
 }
 div.gray h1,
@@ -14130,7 +14130,7 @@ a.gray-light {
 }
 div.gray-light,
 .label.gray-light {
-  color: #565656;
+  color: #161616;
   background-color: #D5D5D5;
 }
 div.gray-light h1,
@@ -14413,7 +14413,7 @@ a.gray-lighter {
 }
 div.gray-lighter,
 .label.gray-lighter {
-  color: #676767;
+  color: #272727;
   background-color: #E6E6E6;
 }
 div.gray-lighter h1,
@@ -14696,7 +14696,7 @@ a.gray-lightest {
 }
 div.gray-lightest,
 .label.gray-lightest {
-  color: #797979;
+  color: #393939;
   background-color: #F8F8F8;
 }
 div.gray-lightest h1,
@@ -14979,7 +14979,7 @@ a.white {
 }
 div.white,
 .label.white {
-  color: #808080;
+  color: #404040;
   background-color: #FFFFFF;
 }
 div.white h1,
@@ -17518,8 +17518,10 @@ span.tag > * {
   color: #2a2b2d;
 }
 .table .scale-score {
-  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
+}
+.table .scale-score .score {
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .table .scale-score .error-band {
   font-size: 81%;
@@ -17556,7 +17558,7 @@ span.tag > * {
   display: block;
   height: 18.4px;
   float: left;
-  border-right: 2px solid #FFFFFF;
+  border-right: 3px solid #FFFFFF;
 }
 .scale-score-graph .bar-container .bar .percentage,
 .scale-score-graph .bar-container .bar .bar-label {
@@ -17564,6 +17566,7 @@ span.tag > * {
   left: 0px;
   display: block;
   width: 100%;
+  line-height: 1.3;
   text-align: center;
   overflow: visible;
 }
@@ -17580,6 +17583,17 @@ span.tag > * {
 }
 .scale-score-graph .bar-container .bar:last-child {
   border-right: none;
+}
+.scale-score-graph.rounded .bar-container .bar:first-child {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.scale-score-graph.rounded .bar-container .bar:last-child {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.scale-score-graph.blend-middle .bar.blue-dark.aqua {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAOklEQVQoU2M0m/bs/631dQwgoBbYBKaR+YwgBeiCyHxGAdeU/9h0whSBFeAyHiRO2ASCbiDoC0JuAABdtDutSFLMdAAAAABJRU5ErkJggg==) repeat;
 }
 section.main {
   padding-top: 64px;
