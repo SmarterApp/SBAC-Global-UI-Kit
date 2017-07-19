@@ -1,16 +1,55 @@
 // Elements exclusive to RDW
+.average-scale-score-display {
+  .label-group {
+    display: block;
+    margin-top: @font-size-base;
+    text-align: center;
+    .label {
+      .small;
+      .sans;
+      color: @gray-darkest;
+      border: 1px solid @gray;
+      &:first-child {
+        font-weight: bold;
+        border-right: none;
+      }
+      &:last-child {
+        border-left: none;
+      }
+    }
+  }
+}
+
 .scale-score {
-  font-weight: 700;
+  display: block;
+  font-size: @font-size-h2;
+  text-align: center;
+  .score {
+    .serif;
+    font-weight: 700;
+  }
+  .error-band {
+    .sans;
+    color: @gray-darkest;
+  }
+  .table & {
+    font-size: @font-size-base;
+    .error-band {
+      .small;
+      color: @gray-darker;
+    }
+  }
+}
+
+.scale-title {
+  display: block;
+  .sans;
+  color: @gray-darker;
+  text-align: center;
+  margin-bottom: @font-size-base;
 }
 
 .scale-score-graph {
-  .scale-title {
-    display: block;
-    .sans;
-    color: @gray-darker;
-    text-align: center;
-    margin-bottom: @font-size-base;
-  }
   .bar-container {
     .clearfix;
     padding-bottom: @font-size-base * 3;
