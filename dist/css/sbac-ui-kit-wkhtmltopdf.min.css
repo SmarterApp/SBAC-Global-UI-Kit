@@ -18249,6 +18249,9 @@ input.form-control {
   background-color: #F8F8F8;
   border-color: #E6E6E6;
 }
+.panel-grid .tag-menu .tag {
+  background: #F8F8F8;
+}
 .navbar-header {
   width: 100%;
 }
