@@ -18508,6 +18508,9 @@ input.form-control {
 .panel {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.panel .panel-heading {
+  padding: 6.72px 16.8px;
+}
 .panel .panel-heading * {
   font-size: 18px;
   font-weight: 700;
