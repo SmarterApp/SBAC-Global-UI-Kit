@@ -15714,7 +15714,7 @@ h1,
   font-size: 32px;
   line-height: 40px;
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 10.52631579px;
 }
 h2,
 .h2 {
@@ -15756,6 +15756,9 @@ blockquote {
   line-height: 22px;
   margin-top: 22px;
   margin-bottom: 11px;
+}
+.lead {
+  margin-bottom: 5.92;
 }
 @media (min-width: 768px) {
   body {
@@ -17172,7 +17175,7 @@ span.tag > * {
   justify-content: center;
   padding: 6.72px 10.08px;
   line-height: 0;
-  height: 37.12px;
+  height: auto;
   border-radius: 5px;
 }
 .tag.tag-lg {
@@ -17188,7 +17191,7 @@ span.tag > * {
   justify-content: center;
   padding: 8.4px 12.6px;
   line-height: 0;
-  height: 43.466666px;
+  height: auto;
   border-radius: 9px;
 }
 .tag.tag-sm {
@@ -17204,7 +17207,7 @@ span.tag > * {
   justify-content: center;
   padding: 5.46px 8.19px;
   line-height: 0;
-  height: 30.42px;
+  height: auto;
   border-radius: 3px;
 }
 .tag.tag-xs {
@@ -17220,7 +17223,7 @@ span.tag > * {
   justify-content: center;
   padding: 2.73px 4.095px;
   line-height: 0;
-  height: 24.96px;
+  height: auto;
   border-radius: 3px;
 }
 .tag:not(a).tag:not(button) {
@@ -18171,6 +18174,7 @@ This will need to be resolved if TFOOT becomes necessary
 .table {
   border-collapse: separate;
   border-radius: 5px;
+  margin-bottom: 0;
 }
 .table > thead > tr > th,
 .table > tfoot > tr > th {
