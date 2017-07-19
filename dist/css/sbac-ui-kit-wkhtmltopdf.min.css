@@ -17494,10 +17494,46 @@ span.tag > * {
 .tag.reverse:hover {
   background-color: #64666A;
 }
+.average-scale-score-display .label-group {
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+}
+.average-scale-score-display .label-group .label {
+  font-size: 81%;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #2a2b2d;
+  border: 1px solid #B8B8B8;
+}
+.average-scale-score-display .label-group .label:first-child {
+  font-weight: bold;
+  border-right: none;
+}
+.average-scale-score-display .label-group .label:last-child {
+  border-left: none;
+}
 .scale-score {
+  display: block;
+  font-size: 26px;
+  text-align: center;
+}
+.scale-score .score {
+  font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
 }
-.scale-score-graph .scale-title {
+.scale-score .error-band {
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #2a2b2d;
+}
+.table .scale-score {
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+.table .scale-score .error-band {
+  font-size: 81%;
+  color: #64666A;
+}
+.scale-title {
   display: block;
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #64666A;
