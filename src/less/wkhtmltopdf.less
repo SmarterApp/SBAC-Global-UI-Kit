@@ -1,2 +1,64 @@
+// bundles vendor libraries with ui kit for distributable packaging
+@library-path: "../../node_modules";
+@import "@{library-path}/bootstrap/less/bootstrap.less";
+@import "@{library-path}/font-awesome/less/font-awesome.less";
+@import "sbac-ui-kit.less";
 
-body { background-color: #000 !important; color:#f39 !important; }
+@body-bg: @white;
+
+.navbar-header {
+  width: 100%;
+  .application-title {
+    .ml-auto;
+  }
+}
+
+// adding some wonky styles for the two column layout in the comps
+.well-group--horizontal {
+  .clearfix();
+  background-color: @white;
+  .well {
+    float: left;
+    &:first-child {
+      .box-shadow(none);
+    }
+    &:last-child {
+      .border-left-radius(0px);
+    }
+  }
+}
+
+// Previous Results list styling
+.previous-results {
+  list-style: none;
+  list-style-image: none;
+  padding-left: 0px;
+  li .previous-result {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    border-bottom: 1px solid @gray-darker;
+    color: @gray-darker;
+    padding: (@padding-base-vertical / 2) @padding-base-horizontal;
+    > span {
+      flex: 1 0;
+    }
+    .date {
+      text-align: left;
+      color: @gray-dark;
+    }
+    .scale-score {
+      color: @gray-darkest;
+      .error-band {
+        .small;
+        color: @gray-dark;
+        font-weight: 400;
+      }
+    }
+    .performance-level {
+      text-align: right;
+      .small;
+      color: @gray-darker;
+    }
+  }
+}

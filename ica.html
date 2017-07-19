@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ICA</title>
+    <link rel="stylesheet" href="sbac-ui-kit/dist/css/sbac-ui-kit.min.css">
+    <style>
+
+        /*
+            wkhtmltopdf has issues with font size.
+            1. font size line wrap issue https://github.com/wkhtmltopdf/wkhtmltopdf/issues/2505
+         */
+
+        body {
+            background-color: #fff;
+            font-size: 120%;
+        }
+
+        .navbar-header {
+            width: 100%;
+        }
+
+        header nav.navbar .navbar-brand {
+            /*1364 x433*/
+            width: 136px;
+            height: 43px;
+            display: inline-block;
+        }
+
+        header .application-title {
+            font-size: inherit;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <span class="navbar-brand" title="Reporting System Dashboard"><img
+                        src="sbac-ui-kit/dist/images/SmarterBalanced-Logo.png"></span>
+                <span class="application-title">Interim Comprehensive Assessment Report</span>
+            </div>
+        </nav>
+    </div>
+
+</header>
+<section class="mt-lg mb-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <span class="student-name">Cleveland, David</span></span>
+            </div>
+            <div class="col-xs-9 text-right">
+                <span class="student-enrollment pull-right">
+                    <span class="student-enrollment-item"><label>Grade:</label> 4</span>
+                    <span class="student-enrollment-item ml-xs"><label>School:</label> Espanosa Elementary</span>
+                    <span class="student-enrollment-item ml-xs"><label>District:</label> Los Angeles Unified</span>
+                    <span class="student-enrollment-item ml-xs"><label>State:</label> CA</span>
+                </span>
+            </div>
+        </div>
+
+        <hr class="mt-sm mb-sm"/>
+
+        <div class="row">
+            <div class="col-xs-6">
+                <div>IAB MATH</div>
+                <div>Interim Comprehensive Assessment 2017 - 18</div>
+                <div><label>Date Taken:</label> 1/24/2017</div>
+            </div>
+            <div class="col-xs-6">
+                <div class="well">
+                    <div class="well-body">
+                        <p>David has made progress and met the grade-level standard. David appears ready for future
+                            coursework.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--- START BODY -->
+
+        <hr class="mt-sm mb-sm"/>
+
+        <h2>Overall Achievement</h2>
+        <div class="tag tag-xs green-dark"><span class="label">2463</span> Standard Met (Level 3) 2473-2532</div>
+
+        <div class="row">
+            <div class="col-xs-9">
+                <!-- SCALE SCORE VISUAL -->
+            </div>
+            <div class="col-xs-3 text-left">
+                <strong class="error-band">Error Band</strong>
+                <p>A student's test score can vary if the test is taken several times. If this student was tested again,
+                    it is likely that the scale score would fall within this range.</p>
+            </div>
+        </div>
+
+        <hr class="mt-sm mb-sm"/>
+
+        <h2>Student Achievement by Claim</h2>
+        <p>The student's results are also reported out into the four claims (i.e., areas) that together make up English
+            language arts/literacy: Reading, Writing, Listening, and Research/Inquiry. These four claims are based on
+            California's academic standards, which describe the knowledge and skills students are expected to learn in
+            grade four. If the student received a score of "No Score Available" for any claim, this means he or she did
+            not complete enough items to receive a score in that area. To view a description of the student's
+            achievement level claim (i.e., area), select either [Above Standard], [Near Standard], or [Below Standard]
+            from the student-level selections available in the table below.</p>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <h3 class="text-center">Reading</h3>
+                <div class="text-center"><!-- ICON --></div>
+                <div class="text-center gray-lightest">Above Standard</div>
+                <p>David demonstrates a thorough ability to read closely and analytically to understand a range of literary texts (e.g., stories, plays, and poems) and informational texts (e.g., articles and other writing covering disciplines like science and social studies) of high complexity.</p>
+            </div>
+            <div class="col-xs-3">
+                <h3 class="text-center">Writing</h3>
+                <div class="text-center"><!-- ICON --></div>
+                <div class="text-center gray-lightest">Above Standard</div>
+                <p>David demonstrates a thorough ability to produce well-organized, developed, and supported writing (e.g., narrative, informational, explanatory, and opinion) for different purposes and audiences.</p>
+            </div>
+            <div class="col-xs-3">
+                <h3 class="text-center">Listening</h3>
+                <div class="text-center"><!-- ICON --></div>
+                <div class="text-center gray-lightest">Near Standard</div>
+                <p>David demonstrates some ability to use effective listening skills for a range of purposes and audiences.</p>
+            </div>
+            <div class="col-xs-3">
+                <h3 class="text-center">Research & Inquiry</h3>
+                <div class="text-center"><!-- ICON --></div>
+                <div class="text-center gray-lightest">Below Standard</div>
+                <p>David does not yet demonstrate the ability to engage in research and inquiry to investigate topics, and to analyze, integrate, and present information.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-5">
+                <div class="well">
+                    <div class="well-body">
+                        <div>The following accommodations were made available:</div>
+                        <!-- should these be potato chips (tags with labels in the ui kit) like the legacy app? -->
+                        <ul>
+                            <li>Alternative Response</li>
+                            <li>Printed passages/stimuli</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--- END BODY -->
+
+        <div class="row">
+            <div class="col-xs-8">
+                <h4 class="h2 gray-dark">Frequently Asked Questions</h4>
+                <p>Where can I find more information about the Smarter Balanced Assessment System? Information about
+                    Smarter Balanced Assessment System is available at <a href="http://www.smarterbalanced.org">www.smarterbalanced.org</a>
+                </p>
+                <p>
+                <div>Take the Test:</div>
+                Gain familiarity with the types of questions and tools for students by taking a practice test: <a
+                    href="http://www.smarterbalanced.org/assessments/practice-and-training-tests">http://www.smarterbalanced.org/assessments/practice-and-training-tests</a></p>
+                <hr/>
+                <p>These results represent only one indicator of a student's performance. These results should be used
+                    along with other information, such as classwork and other tests when making educational decisions.
+                    Specific questions about individual student results should be directed to the student's teacher.</p>
+            </div>
+            <div class="col-xs-4">
+                <div class="well">
+                    <div class="well-body">
+                        <strong>Important Information About Interim Assessments</strong>
+                        <ol>
+                            <li>Interim assessments may be scored by local teachers. This scoring is not subject to the
+                                rigorous controls used in summative assessment and local results may show some
+                                variations.
+                            </li>
+                            <li>Interim assessments questions are not secure. Exposure to, and familiarity, with test
+                                questions my affect student performance and the accuracy of interim results.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="copyright text-right">&copy; The Regents of the University of California - Smarter Balanced
+                    Assessment Consortium
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>

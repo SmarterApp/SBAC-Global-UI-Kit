@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IAB</title>
+    <link rel="stylesheet" href="dist/css/sbac-ui-kit-wkhtmltopdf.min.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <span class="navbar-brand" title="Reporting System Dashboard"><img
+                        src="/dist/images/SmarterBalanced-Logo.png"></span>
+                <span class="application-title ml-auto">Interim Assessment Blocks Report</span>
+            </div>
+        </nav>
+    </div>
+
+</header>
+<section class="mt-lg mb-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <span class="student-name h3">Cleveland, David</span></span>
+            </div>
+            <div class="col-xs-9 text-right">
+                <span class="student-enrollment pull-right">
+                    <span class="student-enrollment-item"><label>Grade:</label> 4</span>
+                    <span class="student-enrollment-item ml-xs"><label>School:</label> Espanosa Elementary</span>
+                    <span class="student-enrollment-item ml-xs"><label>District:</label> Los Angeles Unified</span>
+                    <span class="student-enrollment-item ml-xs"><label>State:</label> CA</span>
+                </span>
+            </div>
+        </div>
+
+        <hr class="mt-sm mb-sm"/>
+
+        <div class="row">
+            <div class="col-xs-6">
+                <div>IAB MATH</div>
+                <div>Interim Assessment Blocks 2017 - 18</div>
+                <div><label>Date Taken:</label> 1/24/2017</div>
+            </div>
+            <div class="col-xs-3 text-right">
+                <!-- SCALE SCORE VISUAL -->
+            </div>
+            <div class="col-xs-3 text-left">
+                <strong class="error-band">Error Band</strong>
+                <p>A student&rsquo;s test score can vary if the test is taken several times. If this student was tested again, it is likely that the scale score would fall within this range.</p>
+            </div>
+        </div>
+
+        <!--- START BODY -->
+        <div class="row sans">
+            <div class="col-xs-8 text-center">
+                <span class="gray">Current Results</span>
+            </div>
+            <div class="col-xs-4 text-center">
+                <span class="gray">Previous Results</span>
+            </div>
+        </div>
+
+        <div class="well-group well-group--horizontal sans">
+            <div class="well" data-width="60">
+                <div class="well-body">
+                    <div class="row">
+                        <div class="col-xs-9">
+                            <span class="tag green"><span class="label">G4</span> Operations and Algebraic Thinking</span>
+                        </div>
+                        <div class="col-xs-3 text-right">
+                            <span class="date">09-20-2017</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-9">
+                            <!-- SCALE SCORE VISUAL -->
+                        </div>
+                        <div class="col-xs-3 text-right">
+                            <span class="performance-level">Above Standard</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="well gray-lightest" data-width="40">
+                <div class="well-body">
+                    <ul class="previous-results">
+                        <li><span class="previous-result"><span class="date">09-14-2017</span> <span
+                            class="scale-score">2256 <span class="error-band">&plusmn; 15</span></span> <span
+                            class="performance-level">Below Standard</span></span></li>
+                        <li><span class="previous-result"><span class="date">09-14-2017</span> <span
+                            class="scale-score">2256 <span class="error-band">&plusmn; 15</span></span> <span
+                            class="performance-level">Below Standard</span></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--- END BODY -->
+
+        <div class="row">
+            <div class="col-xs-8">
+
+
+                <h4 class="h2 gray-dark">Frequently Asked Questions</h4>
+
+                <!-- START FAQ HTML -->
+                <p>Where can I find more information about the Smarter Balanced Assessment System? Information about
+                    Smarter Balanced Assessment System is available at <a href="http://www.smarterbalanced.org">www.smarterbalanced.org</a>
+                </p>
+                <p>
+                <div>Take the Test:</div>
+                Gain familiarity with the types of questions and tools for students by taking a practice test: <a
+                    href="http://www.smarterbalanced.org/assessments/practice-and-training-tests">http://www.smarterbalanced.org/assessments/practice-and-training-tests</a></p>
+                <hr/>
+                <p>These results represent only one indicator of a student's performance. These results should be used
+                    along with other information, such as classwork and other tests when making educational decisions.
+                    Specific questions about individual student results should be directed to the student's teacher.</p>
+                <!-- END FAQ HTML -->
+            </div>
+            <div class="col-xs-4">
+                <div class="well">
+                    <div class="well-body">
+                        <strong>Important Information About Interim Assessments</strong>
+                        <ol>
+                            <li>Interim assessments may be scored by local teachers. This scoring is not subject to the rigorous controls used in summative assessment and local results may show some variations.</li>
+                            <li>Interim assessments questions are not secure. Exposure to, and familiarity, with test questions my affect student performance and the accuracy of interim results.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="copyright text-right">&copy; The Regents of the University of California - Smarter Balanced
+                    Assessment Consortium
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>
