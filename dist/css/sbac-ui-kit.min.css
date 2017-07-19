@@ -15758,7 +15758,7 @@ blockquote {
   margin-bottom: 11px;
 }
 .lead {
-  margin-bottom: 5.92;
+  margin-bottom: 6.5px;
 }
 @media (min-width: 768px) {
   body {
@@ -18201,6 +18201,10 @@ This will need to be resolved if TFOOT becomes necessary
 }
 .table tr th {
   border-top: 1px solid #D5D5D5 !important;
+}
+.table tr th,
+.table tr td {
+  padding: 8px 10.66666667px;
 }
 .table tr th:first-child,
 .table tr td:first-child {

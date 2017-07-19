@@ -32,6 +32,8 @@
 @line-height-h5:          floor((@font-size-h5 * 1)); // ~16px
 @line-height-h6:          floor((@font-size-h6 * 1)); // ~13px
 @line-height-bq:          floor((@font-size-bq * 1.25)); // ~25px
+@line-height-lead:        floor((@font-size-h6 * 1)); // ~13px
+
 
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base:        1.48; // 23.7 / 16
@@ -116,7 +118,7 @@ blockquote {
   margin-bottom: (@line-height-bq / 2);
 }
 .lead {
-  margin-bottom: (@line-height-base * 4);
+  margin-bottom: (@line-height-lead / 2);
 }
 
 @media (min-width: @screen-sm-min) { // Tablet (lg)
