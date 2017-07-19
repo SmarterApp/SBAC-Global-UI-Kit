@@ -17518,6 +17518,7 @@ span.tag > * {
   color: #2a2b2d;
 }
 .table .scale-score {
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
 .table .scale-score .error-band {
