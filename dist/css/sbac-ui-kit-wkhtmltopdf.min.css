@@ -17543,6 +17543,7 @@ span.tag > * {
 .scale-score-graph.individual .scale-score {
   position: absolute;
   top: 0px;
+  transform: translateX(-50%);
 }
 .scale-score-graph.individual .scale-score .score {
   position: relative;
@@ -17559,6 +17560,11 @@ span.tag > * {
   background-color: #64666A;
 }
 .scale-score-graph.individual .scale-score .error-band {
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  display: block;
+  width: 100%;
   color: #64666A;
 }
 .scale-title {
@@ -17597,6 +17603,12 @@ span.tag > * {
   border-style: solid;
   border-width: 0px 1.5px;
 }
+.scale-score-graph .bar-container .bar:first-child {
+  border-width: 0px 1.5px 0px 0px;
+}
+.scale-score-graph .bar-container .bar:last-child {
+  border-width: 0px 0px 0px 1.5px;
+}
 .scale-score-graph .bar-container .bar .percentage,
 .scale-score-graph .bar-container .bar .bar-label {
   position: absolute;
@@ -17619,12 +17631,6 @@ span.tag > * {
   top: 48px;
   font-size: 81%;
   color: #64666A;
-}
-.scale-score-graph .bar-container .bar:first-child {
-  border-left-width: 0px;
-}
-.scale-score-graph .bar-container .bar:last-child {
-  border-right-width: 0px;
 }
 .scale-score-graph .bar-container .cut-points {
   position: absolute;
@@ -17649,10 +17655,10 @@ span.tag > * {
   background-color: #000000;
 }
 .scale-score-graph .bar-container .cut-points .label:first-child {
-  margin-left: 3px;
+  margin-left: 2px;
 }
 .scale-score-graph .bar-container .cut-points .label:last-child {
-  margin-left: -3px;
+  margin-left: -2px;
 }
 .scale-score-graph.rounded .bar-container .bar:first-child {
   border-bottom-left-radius: 3px;

@@ -45,6 +45,7 @@
   .scale-score-graph.individual & {
     position: absolute;
     top: 0px;
+    transform: translateX(-50%);
     .score {
       position: relative;
       overflow: visible;
@@ -60,6 +61,11 @@
       }
     }
     .error-band {
+      position: absolute;
+      top: 0px;
+      left: 100%;
+      display: block;
+      width: 100%;
       color: @gray-darker;
     }
   }
@@ -86,6 +92,12 @@
       border-color: @white;
       border-style: solid;
       border-width: 0px 1.5px;
+      &:first-child {
+        border-width: 0px 1.5px 0px 0px;
+      }
+      &:last-child {
+        border-width: 0px 0px 0px 1.5px;
+      }
       .percentage,
       .bar-label {
         position: absolute;
@@ -109,12 +121,6 @@
         .small;
         color: @gray-darker;
       }
-      &:first-child {
-        border-left-width: 0px;
-      }
-      &:last-child {
-        border-right-width: 0px;
-      }
     }
     .cut-points {
       position: absolute;
@@ -137,10 +143,10 @@
           background-color: @black;
         }
         &:first-child {
-          margin-left: 3px;
+          margin-left: 2px;
         }
         &:last-child {
-          margin-left: -3px;
+          margin-left: -2px;
         }
       }
     }
