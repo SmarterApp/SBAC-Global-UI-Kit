@@ -15866,12 +15866,12 @@ h3,
 .h3 {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-h1 > p.pull-left,
-.h1 > p.pull-left,
-h2 > p.pull-left,
-.h2 > p.pull-left,
-h3 > p.pull-left,
-.h3 > p.pull-left {
+h1 + p.pull-left,
+.h1 + p.pull-left,
+h2 + p.pull-left,
+.h2 + p.pull-left,
+h3 + p.pull-left,
+.h3 + p.pull-left {
   margin: 3px 10px;
 }
 h1,
@@ -17301,6 +17301,10 @@ fieldset[disabled] .tag.focus {
 .tag .flex-children {
   margin: 0.5% 0.5% 0.5% 0.5%;
 }
+.tag > * .flex-children,
+.tag .flex-children .flex-children {
+  margin: 0;
+}
 .tag .grow {
   flex-grow: 1;
 }
@@ -17391,7 +17395,7 @@ span.tag > * {
   border-radius: 3px;
 }
 .tag.tag-xs {
-  padding: 2.73px 2.73px;
+  padding: 2.73px 4.03px;
   font-size: 13px;
   line-height: 1.5;
   border-radius: 3px;
@@ -17401,7 +17405,7 @@ span.tag > * {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5.46px 4.095px;
+  padding: 5.46px 6.045px;
   line-height: 0;
   height: 27.69px;
   border-radius: 3px;
@@ -17754,6 +17758,10 @@ ul.no-bullet {
 .flex-children .flex-children {
   margin: 0.5% 0.5% 0.5% 0.5%;
 }
+.flex-children > * .flex-children,
+.flex-children .flex-children .flex-children {
+  margin: 0;
+}
 .flex-children .grow {
   flex-grow: 1;
 }
@@ -17892,7 +17900,7 @@ header .application-title small,
 header .application-title .small {
   font-size: 65%;
 }
-header .application-title > p.pull-left {
+header .application-title + p.pull-left {
   margin: 3px 10px;
 }
 nav.navbar {
@@ -18065,6 +18073,10 @@ This will need to be resolved if TFOOT becomes necessary
 .well-group--horizontal > *,
 .well-group--horizontal .flex-children {
   margin: 0.5% 0.5% 0.5% 0.5%;
+}
+.well-group--horizontal > * .flex-children,
+.well-group--horizontal .flex-children .flex-children {
+  margin: 0;
 }
 .well-group--horizontal .grow {
   flex-grow: 1;
