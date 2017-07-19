@@ -17489,571 +17489,61 @@ span.tag > * {
 .scale-score {
   font-weight: 700;
 }
-.bar-scale .scale-title,
-.bar-scale .scale-description {
+.scale-score-graph .scale-title {
+  display: block;
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 81%;
-}
-.bar-scale .scale-title {
-  color: #2a2b2d;
-  font-weight: 700;
-}
-.bar-scale .scale-description {
   color: #64666A;
-}
-.bar-scale .bar-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 50px;
-  padding-bottom: 68px;
-}
-.bar-scale .bar-container .score {
-  position: absolute;
-  top: 12px;
-  display: flex;
-  justify-content: center;
   text-align: center;
-  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-  z-index: 3;
-  transform: translateX(-50%);
+  margin-bottom: 16px;
 }
-.bar-scale .bar-container .error-band-mask {
-  position: absolute;
-  top: 0px;
-  display: block;
-  width: 100%;
-  height: 70px;
-  z-index: 2;
-  overflow: hidden;
+.scale-score-graph .bar-container {
+  padding-bottom: 48px;
 }
-.bar-scale .bar-container .error-band-mask .error-band {
-  position: absolute;
-  top: 0px;
-  display: block;
-  height: 70px;
+.scale-score-graph .bar-container:before,
+.scale-score-graph .bar-container:after {
+  content: " ";
+  display: table;
 }
-.bar-scale .bar-container .error-band-mask .error-band .error-band-block {
+.scale-score-graph .bar-container:after {
+  clear: both;
+}
+.scale-score-graph .bar-container:before,
+.scale-score-graph .bar-container:after {
+  content: " ";
+  display: table;
+}
+.scale-score-graph .bar-container:after {
+  clear: both;
+}
+.scale-score-graph .bar-container .bar {
   position: relative;
   display: block;
-  width: 100%;
-  height: 50px;
-  background-color: #D5D5D5;
-  z-index: 0;
-  transform: translateX(-50%);
+  height: 18.4px;
+  float: left;
+  border-right: 2px solid #FFFFFF;
 }
-.bar-scale .bar-container .error-band-mask .error-band .error-band-block:before {
-  content: 'Error Band';
+.scale-score-graph .bar-container .bar .percentage,
+.scale-score-graph .bar-container .bar .bar-label {
   position: absolute;
-  top: 0px;
-  left: 100%;
-  display: block;
-  width: 50px;
-  height: 8px;
-  border-bottom: 1px solid #000000;
-  font-size: 13px;
-  text-indent: 58px;
-  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  white-space: nowrap;
-  overflow: visible;
-}
-.bar-scale .bar-container .error-band-mask .error-band .error-band-block:after {
-  content: '';
-  position: absolute;
-  top: 0px;
   left: 0px;
   display: block;
   width: 100%;
-  height: 8px;
-  border-width: 1px 1px 0px 1px;
-  border-style: solid;
-  border-color: #000000 #000000 transparent #000000;
-}
-.bar-scale .bar-container .error-band-mask .error-band:before {
-  content: '';
-  position: absolute;
-  top: 50px;
-  display: block;
-  width: 40px;
-  height: 11px;
-  border-style: solid;
-  border-width: 11px 20px 0 20px;
-  border-color: #D5D5D5 transparent transparent transparent;
-  transform: translateX(-50%);
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="50"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="51"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="52"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="53"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="54"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="55"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="56"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="57"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="58"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="59"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="60"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="61"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="62"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="63"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="64"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="65"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="66"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="67"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="68"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="69"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="70"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="71"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="72"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="73"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="74"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="75"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="76"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="77"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="78"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="79"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="80"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="81"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="82"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="83"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="84"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="85"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="86"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="87"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="88"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="89"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="90"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="91"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="92"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="93"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="94"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="95"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="96"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="97"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="98"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="99"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .error-band-mask .error-band[data-left="100"] .error-band-block:before {
-  left: auto;
-  right: 100%;
-  direction: rtl;
-  text-align: right;
-  text-indent: 58px;
-}
-.bar-scale .bar-container .bar {
-  position: relative;
-  display: inline-block;
-  align-self: center;
-  flex-grow: 1;
-  height: 20px;
-  border: 1px solid #FFFFFF;
-}
-.bar-scale .bar-container .bar .bar-data,
-.bar-scale .bar-container .bar .bar-label {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  overflow: visible;
   text-align: center;
-  white-space: nowrap;
+  overflow: visible;
 }
-.bar-scale .bar-container .bar .bar-data {
-  bottom: -60px;
-  font-size: 32px;
-  font-weight: 700;
+.scale-score-graph .bar-container .bar .percentage {
+  top: 24px;
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #2a2b2d;
 }
-.bar-scale .bar-container .bar .bar-data:before {
-  content: '';
-  position: absolute;
-  top: -6px;
-  left: 50%;
-  margin-left: -8.25px;
-  display: block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 8.5px 8px 8.5px;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-left-color: transparent;
-  opacity: 0.36;
-}
-.bar-scale .bar-container .bar .bar-label {
-  bottom: -68px;
-  color: #64666A;
-  font-size: 13px;
-}
-.bar-scale.rounded .bar {
-  border-width: 3px;
-}
-.bar-scale.rounded .bar.left-side {
-  border-bottom-left-radius: 7px;
-  border-top-left-radius: 7px;
-}
-.bar-scale.rounded .bar.middle {
-  margin: 0px -7px;
-  border-width: 2px;
-  border-radius: 7px;
-  z-index: 1;
-}
-.bar-scale.rounded .bar.right-side {
-  border-bottom-right-radius: 7px;
-  border-top-right-radius: 7px;
-}
-.bar-scale.blend-middle .bar.middle .bar-data {
+.scale-score-graph .bar-container .bar .bar-label {
+  top: 48px;
+  font-size: 81%;
   color: #64666A;
 }
-.bar-scale.blend-middle .bar.middle .bar-data:before {
-  border-bottom-color: #64666A;
-}
-.bar-scale.blend-middle .bar.green.blue-dark {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAOklEQVQoU2PMX6f5f+F0awYQiM88CqaR+YwgBeiCyHxGAdeU/9h0whSBFeAyHiRO2ASCbiDoC0JuAAACHTn9xCS38wAAAABJRU5ErkJggg==) repeat;
-}
-td .bar-scale .scale-title,
-td .bar-scale .scale-description,
-td .bar-scale .bar-data,
-td .bar-scale .bar-label,
-td .bar-scale .error-band-block:before,
-td .bar-scale .error-band-block:after {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-td .bar-scale .bar-container {
-  padding-top: 18px;
-  padding-bottom: 0px;
-}
-td .bar-scale .bar-container .score {
-  top: 2px;
-  font-size: 13px;
-}
-td .bar-scale .bar-container .error-band-mask {
-  height: 26px;
-}
-td .bar-scale .bar-container .error-band-mask .error-band,
-td .bar-scale .bar-container .error-band-mask .error-band .error-band-block {
-  height: 18px;
-}
-td .bar-scale .bar-container .error-band-mask .error-band:before {
-  top: 18px;
-  width: 20px;
-  border-width: 5px 10px 0 10px;
-}
-td .bar-scale .bar-container .bar {
-  height: 8px;
-  border-width: 1px;
-}
-td .bar-scale .bar-container .bar.middle {
-  border-width: 1px;
+.scale-score-graph .bar-container .bar:last-child {
+  border-right: none;
 }
 section.main {
   padding-top: 64px;
