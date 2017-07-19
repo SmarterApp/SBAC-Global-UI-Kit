@@ -398,6 +398,18 @@ This will need to be resolved if TFOOT becomes necessary
 .label-info.border-only { border-color: @label-info-bg; color: @label-info-bg; }
 .label-warning.border-only { border-color: @label-warning-bg; color: @label-warning-bg; }
 .label-danger.border-only { border-color: @label-danger-bg; color: @label-danger-bg; }
+.label-group {
+  .label {
+    margin: 0px;
+    border-radius: 0px;
+    &:first-child {
+      .border-left-radius(@border-radius-base);
+    }
+    &:last-child {
+      .border-right-radius(@border-radius-base);
+    }
+  }
+}
 
 
 //

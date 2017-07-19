@@ -51,6 +51,19 @@
       }
     }
   }
+  .label-group& {
+    .label {
+      @label-group-color: desaturate(@colorName, 40%);
+      color: contrast(@label-group-color, darken(@label-group-color, 75%), lighten(@label-group-color, 75%));
+      background-color: @label-group-color;
+      &:first-child {
+        background-color: darken(@label-group-color, 10%);
+      }
+      &:last-child {
+        background-color: lighten(@label-group-color, 10%);
+      }
+    }
+  }
   .tag& {
     .label {
       color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
