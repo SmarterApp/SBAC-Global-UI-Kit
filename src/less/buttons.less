@@ -125,7 +125,7 @@
     .border-left-radius(@border-radius);
   }
   .btn-group {
-    margin: 0 1px;
+    margin: 0;
     padding: (@padding-vertical * 0.75) (@padding-horizontal * 0.25);
     .border-right-radius(@border-radius);
     .border-left-radius(0px);
@@ -252,7 +252,7 @@
 }
 
 // positioning elements when we pull them right in a header
-.pull-right {
+.pull-right:first-child {
   h1 & { margin-top: (@line-height-h1 - @font-size-h1); }
   h2 & { margin-top: (@line-height-h2 - @font-size-h2); }
   h3 & { margin-top: (@line-height-h3 - @font-size-h3); }
@@ -277,7 +277,7 @@
     justify-content: center;
     padding: @padding-vertical @padding-horizontal * 0.75;
     line-height: 0;
-    height: auto;
+    height: ((@font-size * @line-height) + (@padding-vertical * 2));
     border-radius: @border-radius;
   }
 }
