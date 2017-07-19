@@ -2239,8 +2239,8 @@ table {
   background-color: transparent;
 }
 caption {
-  padding-top: 13.44px;
-  padding-bottom: 13.44px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   color: #64666A;
   text-align: left;
 }
@@ -2258,7 +2258,7 @@ th {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  padding: 13.44px;
+  padding: 8px;
   line-height: 1.48;
   vertical-align: top;
   border-top: 1px solid #D5D5D5;
@@ -18201,10 +18201,6 @@ This will need to be resolved if TFOOT becomes necessary
 }
 .table tr th {
   border-top: 1px solid #D5D5D5 !important;
-}
-.table tr th,
-.table tr td {
-  padding: 8px 10.66666667px;
 }
 .table tr th:first-child,
 .table tr td:first-child {
