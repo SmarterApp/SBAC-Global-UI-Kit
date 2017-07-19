@@ -17,6 +17,9 @@ section.main {
     > .flex-children {
       width: floor(((100 - (@i - 1)) / @i) * 1%);
       margin: 0.5% 0.5% 0.5% 0.5%;
+      .flex-children {
+        margin: 0;
+      }
     }
   }
   // Continue the iteration
@@ -192,6 +195,7 @@ This will need to be resolved if TFOOT becomes necessary
 .table {
   border-collapse: separate;
   border-radius: @border-radius-base;
+  margin-bottom: 0;
   > thead,
   > tfoot {
     > tr {
@@ -318,10 +322,10 @@ This will need to be resolved if TFOOT becomes necessary
 .well-group .well,
 .well-group--horizontal .well .well-body {
   min-height: (@line-height-computed * 2);
-  padding-top: (@line-height-computed);
-  padding-right: (@grid-gutter-width);
+  padding-top: (@line-height-computed / 1.5);
+  padding-right: (@grid-gutter-width / 1.5);
   padding-bottom: (@line-height-computed);
-  padding-left: (@grid-gutter-width);
+  padding-left: (@grid-gutter-width / 1.5);
 }
 
 .well {
@@ -490,6 +494,7 @@ label {
 .panel {
   font-family: @font-family-sans-serif;
   .panel-heading {
+    padding: @padding-base-vertical @padding-large-horizontal;
     * {
       font-size: @font-size-h4;
       font-weight: 700;

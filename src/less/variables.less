@@ -25,10 +25,10 @@
 @padding-small-horizontal:  (@font-size-small * 0.84);
 
 @padding-xs-vertical:       (@font-size-small * 0.21);
-@padding-xs-horizontal:     (@font-size-small * 0.42);
+@padding-xs-horizontal:     (@font-size-small * 0.62);
 
 @border-radius-base:        5px;
-@border-radius-large:       9px;
+@border-radius-large:       7px;
 @border-radius-small:       3px;
 
 //== Navbar
@@ -102,7 +102,7 @@
 //## Customizes the `.table` component with basic values, each used across all table variations.
 
 //** Padding for `<th>`s and `<td>`s.
-@table-cell-padding:            (@font-size-base * 0.84);
+@table-cell-padding:            (@font-size-base * 0.5);
 //** Padding for cells in `.table-condensed`.
 @table-condensed-cell-padding:  (@font-size-base * 0.42);
 
@@ -220,7 +220,7 @@
 @input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
 
 //** `.form-group` margin
-@form-group-margin-bottom:       @line-height-computed;
+@form-group-margin-bottom:       @line-height-computed / 8;
 
 @legend-color:                   @gray-dark;
 @legend-border-color:            @gray-lightest;
