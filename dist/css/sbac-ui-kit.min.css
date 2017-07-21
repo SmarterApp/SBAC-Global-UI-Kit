@@ -18616,6 +18616,12 @@ input.form-control {
 .breadcrumb-container .breadcrumb li {
   color: #64666A;
 }
+.breadcrumb-container .breadcrumb li .label {
+  background-color: #D5D5D5;
+  color: #64666A;
+  font-size: 83%;
+  font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
+}
 .panel {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
