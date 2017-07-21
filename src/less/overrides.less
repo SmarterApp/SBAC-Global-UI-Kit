@@ -266,12 +266,14 @@ This will need to be resolved if TFOOT becomes necessary
   }
   th.level-down {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     &:before {
       content: '';
       position: absolute;
-      top: 2px;
       left: 0px;
-      display: block;
+      display: flex;
       width: 0;
       height: 0;
       border-style: solid;

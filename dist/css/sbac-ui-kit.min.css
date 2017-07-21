@@ -18349,13 +18349,15 @@ This will need to be resolved if TFOOT becomes necessary
 }
 .table tr th.level-down {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .table tr th.level-down:before {
   content: '';
   position: absolute;
-  top: 2px;
   left: 0px;
-  display: block;
+  display: flex;
   width: 0;
   height: 0;
   border-style: solid;
