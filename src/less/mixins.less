@@ -13,6 +13,9 @@
   a&  {
     color: @colorName;
   }
+  &.bar:before {
+    background-color: @colorName;
+  }
   div&,
   .label& {
     color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));

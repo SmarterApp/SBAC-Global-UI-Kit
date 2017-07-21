@@ -9883,6 +9883,9 @@ span.blue,
 a.blue {
   color: #014F9A;
 }
+.blue.bar:before {
+  background-color: #014F9A;
+}
 div.blue,
 .label.blue {
   color: #ffffff;
@@ -10165,6 +10168,9 @@ p.blue-dark,
 span.blue-dark,
 a.blue-dark {
   color: #104564;
+}
+.blue-dark.bar:before {
+  background-color: #104564;
 }
 div.blue-dark,
 .label.blue-dark {
@@ -10449,6 +10455,9 @@ span.teal,
 a.teal {
   color: #0090B7;
 }
+.teal.bar:before {
+  background-color: #0090B7;
+}
 div.teal,
 .label.teal {
   color: #ffffff;
@@ -10731,6 +10740,9 @@ p.aqua,
 span.aqua,
 a.aqua {
   color: #3696E6;
+}
+.aqua.bar:before {
+  background-color: #3696E6;
 }
 div.aqua,
 .label.aqua {
@@ -11015,6 +11027,9 @@ span.green,
 a.green {
   color: #6FAE29;
 }
+.green.bar:before {
+  background-color: #6FAE29;
+}
 div.green,
 .label.green {
   color: #ffffff;
@@ -11297,6 +11312,9 @@ p.green-dark,
 span.green-dark,
 a.green-dark {
   color: #406934;
+}
+.green-dark.bar:before {
+  background-color: #406934;
 }
 div.green-dark,
 .label.green-dark {
@@ -11581,6 +11599,9 @@ span.orange,
 a.orange {
   color: #D66E1E;
 }
+.orange.bar:before {
+  background-color: #D66E1E;
+}
 div.orange,
 .label.orange {
   color: #ffffff;
@@ -11863,6 +11884,9 @@ p.red,
 span.red,
 a.red {
   color: #D5124A;
+}
+.red.bar:before {
+  background-color: #D5124A;
 }
 div.red,
 .label.red {
@@ -12147,6 +12171,9 @@ span.red-dark,
 a.red-dark {
   color: #931432;
 }
+.red-dark.bar:before {
+  background-color: #931432;
+}
 div.red-dark,
 .label.red-dark {
   color: #ffffff;
@@ -12429,6 +12456,9 @@ p.maroon,
 span.maroon,
 a.maroon {
   color: #5B1931;
+}
+.maroon.bar:before {
+  background-color: #5B1931;
 }
 div.maroon,
 .label.maroon {
@@ -12713,6 +12743,9 @@ span.black,
 a.black {
   color: #000000;
 }
+.black.bar:before {
+  background-color: #000000;
+}
 div.black,
 .label.black {
   color: #bfbfbf;
@@ -12995,6 +13028,9 @@ p.gray-darkest,
 span.gray-darkest,
 a.gray-darkest {
   color: #2a2b2d;
+}
+.gray-darkest.bar:before {
+  background-color: #2a2b2d;
 }
 div.gray-darkest,
 .label.gray-darkest {
@@ -13279,6 +13315,9 @@ span.gray-darker,
 a.gray-darker {
   color: #64666A;
 }
+.gray-darker.bar:before {
+  background-color: #64666A;
+}
 div.gray-darker,
 .label.gray-darker {
   color: #ffffff;
@@ -13561,6 +13600,9 @@ p.gray-dark,
 span.gray-dark,
 a.gray-dark {
   color: #A7A7A7;
+}
+.gray-dark.bar:before {
+  background-color: #A7A7A7;
 }
 div.gray-dark,
 .label.gray-dark {
@@ -13845,6 +13887,9 @@ span.gray,
 a.gray {
   color: #B8B8B8;
 }
+.gray.bar:before {
+  background-color: #B8B8B8;
+}
 div.gray,
 .label.gray {
   color: #000000;
@@ -14127,6 +14172,9 @@ p.gray-light,
 span.gray-light,
 a.gray-light {
   color: #D5D5D5;
+}
+.gray-light.bar:before {
+  background-color: #D5D5D5;
 }
 div.gray-light,
 .label.gray-light {
@@ -14411,6 +14459,9 @@ span.gray-lighter,
 a.gray-lighter {
   color: #E6E6E6;
 }
+.gray-lighter.bar:before {
+  background-color: #E6E6E6;
+}
 div.gray-lighter,
 .label.gray-lighter {
   color: #272727;
@@ -14694,6 +14745,9 @@ span.gray-lightest,
 a.gray-lightest {
   color: #F8F8F8;
 }
+.gray-lightest.bar:before {
+  background-color: #F8F8F8;
+}
 div.gray-lightest,
 .label.gray-lightest {
   color: #393939;
@@ -14976,6 +15030,9 @@ p.white,
 span.white,
 a.white {
   color: #FFFFFF;
+}
+.white.bar:before {
+  background-color: #FFFFFF;
 }
 div.white,
 .label.white {
@@ -17411,7 +17468,6 @@ span.tag > * {
   border-radius: 3px;
 }
 .tag:not(a).tag:not(button) {
-  padding: 10px 0 0 5px;
   border: none;
   background-color: transparent;
   pointer-events: none;
@@ -17575,7 +17631,7 @@ span.tag > * {
 }
 .scale-score-graph .bar-container {
   position: relative;
-  padding-bottom: 48px;
+  padding-bottom: 64px;
 }
 .scale-score-graph .bar-container:before,
 .scale-score-graph .bar-container:after {
@@ -17600,13 +17656,13 @@ span.tag > * {
   float: left;
   border-color: #FFFFFF;
   border-style: solid;
-  border-width: 0px 1.5px;
+  border-width: 0px 1px;
 }
 .scale-score-graph .bar-container .bar:first-child {
-  border-width: 0px 1.5px 0px 0px;
+  border-width: 0px 1px 0px 0px;
 }
 .scale-score-graph .bar-container .bar:last-child {
-  border-width: 0px 0px 0px 1.5px;
+  border-width: 0px 0px 0px 1px;
 }
 .scale-score-graph .bar-container .bar .percentage,
 .scale-score-graph .bar-container .bar .bar-label {
@@ -17687,6 +17743,204 @@ span.tag > * {
 }
 .scale-score-graph.has-cut-points {
   padding-bottom: 32px;
+}
+.scale-score-graph .bar-container .bar[data-width="0"] {
+  width: 10%;
+  background-color: transparent;
+}
+.scale-score-graph .bar-container .bar[data-width="0"]:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 0%;
+  min-width: 10%;
+  height: 18.4px;
+}
+.scale-score-graph .bar-container .bar[data-width="0"] .percentage,
+.scale-score-graph .bar-container .bar[data-width="0"] .bar-label {
+  text-align: left;
+}
+.scale-score-graph .bar-container .bar[data-width="1"] {
+  width: 10%;
+  background-color: transparent;
+}
+.scale-score-graph .bar-container .bar[data-width="1"]:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 10%;
+  min-width: 10%;
+  height: 18.4px;
+}
+.scale-score-graph .bar-container .bar[data-width="1"] .percentage,
+.scale-score-graph .bar-container .bar[data-width="1"] .bar-label {
+  text-align: left;
+}
+.scale-score-graph .bar-container .bar[data-width="2"] {
+  width: 10%;
+  background-color: transparent;
+}
+.scale-score-graph .bar-container .bar[data-width="2"]:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 20%;
+  min-width: 10%;
+  height: 18.4px;
+}
+.scale-score-graph .bar-container .bar[data-width="2"] .percentage,
+.scale-score-graph .bar-container .bar[data-width="2"] .bar-label {
+  text-align: left;
+}
+.scale-score-graph .bar-container .bar[data-width="3"] {
+  width: 10%;
+  background-color: transparent;
+}
+.scale-score-graph .bar-container .bar[data-width="3"]:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 30%;
+  min-width: 10%;
+  height: 18.4px;
+}
+.scale-score-graph .bar-container .bar[data-width="3"] .percentage,
+.scale-score-graph .bar-container .bar[data-width="3"] .bar-label {
+  text-align: left;
+}
+.scale-score-graph .bar-container .bar[data-width="4"] {
+  width: 10%;
+  background-color: transparent;
+}
+.scale-score-graph .bar-container .bar[data-width="4"]:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 40%;
+  min-width: 10%;
+  height: 18.4px;
+}
+.scale-score-graph .bar-container .bar[data-width="4"] .percentage,
+.scale-score-graph .bar-container .bar[data-width="4"] .bar-label {
+  text-align: left;
+}
+.scale-score-graph .bar-container .bar[data-width="5"] {
+  width: 10%;
+  background-color: transparent;
+}
+.scale-score-graph .bar-container .bar[data-width="5"]:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 50%;
+  min-width: 10%;
+  height: 18.4px;
+}
+.scale-score-graph .bar-container .bar[data-width="5"] .percentage,
+.scale-score-graph .bar-container .bar[data-width="5"] .bar-label {
+  text-align: left;
+}
+.scale-score-graph .bar-container .bar[data-width="6"] {
+  width: 10%;
+  background-color: transparent;
+}
+.scale-score-graph .bar-container .bar[data-width="6"]:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 60%;
+  min-width: 10%;
+  height: 18.4px;
+}
+.scale-score-graph .bar-container .bar[data-width="6"] .percentage,
+.scale-score-graph .bar-container .bar[data-width="6"] .bar-label {
+  text-align: left;
+}
+.scale-score-graph .bar-container .bar[data-width="7"] {
+  width: 10%;
+  background-color: transparent;
+}
+.scale-score-graph .bar-container .bar[data-width="7"]:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 70%;
+  min-width: 10%;
+  height: 18.4px;
+}
+.scale-score-graph .bar-container .bar[data-width="7"] .percentage,
+.scale-score-graph .bar-container .bar[data-width="7"] .bar-label {
+  text-align: left;
+}
+.scale-score-graph .bar-container .bar[data-width="8"] {
+  width: 10%;
+  background-color: transparent;
+}
+.scale-score-graph .bar-container .bar[data-width="8"]:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 80%;
+  min-width: 10%;
+  height: 18.4px;
+}
+.scale-score-graph .bar-container .bar[data-width="8"] .percentage,
+.scale-score-graph .bar-container .bar[data-width="8"] .bar-label {
+  text-align: left;
+}
+.scale-score-graph .bar-container .bar[data-width="9"] {
+  width: 10%;
+  background-color: transparent;
+}
+.scale-score-graph .bar-container .bar[data-width="9"]:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 90%;
+  min-width: 10%;
+  height: 18.4px;
+}
+.scale-score-graph .bar-container .bar[data-width="9"] .percentage,
+.scale-score-graph .bar-container .bar[data-width="9"] .bar-label {
+  text-align: left;
+}
+.scale-score-graph .bar-container .bar[data-width="10"] {
+  width: 10%;
+  background-color: transparent;
+}
+.scale-score-graph .bar-container .bar[data-width="10"]:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 100%;
+  min-width: 10%;
+  height: 18.4px;
+}
+.scale-score-graph .bar-container .bar[data-width="10"] .percentage,
+.scale-score-graph .bar-container .bar[data-width="10"] .bar-label {
+  text-align: left;
 }
 section.main {
   padding-top: 64px;

@@ -2,35 +2,7 @@
 <html>
 <head>
     <title>ICA</title>
-    <link rel="stylesheet" href="sbac-ui-kit/dist/css/sbac-ui-kit.min.css">
-    <style>
-
-        /*
-            wkhtmltopdf has issues with font size.
-            1. font size line wrap issue https://github.com/wkhtmltopdf/wkhtmltopdf/issues/2505
-         */
-
-        body {
-            background-color: #fff;
-            font-size: 120%;
-        }
-
-        .navbar-header {
-            width: 100%;
-        }
-
-        header nav.navbar .navbar-brand {
-            /*1364 x433*/
-            width: 136px;
-            height: 43px;
-            display: inline-block;
-        }
-
-        header .application-title {
-            font-size: inherit;
-        }
-
-    </style>
+    <link rel="stylesheet" href="dist/css/sbac-ui-kit-wkhtmltopdf.min.css">
 </head>
 <body>
 <header>
@@ -55,9 +27,9 @@
             <div class="col-xs-9 text-right">
                 <span class="student-enrollment pull-right">
                     <span class="student-enrollment-item"><label>Grade:</label> 4</span>
-                    <span class="student-enrollment-item ml-xs"><label>School:</label> Espanosa Elementary</span>
-                    <span class="student-enrollment-item ml-xs"><label>District:</label> Los Angeles Unified</span>
-                    <span class="student-enrollment-item ml-xs"><label>State:</label> CA</span>
+                    <span class="student-enrollment-item ml-md"><label>School:</label> Espanosa Elementary</span>
+                    <span class="student-enrollment-item ml-md"><label>District:</label> Los Angeles Unified</span>
+                    <span class="student-enrollment-item ml-md"><label>State:</label> CA</span>
                 </span>
             </div>
         </div>
@@ -65,12 +37,16 @@
         <hr class="mt-sm mb-sm"/>
 
         <div class="row">
-            <div class="col-xs-6">
-                <div>IAB MATH</div>
-                <div>Interim Comprehensive Assessment 2017 - 18</div>
-                <div><label>Date Taken:</label> 1/24/2017</div>
+            <div class="col-xs-7">
+                <div>
+                    <span class="h3 label-group red">
+                        <span class="label">ICA</span><span class="label">Math</span>
+                    </span>
+                </div>
+                <div class="h4">Grade 4 Interim Comprehensive Assessment 2017-18<br />
+                <small><strong>Date Taken:</strong> 1/24/2017</small></div>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-5">
                 <div class="well">
                     <div class="well-body">
                         <p>David has made progress and met the grade-level standard. David appears ready for future
@@ -84,16 +60,39 @@
 
         <hr class="mt-sm mb-sm"/>
 
-        <h2>Overall Achievement</h2>
-        <div class="tag tag-xs green-dark"><span class="label">2463</span> Standard Met (Level 3) 2473-2532</div>
+        <h2 class="gray-darker">Overall Achievement</h2>
+        <span class="tag green-dark h2"><span class="label">2463</span> Standard Met (Level 3) 2473-2532</span>
 
         <div class="row">
             <div class="col-xs-9">
-                <!-- SCALE SCORE VISUAL -->
+                <div class="scale-score-graph individual has-cut-points">
+                    <div class="bar-container">
+                      <span class="scale-score" data-left="42"><span class="score label green-dark">2496</span> <span class="error-band">&plusmn; 10</span></span>
+                      <div class="bar maroon" data-width="25">
+                        <span class="bar-label">Did not Meet Standard</span>
+                      </div>
+                      <div class="bar gray-darkest" data-width="25">
+                        <span class="bar-label">Nearly Met Standard</span>
+                      </div>
+                      <div class="bar green-dark" data-width="25">
+                        <span class="bar-label">Met Standard</span>
+                      </div>
+                      <div class="bar blue-dark" data-width="25">
+                        <span class="bar-label">Exceeded Standard</span>
+                      </div>
+                      <div class="cut-points">
+                        <span class="label label-xs gray-darker" data-left="0">2189</span>
+                        <span class="label label-xs gray-darker" data-left="25">2381</span>
+                        <span class="label label-xs gray-darker" data-left="50">2436</span>
+                        <span class="label label-xs gray-darker" data-left="75">2501</span>
+                        <span class="label label-xs gray-darker" data-left="100">2621</span>
+                      </div>
+                    </div>
+                </div>
             </div>
             <div class="col-xs-3 text-left">
-                <strong class="error-band">Error Band</strong>
-                <p>A student's test score can vary if the test is taken several times. If this student was tested again,
+                <p><strong>Error Band</strong><br />
+                    A student&rsquo;s test score can vary if the test is taken several times. If this student was tested again,
                     it is likely that the scale score would fall within this range.</p>
             </div>
         </div>
@@ -101,68 +100,66 @@
         <hr class="mt-sm mb-sm"/>
 
         <h2>Student Achievement by Claim</h2>
-        <p>The student's results are also reported out into the four claims (i.e., areas) that together make up English
+        <p>The student&rsquo;s results are also reported out into the four claims (i.e., areas) that together make up English
             language arts/literacy: Reading, Writing, Listening, and Research/Inquiry. These four claims are based on
             California's academic standards, which describe the knowledge and skills students are expected to learn in
-            grade four. If the student received a score of "No Score Available" for any claim, this means he or she did
-            not complete enough items to receive a score in that area. To view a description of the student's
+            grade four. If the student received a score of &ldquo;No Score Available&rdquo; for any claim, this means he or she did
+            not complete enough items to receive a score in that area. To view a description of the student&rsquo;s
             achievement level claim (i.e., area), select either [Above Standard], [Near Standard], or [Below Standard]
             from the student-level selections available in the table below.</p>
 
         <div class="row">
             <div class="col-xs-3">
                 <h3 class="text-center">Reading</h3>
-                <div class="text-center"><!-- ICON --></div>
-                <div class="text-center gray-lightest">Above Standard</div>
+                <span class="h4 gray-dark"><i class="fa fa-book fa-5x text-center"></i></span><br />
+                <div class="text-center gray-lightest pt-sm pb-sm mb-sm"><strong>Above Standard</strong></div>
                 <p>David demonstrates a thorough ability to read closely and analytically to understand a range of literary texts (e.g., stories, plays, and poems) and informational texts (e.g., articles and other writing covering disciplines like science and social studies) of high complexity.</p>
             </div>
             <div class="col-xs-3">
                 <h3 class="text-center">Writing</h3>
-                <div class="text-center"><!-- ICON --></div>
-                <div class="text-center gray-lightest">Above Standard</div>
+                <span class="h4 gray-dark"><i class="fa fa-edit fa-5x text-center"></i></span><br />
+                <div class="text-center gray-lightest pt-sm pb-sm mb-sm"><strong>Above Standard</strong></div>
                 <p>David demonstrates a thorough ability to produce well-organized, developed, and supported writing (e.g., narrative, informational, explanatory, and opinion) for different purposes and audiences.</p>
             </div>
             <div class="col-xs-3">
                 <h3 class="text-center">Listening</h3>
-                <div class="text-center"><!-- ICON --></div>
-                <div class="text-center gray-lightest">Near Standard</div>
+                <span class="h4 gray-dark"><i class="fa fa-lightbulb-o fa-5x text-center"></i></span><br />
+                <div class="text-center gray-lightest pt-sm pb-sm mb-sm"><strong>Near Standard</strong></div>
                 <p>David demonstrates some ability to use effective listening skills for a range of purposes and audiences.</p>
             </div>
             <div class="col-xs-3">
                 <h3 class="text-center">Research & Inquiry</h3>
-                <div class="text-center"><!-- ICON --></div>
-                <div class="text-center gray-lightest">Below Standard</div>
+                <span class="h4 gray-dark"><i class="fa fa-question fa-5x text-center"></i></span><br />
+                <div class="text-center gray-lightest pt-sm pb-sm mb-sm"><strong>Below Standard</strong></div>
                 <p>David does not yet demonstrate the ability to engage in research and inquiry to investigate topics, and to analyze, integrate, and present information.</p>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-xs-5">
+            <div class="col-xs-12">
                 <div class="well">
                     <div class="well-body">
-                        <div>The following accommodations were made available:</div>
-                        <!-- should these be potato chips (tags with labels in the ui kit) like the legacy app? -->
-                        <ul>
-                            <li>Alternative Response</li>
-                            <li>Printed passages/stimuli</li>
-                        </ul>
+                        <p class="gray-darker">The following accommodations were made available:</p>
+                        <p><strong>Alternative Response<br />
+                        Printed passages/stimuli</strong></p>
                     </div>
                 </div>
             </div>
         </div>
 
+        <hr>
+
         <!--- END BODY -->
 
         <div class="row">
             <div class="col-xs-8">
-                <h4 class="h2 gray-dark">Frequently Asked Questions</h4>
+                <h4 class="h2 gray-darker">Frequently Asked Questions</h4>
                 <p>Where can I find more information about the Smarter Balanced Assessment System? Information about
-                    Smarter Balanced Assessment System is available at <a href="http://www.smarterbalanced.org">www.smarterbalanced.org</a>
+                    Smarter Balanced Assessment System is available at <a href="http://www.smarterbalanced.org" target="_blank">www.smarterbalanced.org</a>
                 </p>
-                <p>
-                <div>Take the Test:</div>
+                <p><strong>Take the Test:</strong><br />
                 Gain familiarity with the types of questions and tools for students by taking a practice test: <a
-                    href="http://www.smarterbalanced.org/assessments/practice-and-training-tests">http://www.smarterbalanced.org/assessments/practice-and-training-tests</a></p>
+                    href="http://www.smarterbalanced.org/assessments/practice-and-training-tests" target="_blank">http://www.smarterbalanced.org/assessments/practice-and-training-tests</a></p>
                 <hr/>
                 <p>These results represent only one indicator of a student's performance. These results should be used
                     along with other information, such as classwork and other tests when making educational decisions.
@@ -171,15 +168,9 @@
             <div class="col-xs-4">
                 <div class="well">
                     <div class="well-body">
-                        <strong>Important Information About Interim Assessments</strong>
-                        <ol>
-                            <li>Interim assessments may be scored by local teachers. This scoring is not subject to the
-                                rigorous controls used in summative assessment and local results may show some
-                                variations.
-                            </li>
-                            <li>Interim assessments questions are not secure. Exposure to, and familiarity, with test
-                                questions my affect student performance and the accuracy of interim results.
-                            </li>
+                        <p><strong>Important Information About Interim Assessments</strong></p>
+                        <p>1. Interim assessments may be scored by local teachers. This scoring is not subject to the rigorous controls used in summative assessment and local results may show some variations.</p>
+                        <p>2. Interim assessments questions are not secure. Exposure to, and familiarity, with test questions my affect student performance and the accuracy of interim results.</p>
                         </ol>
                     </div>
                 </div>

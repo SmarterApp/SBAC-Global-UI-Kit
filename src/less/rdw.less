@@ -83,7 +83,7 @@
   .bar-container {
     .clearfix;
     position: relative;
-    padding-bottom: @font-size-base * 3;
+    padding-bottom: @font-size-base * 4;
     .bar {
       position: relative;
       display: block;
@@ -91,12 +91,12 @@
       float: left;
       border-color: @white;
       border-style: solid;
-      border-width: 0px 1.5px;
+      border-width: 0px 1px;
       &:first-child {
-        border-width: 0px 1.5px 0px 0px;
+        border-width: 0px 1px 0px 0px;
       }
       &:last-child {
-        border-width: 0px 0px 0px 1.5px;
+        border-width: 0px 0px 0px 1px;
       }
       .percentage,
       .bar-label {
@@ -189,4 +189,28 @@
   &.has-cut-points {
     padding-bottom: @font-size-base * 2;
   }
+}
+
+.generate-score-bar-small-width-classes(10, 0);
+
+.generate-score-bar-small-width-classes(@n, @i : 0) when (@i =< @n) {
+  .scale-score-graph .bar-container .bar[data-width="@{i}"] {
+    width: 10%;
+    background-color: transparent;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      display: block;
+      width: (@i * 10%);
+      min-width: 10%;
+      height: @font-size-base * 1.15;
+    }
+    .percentage,
+    .bar-label {
+      text-align: left;
+    }
+  }
+  .generate-score-bar-small-width-classes(@n, (@i + 1));
 }

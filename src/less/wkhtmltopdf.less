@@ -34,21 +34,24 @@
   list-style-image: none;
   padding-left: 0px;
   li .previous-result {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-around;
-    border-bottom: 1px solid @gray-darker;
+    display: block;
+    border-bottom: 1px solid @gray-dark;
     color: @gray-darker;
     padding: (@padding-base-vertical / 2) @padding-base-horizontal;
+    .clearfix();
     > span {
-      flex: 1 0;
+      display:block;
+      width: 33%;
+      float: left;
     }
     .date {
+      padding-top: 11px;
       text-align: left;
       color: @gray-dark;
     }
     .scale-score {
-      color: @gray-darkest;
+      padding-top: 3px;
+      color: @blue-dark;
       .error-band {
         .small;
         color: @gray-dark;
@@ -56,9 +59,44 @@
       }
     }
     .performance-level {
+      padding-top: 12px;
       text-align: right;
       .small;
       color: @gray-darker;
     }
   }
+}
+
+// Individual Scale Score
+.scale-score-graph.individual {
+  .bar-container {
+    .bar {
+      .bar-label {
+        font-size: 70%;
+        line-height: 1.8;
+      }
+    }
+    .cut-points {
+      .label {
+        transform: translateX(0);
+        margin-left: -21px;
+        &:first-child {
+          margin-left: -18px;
+        }
+        &:last-child {
+          margin-left: -23px;
+        }
+      }
+    }
+  }
+}
+.assessment-latest-result {
+  .date {
+    margin-top: @padding-base-vertical;
+    font-size: @font-size-base;
+  }
+}
+
+i.text-center {
+  display: block;
 }
