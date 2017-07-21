@@ -3513,8 +3513,8 @@ tbody.collapse.in {
   list-style: none;
   font-size: 16px;
   text-align: left;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: #FFFFFF;
+  border: 1px solid #F8F8F8;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
@@ -3529,7 +3529,7 @@ tbody.collapse.in {
   height: 1px;
   margin: 10.5px 0;
   overflow: hidden;
-  background-color: #e5e5e5;
+  background-color: #D5D5D5;
 }
 .dropdown-menu > li > a {
   display: block;
@@ -3537,14 +3537,14 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.48;
-  color: #A7A7A7;
+  color: #2a2b2d;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   text-decoration: none;
-  color: #9a9a9a;
-  background-color: #f5f5f5;
+  color: #111213;
+  background-color: #F8F8F8;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -17555,6 +17555,10 @@ span.tag > * {
 .tag.reverse:hover {
   background-color: #64666A;
 }
+.dropdown-menu {
+  font-size: 81%;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .average-scale-score-display .label-group {
   display: block;
   margin-top: 16px;
@@ -18662,3 +18666,7 @@ input.form-control {
 .panel-grid .tag-menu .tag {
   background: #F8F8F8;
 }
+@dropdown-link-disabled-color :   @gray
+
+//** Text color for headers within dropdown menus.
+@dropdown-header-color:          @gray;
