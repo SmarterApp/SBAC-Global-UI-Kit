@@ -15930,6 +15930,7 @@ h2 + p.pull-left,
 h3 + p.pull-left,
 .h3 + p.pull-left {
   margin: 3px 10px;
+  color: #A7A7A7;
 }
 h1,
 .h1,
@@ -18251,6 +18252,7 @@ header .application-title .small {
 }
 header .application-title + p.pull-left {
   margin: 3px 10px;
+  color: #A7A7A7;
 }
 nav.navbar {
   padding: 16px 0px;
