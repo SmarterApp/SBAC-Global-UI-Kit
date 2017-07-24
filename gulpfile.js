@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     clean = require('gulp-clean'),
     less = require('gulp-less'),
+    cssmin = require('gulp-cssmin'),
     imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename'),
     src = 'src',
@@ -22,6 +23,7 @@ gulp.task('less', ['clean', 'less:main', 'less:wkhtmltopdf']);
 gulp.task('less:main', ['clean'], function () {
    return gulp.src(paths.styles[0])
        .pipe(less())
+       .pipe(cssmin())
        .pipe(rename('sbac-ui-kit.min.css'))
        .pipe(gulp.dest(`${dist}/css`));
 });
@@ -29,6 +31,7 @@ gulp.task('less:main', ['clean'], function () {
 gulp.task('less:wkhtmltopdf', ['clean'], function () {
    return gulp.src(paths.styles[1])
        .pipe(less())
+       .pipe(cssmin())
        .pipe(rename('sbac-ui-kit-wkhtmltopdf.min.css'))
        .pipe(gulp.dest(`${dist}/css`));
 });
