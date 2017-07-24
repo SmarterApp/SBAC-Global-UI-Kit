@@ -3557,7 +3557,7 @@ tbody.collapse.in {
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
-  color: #D5D5D5;
+  color: #B8B8B8;
 }
 .dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
@@ -3586,7 +3586,7 @@ tbody.collapse.in {
   padding: 3px 20px;
   font-size: 13px;
   line-height: 1.48;
-  color: #D5D5D5;
+  color: #B8B8B8;
   white-space: nowrap;
 }
 .dropdown-backdrop {
@@ -18674,7 +18674,3 @@ input.form-control {
 .panel-grid .tag-menu .tag {
   background: #F8F8F8;
 }
-@dropdown-link-disabled-color :   @gray
-
-//** Text color for headers within dropdown menus.
-@dropdown-header-color:          @gray;
