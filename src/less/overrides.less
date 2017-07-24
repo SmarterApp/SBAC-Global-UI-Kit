@@ -17,9 +17,6 @@ section.main {
     > .flex-children {
       width: floor(((100 - (@i - 1)) / @i) * 1%);
       margin: 0.5% 0.5% 0.5% 0.5%;
-      .flex-children {
-        margin: 0;
-      }
     }
   }
   // Continue the iteration
@@ -39,7 +36,7 @@ ul.no-bullet {
   > *,
   .flex-children {
     margin: 0.5% 0.5% 0.5% 0.5%;
-    .flex-children {
+    + .normarg {
       margin: 0;
     }
   }
@@ -335,6 +332,9 @@ This will need to be resolved if TFOOT becomes necessary
 
 .well {
   background-color: @well-bg;
+  .navbar {
+    padding: 0;
+  }
 }
 
 // Well Group
