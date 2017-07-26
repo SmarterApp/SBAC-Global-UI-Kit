@@ -53,7 +53,7 @@ gulp.task('less:wkhtmltopdf', ['clean', 'fonts', 'imagemin'], function () {
         .pipe(less())
         .pipe(cssmin())
         .pipe(cssBase64({
-            extensionsAllowed: ['.png']
+            extensionsAllowed: ['.png', '.eot', '.svg', '.ttf', '.woff']
         }))
         .pipe(rename('sbac-ui-kit-wkhtmltopdf.min.css'))
         .pipe(gulp.dest(`${dist}/css`));
