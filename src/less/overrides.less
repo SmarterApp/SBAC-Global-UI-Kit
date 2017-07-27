@@ -208,17 +208,23 @@ This will need to be resolved if TFOOT becomes necessary
     }
   }
   > thead > tr > th {
+    border-right: 1px solid rgba(100, 102, 106, 0.17);
     &:first-child {
       border-top-left-radius: @border-radius-base;
     }
     &:last-child {
+      border-right: none;
       border-top-right-radius: @border-radius-base;
     }
   }
   > tbody > tr {
     background-color: darken(@gray-lightest, 2%);
     > td {
+      border-right: 1px solid rgba(213, 213, 213, 0.26);
       .box-shadow(0 6px 6px -6px rgba(255,255,255,0.95) inset);
+      &:last-child {
+        border-right: none;
+      }
     }
   }
   // Normally this would be the TFOOT rounding class
