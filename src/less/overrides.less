@@ -5,6 +5,10 @@ section.main {
   padding-bottom: (@font-size-h1 * 2);
 }
 
+.no-margin {
+  margin: 0 !important;
+}
+
 .block-children > * {
   display: block;
   white-space: normal;
@@ -17,9 +21,6 @@ section.main {
     > .flex-children {
       width: floor(((100 - (@i - 1)) / @i) * 1%);
       margin: 0.5% 0.5% 0.5% 0.5%;
-      .flex-children {
-        margin: 0;
-      }
     }
   }
   // Continue the iteration
@@ -39,7 +40,7 @@ ul.no-bullet {
   > *,
   .flex-children {
     margin: 0.5% 0.5% 0.5% 0.5%;
-    .flex-children {
+    + .normarg {
       margin: 0;
     }
   }
@@ -341,6 +342,9 @@ This will need to be resolved if TFOOT becomes necessary
 
 .well {
   background-color: @well-bg;
+  .navbar {
+    padding: 0;
+  }
 }
 
 // Well Group
@@ -492,6 +496,11 @@ label {
 // Breadcrumbs
 // --------------------------------------------------
 
+breadcrumbs {
+  .breadcrumb{
+    margin-bottom: 15px;
+  }
+}
 .breadcrumb-container {
   border-width: 1px 0px;
   border-style: solid;
@@ -501,7 +510,7 @@ label {
   .breadcrumb {
     padding-right: 0px;
     padding-left: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     background-color: transparent;
     border-radius: 0px;
     li {
@@ -574,5 +583,14 @@ label {
     .panel-grid & {
       background: @gray-lightest;
     }
+  }
+}
+
+// Popover
+.popover {
+  font-size: 13px;
+  .popover-title {
+      padding:0 13px;
+      font-size: 14px;
   }
 }

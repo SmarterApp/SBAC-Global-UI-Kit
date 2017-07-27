@@ -100,3 +100,58 @@
 i.text-center {
   display: block;
 }
+
+.navbar-brand {
+  display: inline-block;
+  height: 56px;
+  width: 176px;
+  background: url("../images/SmarterBalanced-Logo.png") no-repeat;
+  background-size: contain;
+}
+
+.scale-score-legend {
+  display: inline-block;
+  height: 98px;
+  width: 278px;
+  background: url("../images/scale-score-legend.png") no-repeat;
+  background-size: contain;
+}
+
+/*
+  Override font awesome location to custom font location
+*/
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('@{fa-font-path}/wkhtmltopdf-fontawesome-webfont.eot');
+  src: url('@{fa-font-path}/wkhtmltopdf-fontawesome-webfont.woff') format('woff'),
+  url('@{fa-font-path}/wkhtmltopdf-fontawesome-webfont.ttf') format('truetype'),
+  url('@{fa-font-path}/wkhtmltopdf-fontawesome-webfont.svg') format('svg');
+  // src: url('@{fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+  Override font awesome icon mappings
+ */
+.fa-question:before {
+  content: "\f128";
+}
+.fa-book:before {
+  content: "\f02d";
+}
+.fa-edit:before {
+  content: "\f044";
+}
+.fa-question-circle:before {
+  content: "\f059";
+}
+.fa-comments:before {
+  content: "\f086";
+}
+.fa-lightbulb-o:before {
+  content: "\f0eb";
+}
+.fa-sort-amount-desc:before {
+  content: "\f163";
+}
