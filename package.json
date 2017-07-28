@@ -1,6 +1,6 @@
 {
   "name": "@sbac/sbac-ui-kit",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Common web styling and assets for SBAC projects",
   "author": "Smarter Balanced Assessment Consortium",
   "main": "gulpfile.js",
