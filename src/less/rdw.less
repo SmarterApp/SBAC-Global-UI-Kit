@@ -197,6 +197,13 @@
   .scale-score-graph .bar-container .bar[data-width="@{i}"] {
     width: 10%;
     background-color: transparent;
+    &.blend-middle {
+      .bar {
+        &.blue-dark.aqua {
+          background-image: none;
+        }
+      }
+    }
     &:before {
       content: '';
       position: absolute;

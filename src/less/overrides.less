@@ -209,22 +209,25 @@ This will need to be resolved if TFOOT becomes necessary
     }
   }
   > thead > tr > th {
-    border-right: 1px solid rgba(100, 102, 106, 0.17);
+    &:not(:last-child) {
+      border-right: 1px solid rgba(100, 102, 106, 0.17);
+    }
     &:first-child {
       border-top-left-radius: @border-radius-base;
     }
     &:last-child {
-      border-right: none;
       border-top-right-radius: @border-radius-base;
     }
   }
   > tbody > tr {
-    background-color: darken(@gray-lightest, 2%);
+    &:not(:last-child) {
+      background-color: darken(@gray-lightest, 2%);
+    }
     > td {
       border-right: 1px solid rgba(213, 213, 213, 0.26);
       .box-shadow(0 6px 6px -6px rgba(255,255,255,0.95) inset);
       &:last-child {
-        border-right: none;
+
       }
     }
   }
@@ -266,6 +269,7 @@ This will need to be resolved if TFOOT becomes necessary
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIsAAABHCAYAAAA3M7QwAAABiklEQVR4Xu3aQQqDQBBE0Z54/zNPMCq4CKEWQjPhLYLEpfRU//o65pyjql5VtV+387r/v37uez6fWRi3YTEwDsgVHF+D4j4sEkSC/NwoksXqjTeKZDlYDaMFz0GySBbJos09n5iSRbJIFskiWYjCRhjXhoIWwHAfbRGzYBbMglkwC2bBLN52r/DWH7NgFsyCWTALZsEsmAWzEF5/9UEZg2ug44HWhrQhbUgb0oa0IW1IG9KGwGMMjyt8BqENGeh4oLUhbUgb0oa0IW1IG9KGtCHwGMOjNtQYmZgFs2CWxgPIs1iV8arkWXgWngWzYBbMgll4Fp4FPMbwyLM0RiZmwSyYpfEA8ixWZbwqeRaehWfBLJgFs2AWnoVnAY8xPPIsjZGJWTALZmk8gDyLVRmvSp6FZ+FZMAtmwSyYhWfhWcBjDI88S2NkYhbMglkaDyDPYlXGq5Jn4Vl4FsyCWTALZuFZeBbwGMMjz9IYmZgFs2CWxgPIs1iV8arkWXgWngWzYBbMgll4lhU8yxv+SRr0ShxFMwAAAABJRU5ErkJggg==);
       background-position: center right;
       background-repeat: repeat-y;
+      border-right: none;
     }
     &.level-down {
       .box-shadow(inset 12px 0px 8px -8px rgba(0,0,0,.12));
@@ -294,6 +298,7 @@ This will need to be resolved if TFOOT becomes necessary
       content: '';
       background-color: @gray-lightest;
       border-top-color: @gray-lightest;
+      border-right: none;
     }
   }
 }
