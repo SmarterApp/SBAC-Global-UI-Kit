@@ -2,11 +2,13 @@
 @library-path: "../../node_modules";
 @import "@{library-path}/bootstrap/less/bootstrap.less";
 
-// Directly import font-awesome.less contents so that the path to the font can be overridden
-//@import "@{library-path}/font-awesome/less/font-awesome.less";
+/*
+  Below is a direct copy-paste of font-awesome.less,
+  However, @import "path.less" is replaced with our custom font-awesome font subset which holds only pdf report icons
+  The font subset was necessary because the entire font-awesome font set could not be embedded in the CSS due to size
+ */
 @import "@{library-path}/font-awesome/less/variables.less";
 @import "@{library-path}/font-awesome/less/mixins.less";
-//@import "path.less";
 @font-face {
   font-family: 'FontAwesome';
   src: url('@{fa-font-path}/wkhtmltopdf-fontawesome-webfont.eot');
@@ -16,7 +18,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @import "@{library-path}/font-awesome/less/core.less";
 @import "@{library-path}/font-awesome/less/larger.less";
 @import "@{library-path}/font-awesome/less/fixed-width.less";
@@ -27,24 +28,6 @@
 @import "@{library-path}/font-awesome/less/stacked.less";
 @import "@{library-path}/font-awesome/less/icons.less";
 @import "@{library-path}/font-awesome/less/screen-reader.less";
-/*
-  Override font awesome icon mappings
- */
-.fa-question:before {
-  content: "\f128";
-}
-
-.fa-book:before {
-  content: "\f02d";
-}
-
-.fa-edit:before {
-  content: "\f044";
-}
-
-.fa-lightbulb-o:before {
-  content: "\f0eb";
-}
 
 @import "sbac-ui-kit.less";
 
