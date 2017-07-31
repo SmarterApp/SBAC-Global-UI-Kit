@@ -1,7 +1,51 @@
 // bundles vendor libraries with ui kit for distributable packaging
 @library-path: "../../node_modules";
 @import "@{library-path}/bootstrap/less/bootstrap.less";
-@import "@{library-path}/font-awesome/less/font-awesome.less";
+
+// Directly import font-awesome.less contents so that the path to the font can be overridden
+//@import "@{library-path}/font-awesome/less/font-awesome.less";
+@import "@{library-path}/font-awesome/less/variables.less";
+@import "@{library-path}/font-awesome/less/mixins.less";
+//@import "path.less";
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('@{fa-font-path}/wkhtmltopdf-fontawesome-webfont.eot');
+  src: url('@{fa-font-path}/wkhtmltopdf-fontawesome-webfont.woff') format('woff'),
+  url('@{fa-font-path}/wkhtmltopdf-fontawesome-webfont.ttf') format('truetype'),
+  url('@{fa-font-path}/wkhtmltopdf-fontawesome-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "@{library-path}/font-awesome/less/core.less";
+@import "@{library-path}/font-awesome/less/larger.less";
+@import "@{library-path}/font-awesome/less/fixed-width.less";
+@import "@{library-path}/font-awesome/less/list.less";
+@import "@{library-path}/font-awesome/less/bordered-pulled.less";
+@import "@{library-path}/font-awesome/less/animated.less";
+@import "@{library-path}/font-awesome/less/rotated-flipped.less";
+@import "@{library-path}/font-awesome/less/stacked.less";
+@import "@{library-path}/font-awesome/less/icons.less";
+@import "@{library-path}/font-awesome/less/screen-reader.less";
+/*
+  Override font awesome icon mappings
+ */
+.fa-question:before {
+  content: "\f128";
+}
+
+.fa-book:before {
+  content: "\f02d";
+}
+
+.fa-edit:before {
+  content: "\f044";
+}
+
+.fa-lightbulb-o:before {
+  content: "\f0eb";
+}
+
 @import "sbac-ui-kit.less";
 
 @body-bg: @white;
@@ -40,7 +84,7 @@
     padding: (@padding-base-vertical / 2) @padding-base-horizontal;
     .clearfix();
     > span {
-      display:block;
+      display: block;
       width: 33%;
       float: left;
     }
@@ -90,6 +134,7 @@
     }
   }
 }
+
 .assessment-latest-result {
   .date {
     margin-top: @padding-base-vertical;
@@ -117,41 +162,66 @@ i.text-center {
   background-size: contain;
 }
 
-/*
-  Override font awesome location to custom font location
-*/
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('@{fa-font-path}/wkhtmltopdf-fontawesome-webfont.eot');
-  src: url('@{fa-font-path}/wkhtmltopdf-fontawesome-webfont.woff') format('woff'),
-  url('@{fa-font-path}/wkhtmltopdf-fontawesome-webfont.ttf') format('truetype'),
-  url('@{fa-font-path}/wkhtmltopdf-fontawesome-webfont.svg') format('svg');
-  // src: url('@{fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
-  font-weight: normal;
-  font-style: normal;
+header nav.navbar .navbar-header {
+  display: block;
 }
 
-/*
-  Override font awesome icon mappings
- */
-.fa-question:before {
-  content: "\f128";
+header .application-title {
+  margin: 12px 0 0 0;
 }
-.fa-book:before {
-  content: "\f02d";
+
+.assessment-latest-result .performance-level {
+  display: inline-block;
 }
-.fa-edit:before {
-  content: "\f044";
+
+.assessment-latest-result {
+  > .well-body {
+    position: relative;
+    > .details {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+    }
+  }
 }
-.fa-question-circle:before {
-  content: "\f059";
+
+.assessment-label {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.fa-comments:before {
-  content: "\f086";
+
+.well-group--horizontal > .well {
+  min-height: 167px;
 }
-.fa-lightbulb-o:before {
-  content: "\f0eb";
+
+.scale-score-graph.individual .scale-score .error-band {
+  text-align: left;
+  margin-left: 10px;
+  white-space: nowrap;
 }
-.fa-sort-amount-desc:before {
-  content: "\f163";
+
+.previous-results li .previous-result .scale-score {
+  white-space: nowrap;
+}
+
+.scale-score-graph.individual .scale-score {
+  transform: none;
+  margin-left: -33px;
+}
+
+.accommodations,
+.faq {
+  page-break-inside: avoid;
+}
+
+.hide-bar-labels-in-scale-score-graph-for-percents(0, 6);
+
+.hide-bar-labels-in-scale-score-graph-for-percents(@i : 0, @n) when (@i =< @n) {
+  .scale-score-graph .bar-container .bar[data-width="@{i}"] {
+    .bar-label {
+      display: none;
+    }
+  }
+  .hide-bar-labels-in-scale-score-graph-for-percents((@i + 1), @n);
 }
