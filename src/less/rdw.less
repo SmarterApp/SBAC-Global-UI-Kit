@@ -191,11 +191,10 @@
     padding-bottom: @font-size-base * 2;
   }
 }
-
 .generate-score-bar-small-width-classes(10, 0);
 
 .generate-score-bar-small-width-classes(@n, @i : 0) when (@i =< @n) {
-  .scale-score-graph .bar-container .bar[data-width="@{i}"] {
+  body:not(.pdf) .scale-score-graph .bar-container .bar[data-width="@{i}"] {
     width: 10%;
     background-color: transparent;
     &.blend-middle {
