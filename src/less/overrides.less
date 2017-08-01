@@ -501,31 +501,26 @@ label {
 // Breadcrumbs
 // --------------------------------------------------
 
-breadcrumbs {
-  .breadcrumb{
-    margin-bottom: 15px;
-  }
-}
 .breadcrumb-container {
   border-width: 1px 0px;
   border-style: solid;
   border-color: @gray-light;
   background-color: @gray-lighter;
   .box-shadow(0 6px 6px -6px rgba(0,0,0,.16) inset, 0 1px 1px 1px rgba(255,255,255,.95););
-  .breadcrumb {
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-bottom: 15px;
-    background-color: transparent;
-    border-radius: 0px;
-    li {
+}
+.breadcrumb {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  border-radius: 0px;
+  li {
+    color: @gray-darker;
+    .label {
+      background-color: @gray-light;
       color: @gray-darker;
-      .label {
-        background-color: @gray-light;
-        color: @gray-darker;
-        font-size: 83%;
-        .serif;
-      }
+      font-size: 83%;
+      .serif;
     }
   }
 }
