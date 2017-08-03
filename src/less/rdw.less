@@ -92,9 +92,6 @@
       border-color: @white;
       border-style: solid;
       border-width: 0px 1px;
-      &:before {
-        display: none;
-      }
       &:first-child {
         border-width: 0px 1px 0px 0px;
       }
@@ -202,6 +199,9 @@
     background-color: transparent;
       &.blue-dark.aqua {
         background-image: none;
+        &:before {
+          background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAOklEQVQoU2M0m/bs/631dQwgoBbYBKaR+YwgBeiCyHxGAdeU/9h0whSBFeAyHiRO2ASCbiDoC0JuAABdtDutSFLMdAAAAABJRU5ErkJggg==) repeat;
+        }
       }
     &:before {
       content: '';
