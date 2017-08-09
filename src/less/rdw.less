@@ -196,7 +196,7 @@
 .generate-score-bar-small-width-classes(@n, @i : 0) when (@i =< @n) {
   body:not(.pdf) .scale-score-graph .bar-container .bar[data-width="@{i}"] {
     width: 10%;
-    background-color: transparent;
+    background-color: @gray-lighter;
       &.blue-dark.aqua {
         background-image: none;
         &:before {
