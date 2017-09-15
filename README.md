@@ -70,7 +70,7 @@ npm run build
 ```
 ### Release
 #### Development Releases
-To publish a development release simply create a lightweight tag on your latest commit. Example:
+To publish a development release, update the embedded version in `package.json` and create a lightweight tag on your latest commit. Example:
 ```bash
 git tag v0.0.1
 git push origin v0.0.1
