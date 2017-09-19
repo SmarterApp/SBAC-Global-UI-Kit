@@ -118,6 +118,16 @@ a {
       .box-shadow(none);
     }
   }
+  .btn {
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+      cursor: @cursor-disabled;
+      .opacity(.65);
+      .box-shadow(none);
+      pointer-events: none;
+    }
+  }
 }
 
 // Nested Button Group Sizes
@@ -190,6 +200,14 @@ a {
       .btn {
         display: inline-table;
         margin-bottom: 2px;
+        &.disabled,
+        &[disabled],
+        fieldset[disabled] & {
+          cursor: @cursor-disabled;
+          .opacity(.65);
+          .box-shadow(none);
+          pointer-events: none;
+        }
       }
     }
   }
