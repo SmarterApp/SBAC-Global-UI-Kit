@@ -16,7 +16,7 @@ var gulp = require('gulp'),
             'node_modules/bootstrap/fonts/**/*',
             'node_modules/font-awesome/fonts/**/*'
         ],
-        images: ['src/images/**/*.png']
+        images: ['src/images/**/*']
     };
 
 // Delete the dist directory
