@@ -192,32 +192,3 @@
     padding-bottom: @font-size-base * 2;
   }
 }
-.generate-score-bar-small-width-classes(10, 0);
-
-.generate-score-bar-small-width-classes(@n, @i : 0) when (@i =< @n) {
-  body:not(.pdf) .scale-score-graph .bar-container .bar[data-width="@{i}"] {
-    width: 10%;
-    background-color: @gray-lighter;
-      &.blue-dark.aqua {
-        background-image: none;
-        &:before {
-          background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAOklEQVQoU2M0m/bs/631dQwgoBbYBKaR+YwgBeiCyHxGAdeU/9h0whSBFeAyHiRO2ASCbiDoC0JuAABdtDutSFLMdAAAAABJRU5ErkJggg==) repeat;
-        }
-      }
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      display: block;
-      width: (@i * 10%);
-      min-width: 10%;
-      height: @font-size-base * 1.15;
-    }
-    .percentage,
-    .bar-label {
-      text-align: left;
-    }
-  }
-  .generate-score-bar-small-width-classes(@n, (@i + 1));
-}
