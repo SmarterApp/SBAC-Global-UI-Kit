@@ -80,6 +80,11 @@
   white-space: nowrap;
 }
 
+.textured-blue {
+  // created with http://www.patternify.com/
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAOklEQVQoU2M0m/bs/631dQwgoBbYBKaR+YwgBeiCyHxGAdeU/9h0whSBFeAyHiRO2ASCbiDoC0JuAABdtDutSFLMdAAAAABJRU5ErkJggg==) repeat;
+}
+
 .scale-score-graph {
   .bar-container {
     .clearfix;
@@ -166,8 +171,7 @@
   &.blend-middle {
     .bar {
       &.blue-dark.aqua {
-        // created with http://www.patternify.com/
-        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAOklEQVQoU2M0m/bs/631dQwgoBbYBKaR+YwgBeiCyHxGAdeU/9h0whSBFeAyHiRO2ASCbiDoC0JuAABdtDutSFLMdAAAAABJRU5ErkJggg==) repeat;
+        &:extend(.textured-blue);
       }
     }
   }
@@ -192,3 +196,4 @@
     padding-bottom: @font-size-base * 2;
   }
 }
+
