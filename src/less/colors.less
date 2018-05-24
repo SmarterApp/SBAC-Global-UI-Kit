@@ -12,6 +12,9 @@
 @green:                 #30841F;
 @green-dark:            #246A34;
 
+// Yellows
+@yellow:                #ECCB1A;
+
 // Hot Colors
 @orange:                #B15E15;
 @red:                   #D5124A;
@@ -39,7 +42,7 @@
 
 // Create color classes
 // List the colors
-@colorVars: blue, blue-dark, teal, aqua, green, green-dark, orange, red, red-dark, maroon, black, gray-darkest, gray-darker, gray-dark, gray, gray-light, gray-lighter, gray-lightest, white;
+@colorVars: blue, blue-dark, teal, aqua, green, green-dark, yellow, orange, red, red-dark, maroon, black, gray-darkest, gray-darker, gray-dark, gray, gray-light, gray-lighter, gray-lightest, white;
 // Call the generator mixin
 // Yes, it's supposed to be called in recursive order
 .generate-color-classes(@colorVars, 1);
