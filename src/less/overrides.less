@@ -363,11 +363,11 @@ This will need to be resolved if TFOOT becomes necessary
     &:not(:first-child) {
       .box-shadow(0 6px 6px -6px rgba(0,0,0,.16) inset);
     }
-    > &:first-child {
+    &:first-child {
       border: none;
       .border-top-radius(@border-radius-base);
     }
-    > &:last-child {
+    &:last-child {
       .border-bottom-radius(@border-radius-base);
     }
   }
