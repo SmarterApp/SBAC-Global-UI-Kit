@@ -221,7 +221,8 @@ This will need to be resolved if TFOOT becomes necessary
   > tbody > tr {
     &:not(:last-child) {
       background-color: darken(@gray-lightest, 2%);
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: @table-bg-hover;
       }
     }
@@ -577,7 +578,8 @@ label {
     padding-right: 0.5em !important; // evening out the padding that was put in for labelled tags
     padding-bottom: 0.25em;
     padding-left: 0.5em;
-    &:hover {
+    &:hover,
+    &:focus {
       color: @gray-darkest;
       background-color: @gray-lightest;
       border-color: @gray-lighter;

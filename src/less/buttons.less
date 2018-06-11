@@ -24,7 +24,8 @@ a {
   .btn {
     .button-variant(@white; @gray-darker; @gray-darker);
   }
-  &:hover {
+  &:hover,
+  &:focus {
     .button-variant(@white; darken(@gray-dark, 10%); darken(@gray-dark, 10%));
     .btn {
       .button-variant(@white; darken(@gray-darker, 10%); darken(@gray-darker, 10%));
@@ -68,29 +69,36 @@ a {
   background-color: transparent;
   &.btn-default {
     color: @btn-default-color;
-    &:hover { color: darken(@btn-default-color, 10%); }
+    &:hover,
+    &:focus { color: darken(@btn-default-color, 10%); }
   }
   &.btn-primary {
     color: @btn-primary-bg;
-    &:hover { color: darken(@btn-primary-bg, 20%); }
+    &:hover,
+    &:focus { color: darken(@btn-primary-bg, 20%); }
   }
   &.btn-success {
     color: @btn-success-bg;
-    &:hover { color: darken(@btn-success-bg, 20%); }
+    &:hover,
+    &:focus { color: darken(@btn-success-bg, 20%); }
   }
   &.btn-info {
     color: @btn-info-bg;
-    &:hover { color: darken(@btn-info-bg, 20%); }
+    &:hover,
+    &:focus { color: darken(@btn-info-bg, 20%); }
   }
   &.btn-warning {
     color: @btn-warning-bg;
-    &:hover { color: darken(@btn-warning-bg, 20%); }
+    &:hover,
+    &:focus { color: darken(@btn-warning-bg, 20%); }
   }
   &.btn-danger {
     color: @btn-danger-bg;
-    &:hover { color: darken(@btn-danger-bg, 20%); }
+    &:hover,
+    &:focus { color: darken(@btn-danger-bg, 20%); }
   }
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: transparent;
     background-color: transparent;
   }
@@ -105,7 +113,7 @@ a {
     color: @gray-darker;
     background-color: @white;
     border-color: @gray-light;
-    &:hover {
+    &:hover, &:focus {
       color: @white;
       background-color: @gray-darker;
       border-color: @gray-darker;
@@ -123,7 +131,7 @@ a {
     &[disabled],
     fieldset[disabled] & {
       cursor: @cursor-disabled;
-      .opacity(.65);
+      .opacity(@btn-disabled-opacity);
       .box-shadow(none);
       pointer-events: none;
     }
@@ -204,7 +212,7 @@ a {
         &[disabled],
         fieldset[disabled] & {
           cursor: @cursor-disabled;
-          .opacity(.65);
+          .opacity(@btn-disabled-opacity);
           .box-shadow(none);
           pointer-events: none;
         }
@@ -219,7 +227,8 @@ a {
   .btn {
     .button-variant(darken(@btn-default-color, 10%); darken(@btn-default-bg, 10%); transparent);
   }
-  &:hover .btn {
+  &:hover .btn,
+  &:focus .btn {
     .button-variant(darken(@btn-default-color, 20%); darken(@btn-default-bg, 20%); transparent);
   }
 }
@@ -227,7 +236,8 @@ a {
   .btn {
     .button-variant(darken(@btn-primary-color, 10%); darken(@btn-primary-bg, 10%); transparent);
   }
-  &:hover .btn {
+  &:hover .btn,
+  &:focus .btn {
     .button-variant(darken(@btn-primary-color, 20%); darken(@btn-primary-bg, 20%); transparent);
   }
 }
@@ -235,7 +245,8 @@ a {
   .btn {
     .button-variant(darken(@btn-success-color, 10%); darken(@btn-success-bg, 10%); transparent);
   }
-  &:hover .btn {
+  &:hover .btn,
+  &:focus .btn {
     .button-variant(darken(@btn-success-color, 20%); darken(@btn-success-bg, 20%); transparent);
   }
 }
@@ -243,7 +254,8 @@ a {
   .btn {
     .button-variant(darken(@btn-info-color, 10%); darken(@btn-info-bg, 10%); transparent);
   }
-  &:hover .btn {
+  &:hover .btn,
+  &:focus .btn {
     .button-variant(darken(@btn-info-color, 20%); darken(@btn-info-bg, 20%); transparent);
   }
 }
@@ -251,7 +263,8 @@ a {
   .btn {
     .button-variant(darken(@btn-warning-color, 10%); darken(@btn-warning-bg, 10%); transparent);
   }
-  &:hover .btn {
+  &:hover .btn,
+  &:focus .btn {
     .button-variant(darken(@btn-warning-color, 20%); darken(@btn-warning-bg, 20%); transparent);
   }
 }
@@ -259,7 +272,8 @@ a {
   .btn {
     .button-variant(darken(@btn-danger-color, 10%); darken(@btn-danger-bg, 10%); transparent);
   }
-  &:hover .btn {
+  &:hover .btn,
+  &:focus .btn {
     .button-variant(darken(@btn-danger-color, 20%); darken(@btn-danger-bg, 20%); transparent);
   }
 }
@@ -364,13 +378,15 @@ a {
       height: auto;
     }
   }
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: @gray-darker;
     color: @white;
   }
   &.reverse {
     border-color: transparent;
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: @gray-darker;
     }
   }
