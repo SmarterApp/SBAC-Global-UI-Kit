@@ -53,6 +53,9 @@
         border-color: @colorName;
       }
     }
+    .bar-label {
+      color: contrast(@colorName, darken(@colorName, 100%), lighten(@colorName, 100%));
+    }
   }
   .label-group& {
     .label {
