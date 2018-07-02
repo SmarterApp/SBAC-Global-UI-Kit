@@ -116,17 +116,14 @@
         text-align: center;
         vertical-align: baseline;
         overflow: visible;
+        top: @font-size-base * 3;
+        .small;
       }
       .percentage {
         top: @font-size-base * 1.5;
         .sans;
         font-weight: 700;
         color: @gray-darkest;
-      }
-      .bar-label {
-        top: @font-size-base * 3;
-        .small;
-        color: @gray-darker;
       }
     }
     .cut-points {
@@ -186,7 +183,6 @@
           top: auto;
           display: block;
           line-height: 1.5;
-          color: @white;
           .sans;
         }
       }
@@ -196,4 +192,17 @@
     padding-bottom: @font-size-base * 2;
   }
 }
+
+// Create RDW-specific color classes
+@sb-iab-green: #2c7f3e;
+@sb-iab-yellow: #eccb1a;
+@sb-iab-red: #750f2c;
+
+// List the colors
+@rdwColorVars: sb-iab-green, sb-iab-yellow, sb-iab-red;
+
+// Call the generator mixin
+// Yes, it's supposed to be called in recursive order
+.generate-color-classes(@rdwColorVars, 1);
+
 
