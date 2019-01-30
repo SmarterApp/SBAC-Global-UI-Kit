@@ -1,0 +1,476 @@
+/**
+  Colors
+ */
+// new general gray
+@gray-mid: #73777D;
+
+// new orange
+@orange: #82440e;
+
+// new dark green
+@green-dark: #267738;
+// new green
+@green: #267738;
+
+// new aqua
+@aqua: #0f6bad;
+
+/**
+  Required to meet WCAG 2 AA contrast ratio
+ */
+.navbar-default {
+  .navbar-nav > li > a {
+    color: @gray-mid;
+  }
+  .btn-link {
+    color: @gray-mid;
+  }
+}
+
+.btn-default {
+  color: @gray-mid;
+}
+
+.form-control {
+  color: @gray-mid;
+}
+
+.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+  color: @black;
+  &:hover,
+  &:active,
+  &.active{
+    color: @black;
+  }
+}
+
+.scale-title {
+  color: @gray-mid;
+}
+
+.tag.gray-mid.reverse.tag.gray-mid, .tag.gray-mid.active.tag.gray-mid {
+  background-color: @gray-mid;
+}
+
+.scale-score-graph .bar-container .bar .bar-label {
+  color: @gray-mid;
+}
+
+.table .scale-score .error-band {
+  color: @gray-mid;
+}
+
+h1 + p.pull-left, .h1 + p.pull-left, h2 + p.pull-left, .h2 + p.pull-left, h3 + p.pull-left, .h3 + p.pull-left {
+  color: @gray-darkest;
+}
+
+.toggle-group .btn-primary {
+  color: @gray-mid;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: @gray-mid;
+}
+
+.btn.btn-borderless.btn-default, .scale-score-graph .bar-container .bar .bar-label, .table .scale-score .error-band {
+  color: darken(@gray-mid, 10%);
+}
+// ------------------------------
+// RDW Custom Styles to Match Comps
+// ------------------------------
+.my-groups-search-form-container {
+  border: 1px solid @gray-lighter;
+  border-radius: 5px 5px 0 0;
+}
+
+.navbar-nav > li > div {
+  padding-top: 16.5px;
+  padding-bottom: 16.5px;
+}
+
+.navbar-nav > li > div {
+  line-height: 23px;
+}
+
+.nav > li > div {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.home-view .my-groups-list-container .table > thead > tr > th {
+  &:first-child {
+    border-top-left-radius: 0;
+  }
+  &:last-child {
+    border-top-right-radius: 0;
+  }
+}
+
+.ui-dropdown {
+  width: 100% !important;
+}
+
+.ui-dropdown-filter-container {
+  width: 100% !important;
+}
+
+distractor-analysis .table > tbody > tr > td {
+  box-shadow: none;
+}
+
+// containing the header and footer
+// may pull this back to UI Kit if approved
+// -AS
+header {
+  background-color: transparent;
+  .box-shadow(none);
+  .well {
+    .border-top-radius(0px);
+  }
+}
+
+/*
+.breadcrumb {
+  .small;
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: @gray-light;
+  padding-right: 0px;
+  padding-left: @grid-gutter-width / 2;
+  background-color: @gray-lighter;
+  border-radius: @border-radius-base;
+  .box-shadow(0 6px 6px -6px rgba(0, 0, 0, .16) inset, 0 1px 1px 1px rgba(255, 255, 255, .95););
+  > .active {
+    color: @gray-darkest;
+  }
+}
+*/
+footer {
+  background-color: transparent;
+  padding: 0px;
+  border-top: none;
+  color: @gray-dark;
+  .box-shadow(none);
+}
+
+.white-space-normal {
+  white-space: normal;
+}
+
+.notifications {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1030;
+}
+
+/*
+.district-tree > .tag {
+  margin-left: @grid-gutter-width / 2;
+  margin-top: 1px;
+}
+
+.tag {
+  // including fixes to handle really long tags within lists
+  max-width: 100%;
+  margin-right: @grid-gutter-width / 2;
+  margin-bottom: @line-height-computed / 2;
+}
+
+.fab {
+  position: fixed;
+  right: @grid-gutter-width / 2;
+  bottom: @line-height-computed / 2;
+  z-index: @zindex-fab;
+}
+
+.loader-modal {
+  //.modal without display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: @zindex-modal;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  opacity: @modal-backdrop-opacity;
+  background-color: @modal-backdrop-bg;
+  > .loader {
+    color: #fff;
+  }
+}
+*/
+
+.delayed-fade {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0s linear, visibility 0s linear;
+}
+
+.delayed-fade-in {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s linear, visibility 0.4s linear;
+  transition-delay: 0.15s;
+}
+
+@media (max-width: @screen-xs-max) {
+  // undoing the .pull-right classes
+  .float-none-xs {
+    float: none !important;
+  }
+
+  #group-results-basic-filters .form-group .col-md-2.pull-right,
+  #group-results-selected-assessments .col-md-6 .pull-right {
+    .float-none-xs;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+organization-export form button[type='submit'] {
+  margin-top: 27px;
+}
+
+a.link-button:hover {
+  text-decoration: none;
+}
+
+/*
+  Prevents anchor 'click-box' from extending to the width of its container.
+  Instead it extends to the width of its text.
+ */
+a > h1,
+a > h2,
+a > h3,
+a > h4,
+a > h5,
+a > h6 {
+  display: inline-block;
+}
+
+/*
+  Not sure what to do to get these line-heights right without explicit styles.
+  btn-[size] didn't quite match things up
+ */
+
+organization-export form button[type='submit'],
+sb-button-typeahead .input-group-btn > .btn,
+[sb-button-typeahead] .input-group-btn > .btn {
+  line-height: 1.48;
+}
+
+.label-max-width {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 330px;
+}
+
+/**
+  Required for controls that are placed above data tables, otherwise the data table
+  extends above its size.  The real fix for this would be tio fix the sizing of data tables
+  in the sbac-ui-kit.
+ */
+.z-index-over-data-table {
+  z-index: 3;
+  position: relative;
+}
+
+body .select-menu-group,
+.average-scale-score-display > table,
+.scale-score-graph > table {
+  .selected {
+    background-color: #e8e8e8;
+  }
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+  -moz-box-shadow:    0px 3px 6px 0px rgba(0,0,0,0.16);
+  box-shadow:         0px 3px 6px 0px rgba(0,0,0,0.16);
+}
+
+body .select-menu-group {
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+.btn-group-vertical > .btn {
+  margin-bottom: 5px;
+}
+
+/*
+.gray-light-bg {
+  background-color: @gray-light;
+}
+
+.gray-lightest-bg {
+  background-color: @gray-lightest;
+}
+*/
+.scale-score-graph table .bar-container {
+  padding-bottom: 10px;
+}
+
+.popover-title {
+  line-height: 25px;
+}
+
+.popover-link {
+  word-wrap: break-word;
+}
+
+.level-down {
+  .box-shadow(inset 12px 0px 8px -8px rgba(0,0,0,.12));
+}
+
+.average-scale-score-display {
+
+  .well {
+    padding: 0;
+    margin-bottom: 0;
+
+    .score-distribution-container:last-child > div {
+      padding-bottom: @table-cell-padding;
+    }
+  }
+
+  .bar-container {
+    padding-bottom: 0;
+  }
+
+  .font-large {
+    font-size: 2em;
+  }
+
+  .score-distribution-container {
+    display: grid;
+    grid-template-columns: 40% 13% 1fr;
+
+    > div {
+      padding: @table-cell-padding @table-cell-padding 0 @table-cell-padding;
+    }
+  }
+}
+
+.dropdown-submenu {
+  position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top:0;
+  left:100%;
+  margin-top:-6px;
+  margin-left:-1px;
+  border-radius:0 @border-radius-base @border-radius-base @border-radius-base;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display:block;
+}
+.dropdown-submenu>a>button:after {
+  display:block;
+  content:" ";
+  float:right;
+  width:0;
+  height:0;
+  border-color:transparent;
+  border-style:solid;
+  border-width:5px 0 5px 5px;
+  border-left-color:@gray-mid;
+  margin-top:@padding-base-vertical;
+  margin-right:-@padding-base-horizontal;
+}
+
+.dropdown-submenu.pull-left {
+  float:none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left:-100%;
+  margin-left:10px;
+  border-radius:@border-radius-base 0 @border-radius-base @border-radius-base;
+}
+
+.full-cell {
+  margin: -@table-cell-padding;
+  padding: @table-cell-padding;
+}
+
+.aggregate-report-results {
+  .table .scale-score {
+    font-size: inherit;
+  }
+
+  .performance-comparison-graph {
+    margin: -@table-cell-padding;
+    padding: 0 @table-cell-padding;
+  }
+}
+
+.performance-comparison-graph {
+  position: relative;
+  display: flex;
+  .bar-container {
+    display: flex;
+    padding: 0.6em 0;
+    &:first-child {
+      border-right: 1px solid @gray-darkest;
+      justify-content: flex-end;
+      .bar:first-child {
+        border-top-left-radius: @border-radius-small;
+        border-bottom-left-radius: @border-radius-small;
+      }
+      .bar:last-child {
+        border-right: 1px solid #fff;
+      }
+    }
+    &:last-child .bar:last-child {
+      border-top-right-radius: @border-radius-small;
+      border-bottom-right-radius: @border-radius-small;
+    }
+  }
+  .bar {
+    position: relative;
+    height: 1.48em;
+    text-align: center;
+    border-left: 1px solid #fff;
+  }
+}
+
+/** from admin webapp **/
+
+.white-space-preline {
+  white-space: pre-line;
+}
+
+.my-drop-zone {
+  border: dotted 3px lightgray;
+  border-radius: 5px;
+  height: 118px; /* Required for drag & drop to work in IE11 */
+}
+
+.nv-file-over {
+  border-color: #104564;
+}
+
+.font-weight-light {
+  font-weight: lighter;
+}
+
+.text-overflow-ellipsis {
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  overflow-y: visible;
+  white-space: nowrap;
+  padding: .2em 0 .3em;
+}
+
+/** used on well's containing wide data tables to push the well out with the table */
+.wide-content-container {
+  width: min-content;
+  width: -moz-min-content;
+  width: -webkit-min-content;
+}
