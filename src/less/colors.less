@@ -7,19 +7,38 @@
 @blue-dark:             #04384E;
 @teal:                  #007C9E;
 @aqua:                  #2B7BB5;
+@blue-bright:           #0EB2E8;
+@cerulean:              #4DABC4;
+@denim:                 #00607D;
+@sky:                   #00B4EB;
 
 // Greens
 @green:                 #30841F;
 @green-dark:            #246A34;
+@cyan:                  #44AA94;
+@emerald:               #368129;
+@fern:                  #63C853;
+@green-bright:          #59C924;
+@moss:                  #96BC27;
+@pine:                  #275E1D;
 
 // Yellows
 @yellow:                #ECCB1A;
+@yellow-gold:           #D99F00;
+@yellow-mustard:        #F3CA51;
 
-// Hot Colors
+// Hot Colors (Reds)
 @orange:                #B15E15;
 @red:                   #D5124A;
 @red-dark:              #8A1538;
 @maroon:                #5B1931;
+@cobalt:                #4449BE;
+@pink:                  #ECA8B0;
+@pink-dark:             #DC5561;
+@purple:                #A5508C;
+@purple-dark:           #611568;
+@red-apple:             #EF4522;
+@red-bright:            #F35031;
 
 // Neutrals
 @black:                 #000000;
@@ -42,7 +61,7 @@
 
 // Create color classes
 // List the colors
-@colorVars: blue, blue-dark, teal, aqua, green, green-dark, yellow, orange, red, red-dark, maroon, black, gray-darkest, gray-darker, gray-dark, gray, gray-light, gray-lighter, gray-lightest, white;
+@colorVars: blue, blue-dark, teal, aqua, green, green-dark, yellow, orange, red, red-dark, maroon, black, gray-darkest, gray-darker, gray-dark, gray, gray-light, gray-lighter, gray-lightest, white, blue-bright, cerulean, denim, sky, cyan, emerald, fern, green-bright, moss, pine, cobalt, pink, pink-dark, purple, purple-dark, red-apple, red-bright, yellow-gold, yellow-mustard;
 // Call the generator mixin
 // Yes, it's supposed to be called in recursive order
 .generate-color-classes(@colorVars, 1);
