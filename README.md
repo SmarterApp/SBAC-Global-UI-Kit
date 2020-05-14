@@ -59,10 +59,12 @@ To test this installation out, override the following variable and see how it ch
 ### Build
 #### Prerequisites
 <ol>
-    <li>Install <a href="https://nodejs.org/">node.js</a></li>
+    <li>Install <a href="https://nodejs.org/">node.js</a> (currently version 13.x)</li>
 </ol>
 
 #### Instructions
 ```bash
 npm install && npm run build
 ```
+
+NOTE: do *not* checkin the build-modified version of `npm-shrinkwrap.json`; it breaks the CI build.
