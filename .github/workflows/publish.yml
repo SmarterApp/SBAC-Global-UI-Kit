@@ -16,12 +16,14 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '13.x'
-          registry-url: 'https://registry.npmjs.org'
-          scope: '@sbac'
+#          registry-url: 'https://registry.npmjs.org'
+#          scope: '@sbac'
       - run: npm install
       - run: npm run build
+      - run: npm config set @sbac:registry=http://registry.npmjs.org/
       - run: npm config set //registry.npmjs.org/:username=${{ secrets.NPMJS_USERNAME }}
       - run: npm config set //registry.npmjs.org/:_password=${{ secrets.NPMJS_PASSWORD }}
       - run: npm config set //registry.npmjs.org/:email=mark.laffoon@accenture.com
       - run: npm config set //registry.npmjs.org/:always-auth=true
-      - run: npm publish --access public
+      - run: npm config list
+      - run: npm publish --registry=https://registry.npmjs.org --scope=@sbac --access=public
