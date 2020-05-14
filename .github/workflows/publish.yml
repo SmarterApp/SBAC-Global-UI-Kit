@@ -1,0 +1,25 @@
+# This workflow builds and publishes @sbac/sbac-ui-kit using basic 'npm publish'.
+# For it to work, create a secret called NPMJS_AUTH_TOKEN.
+#
+# Currently it builds and publishes when a commit is made to develop.
+# NOTE: the developer is responsible for bumping the version number (in package.json).
+name: Node.js Package
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@sbac'
+      - run: npm install
+      - run: npm run build
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_AUTH_TOKEN }}
