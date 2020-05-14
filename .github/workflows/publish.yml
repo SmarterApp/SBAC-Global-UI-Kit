@@ -17,11 +17,11 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '13.x'
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: 'http://registry.npmjs.org'
           scope: '@sbac'
       - run: npm install
       - run: npm run build
-      - run: npm whoami ||:; cat /home/runner/work/_temp/.npmrc; echo "TOKEN=${NODE_AUTH_TOKEN}"
+      - run: npm whoami ||:; cat /home/runner/work/_temp/.npmrc; echo "TOKEN=${NODE_AUTH_TOKEN},${#NODE_AUTH_TOKEN}"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_AUTH_TOKEN }}
       - run: npm publish --access public
