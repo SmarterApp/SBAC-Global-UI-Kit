@@ -20,6 +20,8 @@ jobs:
           scope: '@sbac'
       - run: npm install
       - run: npm run build
+      - run: npm config set //registry.npmjs.org/:username=${{ secrets.NPMJS_USERNAME }}
+      - run: npm config set //registry.npmjs.org/:_password=${{ secrets.NPMJS_PASSWORD }}
+      - run: npm config set //registry.npmjs.org/:email=mark.laffoon@accenture.com
+      - run: npm config set //registry.npmjs.org/:always-auth=true
       - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_AUTH_TOKEN }}
