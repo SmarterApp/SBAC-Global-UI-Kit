@@ -1,5 +1,6 @@
 # This workflow builds and publishes @sbac/sbac-ui-kit using basic 'npm publish'.
-# For it to work, create a secret called NPMJS_AUTH_TOKEN.
+# For it to work, create a secret called NPMJS_AUTH_TOKEN and set it to a
+# publish token created at npmjs.org with an authorized user.
 #
 # Currently it builds and publishes when a commit is made to develop.
 # NOTE: the developer is responsible for bumping the version number (in package.json).
@@ -16,20 +17,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '13.x'
-#          registry-url: 'http://registry.npmjs.org'
-#          scope: '@sbac'
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@sbac'
       - run: npm install
       - run: npm run build
-      - run: npm config set @sbac:registry=http://registry.npmjs.org/
-      - run: npm config set //registry.npmjs.org/:always-auth=true
-      - env:
-          NPMJS_EMAIL: mark.laffoon@accenture.com
-        run: npm config set //registry.npmjs.org/:username="$NPMJS_EMAIL"
-      - env:
-          NPMJS_USERNAME: ${{ secrets.NPMJS_USERNAME }}
-        run: npm config set //registry.npmjs.org/:username="$NPMJS_USERNAME"
-      - env:
-          NPMJS_PASSWORD: ${{ secrets.NPMJS_PASSWORD }}
-        run: npm config set //registry.npmjs.org/:username="$NPMJS_PASSWORD"
-      - run: npm config list
-      - run: npm publish --registry=http://registry.npmjs.org --scope=@sbac --access=public
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_AUTH_TOKEN }}
