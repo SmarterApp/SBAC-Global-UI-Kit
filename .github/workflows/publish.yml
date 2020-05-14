@@ -4,7 +4,7 @@
 #
 # Currently it builds and publishes when a commit is made to develop.
 # NOTE: the developer is responsible for bumping the version number (in package.json).
-name: Node.js Package
+name: Node.js Build and Publish
 on:
   push:
     branches:
@@ -21,6 +21,9 @@ jobs:
           scope: '@sbac'
       - run: npm install
       - run: npm run build
+      - run: npm whoami || cat .npmrc
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_AUTH_TOKEN }}
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_AUTH_TOKEN }}
