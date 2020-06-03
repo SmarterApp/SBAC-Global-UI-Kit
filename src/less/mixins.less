@@ -18,29 +18,29 @@
   }
   div&,
   .label& {
-    color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
+    color: contrast(@colorName, black, white, 20%);
     background-color: @colorName;
     h1, .h1,
     h2, .h2,
     h3, .h3 {
-        color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
-        small {
-          color: contrast(@colorName, darken(@colorName, 65%), lighten(@colorName, 65%));
-        }
+      color: contrast(@colorName, black, white, 20%);
+      small {
+        color: contrast(@colorName, darken(@colorName, 65%), lighten(@colorName, 65%));
+      }
     }
     h4, .h4,
     h5, .h5,
     h6, .h6
     p,
     span {
-      color: contrast(@colorName, darken(@colorName, 50%), lighten(@colorName, 50%));
+      color: contrast(@colorName, black, white, 20%);
       small {
         color: contrast(@colorName, darken(@colorName, 40%), lighten(@colorName, 40%));
       }
     }
     .label {
       font-weight: 400;
-      color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
+      color: contrast(@colorName, black, white, 20%);
       background-color: contrast(@colorName, darken(@colorName, 15%), lighten(@colorName, 15%));
     }
     &.border-only {
@@ -72,7 +72,7 @@
   }
   .tag& {
     .label {
-      color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
+      color: contrast(@colorName, black, white, 20%);
       background-color: @colorName;
     }
     span:not(.icon):not(.label) {
@@ -80,7 +80,7 @@
     }
     &:hover,
     &:focus {
-      color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
+      color: contrast(@colorName, black, white, 20%);
       background-color: @colorName;
       border-color: @colorName;
       .label {
@@ -89,15 +89,15 @@
     }
     &.reverse&,
     &.active& {
-      color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
+      color: contrast(@colorName, black, white, 20%);
       background-color: @colorName;
       border-color: @colorName;
       .label {
-        color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
+        color: contrast(@colorName, black, white, 20%);
         background-color: darken(@colorName, 20%);
       }
       span:not(.icon):not(.label) {
-        color: contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%));
+        color: contrast(@colorName, black, white, 20%);
       }
       &:hover,
       &:focus {
@@ -126,10 +126,10 @@
     }
   }
   .btn& {
-    .button-variant(contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%)); @colorName; transparent);
+    .button-variant(contrast(@colorName, black, white); @colorName; transparent);
     &:hover,
     &:focus {
-      .button-variant(contrast(@colorName, darken(@colorName, 75%), lighten(@colorName, 75%)); darken(@colorName, 10%); transparent);
+      .button-variant(contrast(@colorName, black, white); darken(@colorName, 10%); transparent);
     }
   }
   &[class*="border-"] {
